@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dominion Status</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#222;--mute:#777;--line:#ddd;--ok:#3a9d5d;--now:#e8a317;--bad:#c8473a;--todo:#c9c9c9;--open:#d9822b;--blue:#3b7dd8}
+@media(prefers-color-scheme:dark){:root{--bg:#16181c;--card:#20242a;--ink:#e8e8e8;--mute:#9aa;--line:#363b44;--todo:#40464f}}
+*{box-sizing:border-box}body{margin:0;padding:16px;background:var(--bg);color:var(--ink);font:15px/1.4 system-ui,sans-serif;max-width:1100px;margin:auto}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:15px;margin:0 0 10px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:12px 0}
+.sub{color:var(--mute);font-size:13px}.big{font-size:20px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}.k{font-size:12px;color:var(--mute)}
+.chain{display:flex;flex-wrap:wrap;gap:6px}.st{border:1px solid var(--line);border-radius:8px;padding:5px 9px;font-size:13px;background:var(--bg)}
+.st.done{border-color:var(--ok)}.st.done:before{content:"\2713 ";color:var(--ok)}
+.st.now{border-color:var(--now);background:var(--now);color:#000;font-weight:600;animation:p 1.5s infinite}
+@keyframes p{50%{opacity:.6}}.lane{margin:8px 0 2px;font-size:12px;color:var(--mute)}
+.bar{height:14px;background:var(--todo);border-radius:7px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ok)}
+.tiles{display:flex;flex-wrap:wrap;gap:3px;margin-top:10px}.tile{width:14px;height:14px;border-radius:3px;background:var(--todo)}
+.TODO{background:var(--todo)}.RULES-DONE{background:var(--blue)}.WAITING-CHATGPT{background:#8a5bd6}.DONE{background:var(--ok)}.DONE-OPEN{background:var(--open)}.RUNNING{background:var(--now)}.OPEN-RULES{background:var(--bad)}.PARKED{background:#5a6270}
+.leg span{margin-right:12px;font-size:12px}.leg b{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}.sc{overflow-x:auto}
+svg text{fill:var(--mute);font-size:10px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.tabs button{flex:1 1 auto;min-width:0;padding:9px 12px;white-space:nowrap;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;cursor:pointer}.tabs button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}.el{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.el b{font-size:15px}.chip{display:inline-block;border-radius:10px;padding:1px 8px;font-size:12px;border:1px solid var(--line);margin:0 4px 4px 0;color:var(--ink)}
+.chip.finished{background:var(--ok);color:#fff;border-color:var(--ok)}.chip.running{background:var(--now);color:#000;border-color:var(--now)}.chip.built{background:var(--blue);color:#fff;border-color:var(--blue)}.chip.waiting{color:var(--mute)}.chip.rules-done{background:var(--blue);color:#fff;border-color:var(--blue);opacity:.75}
+.gb{margin-top:auto;display:inline-block;text-align:center;padding:7px;border-radius:8px;background:var(--blue);color:#fff;text-decoration:none;font-size:14px}
+#q{width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;margin:6px 0}.el a.n{color:var(--blue);font-size:12px;margin-right:6px}
+.tr{display:grid;grid-template-columns:minmax(120px,1.2fr) auto 2fr auto;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}.tr .bar{height:12px}.tr .bar i{background:var(--blue)}@media(max-width:700px){.tr{grid-template-columns:1fr 1fr}.tr .bar{grid-column:1/3}}
+.chip.trained{background:var(--ok);color:#fff;border-color:var(--ok)}.chip.partly{background:var(--open);color:#fff;border-color:var(--open)}.chip.none{color:var(--mute)}.chip.live{background:var(--now);color:#000;border-color:var(--now)}
+#grf{width:100%;height:85vh;border:0;border-radius:10px;background:var(--card)}pre.lg{white-space:pre-wrap;font-size:12px;margin:6px 0 0}
+h3{margin:18px 0 8px;font-size:14px;color:var(--mute)}
+.nd{display:flex;gap:10px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line)}.nd:last-child{border:0}.nd b{min-width:2.2em;text-align:right;font-size:18px}.nd a{color:var(--blue)}.nd.warn b{color:var(--bad)}
+.pj{display:grid;grid-template-columns:minmax(130px,1fr) 2fr minmax(90px,auto);gap:4px 10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}.pj:last-child{border:0}.pj .sub{grid-column:1/-1}.pj .bar i.b2{background:var(--blue)}@media(max-width:600px){.pj{grid-template-columns:1fr auto}.pj .bar{grid-column:1/-1;order:3}}
+.hl{display:grid;grid-template-columns:auto 1fr auto;gap:2px 10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}.hl:last-child{border:0}.dot{width:10px;height:10px;border-radius:50%;display:inline-block;background:var(--ok);margin-top:4px}.dot.bad{background:var(--bad)}.dot.off{background:var(--todo)}
+.ph{aspect-ratio:16/9;border-radius:6px;background:var(--bg);border:1px solid var(--line);overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:12px;cursor:pointer;padding:0;width:100%}.ph img{width:100%;height:100%;object-fit:cover;display:block}.ph.no{cursor:default}
+#ov{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9;display:none;align-items:stretch;justify-content:center;gap:12px;padding:12px}
+#ovl{flex:1 1 60%;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+#pw{position:relative;display:inline-block;line-height:0;cursor:crosshair;max-width:100%}#pw img{max-width:100%;max-height:80vh;object-fit:contain;border-radius:6px;display:block}
+.pin{position:absolute;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:var(--bad);color:#fff;font:700 12px/22px system-ui;text-align:center;border:2px solid #fff;pointer-events:none}
+#ov .cp{color:#ddd;font-size:13px;text-align:center}
+#ovr{flex:0 0 340px;background:var(--card);color:var(--ink);border-radius:10px;padding:12px;overflow:auto;display:flex;flex-direction:column;gap:8px}
+#ovr textarea{width:100%;min-height:90px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+#ovr input{width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+#ovr button{padding:8px;border-radius:8px;border:0;background:var(--blue);color:#fff;font:inherit;cursor:pointer}#ovr button.x{background:none;color:var(--mute);padding:0 4px;border:1px solid var(--line)}
+#ovr ol{margin:0;padding-left:18px;font-size:13px}#ovr .fi{font-size:13px;margin:3px 0}#fbm{font-size:13px}.er{color:var(--bad)}
+@media(max-width:700px){#ov{flex-direction:column;overflow:auto}#ovl{flex:0 0 auto}#pw img{max-height:45vh}#ovr{flex:0 0 auto}}
+#qsf{display:flex;gap:8px;margin:8px 0}#qsf select,#qsf input{padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;min-width:0;flex:1}.qc{display:flex;flex-direction:column;gap:6px;margin:8px 0}.qch{text-align:left;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;cursor:pointer}.qch:hover{border-color:var(--blue)}.qt{white-space:pre-wrap;font-size:14px;margin:6px 0}.qa textarea{width:100%;box-sizing:border-box;min-height:70px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit}
+#chf{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:8px 0}#chf select,#chf input{padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;min-width:0}
+.cel{display:flex;gap:10px;align-items:center;margin-bottom:8px}.cel img{width:64px;height:36px;object-fit:cover;border-radius:5px;border:1px solid var(--line)}
+.chip.fixed{background:var(--ok);color:#fff;border-color:var(--ok)}.chip.open,.chip.needs-lead{background:var(--open);color:#fff;border-color:var(--open)}.chip.queued{background:var(--blue);color:#fff;border-color:var(--blue)}.chip.reverted{background:var(--bad);color:#fff;border-color:var(--bad)}
+.ct td:nth-child(1){white-space:nowrap}.cl{display:flex;gap:8px;padding:4px 0;border-bottom:1px solid var(--line);font-size:13px}.cl span:first-child{color:var(--mute);white-space:nowrap}
+@media(max-width:600px){.ct thead{display:none}.ct,.ct tbody,.ct tr,.ct td{display:block;width:100%}.ct tr{border-bottom:2px solid var(--line);padding:6px 0}.ct td{border:0;padding:2px 0}.ct td:before{content:attr(data-h) ": ";color:var(--mute);font-size:12px}}
+</style></head><body>
+<h1>Dominion project</h1><div class="sub" id="gen">loading...</div>
+<div class="tabs"><button id="t-ov">Overview</button><button id="t-wf">Workflows</button><button id="t-now">Factory now</button><button id="t-fb">Finished &amp; feedback</button><button id="t-tr">Training</button><button id="t-gr">How it grew</button><button id="t-ch">Agent changes</button><button id="t-qs">Questions</button><button id="t-co">Costs</button></div>
+<div id="tab-ov" style="display:none"><div id="ovb"></div></div>
+<div id="tab-wf" style="display:none"><div id="wfb"></div></div>
+<div id="tab-now" style="display:none"><div class="card" id="now"></div>
+<div class="card"><h2>The factory (each running faction under its stage)</h2><div id="chain"></div></div>
+<div class="card"><h2>Scores of the checks (0 to 10)</h2><div id="scores"></div></div>
+<div class="card"><h2>Fan factions</h2><div class="big" id="prog"></div><div class="bar"><i id="pbar"></i></div><div class="tiles" id="tiles"></div><div class="leg" id="leg" style="margin-top:8px"></div></div>
+<div class="card sc"><h2>Recent agents</h2><table id="ag"></table></div></div>
+<div id="tab-fb" style="display:none"><div class="sub">Feedback goes to the private Dominion issues. A helper checks them every 30 minutes and fixes or queues them.</div><input id="q" placeholder="Search..." type="search"><div id="fbl"></div></div>
+<div id="tab-tr" style="display:none"><div id="trb"></div></div>
+<div id="tab-ch" style="display:none"><div class="sub">What the recurring agents (the feedback helper every 30 minutes, the patrol every 4 hours) found and what they did about it. Factory and chat work is not shown here.</div><div id="chf"><select id="ch-e" aria-label="Element"></select><select id="ch-a" aria-label="Found by"><option value="">all agents</option></select><select id="ch-s" aria-label="Status"><option value="">all statuses</option></select><input id="ch-q" placeholder="Search"></div><div id="chb"></div></div>
+<div id="tab-qs" style="display:none"><div class="sub">Rules questions the cards do not answer. Each one is built to one reading already. Research when you can and write your answer; the feedback helper (every 30 minutes) builds it and marks it done.</div><div id="qsf"><select id="qs-s" aria-label="Status"><option value="open">waiting for you</option><option value="answered">answered</option><option value="done">done</option><option value="">all</option></select><input id="qs-q" placeholder="Search" type="search"></div><div id="qsb"></div></div>
+<div id="tab-co" style="display:none"><div id="cob"></div></div>
+<div id="tab-gr" style="display:none"><div class="sub"><a href="grew.html" target="_blank" rel="noopener">open full page</a></div><iframe id="grf" title="How the factory grew"></iframe></div>
+<div id="ov"><div id="ovl"><div id="pw"><img id="ovi" alt=""></div><div class="cp" id="ovc"></div><div class="cp">Tap the picture to drop a numbered pin.</div></div>
+<div id="ovr"><b id="ovn"></b><div id="pins" class="sub"></div><textarea id="fb-text" placeholder="What is wrong or what you want? (pin 2: braid too thin)"></textarea><label class="sub" for="fb-score">Your score for this (0-100%), optional</label><div style="display:flex;gap:8px"><input id="fb-score" type="number" min="0" max="100" step="1" placeholder="%" style="width:80px"><input id="fb-sl" type="range" min="0" max="100" step="1" value="50"></div><div class="sub">Your scores teach the HUD checker your scale.</div><button id="fb-save">Save feedback</button><div id="fbm"></div>
+<div id="gh"></div><a id="ovg" target="_blank" rel="noopener" class="sub">or write it on GitHub</a><div id="hist"></div><a href="#" id="fb-close" class="sub">Close (Esc)</a></div></div>
+<script>
+const $=id=>document.getElementById(id),esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dur=(a,b)=>{if(!a)return'';const s=Math.max(0,Math.round(((b?new Date(b):new Date())-new Date(a))/1e3));return s>=3600?Math.floor(s/3600)+'h '+Math.floor(s%3600/60)+'m':s>=60?Math.floor(s/60)+'m '+s%60+'s':s+'s'};
+const NAMES={setup:'Setup',reader:'Card reader',theme:'Theme',rules:'Rules build',rulesCheck:'Rules check',hud:'Working HUD',hudCheck:'HUD tools check',stepfix:'Step fix',wireframe:'HUD screenshot',quota:'ChatGPT check',overlay:'Concept over it',plate:'Remove text',cut:'Cut parts',skin:'Skin',judge:'Number judge',fix:'Fix builder',coverage:'Coverage',art:'Pieces art',artCheck:'Pieces check',artfix:'Pieces fix',piecesGate:'Pieces gate',gates:'Gates',shots:'Shots',rulesReview:'Rules review',code:'Code review',ux:'UX review',approve:'Approve',confirm:'Confirm',approveLast:'Approve (last)',record:'Record',learn:'Learner'};
+const nm=i=>NAMES[i]||i;
+const LANES=[['Prep',['setup','reader','theme']],['Rules',['rules','rulesCheck']],['Working HUD',['hud','hudCheck','stepfix']],['Look from the concept',['wireframe','quota','overlay','plate','cut','skin','judge']],['Pieces',['art','artCheck','artfix','piecesGate']],['Gates and reviews',['coverage','gates','shots','rulesReview','code','ux']],['Approve',['approve','confirm','approveLast','fix','learn']]];
+function render(d){
+ $('gen').textContent='Updated '+new Date(d.generatedAt).toLocaleTimeString()+' (page refreshes every minute)';
+ const F=(d.factories||[]).slice().sort((a,b)=>String(a.batch).localeCompare(String(b.batch))),by={};d.stages.forEach(s=>by[s.id]=s);
+ // several factories at once (user 2026-11-21): one row per factory, the chain marks each factory's stage
+ const nst=d.stages.length||1;
+ $('now').innerHTML=F.length?`<h2>Now: ${F.length} ${F.length>1?'factories':'factory'} running</h2>`+F.map((f,k)=>{const n=f.now||{};return`<div style="padding:8px 0;border-top:1px solid rgba(128,128,128,.25)"><div><span class="sub">Factory ${esc((/(\d+)$/.exec(f.batch)||[,k+1])[1])}</span> <b class="big" style="font-size:1.15em">${esc(f.faction||'-')}</b></div><div>${esc(nm(n.stage||'-'))} <span class="sub">· pass ${esc(n.pass||'-')} · try ${esc(n.try||'-')} of 5 · ${esc(n.model||'?')} · ${dur(n.start)}</span></div><div class="bar" title="${f.stageDone.length} of ${nst} stages done"><i style="width:${Math.min(100,100*f.stageDone.length/nst)}%"></i></div></div>`}).join(''):`<h2>Now</h2><div class="big">Nothing is running.</div>`;
+ let h='';for(const[l,ids]of LANES){h+=`<div class="lane">${l}</div><div class="chain">`+ids.map(i=>{const at=F.filter(f=>f.now&&f.now.stage===i);const s=by[i];return`<div class="st ${at.length?'now':''}" title="${esc(s?s.title:'')}">${esc(nm(i))}${s?` <span class="sub">${s.model}</span>`:''}${at.map(f=>`<div style="color:#000;font-weight:700">${esc(f.faction)}</div>`).join('')}</div>`}).join('')+'</div>'}
+ $('chain').innerHTML=h;
+ const sc=d.scores||[];
+ if(!sc.length)$('scores').textContent='No scores yet.';else{
+  const G=[];sc.forEach(q=>{const f=(q.label||'').split(':')[1]||'?';let g=G[G.length-1];if(!g||g.f!=f)G.push(g={f,a:[]});g.a.push(q)});
+  const step=22,gap=26,H=170,y=v=>H-38-Math.max(0,Math.min(10,v))*(H-58)/10,col={rulesCheck:'#3b7dd8',hudCheck:'#e8a317',uiCheck:'#8a5bd6',artCheck:'#3a9d5d'};
+  let xx=30,s='';for(const v of[0,5,10])s+=`<line x1="26" x2="100%" y1="${y(v)}" y2="${y(v)}" stroke="currentColor" opacity=".15"/><text x="2" y="${y(v)+3}">${v}</text>`;
+  for(const g of G){const x0=xx+8,pts=g.a.map((q,i)=>[x0+i*step,y(q.score)]);
+   s+=`<polyline fill="none" stroke="#999" stroke-width="1" points="${pts.map(p=>p.join(',')).join(' ')}"/>`;
+   g.a.forEach((q,i)=>{s+=`<circle cx="${pts[i][0]}" cy="${pts[i][1]}" r="5" fill="${col[q.stage]||'#888'}"><title>${esc(q.label)}: ${q.score}</title></circle><text x="${pts[i][0]}" y="${pts[i][1]-9}" text-anchor="middle">${q.score}</text>`});
+   const w=Math.max(step*g.a.length,60),last=g.a[g.a.length-1].score;
+   s+=`<text x="${x0-4+w/2-step/2}" y="${H-20}" text-anchor="middle" style="fill:var(--ink)">${esc(g.f.slice(0,12))}</text><text x="${x0-4+w/2-step/2}" y="${H-6}" text-anchor="middle">${g.a.length} tries, last ${last}</text>`;
+   xx+=w+gap}
+  $('scores').innerHTML=`<div class="sc"><svg width="${Math.max(320,xx)}" height="${H}">${s}</svg></div><div class="sub">One group per faction, one dot per try, left to right. Blue rules, orange HUD, purple UI, green art.</div>`}
+ const N=d.total||1,c=d.counts||{};$('prog').textContent=`${d.doneCount} finished, ${c['RULES-DONE']||0} rules built, of ${d.total}`;$('pbar').style.width=100*d.doneCount/N+'%';
+ $('tiles').innerHTML=d.factions.map(f=>`<div class="tile ${f.state}" title="${esc(f.key)}: ${esc(f.state)}, ${f.passes} passes"></div>`).join('');
+ $('leg').innerHTML=['TODO','RUNNING','RULES-DONE','DONE','DONE-OPEN','OPEN-RULES','WAITING-CHATGPT','PARKED'].map(k=>`<span><b class="${k}"></b>${k} ${c[k]||0}</span>`).join('');
+ $('ag').innerHTML='<tr><th>Agent</th><th>Model</th><th>Started</th><th>Time</th><th>Result</th></tr>'+d.agents.map(a=>`<tr><td>${esc(a.label)}</td><td>${esc(a.model)}</td><td>${a.start?new Date(a.start).toLocaleTimeString():''}</td><td>${dur(a.start,a.end)}</td><td>${a.running?'running':a.unchanged?`unchanged since ${esc(a.unchanged)}`:a.score!=null?`score ${a.score}, ${a.findings} findings`:a.approve!=null?(a.approve?'approved':'not approved'):'done'}</td></tr>`).join('')}
+async function go(){try{D=await(await fetch('status.json?'+Date.now())).json();render(D);ovHtml();wfHtml();fbHtml();trHtml();chHtml();coHtml();if(!tok()&&$('tab-qs').style.display!='none'&&!QS)qsLoad()}catch(e){$('gen').textContent='Cannot load status.json'}}
+
+let D=null;const R='https://github.com/Kalaminator/Dominion/issues/';
+function tkLine(e){const T=D&&D.tokens;if(!T||e.group!='Factions')return'';const t=T.factions[e.key],b=(T.helpers.byElement||{})[e.key];if(!t&&!b)return'';return`<div class="sub">Tokens: ${nk(t?t.total:0)} build, ${nk(b?b.total:0)} feedback</div>`}
+function fbHtml(){
+ if(!D||!D.elements)return;const q=$('q').value.toLowerCase().trim(),by={};
+ D.elements.forEach(e=>{if(q&&!(e.name+' '+e.key+' '+e.what+' '+e.group).toLowerCase().includes(q))return;(by[e.group]=by[e.group]||[]).push(e)});
+ let h=D.feedbackAvailable?'':'<div class="sub">feedback list unavailable</div>';
+ for(const g of['Factions','Maps','Pages','Systems']){const a=by[g];if(!a)continue;
+  h+=`<h3>${g} (${a.length})</h3><div class="fgrid">`+a.map(e=>{const f=e.feedback,body='Element: '+e.name+' ('+e.key+')\nWhere (screen, panel, button):\n\nWhat is wrong or what you want:\n\nPicture (paste one here if it helps):\n';
+   const u=R+'new?labels=feedback&title='+encodeURIComponent('['+e.key+'] ')+'&body='+encodeURIComponent(body);
+   const c=f?[['open',f.open],['fixed',f.fixed],['queued',f.queued],['needs lead',f.needsLead]].filter(x=>x[1]).map(x=>`<span class="chip">${x[1]} ${x[0]}</span>`).join(''):'';
+   const n=f?f.issues.map(i=>`<a class="n" target="_blank" rel="noopener" href="${R}${i}">#${i}</a>`).join(''):'';
+   const pic=e.thumb?`<button class="ph" data-k="${esc(e.key)}" data-u="${esc(u)}" aria-label="Open picture of ${esc(e.name)}"><img loading="lazy" src="${esc(e.thumb)}" alt=""></button>`:'<div class="ph no">No picture yet</div>';
+   return`<div class="el">${pic}<div><b>${esc(e.name)}</b> <span class="chip ${e.state}">${e.state}</span></div><div class="sub">${esc(e.what)}</div>${tkLine(e)}<div>${c}${n}</div><a class="gb" target="_blank" rel="noopener" href="${u}">Give feedback</a></div>`}).join('')+'</div>'}
+ $('fbl').innerHTML=h||'<div class="sub">Nothing matches.</div>'}
+// Costs tab: tokens per faction (build) and per feedback fix. total = all four usage fields, fresh = without cache reads.
+const nk=n=>n>=1e6?(n/1e6).toFixed(n>=1e7?0:1)+'M':n>=1e3?Math.round(n/1e3)+'k':String(Math.round(n||0));
+function coHtml(){const T=D&&D.tokens;if(!T){$('cob').innerHTML='<div class="card sub">Token data unavailable.</div>';return}
+ const H=T.helpers||{},be=H.byElement||{},els=(D.elements||[]).filter(e=>e.group=='Factions'),rk={finished:0,running:1,built:2,'rules-done':3,waiting:4};
+ const rows=els.map(e=>({e,t:T.factions[e.key],fb:be[e.key]})).filter(r=>r.t||r.fb);
+ rows.sort((a,b)=>(rk[a.e.state]-rk[b.e.state])||((b.t?b.t.total:0)-(a.t?a.t.total:0)));
+ const sh=T.factions.other,sum={t:0,f:0,p:0,fb:0};
+ Object.values(T.factions).forEach(t=>{sum.t+=t.total;sum.f+=t.fresh;sum.p+=t.pictures});
+ sum.fb=H.total||0;
+ const tr=(n,st,t,fb)=>`<tr><td>${n}</td><td>${st}</td><td>${t?nk(t.total):'-'}</td><td>${t?nk(t.fresh):'-'}</td><td>${t?t.runs.length+' runs, '+t.agents+' agents':'-'}</td><td>${t&&t.pictures?t.pictures+(t.failedPictures?' ('+t.failedPictures+' failed)':''):'-'}</td><td>${fb?nk(fb.total):'-'}</td><td>${t&&t.last?esc(t.last):'-'}</td></tr>`;
+ let h='<div class="card sc"><h2>Claude tokens per faction</h2><div class="sub">From the first factory agent to now. Total counts all four usage fields; fresh leaves out cache reads (cheap). Feedback tokens: a fix run on several parts is split evenly over them.</div><table><tr><th>Faction</th><th>State</th><th>Total</th><th>Fresh</th><th>Runs</th><th>Pictures</th><th>Feedback fixes</th><th>Last</th></tr>'
+  +rows.map(r=>tr(esc(r.e.name),`<span class="chip ${r.e.state}">${r.e.state}</span>`,r.t,r.fb)).join('')
+  +(sh?tr('Kit, pages, setup (shared)','',sh,null):'')
+  +`<tr><th>All</th><th></th><th>${nk(sum.t)}</th><th>${nk(sum.f)}</th><th></th><th>${sum.p||'-'}</th><th>${nk(sum.fb)}</th><th></th></tr></table></div>`;
+ const hr=H.runs||[];
+ h+='<div class="card sc"><h2>Feedback fixes: helper runs</h2>'+(hr.length?'<table><tr><th>Date</th><th>Helper</th><th>Issues</th><th>Tokens</th><th>Cost</th></tr>'+hr.map(r=>`<tr><td>${esc(String(r.time).slice(0,16).replace('T',' '))}</td><td>${esc(r.agent)}</td><td>${r.issues.map(i=>`<a target="_blank" rel="noopener" href="${R}${i}">#${i}</a>`).join(' ')||'-'}</td><td>${nk(r.total)} (${nk(r.fresh)} fresh)</td><td>$${(+r.costUsd).toFixed(2)}</td></tr>`).join('')+'</table>':'<div class="sub">No helper run logged yet. Each run from now on writes its tokens here.</div>')+'</div>';
+ const days=[],today=new Date();for(let i=13;i>=0;i--){const d=new Date(today-i*864e5).toISOString().slice(0,10);const x=(H.perDay||[]).find(p=>p.day==d);days.push({d,v:x?x.total:0})}
+ const mx=Math.max(1,...days.map(x=>x.v)),bw=26,hh=110;
+ h+=`<div class="card"><h2>Helper tokens per day</h2><div class="sc"><svg width="${days.length*bw+10}" height="${hh+30}">`+days.map((d,i)=>{const bh=d.v*hh/mx;return`<rect x="${i*bw+5}" y="${hh-bh+12}" width="${bw-6}" height="${bh}" rx="3" fill="var(--blue)"><title>${d.d}: ${nk(d.v)}</title></rect><text x="${i*bw+5+(bw-6)/2}" y="${hh-bh+9}" text-anchor="middle">${d.v?nk(d.v):''}</text><text x="${i*bw+5+(bw-6)/2}" y="${hh+26}" text-anchor="middle">${d.d.slice(8)}</text>`}).join('')+'</svg></div><div class="sub">Last 14 days, feedback helper, patrol and hardener. Number under a bar: day of the month.</div></div>';
+ $('cob').innerHTML=h}
+const API='https://api.github.com/repos/Kalaminator/Dominion/issues',SITE='https://kalaminator.github.io/dominion-factory-status/';
+let CE=null,PINS=[];
+const tok=()=>{try{return localStorage.getItem('ghtok')||''}catch(e){return''}};
+function closeOv(){$('ov').style.display='none';$('ovi').src=''}
+function pinsHtml(){$('pw').querySelectorAll('.pin').forEach(p=>p.remove());
+ PINS.forEach((p,i)=>{const d=document.createElement('div');d.className='pin';d.style.left=p.x+'%';d.style.top=p.y+'%';d.textContent=i+1;$('pw').appendChild(d)});
+ $('pins').innerHTML=PINS.length?PINS.map((p,i)=>`pin ${i+1} (${p.x}%, ${p.y}%) <button class="x" data-r="${i}">remove</button>`).join(' &nbsp; '):'No pins yet.'}
+function ghHtml(){$('gh').innerHTML=tok()?'<a href="#" id="disc" class="sub">Disconnect GitHub</a>':'<div class="sub"><b>Connect GitHub</b> (once per browser)<ol><li>GitHub &gt; Settings &gt; Developer settings &gt; Fine-grained personal access tokens &gt; Generate.</li><li>Repository access: Only select repositories &gt; Dominion. Permissions: Issues = Read and write.</li><li>Copy the token and paste it here.</li></ol></div><input id="tk" type="password" placeholder="github_pat_..." autocomplete="off"><button id="tks">Save token</button>'}
+async function histLoad(){const h=$('hist');if(!tok()){const f=CE.feedback;h.innerHTML='<div class="sub">'+(f?f.open+' open, '+f.fixed+' fixed, '+f.queued+' queued, '+f.needsLead+' needs lead. Connect GitHub to see them.':'Connect GitHub to see earlier feedback.')+'</div>';return}
+ h.innerHTML='<div class="sub">Loading earlier feedback...</div>';const k=CE.key;
+ try{const r=await fetch(API+'?labels=feedback&state=all&per_page=100',{headers:{Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json'}});const j=await r.json();if(!r.ok)throw new Error(j.message||r.status);
+  if(CE.key!=k)return;const a=j.filter(i=>!i.pull_request&&i.title.startsWith('['+k+']'));
+  h.innerHTML='<b>Earlier feedback</b>'+(a.length?a.map(i=>{const l=i.labels.map(x=>x.name),s=l.includes('fb:fixed')?'fixed':l.includes('fb:queued')?'queued':l.includes('fb:needs-lead')?'needs-lead':'open';return`<div class="fi"><a target="_blank" rel="noopener" href="${esc(i.html_url)}">#${i.number}</a> ${esc(i.title.replace('['+k+']','').trim())} <span class="chip">${s}</span></div>`}).join(''):'<div class="sub">None yet.</div>')}
+ catch(e){h.innerHTML='<div class="er">Could not load: '+esc(e.message)+'</div>'}}
+function openOv(e,u){CE=e;PINS=[];$('ovi').src=e.img;$('ovn').textContent=e.name+' ('+e.key+')';$('ovc').textContent=(e.caption||'')+(e.shotAt?' (shot '+e.shotAt.slice(0,10)+')':'');$('ovg').href=u;$('fb-text').value='';$('fb-score').value='';$('fbm').textContent='';pinsHtml();ghHtml();histLoad();$('ov').style.display='flex'}
+$('fbl').onclick=ev=>{const b=ev.target.closest('.ph[data-k]');if(!b)return;openOv(D.elements.find(x=>x.key==b.dataset.k),b.dataset.u)};
+$('pw').onclick=ev=>{if(ev.target.id!='ovi')return;const r=$('ovi').getBoundingClientRect();PINS.push({x:+((ev.clientX-r.left)/r.width*100).toFixed(1),y:+((ev.clientY-r.top)/r.height*100).toFixed(1)});pinsHtml()};
+$('ov').onclick=ev=>{if(ev.target.id=='ov'||ev.target.id=='fb-close'){ev.preventDefault();closeOv()}
+ const r=ev.target.dataset&&ev.target.dataset.r;if(r!=null&&r!==''){PINS.splice(+r,1);pinsHtml()}
+ if(ev.target.id=='disc'){ev.preventDefault();try{localStorage.removeItem('ghtok')}catch(e){}ghHtml();histLoad()}
+ if(ev.target.id=='tks'){const v=$('tk').value.trim();if(v){try{localStorage.setItem('ghtok',v)}catch(e){$('fbm').textContent='Cannot store the token in this browser.'}ghHtml();histLoad()}}
+ if(ev.target.id=='fb-save')save()};
+async function save(){const t=$('fb-text').value.trim(),m=$('fbm');m.className='';const sv=$('fb-score').value.trim(),sn=sv===''?null:Math.max(0,Math.min(100,Math.round(+sv)));if(!t&&sn==null){m.textContent='Write something or give a score.';return}
+ if(!tok()){m.className='er';m.textContent='Connect GitHub first (below).';return}
+ const e=CE,pic=new URL(e.img,SITE).href,body='Element: '+e.name+' ('+e.key+'), group '+e.group+'\nPicture: '+pic+(e.shotAt?' (shot '+e.shotAt+')':'')+'\nPins: '+(PINS.length?PINS.map((p,i)=>(i+1)+' ('+p.x+'%, '+p.y+'%)').join(', '):'none')+(sn!=null?'\nScore: '+sn:'')+'\n\n'+t;
+ m.textContent='Saving...';
+ try{const r=await fetch(API,{method:'POST',headers:{Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({title:('['+e.key+'] '+(t?t.split('\n')[0]:'score '+sn+'%')).slice(0,80+e.key.length+3),labels:sn!=null?['feedback','fb:score']:['feedback'],body})});
+  const j=await r.json();if(!r.ok)throw new Error(j.message||r.status);
+  m.textContent='Saved as #'+j.number;$('fb-text').value='';$('fb-score').value='';PINS=[];pinsHtml();histLoad()}
+ catch(x){m.className='er';m.textContent='GitHub says: '+x.message}}
+document.addEventListener('keydown',ev=>{if(ev.key=='Escape')closeOv()});
+const TABS=['ov','wf','now','fb','tr','gr','ch','qs','co'];
+let QS=null;
+const qState=i=>{const l=i.labels.map(x=>x.name);return i.state=='closed'||l.includes('q:done')?'done':l.includes('q:answered')||l.includes('q:in-progress')?'answered':'open'};
+async function qsLoad(){const b=$('qsb');if(!tok()){if(!D||!D.questions){b.innerHTML='<div class="sub">Loading questions...</div>';return}QS=D.questions.map(i=>({...i,html_url:R+i.number})).sort((x,y)=>x.number-y.number);qsHtml();return}
+ b.innerHTML='<div class="sub">Loading questions...</div>';
+ try{let a=[];for(let pg=1;pg<6;pg++){const r=await fetch(API+'?labels=q:rules&state=all&per_page=100&page='+pg,{headers:{Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json'}});const j=await r.json();if(!r.ok)throw new Error(j.message||r.status);a=a.concat(j);if(j.length<100)break}
+  QS=a.filter(i=>!i.pull_request&&!i.labels.some(x=>x.name=='duplicate')).sort((x,y)=>x.number-y.number);qsHtml()}
+ catch(e){b.innerHTML='<div class="er">Could not load: '+esc(e.message)+'</div>'}}
+function qsHtml(){if(!QS)return;const fs=$('qs-s').value,q=$('qs-q').value.toLowerCase().trim(),by={};
+ QS.forEach(i=>{const st=qState(i);if(fs&&st!=fs)return;if(q&&!(i.title+' '+i.body).toLowerCase().includes(q))return;const k=(i.title.match(/^\[([^\]]+)\]/)||[,'other'])[1];(by[k]=by[k]||[]).push(i)});
+ const n=QS.filter(i=>qState(i)=='open').length;let h=`<div class="sub">${n} waiting for you, ${QS.length} in all.${tok()?'':' A tap opens GitHub with your answer filled in: tap Submit there.'}</div>`;
+ for(const k of Object.keys(by)){h+=`<h3>${esc(k)} (${by[k].length})</h3>`+by[k].map(i=>{const st=qState(i),b=i.body||'',plain=(b.match(/^Plain: (.+)$/m)||[])[1],ch=[...b.matchAll(/^Choice ([A-D])( \(built now\))?: (.+)$/gm)],full=(b.includes('\n---\n')?b.split('\n---\n').slice(1).join('\n---\n'):b).split('\nAnswer on the status page')[0].replace(/\n*qid: \w+/,'').trim();
+  const top=plain?`<div class="qt"><b>${esc(plain)}</b></div><details><summary class="sub">Full question</summary><div class="qt">${esc(full)}</div></details>`:`<div class="qt">${esc(full)}</div>`;
+  const btns=st=='open'&&ch.length?'<div class="qc">'+ch.map(c=>`<button class="qch" data-n="${i.number}" data-a="${esc('Choice '+c[1]+': '+c[3])}">${esc(c[1])}. ${esc(c[3])}${c[2]?' <span class="sub">(built now)</span>':''}</button>`).join('')+'</div>':'';
+  return`<div class="card"><div><a target="_blank" rel="noopener" href="${esc(i.html_url)}">#${i.number}</a> <span class="chip ${st=='done'?'fixed':st=='answered'?'queued':'open'}">${st}</span></div>${top}${btns}`+(st=='open'?`<div class="qa"><textarea id="qa-${i.number}" placeholder="${ch.length?'Or write your own answer':'Your answer (what the rule is, and where you found it)'}"></textarea><button class="qsend" data-n="${i.number}">Send answer</button> <span class="sub" id="qm-${i.number}"></span></div>`:'')+'</div>'}).join('')}
+ $('qsb').innerHTML=h+(Object.keys(by).length?'':'<div class="card sub">Nothing matches.</div>')}
+async function qsSend(nu,pre){const t=pre||$('qa-'+nu).value.trim(),m=$('qm-'+nu);if(!t){m.textContent='Write your answer first.';return}
+ if(!tok()){window.open(R+'new?labels=q:reply&title='+encodeURIComponent('Answer #'+nu)+'&body='+encodeURIComponent('Answer: '+t),'_blank','noopener');m.textContent='GitHub opened: tap Submit there.';return}
+ const H={Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json','Content-Type':'application/json'};m.textContent='Sending...';
+ try{let r=await fetch(API+'/'+nu+'/comments',{method:'POST',headers:H,body:JSON.stringify({body:'Answer: '+t})});if(!r.ok)throw new Error((await r.json()).message||r.status);
+  r=await fetch(API+'/'+nu+'/labels',{method:'POST',headers:H,body:JSON.stringify({labels:['q:answered']})});if(!r.ok)throw new Error((await r.json()).message||r.status);
+  await fetch(API+'/'+nu+'/labels/q:open',{method:'DELETE',headers:H});
+  const i=QS.find(x=>x.number==nu);i.labels=i.labels.filter(x=>x.name!='q:open').concat([{name:'q:answered'}]);m.textContent='Sent.';setTimeout(qsHtml,800)}
+ catch(e){m.textContent='GitHub says: '+e.message}}
+$('qsb').onclick=ev=>{const cb=ev.target.closest('.qch');if(cb){cb.disabled=true;qsSend(cb.dataset.n,cb.dataset.a)}if(ev.target.classList.contains('qsend'))qsSend(ev.target.dataset.n);if(ev.target.id=='qtks'){const v=$('qtk').value.trim();if(v){try{localStorage.setItem('ghtok',v)}catch(e){}qsLoad()}}};
+$('qs-s').onchange=qsHtml;$('qs-q').oninput=qsHtml;
+const ago=t=>{if(!t)return'never';const m=Math.round((Date.now()-new Date(t))/6e4);return m<1?'just now':m<60?m+' min ago':m<2880?Math.round(m/60)+' h ago':Math.round(m/1440)+' days ago'},inn=t=>{if(!t)return'-';const m=Math.round((new Date(t)-Date.now())/6e4);return m<=0?'now':m<60?'in '+m+' min':'in '+Math.round(m/60)+' h'};
+function ovHtml(){const O=D&&D.overview;if(!O){$('ovb').innerHTML='<div class="card sub">Overview data unavailable.</div>';return}
+ const els=D.elements||[],qs=(D.questions||[]).filter(i=>qState(i)=='open').length,fbo=els.reduce((n,e)=>n+(e.feedback?e.feedback.open:0),0),fbl=els.reduce((n,e)=>n+(e.feedback?e.feedback.needsLead:0),0);
+ const R=O.release,B=O.branches,H=O.helpers||[],bad=H.filter(h=>!h.on||!h.ok),c=D.counts||{};
+ const nd=(n,t,link,warn)=>`<div class="nd${warn?' warn':''}"><b>${n}</b><span>${t}${link?` <a href="#" data-go="${link}">open</a>`:''}</span></div>`;
+ let h='<div class="card"><h2>Needs you</h2>';
+ h+=nd(qs,'rules questions wait for your answer.','qs');
+ h+=nd(fbl,`feedback items need a decision from the lead (${fbo} open in all).`,'fb');
+ if(R)h+=nd(R.commitsSinceLive==null?'?':R.commitsSinceLive,`commits on main are not live yet. Live: ${esc(R.live||'?')}, main: ${esc(R.main||'?')}. Say "deploy" in the chat to ship them.`,'',R.commitsSinceLive>30);
+ if(B&&B.list.length)h+=nd(B.list.length,'branches have work that is not on main: '+B.list.map(b=>`<span class="chip">${esc(b.name)} +${b.ahead}</span>`).join(' ')+(B.old?` <span class="sub">(and ${B.old} old agent branches to clean up)</span>`:''));
+ if(c['WAITING-CHATGPT'])h+=nd(c['WAITING-CHATGPT'],'factions wait for the ChatGPT drawing quota.','now');
+ h+=nd(bad.length,bad.length?'helpers are off or failed: '+bad.map(x=>esc(x.name)).join(', ')+'.':'helpers have a problem.','',bad.length>0);
+ h+='</div>';
+ const pj=(name,done,total,note,part)=>`<div class="pj"><b>${name}</b><div class="bar"><i style="width:${total?100*done/total:0}%"></i></div><span class="big" style="font-size:15px">${done} / ${total}</span>${note?`<div class="sub">${note}</div>`:''}</div>`;
+ const fac=els.filter(e=>e.group=='Factions'),off=fac.filter(e=>e.what=='Official faction.'),pg=els.filter(e=>e.group=='Pages'),G=O.gpu,T=D.training&&D.training.factions?Object.values(D.training.factions):[];
+ h+='<div class="card"><h2>Projects</h2>';
+ h+=pj('Fan factions: rules built',(c['RULES-DONE']||0)+D.doneCount,D.total,`${D.doneCount} fully finished (rules, HUD, art). ${(D.factories||[]).length?(D.factories.length+' '+(D.factories.length>1?'factories':'factory')+' running now: '+D.factories.map(f=>f.faction).join(', ')+'.'):'Factory is not running.'}`);
+ h+=pj('Official faction HUDs approved',off.filter(e=>e.state=='finished').length,off.length,'You approve each HUD.');
+ h+=pj('Menu pages finished',pg.filter(e=>e.state=='finished').length,pg.length,'');
+ if(G)h+=pj('GPU / JAX engine plan',G.planDone,G.planTotal,`Next: ${esc(G.left[0]||'nothing left')}. Rules gaps in the ledger: ${G.ledgerOpen} open, ${G.ledgerClosed} fixed. Last engine change: ${esc(G.lastChange||'?')}.`);
+ if(T.length)h+=pj('Bots trained',T.filter(f=>f.status=='trained').length,T.length,`${T.filter(f=>f.status=='partly').length} partly trained. See the Training tab.`);
+ h+='</div>';
+ h+='<div class="card"><h2>Helpers (recurring agents)</h2>'+H.map(x=>`<div class="hl"><span class="dot ${!x.on?'off':x.ok?'':'bad'}"></span><span><b>${esc(x.name)}</b> <span class="sub">every ${esc(x.every)}</span></span><span class="sub">last ${ago(x.lastRun)}, next ${inn(x.nextRun)}</span>${x.lastNote?`<span></span><span class="sub" style="grid-column:2/4">Last note: ${esc(x.lastNote)}</span>`:''}</div>`).join('')+'</div>';
+ const TR=O.trust||{},rows=(D.changes&&D.changes.rows)||[],LV={1:'you check each change',2:'lands on its branch, checked next morning',3:'lands on main alone'};
+ {const t=TR.tests,ru=TR.rules,hard=ru?ru.filter(r=>r.guard).length:0,ng=rows.filter(r=>r.guard===null).length,rv=rows.filter(r=>r.status=='reverted').length,fx=rows.filter(r=>r.status=='fixed').length;
+  const cz={};rows.forEach(r=>{if(r.cause)cz[r.cause]=(cz[r.cause]||0)+1});const rep=Object.entries(cz).filter(x=>x[1]>1).sort((a,b)=>b[1]-a[1]);
+  const tl=!t?nd('-','Night tests have not run yet. They run every night at 03:30 on this computer.',''):t.skipped?nd('-',`Night tests skipped ${ago(t.ran)}: ${esc(t.skipped)}.`,''):nd(t.failed,`of ${t.total} tests failed last night (${ago(t.ran)}, commit ${esc(t.commit||'?')}).${t.failed?' Failing: '+t.failures.slice(0,8).map(f=>`<span class="chip reverted">${esc(f)}</span>`).join(' '):''}`,'',t.failed>0);
+  h+='<div class="card"><h2>Trust</h2>'+tl;
+  if((TR.testsHistory||[]).length>1)h+=`<div class="sub" style="margin:4px 0 6px">Last nights: ${TR.testsHistory.map(x=>x.skipped?'<span class="chip waiting">skip</span>':`<span class="chip ${x.failed?'reverted':'fixed'}">${x.failed} failed</span>`).join(' ')}</div>`;
+  h+=ru?nd(ru.length-hard,`rules are only written text (soft). ${hard} of ${ru.length} rules have an automatic check (hard).`,'',false)+`<details><summary class="sub">Show the soft rules</summary>${ru.filter(r=>!r.guard).map(r=>`<div class="fi">${esc(r.rule)} <span class="sub">(${esc(r.source)})</span></div>`).join('')||'<div class="sub">None.</div>'}</details>`:nd('-','Rules list not made yet.','');
+  h+=nd(ng,`fixes have no check that stops the problem coming back ("no guard").`,'ch',ng>0);
+  h+=nd(rv,`of ${fx+rv} agent fixes were undone (reverted).`,'ch',rv>0);
+  if(rep.length)h+=nd(rep.length,'problems came back more than once: '+rep.slice(0,8).map(x=>`<span class="chip open">${esc(x[0])} x${x[1]}</span>`).join(' ')+' <span class="sub">Each should become a check.</span>','ch',true);
+  const AG=TR.agents||{},EV=TR.evals||{};
+  if(Object.keys(AG).length)h+='<h3>Trust level of each agent</h3>'+Object.entries(AG).map(([k,a])=>{const e=EV[k];return`<div class="hl"><span class="big" style="font-size:15px">L${a.level}</span><span><b>${esc(a.name||k)}</b> <span class="sub">${esc(LV[a.level]||'')}</span><br><span class="sub">Up when: ${esc(a.promoteWhen||'-')}. Down when: ${esc(a.demoteWhen||'-')}.</span></span><span class="sub">${e?`instruction test ${e.mean==null?'?':Math.round(e.mean*10)/10}/10<br>${ago(e.date)}, ${e.cases} cases`:'instructions not tested yet'}</span></div>`}).join('');
+  h+='</div>'}
+ const CG=O.chatgpt;if(CG){const q=CG.quota,c=CG.calls||{},bar=(nm,w)=>w?`<div class="pj"><b>${nm}</b><div class="bar"><i style="width:${Math.min(100,w.usedPercent)}%;background:${w.usedPercent>=90?'var(--bad)':w.usedPercent>=60?'var(--now)':'var(--ok)'}"></i></div><span>${Math.round(w.usedPercent)}% used</span><div class="sub">Resets ${inn(w.resetsAt)} (${new Date(w.resetsAt).toLocaleString([],{weekday:'short',hour:'2-digit',minute:'2-digit'})}).</div></div>`:'';
+  const pf=Object.entries(c.perFaction||{}).sort((a,b)=>b[1]-a[1]);
+  h+=`<div class="card"><h2>ChatGPT pictures</h2>${q?bar('5-hour limit',q.primary)+bar('Weekly limit',q.secondary)+`<div class="sub">Read ${ago(q.seen)} from ChatGPT's own log (no extra call).</div>`:'<div class="sub">No limit data yet. It appears after the next picture.</div>'}<div class="sub" style="margin-top:8px">Pictures: ${c.today||0} today, ${c.last7||0} in 7 days, ${c.failed||0} failed. Limit: 36 per faction per batch.</div>${pf.length?'<div style="margin-top:6px">'+pf.map(x=>`<span class="chip">${esc(x[0])} ${x[1]}</span>`).join(' ')+'</div>':''}</div>`}
+ const A=O.activity;if(A&&A.last24){const by={};A.last24.forEach(c=>{(by[c.agent]=by[c.agent]||[]).push(c)});
+  h+=`<div class="card"><h2>Last 24 hours</h2><div class="sub">${A.last24Count} commits on main and the agent branches.</div>`+['feedback','patrol','factory','lead'].filter(k=>by[k]).map(k=>`<details><summary><b>${{feedback:'Feedback helper',patrol:'Patrol',factory:'Factory',lead:'Lead (chat sessions)'}[k]}</b>: ${by[k].length} commits</summary>`+by[k].map(c=>`<div class="cl"><span>${new Date(c.time).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})}</span><span><a target="_blank" rel="noopener" href="${CH}${esc(c.hash)}">${esc(c.hash)}</a> <span class="chip">${esc(c.branch)}</span> ${esc(c.subject)}</span></div>`).join('')+'</details>').join('')+'</div>'}
+ if(A){const mx=Math.max(1,...A.perDay.map(d=>d.commits)),bw=26,hh=110;
+  h+=`<div class="card"><h2>Work done: commits on main per day</h2><div class="sc"><svg width="${A.perDay.length*bw+10}" height="${hh+30}">`+A.perDay.map((d,i)=>{const bh=d.commits*hh/mx;return`<rect x="${i*bw+5}" y="${hh-bh+12}" width="${bw-6}" height="${bh}" rx="3" fill="var(--blue)"><title>${d.date}: ${d.commits}</title></rect><text x="${i*bw+5+(bw-6)/2}" y="${hh-bh+9}" text-anchor="middle">${d.commits||''}</text><text x="${i*bw+5+(bw-6)/2}" y="${hh+26}" text-anchor="middle">${d.date.slice(8)}</text>`}).join('')+`</svg></div><div class="sub">Last 14 days. Number under a bar: day of the month.</div>`;
+  h+='<h3>Latest commits</h3>'+A.latest.map(c=>`<div class="cl"><span>${esc(c.date)}</span><span><a target="_blank" rel="noopener" href="${CH}${esc(c.hash)}">${esc(c.hash)}</a> ${esc(c.subject)}</span></div>`).join('')+'</div>'}
+ $('ovb').innerHTML=h}
+$('ovb').onclick=ev=>{const g=ev.target.dataset&&ev.target.dataset.go;if(g){ev.preventDefault();tab(g)}};
+const GHB='https://github.com/Kalaminator/Dominion/blob/main/';
+function wfHtml(){const O=D&&D.overview,W=O&&O.trust&&O.trust.workflows;if(!W){$('wfb').innerHTML='<div class="card sub">Workflow list unavailable.</div>';return}
+ const H={},AG=(O.trust.agents)||{},LV={1:'you check each change',2:'lands on its branch, you look the next morning',3:'lands on main alone'};(O.helpers||[]).forEach(x=>H[x.key]=x);
+ let h=`<div class="card"><h2>How the work flows</h2><div class="chain"><div class="st">You: feedback, answers, "deploy"</div><div class="st">Helpers fix on their branches</div><div class="st">Night: tests, patrol, hardener</div><div class="st">Morning: Overview shows what happened</div><div class="st">Lead merges in a chat</div><div class="st">Deploy (only when you say)</div></div><div class="sub" style="margin-top:8px">Tap "Ask for a change" on any card: it opens GitHub with your request. The feedback helper queues it and the lead does it in the next chat.</div></div>`;
+ h+=W.map(w=>{const x=w.helper&&H[w.helper],a=w.agent&&AG[w.agent];
+  const live=x?`<span class="dot ${!x.on?'off':x.ok?'':'bad'}"></span> <span class="sub">${x.on?'on':'off'}, last ${ago(x.lastRun)}, next ${inn(x.nextRun)}</span>`:'';
+  const body='Workflow: '+w.name+' ('+w.key+')\nWhat should change:\n\nWhy:\n';
+  const u=R+'new?labels=feedback&title='+encodeURIComponent('[wf-'+w.key+'] ')+'&body='+encodeURIComponent(body);
+  return`<div class="card"><div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center"><b style="font-size:17px">${esc(w.name)}</b>${a?`<span class="chip built">level ${a.level}</span>`:''}${live}</div>
+<div style="margin:6px 0">${esc(w.what)}</div><div class="sub"><b>Starts:</b> ${esc(w.starts)}${a?` &nbsp; <b>Trust:</b> ${esc(LV[a.level]||'')}`:''}</div>
+<div class="chain" style="margin:10px 0">${w.steps.map((t,i)=>`<div class="st">${i+1}. ${esc(t)}</div>`).join('')}</div>
+<div class="sub"><b>Uses:</b> ${w.uses.map(esc).join(', ')}</div><div class="sub"><b>May change:</b> ${esc(w.may)} &nbsp; <b>Never:</b> ${esc(w.never)}</div>
+${a?`<div class="sub"><b>Level up when:</b> ${esc(a.promoteWhen)}. <b>Down when:</b> ${esc(a.demoteWhen)}.</div>`:''}
+<div class="sub" style="margin-top:4px"><b>Its files:</b> ${w.files.map(f=>`<a target="_blank" rel="noopener" href="${GHB}${esc(f)}">${esc(f)}</a>`).join(', ')}</div>
+<a class="gb" style="margin-top:10px" target="_blank" rel="noopener" href="${u}">Ask for a change</a></div>`}).join('');
+ $('wfb').innerHTML=h}
+function tab(t){TABS.forEach(k=>{$('tab-'+k).style.display=k==t?'':'none';$('t-'+k).className=k==t?'on':''});if(t=='gr'&&!$('grf').getAttribute('src'))$('grf').src='grew.html';if(t=='qs')qsLoad();try{localStorage.setItem('fstab',t)}catch(e){}}
+TABS.forEach(k=>$('t-'+k).onclick=()=>tab(k));$('q').oninput=fbHtml;$('fb-sl').oninput=()=>{$('fb-score').value=$('fb-sl').value};$('fb-score').oninput=()=>{if($('fb-score').value!=='')$('fb-sl').value=$('fb-score').value};
+const pc=v=>v==null?'-':Math.round(v*100)+'%',sg=v=>v==null?'-':(v>=0?'+':'')+Math.round(v*100)+' pts';
+function trHtml(){const T=D&&D.training;if(!T){$('trb').innerHTML='<div class="card sub">Training data unavailable.</div>';return}
+ const L=T.live||{},F=Object.entries(T.factions||{}),run=!!L.running;let h='';
+ if(L.running)h+=`<div class="card"><h2>Live</h2><span class="chip live">training now</span> <b>${esc(L.what)}</b> <span class="sub">since ${L.since?new Date(L.since).toLocaleString():'?'}</span><pre class="lg">${esc((L.lastLogLines||[]).join('\n'))}</pre></div>`;
+ h+=`<div class="card"><h2>Bots by faction</h2><div class="sub">Win rate against random players; lift is the gain over untrained. Updated ${esc(T.updated||'')}.</div>`+F.map(([k,f])=>{const st=run&&L.what&&(L.what+' '+(L.lastLogLines||[]).join(' ')).toLowerCase().includes(k)?'training now':f.status,cl=st=='training now'?'live':st=='trained'?'trained':st=='partly'?'partly':'none',l=f.latest||{};
+  return`<div class="tr"><div><b>${esc(f.name||k)}</b><div class="sub">${esc((f.engines||[]).join(', ')||'no engine yet')}</div></div><span class="chip ${cl}">${esc(st)}</span><div><div class="bar"><i style="width:${Math.round((l.winRate||0)*100)}%"></i></div></div><div class="sub">${l.winRate!=null?pc(l.winRate)+', lift '+sg(l.lift)+'<br>'+esc(l.date||''):'no result yet'}</div></div>`}).join('')+'</div>';
+ h+='<div class="card sc"><h2>Runs (newest first)</h2>'+((T.runs||[]).length?T.runs.map(r=>`<h3>${esc(r.date)} &middot; ${esc(r.engine)} &middot; ${esc(r.run)}</h3><table><tr><th>Faction</th><th>Win</th><th>Baseline</th><th>Lift</th><th>Games</th></tr>${Object.entries(r.factions||{}).map(([k,x])=>`<tr><td>${esc(k)}</td><td>${pc(x.winRate)}</td><td>${pc(x.baseline)}</td><td>${sg(x.lift)}</td><td>${x.games==null?'-':x.games}</td></tr>`).join('')}</table>`).join(''):'<div class="sub">No runs yet.</div>')+'</div>';
+ $('trb').innerHTML=h}
+const CH='https://github.com/Kalaminator/Dominion/commit/';let chInit=false;
+function chHtml(){const C=D&&D.changes;if(!C){$('chb').innerHTML='<div class="card sub">Change record unavailable.</div>';return}
+if(!C.rows.length&&!C.commits.length){$('chb').innerHTML='<div class="card sub">No changes yet. The feedback helper (every 30 minutes) and the patrol (every 4 hours) write here when they find and fix something.</div>';return}
+ const rows=C.rows||[],els=D.elements||[],nmOf=k=>(els.find(e=>e.key==k)||{name:k}).name;
+ if(!chInit){chInit=true;const u=a=>[...new Set(a)].sort();
+  $('ch-e').innerHTML='<option value="">all elements</option>'+u(rows.map(r=>r.element)).map(k=>`<option value="${esc(k)}">${esc(nmOf(k))}</option>`).join('');
+  $('ch-a').innerHTML+=u(rows.map(r=>r.agent)).map(k=>`<option>${esc(k)}</option>`).join('');
+  $('ch-s').innerHTML+=u(rows.map(r=>r.status)).map(k=>`<option>${esc(k)}</option>`).join('')}
+ const fe=$('ch-e').value,fa=$('ch-a').value,fs=$('ch-s').value,q=$('ch-q').value.toLowerCase().trim(),by={};
+ rows.forEach(r=>{if(fe&&r.element!=fe||fa&&r.agent!=fa||fs&&r.status!=fs)return;if(q&&!(r.finding+' '+r.action+' '+r.source+' '+r.element).toLowerCase().includes(q))return;(by[r.element]=by[r.element]||[]).push(r)});
+ const rank=k=>{const e=els.find(x=>x.key==k);return e&&e.state=='finished'?0:1};
+ const keys=Object.keys(by).sort((a,b)=>rank(a)-rank(b)||by[b].length-by[a].length);let h='';
+ for(const k of keys){const a=by[k],e=els.find(x=>x.key==k),f=a.filter(r=>r.status=='fixed').length;
+  h+=`<div class="card"><div class="cel">${e&&e.thumb?`<img loading="lazy" src="${esc(e.thumb)}" alt="">`:''}<div><b>${esc(nmOf(k))}</b> ${e?`<span class="chip ${e.state}">${e.state}</span>`:''}<div class="sub">${f} fixed, ${a.length-f} not fixed</div></div></div><div class="sc"><table class="ct"><thead><tr><th>Date</th><th>Found by</th><th>Finding</th><th>What was done</th><th>Proof</th><th>Commit</th><th>Status</th></tr></thead><tbody>`+
+  a.map(r=>`<tr><td data-h="Date">${esc(r.date)}</td><td data-h="Found by">${esc(r.agent)}: ${esc(r.source)}</td><td data-h="Finding">${esc(r.finding)}</td><td data-h="Done">${esc(r.action)}</td><td data-h="Proof">${r.repro?`<span class="chip ${r.repro=='reproduced'?'queued':'waiting'}">${esc(r.repro)}</span> `:''}${r.guard?`<span class="sub">guard: ${esc(r.guard)}</span>`:r.guard===null?'<span class="chip reverted">no guard</span>':''}${r.cause?`<div class="sub">cause: ${esc(r.cause)}</div>`:''}</td><td data-h="Commit">${r.commit?`<a target="_blank" rel="noopener" href="${CH}${esc(r.commit)}">${esc(r.commit)}</a>`:'-'}</td><td data-h="Status"><span class="chip ${esc(r.status)}">${esc(r.status)}</span></td></tr>`).join('')+'</tbody></table></div></div>'}
+ h+=keys.length?'':'<div class="card sub">Nothing matches.</div>';
+ h+='<div class="card"><h2>Latest agent commits</h2>'+(C.commits||[]).map(c=>`<div class="cl"><span>${esc(c.date)}</span><span><a target="_blank" rel="noopener" href="${CH}${esc(c.hash)}">${esc(c.hash)}</a> <span class="chip">${esc(c.agent)}</span> ${esc(c.subject)}</span></div>`).join('')+'</div>';
+ $('chb').innerHTML=h}
+['ch-e','ch-a','ch-s'].forEach(i=>$(i).onchange=chHtml);$('ch-q').oninput=chHtml;
+let t0='ov';try{t0=localStorage.getItem('fstab')||'ov'}catch(e){}const hh=location.hash.slice(1);if(hh=='overview')t0='ov';else if(hh=='workflows')t0='wf';else if(hh=='factory')t0='now';else if(hh=='feedback')t0='fb';else if(hh=='training')t0='tr';else if(hh=='grew')t0='gr';else if(hh=='changes')t0='ch';else if(hh=='questions')t0='qs';else if(hh=='costs')t0='co';if(!TABS.includes(t0))t0='ov';tab(t0);
+go();setInterval(go,60000);
+</script></body></html>

@@ -1,0 +1,1094 @@
+{
+ "cat": {
+  "group": "factions",
+  "file": "img/factions/cat.webp",
+  "thumb": "img/factions/cat-thumb.webp",
+  "shotAt": "2026-11-18T20:57:45.296Z",
+  "caption": ""
+ },
+ "fall": {
+  "group": "maps",
+  "file": "img/maps/fall.webp",
+  "thumb": "img/maps/fall-thumb.webp",
+  "shotAt": "2026-11-18T20:57:45.686Z",
+  "caption": ""
+ },
+ "workshop": {
+  "group": "pages",
+  "file": "img/pages/workshop.webp",
+  "thumb": "img/pages/workshop-thumb.webp",
+  "shotAt": "2026-11-18T20:57:49.517Z",
+  "caption": ""
+ },
+ "history": {
+  "group": "pages",
+  "file": "img/pages/history.webp",
+  "thumb": "img/pages/history-thumb.webp",
+  "shotAt": "2026-11-18T20:57:53.264Z",
+  "caption": ""
+ },
+ "lobby": {
+  "group": "systems",
+  "file": "img/systems/lobby.webp",
+  "thumb": "img/systems/lobby-thumb.webp",
+  "shotAt": "2026-11-18T20:57:56.432Z",
+  "caption": ""
+ },
+ "eyrie": {
+  "group": "factions",
+  "file": "img/factions/eyrie.webp",
+  "thumb": "img/factions/eyrie-thumb.webp",
+  "shotAt": "2026-11-18T20:58:16.137Z",
+  "caption": ""
+ },
+ "vagabond": {
+  "group": "factions",
+  "file": "img/factions/vagabond.webp",
+  "thumb": "img/factions/vagabond-thumb.webp",
+  "shotAt": "2026-11-18T20:58:21.856Z",
+  "caption": ""
+ },
+ "lizard": {
+  "group": "factions",
+  "file": "img/factions/lizard.webp",
+  "thumb": "img/factions/lizard-thumb.webp",
+  "shotAt": "2026-11-18T20:58:29.019Z",
+  "caption": ""
+ },
+ "lupine_pact": {
+  "group": "factions",
+  "file": "img/factions/lupine_pact.webp",
+  "thumb": "img/factions/lupine_pact-thumb.webp",
+  "shotAt": "2026-11-22T09:22:12.458Z",
+  "caption": ""
+ },
+ "woodland": {
+  "group": "factions",
+  "file": "img/factions/woodland.webp",
+  "thumb": "img/factions/woodland-thumb.webp",
+  "shotAt": "2026-11-18T20:58:44.452Z",
+  "caption": ""
+ },
+ "vagabond2": {
+  "group": "factions",
+  "file": "img/factions/vagabond2.webp",
+  "thumb": "img/factions/vagabond2-thumb.webp",
+  "shotAt": "2026-11-18T20:58:51.393Z",
+  "caption": ""
+ },
+ "riverfolk": {
+  "group": "factions",
+  "file": "img/factions/riverfolk.webp",
+  "thumb": "img/factions/riverfolk-thumb.webp",
+  "shotAt": "2026-11-18T20:58:58.381Z",
+  "caption": ""
+ },
+ "duchy": {
+  "group": "factions",
+  "file": "img/factions/duchy.webp",
+  "thumb": "img/factions/duchy-thumb.webp",
+  "shotAt": "2026-11-18T20:59:04.899Z",
+  "caption": ""
+ },
+ "corvid": {
+  "group": "factions",
+  "file": "img/factions/corvid.webp",
+  "thumb": "img/factions/corvid-thumb.webp",
+  "shotAt": "2026-11-18T20:59:11.875Z",
+  "caption": ""
+ },
+ "lord": {
+  "group": "factions",
+  "file": "img/factions/lord.webp",
+  "thumb": "img/factions/lord-thumb.webp",
+  "shotAt": "2026-11-18T20:59:19.288Z",
+  "caption": ""
+ },
+ "keepers": {
+  "group": "factions",
+  "file": "img/factions/keepers.webp",
+  "thumb": "img/factions/keepers-thumb.webp",
+  "shotAt": "2026-11-18T20:59:25.041Z",
+  "caption": ""
+ },
+ "diaspora": {
+  "group": "factions",
+  "file": "img/factions/diaspora.webp",
+  "thumb": "img/factions/diaspora-thumb.webp",
+  "shotAt": "2026-11-18T20:59:30.750Z",
+  "caption": ""
+ },
+ "knaves": {
+  "group": "factions",
+  "file": "img/factions/knaves.webp",
+  "thumb": "img/factions/knaves-thumb.webp",
+  "shotAt": "2026-11-18T20:59:35.611Z",
+  "caption": ""
+ },
+ "twilight": {
+  "group": "factions",
+  "file": "img/factions/twilight.webp",
+  "thumb": "img/factions/twilight-thumb.webp",
+  "shotAt": "2026-11-18T20:59:41.328Z",
+  "caption": ""
+ },
+ "dragon_cult": {
+  "group": "factions",
+  "file": "img/factions/dragon_cult.webp",
+  "thumb": "img/factions/dragon_cult-thumb.webp",
+  "shotAt": "2026-11-22T09:24:06.821Z",
+  "caption": ""
+ },
+ "cryptic_circle": {
+  "group": "factions",
+  "file": "img/factions/cryptic_circle.webp",
+  "thumb": "img/factions/cryptic_circle-thumb.webp",
+  "shotAt": "2026-11-22T09:36:53.429Z",
+  "caption": ""
+ },
+ "angry_riverfolk": {
+  "group": "factions",
+  "file": "img/factions/angry_riverfolk.webp",
+  "thumb": "img/factions/angry_riverfolk-thumb.webp",
+  "shotAt": "2026-11-22T09:52:44.793Z",
+  "caption": ""
+ },
+ "arachnidassoc": {
+  "group": "factions",
+  "file": "img/factions/arachnidassoc.webp",
+  "thumb": "img/factions/arachnidassoc-thumb.webp",
+  "shotAt": "2026-11-22T19:53:54.556Z",
+  "caption": ""
+ },
+ "arachnid": {
+  "group": "factions",
+  "file": "img/factions/arachnid.webp",
+  "thumb": "img/factions/arachnid-thumb.webp",
+  "shotAt": "2026-11-23T02:04:20.669Z",
+  "caption": ""
+ },
+ "augury": {
+  "group": "factions",
+  "file": "img/factions/augury.webp",
+  "thumb": "img/factions/augury-thumb.webp",
+  "shotAt": "2026-11-22T09:58:50.170Z",
+  "caption": ""
+ },
+ "skunkpany": {
+  "group": "factions",
+  "file": "img/factions/skunkpany.webp",
+  "thumb": "img/factions/skunkpany-thumb.webp",
+  "shotAt": "2026-11-23T02:04:28.407Z",
+  "caption": ""
+ },
+ "pirates": {
+  "group": "factions",
+  "file": "img/factions/pirates.webp",
+  "thumb": "img/factions/pirates-thumb.webp",
+  "shotAt": "2026-11-22T10:35:58.844Z",
+  "caption": ""
+ },
+ "pirates2": {
+  "group": "factions",
+  "file": "img/factions/pirates2.webp",
+  "thumb": "img/factions/pirates2-thumb.webp",
+  "shotAt": "2026-11-22T16:22:28.034Z",
+  "caption": ""
+ },
+ "blackpaw": {
+  "group": "factions",
+  "file": "img/factions/blackpaw.webp",
+  "thumb": "img/factions/blackpaw-thumb.webp",
+  "shotAt": "2026-11-22T14:34:01.370Z",
+  "caption": ""
+ },
+ "blacktail": {
+  "group": "factions",
+  "file": "img/factions/blacktail.webp",
+  "thumb": "img/factions/blacktail-thumb.webp",
+  "shotAt": "2026-11-23T03:03:31.777Z",
+  "caption": ""
+ },
+ "blossom_empire": {
+  "group": "factions",
+  "file": "img/factions/blossom_empire.webp",
+  "thumb": "img/factions/blossom_empire-thumb.webp",
+  "shotAt": "2026-11-23T10:45:26.488Z",
+  "caption": ""
+ },
+ "boars": {
+  "group": "factions",
+  "file": "img/factions/boars.webp",
+  "thumb": "img/factions/boars-thumb.webp",
+  "shotAt": "2026-11-23T14:10:33.241Z",
+  "caption": ""
+ },
+ "bonepatrol": {
+  "group": "factions",
+  "file": "img/factions/bonepatrol.webp",
+  "thumb": "img/factions/bonepatrol-thumb.webp",
+  "shotAt": "2026-11-23T14:10:41.999Z",
+  "caption": ""
+ },
+ "boroughkings": {
+  "group": "factions",
+  "file": "img/factions/boroughkings.webp",
+  "thumb": "img/factions/boroughkings-thumb.webp",
+  "shotAt": "2026-11-24T15:42:23.125Z",
+  "caption": ""
+ },
+ "bristling": {
+  "group": "factions",
+  "file": "img/factions/bristling.webp",
+  "thumb": "img/factions/bristling-thumb.webp",
+  "shotAt": "2026-11-25T05:29:18.820Z",
+  "caption": ""
+ },
+ "bumblebee": {
+  "group": "factions",
+  "file": "img/factions/bumblebee.webp",
+  "thumb": "img/factions/bumblebee-thumb.webp",
+  "shotAt": "2026-11-24T23:57:28.320Z",
+  "caption": ""
+ },
+ "camarilla": {
+  "group": "factions",
+  "file": "img/factions/camarilla.webp",
+  "thumb": "img/factions/camarilla-thumb.webp",
+  "shotAt": "2026-11-24T14:42:09.678Z",
+  "caption": ""
+ },
+ "caninecommonwealth": {
+  "group": "factions",
+  "file": "img/factions/caninecommonwealth.webp",
+  "thumb": "img/factions/caninecommonwealth-thumb.webp",
+  "shotAt": "2026-11-25T16:39:42.786Z",
+  "caption": ""
+ },
+ "caninerepublic": {
+  "group": "factions",
+  "file": "img/factions/caninerepublic.webp",
+  "thumb": "img/factions/caninerepublic-thumb.webp",
+  "shotAt": "2026-11-25T13:01:00.590Z",
+  "caption": ""
+ },
+ "chameleander": {
+  "group": "factions",
+  "file": "img/factions/chameleander.webp",
+  "thumb": "img/factions/chameleander-thumb.webp",
+  "shotAt": "2026-11-18T21:02:33.667Z",
+  "caption": ""
+ },
+ "cirque": {
+  "group": "factions",
+  "file": "img/factions/cirque.webp",
+  "thumb": "img/factions/cirque-thumb.webp",
+  "shotAt": "2026-11-18T21:02:40.615Z",
+  "caption": ""
+ },
+ "collegiumalfaromancy": {
+  "group": "factions",
+  "file": "img/factions/collegiumalfaromancy.webp",
+  "thumb": "img/factions/collegiumalfaromancy-thumb.webp",
+  "shotAt": "2026-11-18T21:02:49.014Z",
+  "caption": ""
+ },
+ "croakers": {
+  "group": "factions",
+  "file": "img/factions/croakers.webp",
+  "thumb": "img/factions/croakers-thumb.webp",
+  "shotAt": "2026-11-22T11:02:32.601Z",
+  "caption": ""
+ },
+ "crumblingcourt": {
+  "group": "factions",
+  "file": "img/factions/crumblingcourt.webp",
+  "thumb": "img/factions/crumblingcourt-thumb.webp",
+  "shotAt": "2026-11-18T21:03:04.365Z",
+  "caption": ""
+ },
+ "darkforest": {
+  "group": "factions",
+  "file": "img/factions/darkforest.webp",
+  "thumb": "img/factions/darkforest-thumb.webp",
+  "shotAt": "2026-11-18T21:03:11.345Z",
+  "caption": ""
+ },
+ "marquistadors": {
+  "group": "factions",
+  "file": "img/factions/marquistadors.webp",
+  "thumb": "img/factions/marquistadors-thumb.webp",
+  "shotAt": "2026-11-18T21:03:19.761Z",
+  "caption": ""
+ },
+ "doomsayers": {
+  "group": "factions",
+  "file": "img/factions/doomsayers.webp",
+  "thumb": "img/factions/doomsayers-thumb.webp",
+  "shotAt": "2026-11-18T21:03:28.174Z",
+  "caption": ""
+ },
+ "eagleking": {
+  "group": "factions",
+  "file": "img/factions/eagleking.webp",
+  "thumb": "img/factions/eagleking-thumb.webp",
+  "shotAt": "2026-11-18T21:03:36.874Z",
+  "caption": ""
+ },
+ "eyriesend": {
+  "group": "factions",
+  "file": "img/factions/eyriesend.webp",
+  "thumb": "img/factions/eyriesend-thumb.webp",
+  "shotAt": "2026-11-18T21:03:45.412Z",
+  "caption": ""
+ },
+ "fangus": {
+  "group": "factions",
+  "file": "img/factions/fangus.webp",
+  "thumb": "img/factions/fangus-thumb.webp",
+  "shotAt": "2026-11-18T21:03:53.691Z",
+  "caption": ""
+ },
+ "farmlands": {
+  "group": "factions",
+  "file": "img/factions/farmlands.webp",
+  "thumb": "img/factions/farmlands-thumb.webp",
+  "shotAt": "2026-11-18T21:04:02.080Z",
+  "caption": ""
+ },
+ "freeleaders": {
+  "group": "factions",
+  "file": "img/factions/freeleaders.webp",
+  "thumb": "img/factions/freeleaders-thumb.webp",
+  "shotAt": "2026-11-18T21:04:10.934Z",
+  "caption": ""
+ },
+ "frosty": {
+  "group": "factions",
+  "file": "img/factions/frosty.webp",
+  "thumb": "img/factions/frosty-thumb.webp",
+  "shotAt": "2026-11-18T21:04:17.747Z",
+  "caption": ""
+ },
+ "pretenders": {
+  "group": "factions",
+  "file": "img/factions/pretenders.webp",
+  "thumb": "img/factions/pretenders-thumb.webp",
+  "shotAt": "2026-11-18T21:04:24.836Z",
+  "caption": ""
+ },
+ "grizzly_tribe": {
+  "group": "factions",
+  "file": "img/factions/grizzly_tribe.webp",
+  "thumb": "img/factions/grizzly_tribe-thumb.webp",
+  "shotAt": "2026-11-18T21:04:33.368Z",
+  "caption": ""
+ },
+ "honeycomb": {
+  "group": "factions",
+  "file": "img/factions/honeycomb.webp",
+  "thumb": "img/factions/honeycomb-thumb.webp",
+  "shotAt": "2026-11-18T21:04:41.838Z",
+  "caption": ""
+ },
+ "horseoftheapocalypse": {
+  "group": "factions",
+  "file": "img/factions/horseoftheapocalypse.webp",
+  "thumb": "img/factions/horseoftheapocalypse-thumb.webp",
+  "shotAt": "2026-11-18T21:04:50.364Z",
+  "caption": ""
+ },
+ "host": {
+  "group": "factions",
+  "file": "img/factions/host.webp",
+  "thumb": "img/factions/host-thumb.webp",
+  "shotAt": "2026-11-18T21:04:58.678Z",
+  "caption": ""
+ },
+ "hyena_necrocracy": {
+  "group": "factions",
+  "file": "img/factions/hyena_necrocracy.webp",
+  "thumb": "img/factions/hyena_necrocracy-thumb.webp",
+  "shotAt": "2026-11-18T21:05:06.063Z",
+  "caption": ""
+ },
+ "tinklones": {
+  "group": "factions",
+  "file": "img/factions/tinklones.webp",
+  "thumb": "img/factions/tinklones-thumb.webp",
+  "shotAt": "2026-11-18T21:05:13.010Z",
+  "caption": ""
+ },
+ "lemmings": {
+  "group": "factions",
+  "file": "img/factions/lemmings.webp",
+  "thumb": "img/factions/lemmings-thumb.webp",
+  "shotAt": "2026-11-18T21:05:19.979Z",
+  "caption": ""
+ },
+ "lostpowers": {
+  "group": "factions",
+  "file": "img/factions/lostpowers.webp",
+  "thumb": "img/factions/lostpowers-thumb.webp",
+  "shotAt": "2026-11-18T21:05:28.380Z",
+  "caption": ""
+ },
+ "necropossums": {
+  "group": "factions",
+  "file": "img/factions/necropossums.webp",
+  "thumb": "img/factions/necropossums-thumb.webp",
+  "shotAt": "2026-11-18T21:05:35.299Z",
+  "caption": ""
+ },
+ "nocturnal": {
+  "group": "factions",
+  "file": "img/factions/nocturnal.webp",
+  "thumb": "img/factions/nocturnal-thumb.webp",
+  "shotAt": "2026-11-18T21:05:42.693Z",
+  "caption": ""
+ },
+ "nomads": {
+  "group": "factions",
+  "file": "img/factions/nomads.webp",
+  "thumb": "img/factions/nomads-thumb.webp",
+  "shotAt": "2026-11-18T21:05:51.186Z",
+  "caption": ""
+ },
+ "northclan": {
+  "group": "factions",
+  "file": "img/factions/northclan.webp",
+  "thumb": "img/factions/northclan-thumb.webp",
+  "shotAt": "2026-11-18T21:05:58.112Z",
+  "caption": ""
+ },
+ "battery": {
+  "group": "factions",
+  "file": "img/factions/battery.webp",
+  "thumb": "img/factions/battery-thumb.webp",
+  "shotAt": "2026-11-18T21:06:06.591Z",
+  "caption": ""
+ },
+ "tinker": {
+  "group": "factions",
+  "file": "img/factions/tinker.webp",
+  "thumb": "img/factions/tinker-thumb.webp",
+  "shotAt": "2026-11-18T21:06:21.966Z",
+  "caption": ""
+ },
+ "orderforest": {
+  "group": "factions",
+  "file": "img/factions/orderforest.webp",
+  "thumb": "img/factions/orderforest-thumb.webp",
+  "shotAt": "2026-11-18T21:06:30.560Z",
+  "caption": ""
+ },
+ "order_of_the_scale": {
+  "group": "factions",
+  "file": "img/factions/order_of_the_scale.webp",
+  "thumb": "img/factions/order_of_the_scale-thumb.webp",
+  "shotAt": "2026-11-18T21:07:42.147Z",
+  "caption": ""
+ },
+ "owls": {
+  "group": "factions",
+  "file": "img/factions/owls.webp",
+  "thumb": "img/factions/owls-thumb.webp",
+  "shotAt": "2026-11-18T21:07:49.030Z",
+  "caption": ""
+ },
+ "pigtroupe": {
+  "group": "factions",
+  "file": "img/factions/pigtroupe.webp",
+  "thumb": "img/factions/pigtroupe-thumb.webp",
+  "shotAt": "2026-11-18T21:07:56.127Z",
+  "caption": ""
+ },
+ "plaguedoctors": {
+  "group": "factions",
+  "file": "img/factions/plaguedoctors.webp",
+  "thumb": "img/factions/plaguedoctors-thumb.webp",
+  "shotAt": "2026-11-18T21:08:03.032Z",
+  "caption": ""
+ },
+ "pond": {
+  "group": "factions",
+  "file": "img/factions/pond.webp",
+  "thumb": "img/factions/pond-thumb.webp",
+  "shotAt": "2026-11-18T21:08:10.276Z",
+  "caption": ""
+ },
+ "queenless": {
+  "group": "factions",
+  "file": "img/factions/queenless.webp",
+  "thumb": "img/factions/queenless-thumb.webp",
+  "shotAt": "2026-11-18T21:08:18.782Z",
+  "caption": ""
+ },
+ "raggoon": {
+  "group": "factions",
+  "file": "img/factions/raggoon.webp",
+  "thumb": "img/factions/raggoon-thumb.webp",
+  "shotAt": "2026-11-18T21:08:25.717Z",
+  "caption": ""
+ },
+ "redguard": {
+  "group": "factions",
+  "file": "img/factions/redguard.webp",
+  "thumb": "img/factions/redguard-thumb.webp",
+  "shotAt": "2026-11-18T21:08:32.743Z",
+  "caption": ""
+ },
+ "rockinrobin": {
+  "group": "factions",
+  "file": "img/factions/rockinrobin.webp",
+  "thumb": "img/factions/rockinrobin-thumb.webp",
+  "shotAt": "2026-11-18T21:08:41.257Z",
+  "caption": ""
+ },
+ "rotwithin": {
+  "group": "factions",
+  "file": "img/factions/rotwithin.webp",
+  "thumb": "img/factions/rotwithin-thumb.webp",
+  "shotAt": "2026-11-18T21:08:48.260Z",
+  "caption": ""
+ },
+ "rothschild": {
+  "group": "factions",
+  "file": "img/factions/rothschild.webp",
+  "thumb": "img/factions/rothschild-thumb.webp",
+  "shotAt": "2026-11-18T21:08:56.905Z",
+  "caption": ""
+ },
+ "scholars": {
+  "group": "factions",
+  "file": "img/factions/scholars.webp",
+  "thumb": "img/factions/scholars-thumb.webp",
+  "shotAt": "2026-11-18T21:09:05.245Z",
+  "caption": ""
+ },
+ "scrappers": {
+  "group": "factions",
+  "file": "img/factions/scrappers.webp",
+  "thumb": "img/factions/scrappers-thumb.webp",
+  "shotAt": "2026-11-18T21:09:13.741Z",
+  "caption": ""
+ },
+ "sheriffking": {
+  "group": "factions",
+  "file": "img/factions/sheriffking.webp",
+  "thumb": "img/factions/sheriffking-thumb.webp",
+  "shotAt": "2026-11-18T21:09:22.162Z",
+  "caption": ""
+ },
+ "shoreline": {
+  "group": "factions",
+  "file": "img/factions/shoreline.webp",
+  "thumb": "img/factions/shoreline-thumb.webp",
+  "shotAt": "2026-11-18T21:09:29.067Z",
+  "caption": ""
+ },
+ "shrewd": {
+  "group": "factions",
+  "file": "img/factions/shrewd.webp",
+  "thumb": "img/factions/shrewd-thumb.webp",
+  "shotAt": "2026-11-18T21:09:37.691Z",
+  "caption": ""
+ },
+ "skunk_artists": {
+  "group": "factions",
+  "file": "img/factions/skunk_artists.webp",
+  "thumb": "img/factions/skunk_artists-thumb.webp",
+  "shotAt": "2026-11-18T21:09:44.651Z",
+  "caption": ""
+ },
+ "snow": {
+  "group": "factions",
+  "file": "img/factions/snow.webp",
+  "thumb": "img/factions/snow-thumb.webp",
+  "shotAt": "2026-11-18T21:09:53.046Z",
+  "caption": ""
+ },
+ "snow2": {
+  "group": "factions",
+  "file": "img/factions/snow2.webp",
+  "thumb": "img/factions/snow2-thumb.webp",
+  "shotAt": "2026-11-18T21:10:01.608Z",
+  "caption": ""
+ },
+ "spinners": {
+  "group": "factions",
+  "file": "img/factions/spinners.webp",
+  "thumb": "img/factions/spinners-thumb.webp",
+  "shotAt": "2026-11-18T21:10:08.662Z",
+  "caption": ""
+ },
+ "spore_stratagem": {
+  "group": "factions",
+  "file": "img/factions/spore_stratagem.webp",
+  "thumb": "img/factions/spore_stratagem-thumb.webp",
+  "shotAt": "2026-11-18T21:10:15.884Z",
+  "caption": ""
+ },
+ "sunskaleidoscope": {
+  "group": "factions",
+  "file": "img/factions/sunskaleidoscope.webp",
+  "thumb": "img/factions/sunskaleidoscope-thumb.webp",
+  "shotAt": "2026-11-18T21:10:22.752Z",
+  "caption": ""
+ },
+ "syndicateswine": {
+  "group": "factions",
+  "file": "img/factions/syndicateswine.webp",
+  "thumb": "img/factions/syndicateswine-thumb.webp",
+  "shotAt": "2026-11-18T21:10:31.144Z",
+  "caption": ""
+ },
+ "tft": {
+  "group": "factions",
+  "file": "img/factions/tft.webp",
+  "thumb": "img/factions/tft-thumb.webp",
+  "shotAt": "2026-11-18T21:10:39.807Z",
+  "caption": ""
+ },
+ "temple": {
+  "group": "factions",
+  "file": "img/factions/temple.webp",
+  "thumb": "img/factions/temple-thumb.webp",
+  "shotAt": "2026-11-18T21:10:48.807Z",
+  "caption": ""
+ },
+ "ooze": {
+  "group": "factions",
+  "file": "img/factions/ooze.webp",
+  "thumb": "img/factions/ooze-thumb.webp",
+  "shotAt": "2026-11-18T21:10:55.690Z",
+  "caption": ""
+ },
+ "fury": {
+  "group": "factions",
+  "file": "img/factions/fury.webp",
+  "thumb": "img/factions/fury-thumb.webp",
+  "shotAt": "2026-11-18T21:11:02.713Z",
+  "caption": ""
+ },
+ "colonies": {
+  "group": "factions",
+  "file": "img/factions/colonies.webp",
+  "thumb": "img/factions/colonies-thumb.webp",
+  "shotAt": "2026-11-18T21:11:11.129Z",
+  "caption": ""
+ },
+ "undergrowth_front": {
+  "group": "factions",
+  "file": "img/factions/undergrowth_front.webp",
+  "thumb": "img/factions/undergrowth_front-thumb.webp",
+  "shotAt": "2026-11-18T21:11:19.665Z",
+  "caption": ""
+ },
+ "unearthed": {
+  "group": "factions",
+  "file": "img/factions/unearthed.webp",
+  "thumb": "img/factions/unearthed-thumb.webp",
+  "shotAt": "2026-11-18T21:11:28.102Z",
+  "caption": ""
+ },
+ "unitedcolonies": {
+  "group": "factions",
+  "file": "img/factions/unitedcolonies.webp",
+  "thumb": "img/factions/unitedcolonies-thumb.webp",
+  "shotAt": "2026-11-18T21:11:35.136Z",
+  "caption": ""
+ },
+ "doves": {
+  "group": "factions",
+  "file": "img/factions/doves.webp",
+  "thumb": "img/factions/doves-thumb.webp",
+  "shotAt": "2026-11-18T21:11:42.092Z",
+  "caption": ""
+ },
+ "doves2": {
+  "group": "factions",
+  "file": "img/factions/doves2.webp",
+  "thumb": "img/factions/doves2-thumb.webp",
+  "shotAt": "2026-11-18T21:11:49.046Z",
+  "caption": ""
+ },
+ "upstart": {
+  "group": "factions",
+  "file": "img/factions/upstart.webp",
+  "thumb": "img/factions/upstart-thumb.webp",
+  "shotAt": "2026-11-18T21:11:57.549Z",
+  "caption": ""
+ },
+ "wyrm": {
+  "group": "factions",
+  "file": "img/factions/wyrm.webp",
+  "thumb": "img/factions/wyrm-thumb.webp",
+  "shotAt": "2026-11-18T21:12:05.981Z",
+  "caption": ""
+ },
+ "wake": {
+  "group": "factions",
+  "file": "img/factions/wake.webp",
+  "thumb": "img/factions/wake-thumb.webp",
+  "shotAt": "2026-11-18T21:12:14.497Z",
+  "caption": ""
+ },
+ "whisperers": {
+  "group": "factions",
+  "file": "img/factions/whisperers.webp",
+  "thumb": "img/factions/whisperers-thumb.webp",
+  "shotAt": "2026-11-18T21:12:22.836Z",
+  "caption": ""
+ },
+ "wingedmenace": {
+  "group": "factions",
+  "file": "img/factions/wingedmenace.webp",
+  "thumb": "img/factions/wingedmenace-thumb.webp",
+  "shotAt": "2026-11-18T21:12:28.812Z",
+  "caption": ""
+ },
+ "wolfpack": {
+  "group": "factions",
+  "file": "img/factions/wolfpack.webp",
+  "thumb": "img/factions/wolfpack-thumb.webp",
+  "shotAt": "2026-11-18T21:12:35.812Z",
+  "caption": ""
+ },
+ "woodlandguard": {
+  "group": "factions",
+  "file": "img/factions/woodlandguard.webp",
+  "thumb": "img/factions/woodlandguard-thumb.webp",
+  "shotAt": "2026-11-18T21:12:42.823Z",
+  "caption": ""
+ },
+ "revolution": {
+  "group": "factions",
+  "file": "img/factions/revolution.webp",
+  "thumb": "img/factions/revolution-thumb.webp",
+  "shotAt": "2026-11-18T21:12:51.296Z",
+  "caption": ""
+ },
+ "workshopcat": {
+  "group": "factions",
+  "file": "img/factions/workshopcat.webp",
+  "thumb": "img/factions/workshopcat-thumb.webp",
+  "shotAt": "2026-11-18T21:12:59.825Z",
+  "caption": ""
+ },
+ "winter": {
+  "group": "maps",
+  "file": "img/maps/winter.webp",
+  "thumb": "img/maps/winter-thumb.webp",
+  "shotAt": "2026-11-18T21:13:00.225Z",
+  "caption": ""
+ },
+ "mountain": {
+  "group": "maps",
+  "file": "img/maps/mountain.webp",
+  "thumb": "img/maps/mountain-thumb.webp",
+  "shotAt": "2026-11-18T21:13:00.563Z",
+  "caption": ""
+ },
+ "lake": {
+  "group": "maps",
+  "file": "img/maps/lake.webp",
+  "thumb": "img/maps/lake-thumb.webp",
+  "shotAt": "2026-11-18T21:13:00.926Z",
+  "caption": ""
+ },
+ "autumnofficial": {
+  "group": "maps",
+  "file": "img/maps/autumnofficial.webp",
+  "thumb": "img/maps/autumnofficial-thumb.webp",
+  "shotAt": "2026-11-18T21:13:33.445Z",
+  "caption": ""
+ },
+ "spring": {
+  "group": "maps",
+  "file": "img/maps/spring.webp",
+  "thumb": "img/maps/spring-thumb.webp",
+  "shotAt": "2026-11-18T21:13:33.842Z",
+  "caption": ""
+ },
+ "marsh": {
+  "group": "maps",
+  "file": "img/maps/marsh.webp",
+  "thumb": "img/maps/marsh-thumb.webp",
+  "shotAt": "2026-11-18T21:13:34.239Z",
+  "caption": ""
+ },
+ "gorge": {
+  "group": "maps",
+  "file": "img/maps/gorge.webp",
+  "thumb": "img/maps/gorge-thumb.webp",
+  "shotAt": "2026-11-18T21:13:34.607Z",
+  "caption": ""
+ },
+ "wastelands": {
+  "group": "maps",
+  "file": "img/maps/wastelands.webp",
+  "thumb": "img/maps/wastelands-thumb.webp",
+  "shotAt": "2026-11-18T21:13:34.933Z",
+  "caption": ""
+ },
+ "urban": {
+  "group": "maps",
+  "file": "img/maps/urban.webp",
+  "thumb": "img/maps/urban-thumb.webp",
+  "shotAt": "2026-11-18T21:15:11.759Z",
+  "caption": ""
+ },
+ "tropics": {
+  "group": "maps",
+  "file": "img/maps/tropics.webp",
+  "thumb": "img/maps/tropics-thumb.webp",
+  "shotAt": "2026-11-18T21:17:52.884Z",
+  "caption": ""
+ },
+ "inferno": {
+  "group": "maps",
+  "file": "img/maps/inferno.webp",
+  "thumb": "img/maps/inferno-thumb.webp",
+  "shotAt": "2026-11-18T21:18:25.422Z",
+  "caption": ""
+ },
+ "duskgorge": {
+  "group": "maps",
+  "file": "img/maps/duskgorge.webp",
+  "thumb": "img/maps/duskgorge-thumb.webp",
+  "shotAt": "2026-11-18T21:20:34.405Z",
+  "caption": ""
+ },
+ "menu-kit": {
+  "group": "pages",
+  "file": "img/pages/menu-kit.webp",
+  "thumb": "img/pages/menu-kit-thumb.webp",
+  "shotAt": "2026-11-18T21:20:38.246Z",
+  "caption": ""
+ },
+ "faction-card": {
+  "group": "pages",
+  "file": "img/pages/faction-card.webp",
+  "thumb": "img/pages/faction-card-thumb.webp",
+  "shotAt": "2026-11-18T21:20:43.064Z",
+  "caption": ""
+ },
+ "map-card": {
+  "group": "pages",
+  "file": "img/pages/map-card.webp",
+  "thumb": "img/pages/map-card-thumb.webp",
+  "shotAt": "2026-11-18T21:20:47.738Z",
+  "caption": ""
+ },
+ "play-solo": {
+  "group": "pages",
+  "file": "img/pages/play-solo.webp",
+  "thumb": "img/pages/play-solo-thumb.webp",
+  "shotAt": "2026-11-18T21:20:51.640Z",
+  "caption": ""
+ },
+ "play-online": {
+  "group": "pages",
+  "file": "img/pages/play-online.webp",
+  "thumb": "img/pages/play-online-thumb.webp",
+  "shotAt": "2026-11-18T21:20:55.383Z",
+  "caption": ""
+ },
+ "engine": {
+  "group": "systems",
+  "file": "img/systems/engine.webp",
+  "thumb": "img/systems/engine-thumb.webp",
+  "shotAt": "2026-11-18T21:21:03.984Z",
+  "caption": "Game board with the Cat HUD (this part has no screen of its own)"
+ },
+ "combat": {
+  "group": "systems",
+  "file": "img/systems/combat.webp",
+  "thumb": "img/systems/combat-thumb.webp",
+  "shotAt": "2026-11-18T21:21:10.983Z",
+  "caption": "Game board with the Cat HUD (this part has no screen of its own)"
+ },
+ "bots": {
+  "group": "systems",
+  "file": "img/systems/bots.webp",
+  "thumb": "img/systems/bots-thumb.webp",
+  "shotAt": "2026-11-18T21:21:16.754Z",
+  "caption": "Game board with the Cat HUD (this part has no screen of its own)"
+ },
+ "hud-kit": {
+  "group": "systems",
+  "file": "img/systems/hud-kit.webp",
+  "thumb": "img/systems/hud-kit-thumb.webp",
+  "shotAt": "2026-11-18T21:21:26.568Z",
+  "caption": "Game board with the Cat HUD (this part has no screen of its own)"
+ },
+ "map-editor": {
+  "group": "systems",
+  "file": "img/systems/map-editor.webp",
+  "thumb": "img/systems/map-editor-thumb.webp",
+  "shotAt": "2026-11-18T21:21:29.160Z",
+  "caption": ""
+ },
+ "faction-workshop": {
+  "group": "systems",
+  "file": "img/systems/faction-workshop.webp",
+  "thumb": "img/systems/faction-workshop-thumb.webp",
+  "shotAt": "2026-11-18T21:21:32.218Z",
+  "caption": ""
+ },
+ "deck-editor": {
+  "group": "systems",
+  "file": "img/systems/deck-editor.webp",
+  "thumb": "img/systems/deck-editor-thumb.webp",
+  "shotAt": "2026-11-18T21:21:35.295Z",
+  "caption": "Workshop page (decks are built there)"
+ },
+ "history-replay": {
+  "group": "systems",
+  "file": "img/systems/history-replay.webp",
+  "thumb": "img/systems/history-replay-thumb.webp",
+  "shotAt": "2026-11-18T21:21:38.456Z",
+  "caption": "Records page, where replays start"
+ },
+ "records": {
+  "group": "systems",
+  "file": "img/systems/records.webp",
+  "thumb": "img/systems/records-thumb.webp",
+  "shotAt": "2026-11-18T21:21:41.569Z",
+  "caption": ""
+ },
+ "online": {
+  "group": "systems",
+  "file": "img/systems/online.webp",
+  "thumb": "img/systems/online-thumb.webp",
+  "shotAt": "2026-11-18T21:21:44.665Z",
+  "caption": ""
+ },
+ "offline": {
+  "group": "systems",
+  "file": "img/systems/offline.webp",
+  "thumb": "img/systems/offline-thumb.webp",
+  "shotAt": "2026-11-18T21:21:51.856Z",
+  "caption": "Game board with the Cat HUD (this part has no screen of its own)"
+ },
+ "boards-3d": {
+  "group": "systems",
+  "file": "img/systems/boards-3d.webp",
+  "thumb": "img/systems/boards-3d-thumb.webp",
+  "shotAt": "2026-11-18T21:21:58.479Z",
+  "caption": "Game board with the Cat HUD (this part has no screen of its own)"
+ },
+ "settings": {
+  "group": "systems",
+  "file": "img/systems/settings.webp",
+  "thumb": "img/systems/settings-thumb.webp",
+  "shotAt": "2026-11-18T21:22:01.634Z",
+  "caption": ""
+ },
+ "aviators": {
+  "group": "factions",
+  "file": "img/factions/aviators.webp",
+  "thumb": "img/factions/aviators-thumb.webp",
+  "shotAt": "2026-11-18T21:22:22.008Z",
+  "caption": ""
+ },
+ "autumn": {
+  "group": "maps",
+  "file": "img/maps/autumn.webp",
+  "thumb": "img/maps/autumn-thumb.webp",
+  "shotAt": "2026-11-18T21:23:11.918Z",
+  "caption": "Game board on this map"
+ },
+ "deepwoods": {
+  "group": "maps",
+  "file": "img/maps/deepwoods.webp",
+  "thumb": "img/maps/deepwoods-thumb.webp",
+  "shotAt": "2026-11-18T21:23:49.733Z",
+  "caption": "Game board on this map"
+ },
+ "river": {
+  "group": "maps",
+  "file": "img/maps/river.webp",
+  "thumb": "img/maps/river-thumb.webp",
+  "shotAt": "2026-11-18T21:24:27.515Z",
+  "caption": "Game board on this map"
+ },
+ "legends": {
+  "group": "maps",
+  "file": "img/maps/legends.webp",
+  "thumb": "img/maps/legends-thumb.webp",
+  "shotAt": "2026-11-18T21:25:05.290Z",
+  "caption": "Game board on this map"
+ },
+ "gloom": {
+  "group": "maps",
+  "file": "img/maps/gloom.webp",
+  "thumb": "img/maps/gloom-thumb.webp",
+  "shotAt": "2026-11-18T21:25:43.042Z",
+  "caption": "Game board on this map"
+ },
+ "rivertown": {
+  "group": "maps",
+  "file": "img/maps/rivertown.webp",
+  "thumb": "img/maps/rivertown-thumb.webp",
+  "shotAt": "2026-11-18T21:26:20.841Z",
+  "caption": "Game board on this map"
+ },
+ "lostwoodland": {
+  "group": "maps",
+  "file": "img/maps/lostwoodland.webp",
+  "thumb": "img/maps/lostwoodland-thumb.webp",
+  "shotAt": "2026-11-18T21:26:58.659Z",
+  "caption": "Game board on this map"
+ },
+ "blightedcity": {
+  "group": "maps",
+  "file": "img/maps/blightedcity.webp",
+  "thumb": "img/maps/blightedcity-thumb.webp",
+  "shotAt": "2026-11-18T21:27:36.534Z",
+  "caption": "Game board on this map"
+ },
+ "summermap": {
+  "group": "maps",
+  "file": "img/maps/summermap.webp",
+  "thumb": "img/maps/summermap-thumb.webp",
+  "shotAt": "2026-11-18T21:28:14.308Z",
+  "caption": "Game board on this map"
+ },
+ "australia": {
+  "group": "maps",
+  "file": "img/maps/australia.webp",
+  "thumb": "img/maps/australia-thumb.webp",
+  "shotAt": "2026-11-18T21:28:52.054Z",
+  "caption": "Game board on this map"
+ },
+ "narrows": {
+  "group": "maps",
+  "file": "img/maps/narrows.webp",
+  "thumb": "img/maps/narrows-thumb.webp",
+  "shotAt": "2026-11-18T21:29:29.921Z",
+  "caption": "Game board on this map"
+ },
+ "treasureisland": {
+  "group": "maps",
+  "file": "img/maps/treasureisland.webp",
+  "thumb": "img/maps/treasureisland-thumb.webp",
+  "shotAt": "2026-11-18T21:30:07.720Z",
+  "caption": "Game board on this map"
+ },
+ "tunnelunraveled": {
+  "group": "maps",
+  "file": "img/maps/tunnelunraveled.webp",
+  "thumb": "img/maps/tunnelunraveled-thumb.webp",
+  "shotAt": "2026-11-18T21:30:45.542Z",
+  "caption": "Game board on this map"
+ },
+ "volcanoisland": {
+  "group": "maps",
+  "file": "img/maps/volcanoisland.webp",
+  "thumb": "img/maps/volcanoisland-thumb.webp",
+  "shotAt": "2026-11-18T21:31:23.527Z",
+  "caption": "Game board on this map"
+ }
+}
