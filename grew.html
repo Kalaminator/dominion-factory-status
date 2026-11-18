@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faction Factory Evolution</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; diagrams as vertical step chains side by side, stacking on phones. */
+:root {
+  --bg: #f3f5f2;
+  --surface: #ffffff;
+  --ink: #1d2622;
+  --muted: #5b6862;
+  --line: #d3dbd6;
+  --prep: #1f7a74;
+  --prep-soft: #dcefed;
+  --loop: #b5620f;
+  --loop-soft: #fbe9d6;
+  --review: #4b5bb0;
+  --review-soft: #e3e6f7;
+  --bad: #b3352c;
+  --bad-soft: #f8e1de;
+  --good: #2f7d3b;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121816; --surface: #1b2320; --ink: #e4ebe7; --muted: #9aa8a1; --line: #2e3a35;
+    --prep: #5cc4bb; --prep-soft: #173532; --loop: #f0a35a; --loop-soft: #3a2a17;
+    --review: #9aa7ef; --review-soft: #232a4a; --bad: #f08a80; --bad-soft: #3d1f1c; --good: #7fcf8a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121816; --surface: #1b2320; --ink: #e4ebe7; --muted: #9aa8a1; --line: #2e3a35;
+  --prep: #5cc4bb; --prep-soft: #173532; --loop: #f0a35a; --loop-soft: #3a2a17;
+  --review: #9aa7ef; --review-soft: #232a4a; --bad: #f08a80; --bad-soft: #3d1f1c; --good: #7fcf8a;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 64px;
+}
+main { max-width: 1120px; margin: 0 auto; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; }
+h2 { font-size: 1.6rem; font-weight: 800; }
+h3 { font-size: 1.05rem; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+.lede { color: var(--muted); font-size: 1.1rem; margin-top: 12px; }
+section { display: grid; gap: 18px; }
+code, .mono { font-family: var(--font-mono); font-size: 0.85em; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+
+/* legend */
+.legend { display: flex; flex-wrap: wrap; gap: 10px 18px; font-size: 0.9rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.sw { width: 14px; height: 14px; border-radius: 3px; border: 2px solid; }
+
+/* flow diagrams */
+.flows { display: grid; grid-template-columns: minmax(0, 560px); gap: 20px; align-items: start; }
+.flow { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 10px; min-width: 0; }
+.flow header { display: grid; gap: 4px; margin-bottom: 4px; }
+.flow header p { color: var(--muted); font-size: 0.9rem; }
+.chain { display: grid; gap: 0; }
+.step { border: 1.5px solid var(--line); border-radius: 7px; padding: 7px 10px; font-size: 0.9rem; background: var(--surface); display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.step small { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); white-space: nowrap; }
+.arrow { height: 16px; display: grid; place-items: center; color: var(--muted); font-size: 0.8rem; line-height: 1; }
+.step.prep { border-color: var(--prep); background: var(--prep-soft); }
+.step.review { border-color: var(--review); background: var(--review-soft); }
+.step.gate { border-style: dashed; }
+.step.bad { border-color: var(--bad); background: var(--bad-soft); }
+.loopbox { border: 2px solid var(--loop); background: var(--loop-soft); border-radius: 9px; padding: 8px; display: grid; gap: 0; position: relative; }
+.loopbox .tag { font-family: var(--font-mono); font-size: 0.7rem; color: var(--loop); font-weight: 500; margin-bottom: 6px; }
+.repeat { border: 2px dashed var(--muted); border-radius: 9px; padding: 8px; display: grid; gap: 0; }
+.repeat .tag { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); margin-bottom: 6px; }
+.lane { border: 2px solid var(--prep); border-radius: 9px; padding: 8px; display: grid; gap: 0; }
+.lane .tag { font-family: var(--font-mono); font-size: 0.7rem; color: var(--prep); font-weight: 500; margin-bottom: 6px; }
+.problems { display: grid; gap: 6px; margin-top: 6px; padding: 10px 12px; border-radius: 7px; background: var(--bad-soft); font-size: 0.86rem; }
+.problems b { color: var(--bad); }
+.wins { display: grid; gap: 6px; margin-top: 6px; padding: 10px 12px; border-radius: 7px; background: var(--prep-soft); font-size: 0.86rem; }
+.wins b { color: var(--good); }
+ul.tight { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
+
+/* timeline */
+.timeline { display: grid; gap: 0; border-left: 2px solid var(--line); margin-left: 6px; }
+.tl { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 4px 18px; padding: 0 0 18px 18px; position: relative; }
+.tl::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--muted); }
+.tl.now::before { background: var(--loop); border-color: var(--loop); }
+.tl .date { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); padding-top: 2px; }
+.tl .what { display: grid; gap: 3px; min-width: 0; }
+.tl .what p { color: var(--muted); font-size: 0.93rem; }
+.tl .commit { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+
+/* gantt */
+.gantt-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.gantt { display: grid; grid-template-columns: 9rem repeat(12, minmax(42px, 1fr)); gap: 6px 4px; min-width: 640px; font-size: 0.82rem; align-items: center; }
+.gantt .rowname { color: var(--muted); font-weight: 500; }
+.bar { border-radius: 5px; padding: 4px 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border: 1.5px solid; }
+.bar.p { background: var(--prep-soft); border-color: var(--prep); }
+.bar.b { background: var(--loop-soft); border-color: var(--loop); }
+.bar.r { background: var(--review-soft); border-color: var(--review); }
+.gantt .axis { color: var(--muted); font-family: var(--font-mono); font-size: 0.7rem; }
+
+/* tables */
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+tr:last-child td { border-bottom: 0; }
+td.old { color: var(--muted); }
+.pill { display: inline-block; font-family: var(--font-mono); font-size: 0.72rem; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--line); white-space: nowrap; }
+.pill.opus { border-color: var(--loop); color: var(--loop); }
+.pill.sonnet { border-color: var(--prep); color: var(--prep); }
+.pill.gpt { border-color: var(--review); color: var(--review); }
+.note { font-size: 0.92rem; color: var(--muted); }
+
+@media (max-width: 600px) { .flows { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 480px) { .tl { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+
+<main>
+  <header>
+    <div class="eyebrow">Dominion · faction factory · 20 Nov 2026</div>
+    <h1>How the factory grew</h1>
+    <p class="lede">The factory takes one faction and builds its rules, its HUD and its pieces, then checks them. This page shows the old flow, the first fan flow, and the new flow, side by side, and why each change came.</p>
+  </header>
+
+  <section>
+    <h2>The factory today</h2>
+    <div class="legend">
+      <span><i class="sw" style="border-color:var(--prep);background:var(--prep-soft)"></i>Prep (no tests)</span>
+      <span><i class="sw" style="border-color:var(--loop);background:var(--loop-soft)"></i>Check and fix at once</span>
+      <span><i class="sw" style="border-color:var(--review);background:var(--review-soft)"></i>Reviews</span>
+                </div>
+    <div class="flows">
+
+      <!-- NEW -->
+      <article class="flow">
+        <header>
+          <div class="eyebrow">Fan flow · updated 21 Nov</div>
+          <h3>Working HUD first, the concept is the art</h3>
+          <p>Dragon Cult: approved in 1 pass, 2.25M tokens, 4 pictures.</p>
+        </header>
+        <div class="chain">
+          <div class="lane">
+            <div class="tag">PREP · runs while the faction before it builds</div>
+            <div class="step prep">Card reader → ability list <small>Opus</small></div>
+            <div class="arrow">↓</div>
+            <div class="step prep">Theme on <small>Sonnet</small></div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="step">Rules build, tests first <small>Opus</small></div>
+          <div class="loopbox">
+            <div class="tag">⟲ rules check → fix · up to 5 checks</div>
+            <div class="step">Rules vs the ability list <small>Opus</small></div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="step">Working HUD, plain look, every real item <small>Opus</small></div>
+          <div class="loopbox">
+            <div class="tag">⟲ tools check → fix · up to 3 checks</div>
+            <div class="step">Coverage, overflow (phone too), contrast <small>Sonnet</small></div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="step">Screenshot of the working HUD <small>Sonnet</small></div>
+          <div class="arrow">↓</div>
+          <div class="step prep">ChatGPT paints ONE concept over it; the map stays the game map <small>1 picture</small></div>
+          <div class="arrow">↓</div>
+          <div class="step prep">Text removed, only inside the text boxes <small>1 picture</small></div>
+          <div class="arrow">↓</div>
+          <div class="step">Code cuts the parts, skin puts them on the HUD <small>Opus</small></div>
+          <div class="loopbox">
+            <div class="tag">⟲ number judge vs the concept · max 2 fixes, never blocks</div>
+            <div class="step">Panel scores (target 70) <small>no AI</small></div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="step">Pieces: cute cartoon head in the style of the official Meeples heads, buildings and tokens at official size <small>Sonnet</small></div>
+          <div class="loopbox">
+            <div class="tag">⟲ piece check → fix · up to 5 checks</div>
+            <div class="step">Size, fill, head shape and thick outline like the official pieces <small>Opus</small></div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="step gate">Hard gates: hand area empty, frames closed, every button works, one title style, warrior is a cute head · shots with warriors on the map <small>Sonnet</small></div>
+          <div class="arrow">↓</div>
+          <div class="step review">Reviews: rules, code, UX <small>Opus + Sonnet</small></div>
+          <div class="arrow">↓</div>
+          <div class="step review">Approve → learner (lessons become checks) <small>Sonnet + Opus</small></div>
+        </div>
+        <div class="wins">
+          <b>Why it is better</b>
+          <ul class="tight">
+            <li>The concept is painted on the real layout, so it always fits the HUD.</li>
+            <li>Parts are cut, not repainted one by one: no drift.</li>
+            <li>Numbers judge the look, not a lenient eye.</li>
+            <li>2-4 ChatGPT pictures per HUD instead of 17.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Four factories at the same time</h2>
+    <p>Four factories run at once, one faction each, each in its own copy of the code. They share one browser and one test runner, so they take turns for those. When one finishes, its faction joins the game and the factory starts the next faction.</p>
+  </section>
+
+  <section>
+    <h2>What changed, and why</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Part</th><th>Before</th><th>Now</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>When problems get fixed</td><td class="old">At the end of a whole pass</td><td>At the step where they start: up to 5 checks, it stops at the first clean one, then the next step</td><td>Your rule: fix it now, not 4–6 passes later</td></tr>
+          <tr><td>ChatGPT art prompt</td><td class="old">The whole concept plus a general style line; the element crop was optional</td><td>The element's own crop from the concept goes first, as a "faithful repaint" target, with its size. After each try a target | new picture is checked; a miss is painted again with notes on what differs, up to 5 tries</td><td>Get the part right the first time, and fix misses with exact notes</td></tr>
+          <tr><td>Look check</td><td class="old">check-look.sh, 9 minutes of numbers</td><td>A model looks at the real HUD next to the concept, part by part</td><td>The numbers sent builders on long repaint loops</td></tr>
+          <tr><td>Right-panel buttons</td><td class="old">Judged only in the final UI review</td><td>Checked right after the HUD build: readable, contrast, look like buttons, match the concept</td><td>Catch weak buttons before anything else is built on them</td></tr>
+          <tr><td>Reviews</td><td class="old">Skipped when a gate failed</td><td>Always run; a clean step check counts as its review</td><td>No blind passes, and no paying twice</td></tr>
+          <tr><td>Concept pick</td><td class="old">Could stop the faction (PARKED)</td><td>Never stops; picks the better concept as a style guide</td><td>The pilot stopped there once</td></tr>
+          <tr><td>Order</td><td class="old">One faction fully, then the next</td><td>The next faction's prep runs beside the current build</td><td>Less waiting, no extra tokens</td></tr>
+          <tr><td>Models</td><td class="old">Fable for reader, pick, reviews, approvers</td><td>Opus 5.5 high everywhere Fable was</td><td>Your choice, 18 Nov</td></tr>
+          <tr><td>Starting the factory</td><td class="old">By name (could load an old copy)</td><td>By its file path</td><td>Run 2 ran an old copy and its reviews never ran</td></tr>
+          <tr><td>Who reviews</td><td class="old">ChatGPT did the UI and UX reviews</td><td>Claude (Opus) does every review; ChatGPT only draws</td><td>Your rule, 18 Nov; it also saves the ChatGPT quota for drawings</td></tr>
+          <tr><td>The look checker</td><td class="old">One Opus look at half-size pictures; it scored a 50% HUD at 8.5/10</td><td>Full-size part pairs, your own scores as the scale, 3 judges, the lowest score counts; it must pass a test on your scores before use</td><td>Lupine Pact pass 1: you rated it 50% at best</td></tr>
+          <tr><td>ChatGPT out of quota</td><td class="old">Failed quietly; builders drew painted parts with code lines</td><td>The factory checks ChatGPT first; with no quota the faction waits. Painted parts are always repainted, never faked</td><td>The quota ran out in the middle of Lupine Pact</td></tr>
+          <tr><td>ChatGPT model</td><td class="old">gpt-6.1-sol at low effort</td><td>gpt-6.1-terra (the visual model) at high effort, with a self-check before it saves</td><td>Your choice, 18 Nov</td></tr>
+          <tr><td>Your feedback</td><td class="old">In the chat only</td><td>On the status page, next to each picture, with pins; a helper fixes that exact spot without a new factory run</td><td>Your request, 18 Nov</td></tr>
+          <tr><td>Seeing the work</td><td class="old">Only in the chat</td><td>A public status page with tabs: Factory now (live agent, step, scores), Finished &amp; feedback (every faction, map, page and system with its picture; write next to the picture, drop pins, give a 0-100 score), Training (bot strength per faction), How it grew (this page) and Agent changes (every finding of every agent and what was done about it, with its commit)</td><td>Your request, 18 Nov</td></tr>
+          <tr><td>Agent records</td><td class="old">Findings lived in scattered log files</td><td>One shared record (docs/changes/changes.jsonl): the factory, the feedback helper and the patrol each write what they found and what they did, in the same commit</td><td>Your request, 18 Nov</td></tr>
+          <tr><td>Dice and cards</td><td class="old">The browser's basic random function; the Knaves Captain deal used a biased shuffle</td><td>The Knaves deal is fixed (fair shuffle). Being built: one secure random source for real games, and a saved seed so a reported game replays with the same dice</td><td>The randomness video, 18 Nov</td></tr>
+          <tr><td>HUD design</td><td class="old">Its own design per faction</td><td>Its own design per faction, unchanged</td><td>Variety is part of quality (your rule)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Who does each job now</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Model</th><th>Jobs</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill opus">Opus 5.5 high</span></td><td>Card reader, concept pick + HUD spec, rules build, HUD build, every fix, the 3 step checks (rules, HUD, art), the strict look judge, the rules, UI and UX reviews, the last approver and the confirm</td></tr>
+          <tr><td><span class="pill sonnet">Sonnet</span></td><td>Theme on, running the concept painter, art cutting, coverage, hard gates, shots, code review, the approver between passes</td></tr>
+          <tr><td><span class="pill gpt">ChatGPT gpt-6.1-terra, high</span></td><td>Draws only: ONE concept over the working HUD, its text removal, and the pieces that have no source (36 pictures max per faction)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Timeline</h2>
+    <div class="timeline">
+      <div class="tl"><div class="date">4 Nov</div><div class="what"><h3>First factory</h3><p>Spec, build, then 4 reviews (rules, code, UI and UX by ChatGPT), then approve.</p><span class="commit">e4873dd</span></div></div>
+      <div class="tl"><div class="date">4 Nov</div><div class="what"><h3>Version 2: shared HUD kit first</h3><p>Kit before factions, a "brain" file, builders write tests first, a consistency pass, your look at the end.</p><span class="commit">2245c7d · 9f9f60f</span></div></div>
+      <div class="tl"><div class="date">5 Nov</div><div class="what"><h3>Token rules and lessons</h3><p>2 rounds max, Sonnet approves between rounds, half-size crops. A Learn step writes lessons after each approval.</p><span class="commit">3eb24fc · ba4f470</span></div></div>
+      <div class="tl"><div class="date">6–7 Nov</div><div class="what"><h3>Hard look gate</h3><p>check-look and a frame gate must pass before any review. Your notes reach the builder first.</p><span class="commit">de68479 · 50dcfd3 · b4c51c7</span></div></div>
+      <div class="tl"><div class="date">8–11 Nov</div><div class="what"><h3>Model changes, Sound step, menu pages</h3><p>Fable replaced Opus in some steps. A Sound step came and went: you removed all sounds on 11 Nov. Menu pages got their own kind.</p><span class="commit">cf37076 · a19b984 · cbce74d</span></div></div>
+      <div class="tl"><div class="date">18 Nov, morning</div><div class="what"><h3>Fan kind</h3><p>Card reader and ability list, 2 concepts the factory picks, coverage check, art stage, 3 passes.</p><span class="commit">3e4e78e</span></div></div>
+      <div class="tl"><div class="date">18 Nov</div><div class="what"><h3>Pilot fixes</h3><p>The pick never stops a faction. Reviews always run. Look numbers became advice only.</p><span class="commit">547dc2b · e330be4</span></div></div>
+      <div class="tl"><div class="date">18 Nov, evening</div><div class="what"><h3>Fix at each step</h3><p>Rules, HUD and art each check and fix at once. The next faction preps in parallel. No more check-look for fan factions. Opus instead of Fable.</p><span class="commit">0766a4a · e652710 · e5d1f9e</span></div></div>
+      <div class="tl"><div class="date">19 Nov, night</div><div class="what"><h3>Rules-only batch</h3><p>10 fan factions got their rules built and checked while ChatGPT was out. Open rules questions became tickets you answer on the status page.</p><span class="commit">c90f4d2 · 3f0d3e3</span></div></div>
+      <div class="tl"><div class="date">19 Nov</div><div class="what"><h3>Trust and proof</h3><p>Helpers reproduce a problem before they fix it and name the check that keeps it fixed. Lessons become checks. A weekly hardener turns written rules into checks. Night tests on this computer replace GitHub. Helper instructions get a score from a second model.</p><span class="commit">9a3149e · 076a900 · 4ec6d0f · 9fb1756</span></div></div>
+      <div class="tl"><div class="date">19 Nov</div><div class="what"><h3>ChatGPT budget</h3><p>The factory reads the ChatGPT limits from its own log (no extra call), waits when a limit is full, and stops a faction after 24 pictures.</p><span class="commit">153e03b</span></div></div>
+      <div class="tl"><div class="date">20 Nov</div><div class="what"><h3>The concept IS the art</h3><p>New order: rules, a working HUD with every real item, ChatGPT paints the concept OVER that HUD, the text is removed, code cuts the parts, a number judge compares with the concept. Parts are no longer repainted one by one. First faction made this way, Dragon Cult: approved in 1 pass, 2.25M tokens, 4 pictures (Lupine took 2 passes, 4.2M, 17 pictures).</p><span class="commit">4049eb2 · f9d207e · a36db90</span></div></div>
+      <div class="tl"><div class="date">20 Nov</div><div class="what"><h3>The map stays the game map</h3><p>ChatGPT repainted the map in every concept. The factory now pastes the real board back, so only the HUD comes from the concept.</p><span class="commit">21c9f9c</span></div></div>
+      <div class="tl"><div class="date">20 Nov</div><div class="what"><h3>Pieces</h3><p>Warrior = the faction's own head from Images/Meeples (else drawn in that style). Buildings and tokens repainted at the official size, checked by numbers. A pieces-only mode for any faction. Your Meeples heads replaced 24 warriors.</p><span class="commit">d8b87bf · 6448bd3 · 7bbe115 · 2705c57</span></div></div>
+      <div class="tl"><div class="date">20 Nov</div><div class="what"><h3>Costs tab</h3><p>Claude tokens per faction from start to finished, ChatGPT pictures, and the tokens of each feedback fix.</p><span class="commit">20b31a6</span></div></div>
+      <div class="tl"><div class="date">21 Nov</div><div class="what"><h3>Checks skip when nothing changed</h3><p>A check or review that came out clean is not run again while nothing in its own files changed (rules files for the rules check, HUD files for the HUD checks, pieces for the art check). It shows "unchanged since" instead. The hard gates and the approver always run.</p><span class="commit">ce96a02</span></div></div>
+      <div class="tl"><div class="date">21 Nov</div><div class="what"><h3>Your 4 HUD problems became checks</h3><p>No painted cards behind the hand, every frame closed, no button without a function, one title style centred. Each is a blocking check and a ChatGPT prompt rule. Painted arrows and half-cut characters are banned in the prompt.</p><span class="commit">lessons 108-113</span></div></div>
+      <div class="tl"><div class="date">21 Nov</div><div class="what"><h3>Cute warrior heads, 4 factories</h3><p>Every warrior is a cute cartoon head like the official Meeples heads, sent to ChatGPT every time and checked by shape and outline. Four factories run at once. Shots put warriors on the map.</p><span class="commit">be4ce16 · 6116378</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="timeline">
+      <div class="tl now"><div class="date">18 Nov, night</div><div class="what"><h3>Stricter judging, ChatGPT only draws</h3><p>Lupine Pact pass 1 came out at 50% by your eye while the checker said 8.5/10. Now: a strict judge calibrated on your scores, Claude does every review, ChatGPT draws with gpt-6.1-terra at high effort, the factory waits when ChatGPT is out, 2 passes max, and feedback straight from the status page.</p><span class="commit">35d3dba · 347b5a7 · b13a6f5 · 5195806</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Still to prove</h2>
+    <p class="note">Strict judge, first test (18 Nov night): it scores Lupine Pact 52–60, close to your 50. But it scores the approved Eyrie HUD only 34–58, not near 85. Reason: the Eyrie build looks quite different from its concept, so as a "match the concept" pair it looks weak. The judge needs a few more of your own scores on built HUDs before it is used. Until then the factory keeps the old checker plus your feedback.</p>
+    <p class="note">The number judge: its pass mark (70) must match your eye. Lupine, which you rated 80%, scored only 22 on it; Dragon Cult scored 71. Your ratings of the next factions set the mark.</p>
+    <p class="note">Lupine Pact pass 1: the step loops worked (rules 7.8 → 9, art 5 → 8 in one pass), but the HUD reached only about 50% by your eye, because the checker was too soft and ChatGPT ran out before the repaints. The strict judge must first pass its test on your scores. ChatGPT is back on 19 Nov at 9:10 PM; then Lupine Pact is repainted and judged again.</p>
+  </section>
+</main>
+</body>
+</html>
