@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T19:10:05.980Z",
+ "generatedAt": "2026-11-25T19:20:39.655Z",
  "stages": [
   {
    "id": "reader",
@@ -4695,9 +4695,9 @@
  },
  "overview": {
   "release": {
-   "live": null,
+   "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": null
+   "commitsSinceLive": 604
   },
   "branches": {
    "list": [
@@ -4766,7 +4766,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T19:10:05.000Z",
+    "lastRun": "2026-11-25T19:20:39.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4788,9 +4788,9 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T15:17:00.000Z",
-    "nextRun": "2026-11-25T19:17:00.000Z",
-    "lastNote": "2026-11-25T16:17:00+01:00 skip: lock dominion-chromium held"
+    "lastRun": "2026-11-25T19:17:10.000Z",
+    "nextRun": "2026-11-25T23:17:00.000Z",
+    "lastNote": "2026-11-25T20:17:10+01:00 skip: lock dominion-chromium held"
    },
    {
     "key": "hardener",
@@ -7559,10 +7559,10 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 954,
-    "output": 280184,
-    "cacheCreate": 4372078,
-    "cacheRead": 44657199,
+    "input": 960,
+    "output": 280776,
+    "cacheCreate": 4450178,
+    "cacheRead": 44800281,
     "stages": {
      "reader": {
       "input": 74,
@@ -7613,12 +7613,12 @@
       "total": 7983122
      },
      "hudcheck": {
-      "input": 40,
-      "output": 8307,
-      "cacheCreate": 857720,
-      "cacheRead": 459878,
-      "fresh": 866067,
-      "total": 1325945
+      "input": 46,
+      "output": 8899,
+      "cacheCreate": 935820,
+      "cacheRead": 602960,
+      "fresh": 944765,
+      "total": 1547725
      }
     },
     "runs": [
@@ -7635,8 +7635,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 4653216,
-    "total": 49310415
+    "fresh": 4731914,
+    "total": 49532195
    },
    "bumblebee": {
     "input": 3174,
@@ -7869,10 +7869,10 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 1574,
-    "output": 470358,
-    "cacheCreate": 6974528,
-    "cacheRead": 79989994,
+    "input": 1576,
+    "output": 470622,
+    "cacheCreate": 7076263,
+    "cacheRead": 80010571,
     "stages": {
      "reader": {
       "input": 80,
@@ -7907,12 +7907,12 @@
       "total": 11860301
      },
      "stepfix": {
-      "input": 636,
-      "output": 162962,
-      "cacheCreate": 3075732,
-      "cacheRead": 31845933,
-      "fresh": 3239330,
-      "total": 35085263
+      "input": 638,
+      "output": 163226,
+      "cacheCreate": 3177467,
+      "cacheRead": 31866510,
+      "fresh": 3341331,
+      "total": 35207841
      },
      "hud": {
       "input": 142,
@@ -8001,8 +8001,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 7446460,
-    "total": 87436454
+    "fresh": 7548461,
+    "total": 87559032
    },
    "camarilla": {
     "input": 4048,
@@ -8443,10 +8443,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 594,
-    "output": 226396,
-    "cacheCreate": 2109014,
-    "cacheRead": 32608395,
+    "input": 596,
+    "output": 226707,
+    "cacheCreate": 2267816,
+    "cacheRead": 32628972,
     "stages": {
      "reader": {
       "input": 80,
@@ -8489,12 +8489,12 @@
       "total": 6783442
      },
      "hud": {
-      "input": 144,
-      "output": 35051,
-      "cacheCreate": 580448,
-      "cacheRead": 9303633,
-      "fresh": 615643,
-      "total": 9919276
+      "input": 146,
+      "output": 35362,
+      "cacheCreate": 739250,
+      "cacheRead": 9324210,
+      "fresh": 774758,
+      "total": 10098968
      }
     },
     "runs": [
@@ -8511,8 +8511,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2336004,
-    "total": 34944399
+    "fresh": 2495119,
+    "total": 35124091
    },
    "caninerepublic": {
     "input": 1960,
@@ -8731,10 +8731,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 168,
-    "output": 63789,
-    "cacheCreate": 472785,
-    "cacheRead": 8205541,
+    "input": 212,
+    "output": 87225,
+    "cacheCreate": 502068,
+    "cacheRead": 11951005,
     "stages": {
      "reader": {
       "input": 58,
@@ -8753,12 +8753,12 @@
       "total": 777314
      },
      "rules": {
-      "input": 88,
-      "output": 34113,
-      "cacheCreate": 134839,
-      "cacheRead": 4909855,
-      "fresh": 169040,
-      "total": 5078895
+      "input": 132,
+      "output": 57549,
+      "cacheCreate": 164122,
+      "cacheRead": 8655319,
+      "fresh": 221803,
+      "total": 8877122
      }
     },
     "runs": [
@@ -8775,8 +8775,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 536742,
-    "total": 8742283
+    "fresh": 589505,
+    "total": 12540510
    },
    "chameleander": {
     "input": 2108,
