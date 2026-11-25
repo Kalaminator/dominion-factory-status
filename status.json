@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T20:00:32.068Z",
+ "generatedAt": "2026-11-25T20:01:44.772Z",
  "stages": [
   {
    "id": "reader",
@@ -4738,7 +4738,7 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 604
+   "commitsSinceLive": 605
   },
   "branches": {
    "list": [
@@ -4808,7 +4808,7 @@
     "ok": true,
     "exit": 0,
     "lastRun": "2026-11-25T20:00:31.000Z",
-    "nextRun": null,
+    "nextRun": "2026-11-25T20:10:00.000Z",
     "lastNote": null
    },
    {
@@ -4923,10 +4923,15 @@
     },
     {
      "date": "2026-11-25",
-     "commits": 121
+     "commits": 122
     }
    ],
    "latest": [
+    {
+     "hash": "71bdb0b",
+     "date": "2026-11-25",
+     "subject": "status page: GitHub list reads skip the browser cache (a refresh within 60 s showed 'None yet' after saving feedback)"
+    },
     {
      "hash": "fcff69b",
      "date": "2026-11-25",
@@ -4971,14 +4976,16 @@
      "hash": "9e037ac",
      "date": "2026-11-25",
      "subject": "factory: CLEAN artCheck chameleander"
-    },
-    {
-     "hash": "b862a38",
-     "date": "2026-11-25",
-     "subject": "factory art chameleander: new chameleon head warrior, ego token repainted"
     }
    ],
    "last24": [
+    {
+     "hash": "71bdb0b",
+     "time": "2026-11-25T21:01:44+01:00",
+     "subject": "status page: GitHub list reads skip the browser cache (a refresh within 60 s showed 'None yet' after saving feedback)",
+     "agent": "lead",
+     "branch": "main"
+    },
     {
      "hash": "5e13dd7",
      "time": "2026-11-25T20:56:47+01:00",
@@ -5391,16 +5398,9 @@
      "subject": "factory: CLEAN code caninecommonwealth",
      "agent": "factory",
      "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "61f4e46",
-     "time": "2026-11-25T15:52:21+01:00",
-     "subject": "cirque: cut plate parts (fan-rules-4)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
     }
    ],
-   "last24Count": 205
+   "last24Count": 206
   },
   "trust": {
    "tests": {

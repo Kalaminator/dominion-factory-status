@@ -145,7 +145,7 @@ function pinsHtml(){$('pw').querySelectorAll('.pin').forEach(p=>p.remove());
 function ghHtml(){$('gh').innerHTML=tok()?'<a href="#" id="disc" class="sub">Disconnect GitHub</a>':'<div class="sub"><b>Connect GitHub</b> (once per browser)<ol><li>GitHub &gt; Settings &gt; Developer settings &gt; Fine-grained personal access tokens &gt; Generate.</li><li>Repository access: Only select repositories &gt; Dominion. Permissions: Issues = Read and write.</li><li>Copy the token and paste it here.</li></ol></div><input id="tk" type="password" placeholder="github_pat_..." autocomplete="off"><button id="tks">Save token</button>'}
 async function histLoad(){const h=$('hist');if(!tok()){const f=CE.feedback;h.innerHTML='<div class="sub">'+(f?f.open+' open, '+f.fixed+' fixed, '+f.queued+' queued, '+f.needsLead+' needs lead. Connect GitHub to see them.':'Connect GitHub to see earlier feedback.')+'</div>';return}
  h.innerHTML='<div class="sub">Loading earlier feedback...</div>';const k=CE.key;
- try{const r=await fetch(API+'?labels=feedback&state=all&per_page=100',{headers:{Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json'}});const j=await r.json();if(!r.ok)throw new Error(j.message||r.status);
+ try{const r=await fetch(API+'?labels=feedback&state=all&per_page=100',{cache:'no-store',headers:{Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json'}});const j=await r.json();if(!r.ok)throw new Error(j.message||r.status);
   if(CE.key!=k)return;const a=j.filter(i=>!i.pull_request&&i.title.startsWith('['+k+']'));
   h.innerHTML='<b>Earlier feedback</b>'+(a.length?a.map(i=>{const l=i.labels.map(x=>x.name),s=l.includes('fb:fixed')?'fixed':l.includes('fb:queued')?'queued':l.includes('fb:needs-lead')?'needs-lead':'open';return`<div class="fi"><a target="_blank" rel="noopener" href="${esc(i.html_url)}">#${i.number}</a> ${esc(i.title.replace('['+k+']','').trim())} <span class="chip">${s}</span></div>`}).join(''):'<div class="sub">None yet.</div>')}
  catch(e){h.innerHTML='<div class="er">Could not load: '+esc(e.message)+'</div>'}}
@@ -171,7 +171,7 @@ let QS=null;
 const qState=i=>{const l=i.labels.map(x=>x.name);return i.state=='closed'||l.includes('q:done')?'done':l.includes('q:answered')||l.includes('q:in-progress')?'answered':'open'};
 async function qsLoad(){const b=$('qsb');if(!tok()){if(!D||!D.questions){b.innerHTML='<div class="sub">Loading questions...</div>';return}QS=D.questions.map(i=>({...i,html_url:R+i.number})).sort((x,y)=>x.number-y.number);qsHtml();return}
  b.innerHTML='<div class="sub">Loading questions...</div>';
- try{let a=[];for(let pg=1;pg<6;pg++){const r=await fetch(API+'?labels=q:rules&state=all&per_page=100&page='+pg,{headers:{Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json'}});const j=await r.json();if(!r.ok)throw new Error(j.message||r.status);a=a.concat(j);if(j.length<100)break}
+ try{let a=[];for(let pg=1;pg<6;pg++){const r=await fetch(API+'?labels=q:rules&state=all&per_page=100&page='+pg,{cache:'no-store',headers:{Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json'}});const j=await r.json();if(!r.ok)throw new Error(j.message||r.status);a=a.concat(j);if(j.length<100)break}
   QS=a.filter(i=>!i.pull_request&&!i.labels.some(x=>x.name=='duplicate')).sort((x,y)=>x.number-y.number);qsHtml()}
  catch(e){b.innerHTML='<div class="er">Could not load: '+esc(e.message)+'</div>'}}
 function qsHtml(){if(!QS)return;const fs=$('qs-s').value,q=$('qs-q').value.toLowerCase().trim(),by={};
