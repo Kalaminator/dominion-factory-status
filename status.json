@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T22:10:00.198Z",
+ "generatedAt": "2026-11-25T22:20:00.190Z",
  "stages": [
   {
    "id": "reader",
@@ -4800,7 +4800,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T22:10:00.000Z",
+    "lastRun": "2026-11-25T22:20:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -7600,10 +7600,10 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 1298,
-    "output": 390240,
-    "cacheCreate": 6532650,
-    "cacheRead": 59464544,
+    "input": 1334,
+    "output": 406360,
+    "cacheCreate": 6559686,
+    "cacheRead": 61425687,
     "stages": {
      "reader": {
       "input": 74,
@@ -7638,12 +7638,12 @@
       "total": 11684358
      },
      "stepfix": {
-      "input": 396,
-      "output": 88412,
-      "cacheCreate": 1930572,
-      "cacheRead": 16653403,
-      "fresh": 2019380,
-      "total": 18672783
+      "input": 432,
+      "output": 104532,
+      "cacheCreate": 1957608,
+      "cacheRead": 18614546,
+      "fresh": 2062572,
+      "total": 20677118
      },
      "hud": {
       "input": 136,
@@ -7732,8 +7732,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 6924188,
-    "total": 66388732
+    "fresh": 6967380,
+    "total": 68393067
    },
    "bumblebee": {
     "input": 3174,
@@ -7966,10 +7966,10 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 2030,
-    "output": 577473,
-    "cacheCreate": 9273327,
-    "cacheRead": 98000400,
+    "input": 2114,
+    "output": 596170,
+    "cacheCreate": 9310901,
+    "cacheRead": 102284446,
     "stages": {
      "reader": {
       "input": 84,
@@ -8012,12 +8012,12 @@
       "total": 35714053
      },
      "hud": {
-      "input": 160,
-      "output": 33688,
-      "cacheCreate": 503088,
-      "cacheRead": 8860600,
-      "fresh": 536936,
-      "total": 9397536
+      "input": 244,
+      "output": 52385,
+      "cacheCreate": 540662,
+      "cacheRead": 13144646,
+      "fresh": 593291,
+      "total": 13737937
      },
      "hudcheck": {
       "input": 58,
@@ -8176,8 +8176,8 @@
     "pictures": 5,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 9852830,
-    "total": 107853230
+    "fresh": 9909185,
+    "total": 112193631
    },
    "camarilla": {
     "input": 4048,
@@ -8618,10 +8618,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 832,
-    "output": 277562,
-    "cacheCreate": 4398850,
-    "cacheRead": 44831107,
+    "input": 882,
+    "output": 289559,
+    "cacheCreate": 4502493,
+    "cacheRead": 47536269,
     "stages": {
      "reader": {
       "input": 80,
@@ -8656,12 +8656,12 @@
       "total": 3276762
      },
      "stepfix": {
-      "input": 288,
-      "output": 87665,
-      "cacheCreate": 1378794,
-      "cacheRead": 15034257,
-      "fresh": 1466747,
-      "total": 16501004
+      "input": 338,
+      "output": 99662,
+      "cacheCreate": 1482437,
+      "cacheRead": 17739419,
+      "fresh": 1582437,
+      "total": 19321856
      },
      "hud": {
       "input": 190,
@@ -8694,8 +8694,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 4677244,
-    "total": 49508351
+    "fresh": 4792934,
+    "total": 52329203
    },
    "caninerepublic": {
     "input": 1960,
@@ -8914,10 +8914,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 642,
-    "output": 187176,
-    "cacheCreate": 2677520,
-    "cacheRead": 31573364,
+    "input": 678,
+    "output": 195726,
+    "cacheCreate": 2691163,
+    "cacheRead": 34115115,
     "stages": {
      "reader": {
       "input": 58,
@@ -8952,12 +8952,12 @@
       "total": 5840962
      },
      "stepfix": {
-      "input": 168,
-      "output": 40135,
-      "cacheCreate": 705832,
-      "cacheRead": 7454326,
-      "fresh": 746135,
-      "total": 8200461
+      "input": 204,
+      "output": 48685,
+      "cacheCreate": 719475,
+      "cacheRead": 9996077,
+      "fresh": 768364,
+      "total": 10764441
      },
      "hud": {
       "input": 110,
@@ -8990,8 +8990,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2865338,
-    "total": 34438702
+    "fresh": 2887567,
+    "total": 37002682
    },
    "chameleander": {
     "input": 2108,
