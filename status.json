@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T22:20:00.190Z",
+ "generatedAt": "2026-11-25T22:30:00.184Z",
  "stages": [
   {
    "id": "reader",
@@ -4800,7 +4800,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T22:20:00.000Z",
+    "lastRun": "2026-11-25T22:30:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -7600,10 +7600,10 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 1334,
-    "output": 406360,
-    "cacheCreate": 6559686,
-    "cacheRead": 61425687,
+    "input": 1338,
+    "output": 407288,
+    "cacheCreate": 6661673,
+    "cacheRead": 61568252,
     "stages": {
      "reader": {
       "input": 74,
@@ -7638,12 +7638,12 @@
       "total": 11684358
      },
      "stepfix": {
-      "input": 432,
-      "output": 104532,
-      "cacheCreate": 1957608,
-      "cacheRead": 18614546,
-      "fresh": 2062572,
-      "total": 20677118
+      "input": 436,
+      "output": 105460,
+      "cacheCreate": 2059595,
+      "cacheRead": 18757111,
+      "fresh": 2165491,
+      "total": 20922602
      },
      "hud": {
       "input": 136,
@@ -7732,8 +7732,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 6967380,
-    "total": 68393067
+    "fresh": 7070299,
+    "total": 68638551
    },
    "bumblebee": {
     "input": 3174,
@@ -7966,10 +7966,10 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 2114,
-    "output": 596170,
-    "cacheCreate": 9310901,
-    "cacheRead": 102284446,
+    "input": 2116,
+    "output": 596410,
+    "cacheCreate": 9414173,
+    "cacheRead": 102305023,
     "stages": {
      "reader": {
       "input": 84,
@@ -8012,12 +8012,12 @@
       "total": 35714053
      },
      "hud": {
-      "input": 244,
-      "output": 52385,
-      "cacheCreate": 540662,
-      "cacheRead": 13144646,
-      "fresh": 593291,
-      "total": 13737937
+      "input": 246,
+      "output": 52625,
+      "cacheCreate": 643934,
+      "cacheRead": 13165223,
+      "fresh": 696805,
+      "total": 13862028
      },
      "hudcheck": {
       "input": 58,
@@ -8176,8 +8176,8 @@
     "pictures": 5,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 9909185,
-    "total": 112193631
+    "fresh": 10012699,
+    "total": 112317722
    },
    "camarilla": {
     "input": 4048,
@@ -8618,9 +8618,9 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 882,
-    "output": 289559,
-    "cacheCreate": 4502493,
+    "input": 884,
+    "output": 289766,
+    "cacheCreate": 4627135,
     "cacheRead": 47536269,
     "stages": {
      "reader": {
@@ -8656,12 +8656,12 @@
       "total": 3276762
      },
      "stepfix": {
-      "input": 338,
-      "output": 99662,
-      "cacheCreate": 1482437,
+      "input": 340,
+      "output": 99869,
+      "cacheCreate": 1607079,
       "cacheRead": 17739419,
-      "fresh": 1582437,
-      "total": 19321856
+      "fresh": 1707288,
+      "total": 19446707
      },
      "hud": {
       "input": 190,
@@ -8694,8 +8694,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 4792934,
-    "total": 52329203
+    "fresh": 4917785,
+    "total": 52454054
    },
    "caninerepublic": {
     "input": 1960,
@@ -8914,10 +8914,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 678,
-    "output": 195726,
-    "cacheCreate": 2691163,
-    "cacheRead": 34115115,
+    "input": 680,
+    "output": 195954,
+    "cacheCreate": 2819535,
+    "cacheRead": 34135692,
     "stages": {
      "reader": {
       "input": 58,
@@ -8952,12 +8952,12 @@
       "total": 5840962
      },
      "stepfix": {
-      "input": 204,
-      "output": 48685,
-      "cacheCreate": 719475,
-      "cacheRead": 9996077,
-      "fresh": 768364,
-      "total": 10764441
+      "input": 206,
+      "output": 48913,
+      "cacheCreate": 847847,
+      "cacheRead": 10016654,
+      "fresh": 896966,
+      "total": 10913620
      },
      "hud": {
       "input": 110,
@@ -8990,8 +8990,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2887567,
-    "total": 37002682
+    "fresh": 3016169,
+    "total": 37151861
    },
    "chameleander": {
     "input": 2108,
