@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T22:40:00.192Z",
+ "generatedAt": "2026-11-25T22:50:00.195Z",
  "stages": [
   {
    "id": "reader",
@@ -4737,7 +4737,7 @@
    "list": [
     {
      "name": "factory/fan-rules-2",
-     "ahead": 8,
+     "ahead": 9,
      "date": "2026-11-25"
     },
     {
@@ -4800,7 +4800,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T22:40:00.000Z",
+    "lastRun": "2026-11-25T22:50:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4972,6 +4972,13 @@
     }
    ],
    "last24": [
+    {
+     "hash": "4d32047",
+     "time": "2026-11-25T23:46:35+01:00",
+     "subject": "factory stepfix HUD crumblingcourt (wip): Halls chips clear the Forges row (rowClass cc-row-hall, ⚔ icon), abilities fold to names (LIST_BOX",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
     {
      "hash": "213ddc2",
      "time": "2026-11-25T23:37:29+01:00",
@@ -5384,16 +5391,9 @@
      "subject": "factory rules croakers: split spellBlock / daylightActions / eveningActions into named helpers (slop COMPLEXITY)",
      "agent": "factory",
      "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "6b28196",
-     "time": "2026-11-25T18:27:04+01:00",
-     "subject": "factory rules croakers: 34 of 37 ledger rows built and tested (Advanced Setup card, spells, Mudman move, tracks)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
     }
    ],
-   "last24Count": 214
+   "last24Count": 215
   },
   "trust": {
    "tests": {
@@ -7600,10 +7600,10 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 1342,
-    "output": 408157,
-    "cacheCreate": 6765627,
-    "cacheRead": 61711976,
+    "input": 1344,
+    "output": 408443,
+    "cacheCreate": 6869951,
+    "cacheRead": 61732553,
     "stages": {
      "reader": {
       "input": 74,
@@ -7638,12 +7638,12 @@
       "total": 11684358
      },
      "stepfix": {
-      "input": 440,
-      "output": 106329,
-      "cacheCreate": 2163549,
-      "cacheRead": 18900835,
-      "fresh": 2270318,
-      "total": 21171153
+      "input": 442,
+      "output": 106615,
+      "cacheCreate": 2267873,
+      "cacheRead": 18921412,
+      "fresh": 2374930,
+      "total": 21296342
      },
      "hud": {
       "input": 136,
@@ -7732,8 +7732,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 7175126,
-    "total": 68887102
+    "fresh": 7279738,
+    "total": 69012291
    },
    "bumblebee": {
     "input": 3174,
@@ -7966,10 +7966,10 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 2122,
-    "output": 597148,
-    "cacheCreate": 9518677,
-    "cacheRead": 102574399,
+    "input": 2124,
+    "output": 597453,
+    "cacheCreate": 9623478,
+    "cacheRead": 102594976,
     "stages": {
      "reader": {
       "input": 84,
@@ -8012,12 +8012,12 @@
       "total": 35714053
      },
      "hud": {
-      "input": 252,
-      "output": 53363,
-      "cacheCreate": 748438,
-      "cacheRead": 13434599,
-      "fresh": 802053,
-      "total": 14236652
+      "input": 254,
+      "output": 53668,
+      "cacheCreate": 853239,
+      "cacheRead": 13455176,
+      "fresh": 907161,
+      "total": 14362337
      },
      "hudcheck": {
       "input": 58,
@@ -8176,8 +8176,8 @@
     "pictures": 5,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 10117947,
-    "total": 112692346
+    "fresh": 10223055,
+    "total": 112818031
    },
    "camarilla": {
     "input": 4048,
@@ -8618,9 +8618,9 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 886,
-    "output": 289973,
-    "cacheCreate": 4752063,
+    "input": 888,
+    "output": 290180,
+    "cacheCreate": 4877245,
     "cacheRead": 47536269,
     "stages": {
      "reader": {
@@ -8656,12 +8656,12 @@
       "total": 3276762
      },
      "stepfix": {
-      "input": 342,
-      "output": 100076,
-      "cacheCreate": 1732007,
+      "input": 344,
+      "output": 100283,
+      "cacheCreate": 1857189,
       "cacheRead": 17739419,
-      "fresh": 1832425,
-      "total": 19571844
+      "fresh": 1957816,
+      "total": 19697235
      },
      "hud": {
       "input": 190,
@@ -8694,8 +8694,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 5042922,
-    "total": 52579191
+    "fresh": 5168313,
+    "total": 52704582
    },
    "caninerepublic": {
     "input": 1960,
@@ -8914,10 +8914,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 682,
-    "output": 196182,
-    "cacheCreate": 2948144,
-    "cacheRead": 34156269,
+    "input": 688,
+    "output": 197114,
+    "cacheCreate": 3078263,
+    "cacheRead": 34476367,
     "stages": {
      "reader": {
       "input": 58,
@@ -8952,12 +8952,12 @@
       "total": 5840962
      },
      "stepfix": {
-      "input": 208,
-      "output": 49141,
-      "cacheCreate": 976456,
-      "cacheRead": 10037231,
-      "fresh": 1025805,
-      "total": 11063036
+      "input": 214,
+      "output": 50073,
+      "cacheCreate": 1106575,
+      "cacheRead": 10357329,
+      "fresh": 1156862,
+      "total": 11514191
      },
      "hud": {
       "input": 110,
@@ -8990,8 +8990,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3145008,
-    "total": 37301277
+    "fresh": 3276065,
+    "total": 37752432
    },
    "chameleander": {
     "input": 2108,
