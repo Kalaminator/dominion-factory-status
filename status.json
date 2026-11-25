@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T20:01:44.772Z",
+ "generatedAt": "2026-11-25T20:03:28.062Z",
  "stages": [
   {
    "id": "reader",
@@ -4738,7 +4738,7 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 605
+   "commitsSinceLive": 606
   },
   "branches": {
    "list": [
@@ -4923,10 +4923,15 @@
     },
     {
      "date": "2026-11-25",
-     "commits": 122
+     "commits": 123
     }
    ],
    "latest": [
+    {
+     "hash": "8a0aef0",
+     "date": "2026-11-25",
+     "subject": "status page: earlier feedback shows its full text, a readable #link and a 'show N pins' button that draws its pins on the picture"
+    },
     {
      "hash": "71bdb0b",
      "date": "2026-11-25",
@@ -4971,14 +4976,16 @@
      "hash": "892c5bf",
      "date": "2026-11-25",
      "subject": "hud-coverage selftest: fixture counters follow the re-skinned Lupine HUD; transparent-ink probes hide fill colour and beat themed !important"
-    },
-    {
-     "hash": "9e037ac",
-     "date": "2026-11-25",
-     "subject": "factory: CLEAN artCheck chameleander"
     }
    ],
    "last24": [
+    {
+     "hash": "8a0aef0",
+     "time": "2026-11-25T21:03:27+01:00",
+     "subject": "status page: earlier feedback shows its full text, a readable #link and a 'show N pins' button that draws its pins on the picture",
+     "agent": "lead",
+     "branch": "main"
+    },
     {
      "hash": "71bdb0b",
      "time": "2026-11-25T21:01:44+01:00",
@@ -5391,16 +5398,9 @@
      "subject": "chameleander step fix p1.1 leg 2: clean chip plate (rim ends only), phone stat rows, narrow hand tab, smaller values below 1080",
      "agent": "lead",
      "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "2f54c4d",
-     "time": "2026-11-25T16:02:22+01:00",
-     "subject": "factory: CLEAN code caninecommonwealth",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 206
+   "last24Count": 207
   },
   "trust": {
    "tests": {
