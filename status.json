@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T20:30:00.199Z",
+ "generatedAt": "2026-11-25T20:40:24.408Z",
  "stages": [
   {
    "id": "reader",
@@ -1967,11 +1967,14 @@
    "what": "Fan faction.",
    "state": "finished",
    "feedback": {
-    "open": 0,
+    "open": 2,
     "fixed": 0,
     "queued": 0,
     "needsLead": 0,
-    "issues": []
+    "issues": [
+     95,
+     94
+    ]
    },
    "img": "img/factions/chameleander.webp",
    "thumb": "img/factions/chameleander-thumb.webp",
@@ -4768,20 +4771,20 @@
  },
  "overview": {
   "release": {
-   "live": "dominion-v262",
+   "live": null,
    "main": "dominion-v262",
-   "commitsSinceLive": 606
+   "commitsSinceLive": null
   },
   "branches": {
    "list": [
     {
      "name": "factory/fan-rules-2",
-     "ahead": 6,
+     "ahead": 7,
      "date": "2026-11-25"
     },
     {
      "name": "factory/fan-rules-3",
-     "ahead": 17,
+     "ahead": 18,
      "date": "2026-11-25"
     },
     {
@@ -4839,7 +4842,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T20:30:00.000Z",
+    "lastRun": "2026-11-25T20:40:24.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4850,8 +4853,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T20:05:40.000Z",
-    "nextRun": "2026-11-25T20:35:00.000Z",
+    "lastRun": "2026-11-25T20:35:41.000Z",
+    "nextRun": "2026-11-25T21:05:00.000Z",
     "lastNote": null
    },
    {
@@ -4955,10 +4958,15 @@
     },
     {
      "date": "2026-11-25",
-     "commits": 123
+     "commits": 124
     }
    ],
    "latest": [
+    {
+     "hash": "f6f48ff",
+     "date": "2026-11-25",
+     "subject": "triage: Chameleander meeple head = Images/Meeples/chameleander.png (the user's original warrior)"
+    },
     {
      "hash": "8a0aef0",
      "date": "2026-11-25",
@@ -5003,14 +5011,30 @@
      "hash": "c65940a",
      "date": "2026-11-25",
      "subject": "Merge branch 'fix/hud-coverage-selftest' (hud-coverage selftest: current Lupine counter ids, transparent-ink probes reach every descendant)"
-    },
-    {
-     "hash": "892c5bf",
-     "date": "2026-11-25",
-     "subject": "hud-coverage selftest: fixture counters follow the re-skinned Lupine HUD; transparent-ink probes hide fill colour and beat themed !important"
     }
    ],
    "last24": [
+    {
+     "hash": "f6f48ff",
+     "time": "2026-11-25T21:40:07+01:00",
+     "subject": "triage: Chameleander meeple head = Images/Meeples/chameleander.png (the user's original warrior)",
+     "agent": "lead",
+     "branch": "main"
+    },
+    {
+     "hash": "5fd48b0",
+     "time": "2026-11-25T21:36:08+01:00",
+     "subject": "crumblingcourt HUD build (wip): AA on the dark frame (name, scoreboard, state title in pale blue/cream; dark bonus chips)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "cf19257",
+     "time": "2026-11-25T21:32:41+01:00",
+     "subject": "collegiumalfaromancy skin build (wip): cut parts on the live HUD, crests from the concept (fan-rules-3)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-3"
+    },
     {
      "hash": "f531a24",
      "time": "2026-11-25T21:11:47+01:00",
@@ -5409,30 +5433,9 @@
      "subject": "cirque: skin leg 1 handoff (fan-rules-4)",
      "agent": "lead",
      "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "cb3239f",
-     "time": "2026-11-25T16:23:26+01:00",
-     "subject": "factory: approver caninecommonwealth pass 1/1 DONE-OPEN (hud-coverage no result)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "1b96dfd",
-     "time": "2026-11-25T16:22:46+01:00",
-     "subject": "chameleander step fix p1.1 leg 2: Undo off the panel edge, short-screen stat rows, narrower tag below 1080, plain chips on tablet/phone",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "f8937ea",
-     "time": "2026-11-25T16:14:36+01:00",
-     "subject": "cirque: skin leg 1 - plates, rows, tiles and buttons on their cut parts; extra parts (top bar, Undo, cleared column, plain Pieces plate) cut",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
     }
    ],
-   "last24Count": 207
+   "last24Count": 209
   },
   "trust": {
    "tests": {
@@ -7633,10 +7636,10 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 1114,
-    "output": 317782,
-    "cacheCreate": 5312437,
-    "cacheRead": 50665417,
+    "input": 1140,
+    "output": 328251,
+    "cacheCreate": 5573141,
+    "cacheRead": 52250444,
     "stages": {
      "reader": {
       "input": 74,
@@ -7735,12 +7738,12 @@
       "total": 398982
      },
      "skin": {
-      "input": 88,
-      "output": 25844,
-      "cacheCreate": 313125,
-      "cacheRead": 4224786,
-      "fresh": 339057,
-      "total": 4563843
+      "input": 114,
+      "output": 36313,
+      "cacheCreate": 573829,
+      "cacheRead": 5809813,
+      "fresh": 610256,
+      "total": 6420069
      }
     },
     "runs": [
@@ -7757,8 +7760,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 5631333,
-    "total": 56296750
+    "fresh": 5902532,
+    "total": 58152976
    },
    "bumblebee": {
     "input": 3174,
@@ -7991,9 +7994,9 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 1608,
-    "output": 478445,
-    "cacheCreate": 7569958,
+    "input": 1610,
+    "output": 478670,
+    "cacheCreate": 7632137,
     "cacheRead": 80847618,
     "stages": {
      "reader": {
@@ -8109,12 +8112,12 @@
       "total": 1827507
      },
      "coverage": {
-      "input": 4,
-      "output": 516,
-      "cacheCreate": 120166,
+      "input": 6,
+      "output": 741,
+      "cacheCreate": 182345,
       "cacheRead": 0,
-      "fresh": 120686,
-      "total": 120686
+      "fresh": 183092,
+      "total": 183092
      }
     },
     "runs": [
@@ -8131,8 +8134,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 8050011,
-    "total": 88897629
+    "fresh": 8112417,
+    "total": 88960035
    },
    "camarilla": {
     "input": 4048,
@@ -8573,10 +8576,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 646,
-    "output": 237103,
-    "cacheCreate": 3273653,
-    "cacheRead": 35929512,
+    "input": 654,
+    "output": 237976,
+    "cacheCreate": 3412736,
+    "cacheRead": 36065223,
     "stages": {
      "reader": {
       "input": 80,
@@ -8627,12 +8630,12 @@
       "total": 14223269
      },
      "hudcheck": {
-      "input": 6,
-      "output": 1485,
-      "cacheCreate": 109739,
-      "cacheRead": 81292,
-      "fresh": 111230,
-      "total": 192522
+      "input": 14,
+      "output": 2358,
+      "cacheCreate": 248822,
+      "cacheRead": 217003,
+      "fresh": 251194,
+      "total": 468197
      }
     },
     "runs": [
@@ -8649,8 +8652,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3511402,
-    "total": 39440914
+    "fresh": 3651366,
+    "total": 39716589
    },
    "caninerepublic": {
     "input": 1960,
@@ -8869,10 +8872,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 496,
-    "output": 155976,
-    "cacheCreate": 1487427,
-    "cacheRead": 25353501,
+    "input": 500,
+    "output": 156628,
+    "cacheCreate": 1587393,
+    "cacheRead": 25494031,
     "stages": {
      "reader": {
       "input": 58,
@@ -8915,12 +8918,12 @@
       "total": 2653198
      },
      "hud": {
-      "input": 86,
-      "output": 16145,
-      "cacheCreate": 460323,
-      "cacheRead": 3761692,
-      "fresh": 476554,
-      "total": 4238246
+      "input": 90,
+      "output": 16797,
+      "cacheCreate": 560289,
+      "cacheRead": 3902222,
+      "fresh": 577176,
+      "total": 4479398
      }
     },
     "runs": [
@@ -8937,8 +8940,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1643899,
-    "total": 26997400
+    "fresh": 1744521,
+    "total": 27238552
    },
    "chameleander": {
     "input": 2108,
