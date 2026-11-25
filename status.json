@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T20:20:41.295Z",
+ "generatedAt": "2026-11-25T20:30:00.199Z",
  "stages": [
   {
    "id": "reader",
@@ -1806,11 +1806,13 @@
    "what": "Fan faction.",
    "state": "finished",
    "feedback": {
-    "open": 0,
+    "open": 1,
     "fixed": 0,
     "queued": 0,
     "needsLead": 0,
-    "issues": []
+    "issues": [
+     91
+    ]
    },
    "img": "img/factions/pirates2.webp",
    "thumb": "img/factions/pirates2-thumb.webp",
@@ -1823,11 +1825,13 @@
    "what": "Fan faction.",
    "state": "finished",
    "feedback": {
-    "open": 0,
+    "open": 1,
     "fixed": 0,
     "queued": 0,
     "needsLead": 0,
-    "issues": []
+    "issues": [
+     90
+    ]
    },
    "img": "img/factions/blacktail.webp",
    "thumb": "img/factions/blacktail-thumb.webp",
@@ -1857,11 +1861,13 @@
    "what": "Fan faction.",
    "state": "finished",
    "feedback": {
-    "open": 0,
+    "open": 1,
     "fixed": 0,
     "queued": 0,
     "needsLead": 0,
-    "issues": []
+    "issues": [
+     92
+    ]
    },
    "img": "img/factions/boars.webp",
    "thumb": "img/factions/boars-thumb.webp",
@@ -1874,11 +1880,13 @@
    "what": "Fan faction.",
    "state": "finished",
    "feedback": {
-    "open": 0,
+    "open": 1,
     "fixed": 0,
     "queued": 0,
     "needsLead": 0,
-    "issues": []
+    "issues": [
+     93
+    ]
    },
    "img": "img/factions/bonepatrol.webp",
    "thumb": "img/factions/bonepatrol-thumb.webp",
@@ -4831,7 +4839,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T20:20:41.000Z",
+    "lastRun": "2026-11-25T20:30:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -5424,7 +5432,7 @@
      "branch": "factory/fan-rules-4"
     }
    ],
-   "last24Count": 208
+   "last24Count": 207
   },
   "trust": {
    "tests": {
@@ -7625,9 +7633,9 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 1112,
-    "output": 317589,
-    "cacheCreate": 5180408,
+    "input": 1114,
+    "output": 317782,
+    "cacheCreate": 5312437,
     "cacheRead": 50665417,
     "stages": {
      "reader": {
@@ -7727,12 +7735,12 @@
       "total": 398982
      },
      "skin": {
-      "input": 86,
-      "output": 25651,
-      "cacheCreate": 181096,
+      "input": 88,
+      "output": 25844,
+      "cacheCreate": 313125,
       "cacheRead": 4224786,
-      "fresh": 206833,
-      "total": 4431619
+      "fresh": 339057,
+      "total": 4563843
      }
     },
     "runs": [
@@ -7749,8 +7757,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 5499109,
-    "total": 56164526
+    "fresh": 5631333,
+    "total": 56296750
    },
    "bumblebee": {
     "input": 3174,
@@ -7983,9 +7991,9 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 1606,
-    "output": 478152,
-    "cacheCreate": 7508356,
+    "input": 1608,
+    "output": 478445,
+    "cacheCreate": 7569958,
     "cacheRead": 80847618,
     "stages": {
      "reader": {
@@ -8101,12 +8109,12 @@
       "total": 1827507
      },
      "coverage": {
-      "input": 2,
-      "output": 223,
-      "cacheCreate": 58564,
+      "input": 4,
+      "output": 516,
+      "cacheCreate": 120166,
       "cacheRead": 0,
-      "fresh": 58789,
-      "total": 58789
+      "fresh": 120686,
+      "total": 120686
      }
     },
     "runs": [
@@ -8123,8 +8131,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 7988114,
-    "total": 88835732
+    "fresh": 8050011,
+    "total": 88897629
    },
    "camarilla": {
     "input": 4048,
@@ -8861,10 +8869,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 494,
-    "output": 155745,
-    "cacheCreate": 1388291,
-    "cacheRead": 25332924,
+    "input": 496,
+    "output": 155976,
+    "cacheCreate": 1487427,
+    "cacheRead": 25353501,
     "stages": {
      "reader": {
       "input": 58,
@@ -8907,12 +8915,12 @@
       "total": 2653198
      },
      "hud": {
-      "input": 84,
-      "output": 15914,
-      "cacheCreate": 361187,
-      "cacheRead": 3741115,
-      "fresh": 377185,
-      "total": 4118300
+      "input": 86,
+      "output": 16145,
+      "cacheCreate": 460323,
+      "cacheRead": 3761692,
+      "fresh": 476554,
+      "total": 4238246
      }
     },
     "runs": [
@@ -8929,8 +8937,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1544530,
-    "total": 26877454
+    "fresh": 1643899,
+    "total": 26997400
    },
    "chameleander": {
     "input": 2108,
