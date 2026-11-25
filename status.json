@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T19:30:08.282Z",
+ "generatedAt": "2026-11-25T19:40:00.186Z",
  "stages": [
   {
    "id": "reader",
@@ -213,90 +213,32 @@
   }
  ],
  "run": {
-  "id": "wf_37246409-676",
-  "modified": "2026-11-25T19:29:54.267Z",
+  "id": "wf_aadf05ca-a24",
+  "modified": "2026-11-25T19:39:06.523Z",
   "running": 1,
-  "faction": "cirque",
+  "faction": "crumblingcourt",
   "stageDone": [
    "setup",
    "reader",
    "theme",
    "rules",
    "rulesCheck",
-   "stepfix",
-   "hud",
-   "hudCheck",
-   "wireframe",
-   "quota",
-   "overlay",
-   "plate",
-   "cut",
-   "skin",
-   "judge"
+   "stepfix"
   ]
  },
  "now": {
-  "label": "judge:cirque:p1.2",
-  "stage": "judge",
-  "faction": "cirque",
+  "label": "rulescheck:crumblingcourt:p1.2",
+  "stage": "rulesCheck",
+  "faction": "crumblingcourt",
   "pass": 1,
   "try": 2,
   "phase": "Review",
-  "model": "sonnet",
+  "model": "opus",
   "running": true,
-  "start": "2026-11-25T19:29:54.265Z",
+  "start": "2026-11-25T19:39:06.519Z",
   "end": null
  },
  "scores": [
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:cirque:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 7.8
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:cirque:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 7
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:cirque:p1.3",
-   "pass": 1,
-   "try": 3,
-   "score": 8.8
-  },
-  {
-   "stage": "hudCheck",
-   "label": "hudcheck:cirque:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 0
-  },
-  {
-   "stage": "hudCheck",
-   "label": "hudcheck:cirque:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 9
-  },
-  {
-   "stage": "hudCheck",
-   "label": "hudcheck:cirque:p1.3",
-   "pass": 1,
-   "try": 3,
-   "score": 10
-  },
-  {
-   "stage": "judge",
-   "label": "judge:cirque:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 1.1
-  },
   {
    "stage": "rulesCheck",
    "label": "rulescheck:crumblingcourt:p1.1",
@@ -345,6 +287,62 @@
    "pass": 1,
    "try": 2,
    "score": 9
+  },
+  {
+   "stage": "hudCheck",
+   "label": "hudcheck:collegiumalfaromancy:p1.3",
+   "pass": 1,
+   "try": 3,
+   "score": 9
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:cirque:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 7.8
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:cirque:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 7
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:cirque:p1.3",
+   "pass": 1,
+   "try": 3,
+   "score": 8.8
+  },
+  {
+   "stage": "hudCheck",
+   "label": "hudcheck:cirque:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 0
+  },
+  {
+   "stage": "hudCheck",
+   "label": "hudcheck:cirque:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 9
+  },
+  {
+   "stage": "hudCheck",
+   "label": "hudcheck:cirque:p1.3",
+   "pass": 1,
+   "try": 3,
+   "score": 10
+  },
+  {
+   "stage": "judge",
+   "label": "judge:cirque:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 1.1
   },
   {
    "stage": "rulesCheck",
@@ -930,22 +928,22 @@
  "doneCount": 22,
  "recentRuns": [
   {
+   "id": "wf_aadf05ca-a24",
+   "modified": "2026-11-25T19:39:06.523Z",
+   "running": 1,
+   "agents": 7
+  },
+  {
+   "id": "wf_32517594-3d7",
+   "modified": "2026-11-25T19:30:10.717Z",
+   "running": 1,
+   "agents": 18
+  },
+  {
    "id": "wf_37246409-676",
    "modified": "2026-11-25T19:29:54.267Z",
    "running": 1,
    "agents": 28
-  },
-  {
-   "id": "wf_aadf05ca-a24",
-   "modified": "2026-11-25T19:29:43.574Z",
-   "running": 1,
-   "agents": 6
-  },
-  {
-   "id": "wf_32517594-3d7",
-   "modified": "2026-11-25T18:56:52.590Z",
-   "running": 1,
-   "agents": 17
   },
   {
    "id": "wf_e1250844-764",
@@ -1004,6 +1002,60 @@
  ],
  "factories": [
   {
+   "id": "wf_aadf05ca-a24",
+   "batch": "fan-rules-2",
+   "faction": "crumblingcourt",
+   "modified": "2026-11-25T19:39:06.523Z",
+   "now": {
+    "label": "rulescheck:crumblingcourt:p1.2",
+    "stage": "rulesCheck",
+    "faction": "crumblingcourt",
+    "pass": 1,
+    "try": 2,
+    "phase": "Review",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-25T19:39:06.519Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix"
+   ]
+  },
+  {
+   "id": "wf_32517594-3d7",
+   "batch": "fan-rules-3",
+   "faction": "collegiumalfaromancy",
+   "modified": "2026-11-25T19:30:10.717Z",
+   "now": {
+    "label": "wireframe:collegiumalfaromancy",
+    "stage": "wireframe",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Screenshot",
+    "model": "sonnet",
+    "running": true,
+    "start": "2026-11-25T19:30:10.710Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix",
+    "hud",
+    "hudCheck"
+   ]
+  },
+  {
    "id": "wf_37246409-676",
    "batch": "fan-rules-4",
    "faction": "cirque",
@@ -1039,59 +1091,6 @@
    ]
   },
   {
-   "id": "wf_aadf05ca-a24",
-   "batch": "fan-rules-2",
-   "faction": "crumblingcourt",
-   "modified": "2026-11-25T19:29:43.574Z",
-   "now": {
-    "label": "stepfix:crumblingcourt:p1.1",
-    "stage": "stepfix",
-    "faction": "crumblingcourt",
-    "pass": 1,
-    "try": 1,
-    "phase": "Build",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-25T19:29:43.570Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck"
-   ]
-  },
-  {
-   "id": "wf_32517594-3d7",
-   "batch": "fan-rules-3",
-   "faction": "collegiumalfaromancy",
-   "modified": "2026-11-25T18:56:52.590Z",
-   "now": {
-    "label": "hudcheck:collegiumalfaromancy:p1.3",
-    "stage": "hudCheck",
-    "faction": "collegiumalfaromancy",
-    "pass": 1,
-    "try": 3,
-    "phase": "Review",
-    "model": "sonnet",
-    "running": true,
-    "start": "2026-11-25T18:56:52.585Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix",
-    "hud",
-    "hudCheck"
-   ]
-  },
-  {
    "id": "wf_8cad20e0-2b9",
    "batch": "fan-rules-5",
    "faction": "croakers",
@@ -1120,6 +1119,30 @@
  ],
  "agents": [
   {
+   "label": "rulescheck:crumblingcourt:p1.2",
+   "stage": "rulesCheck",
+   "faction": "crumblingcourt",
+   "pass": 1,
+   "try": 2,
+   "phase": "Review",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-25T19:39:06.519Z",
+   "end": null
+  },
+  {
+   "label": "wireframe:collegiumalfaromancy",
+   "stage": "wireframe",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Screenshot",
+   "model": "sonnet",
+   "running": true,
+   "start": "2026-11-25T19:30:10.710Z",
+   "end": null
+  },
+  {
    "label": "judge:cirque:p1.2",
    "stage": "judge",
    "faction": "cirque",
@@ -1139,9 +1162,11 @@
    "try": 1,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-25T19:29:43.570Z",
-   "end": null
+   "end": "2026-11-25T19:39:06.398Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "rulescheck:crumblingcourt:p1.1",
@@ -1180,9 +1205,12 @@
    "try": 3,
    "phase": "Review",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-25T18:56:52.585Z",
-   "end": null
+   "end": "2026-11-25T19:30:10.578Z",
+   "score": 9,
+   "pass_ok": false,
+   "findings": 1
   },
   {
    "label": "theme:crumblingcourt",
@@ -1501,34 +1529,6 @@
    "running": false,
    "start": "2026-11-25T14:50:08.094Z",
    "end": "2026-11-25T14:52:02.201Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:cirque:plate",
-   "stage": "quota",
-   "faction": "cirque",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-25T14:49:56.543Z",
-   "end": "2026-11-25T14:50:07.527Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "hud:collegiumalfaromancy:p1.1",
-   "stage": "hud",
-   "faction": "collegiumalfaromancy",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-25T14:42:45.955Z",
-   "end": "2026-11-25T15:45:53.455Z",
    "score": null,
    "findings": 0
   }
@@ -4724,7 +4724,7 @@
    "list": [
     {
      "name": "factory/fan-rules-2",
-     "ahead": 3,
+     "ahead": 4,
      "date": "2026-11-25"
     },
     {
@@ -4739,7 +4739,7 @@
     },
     {
      "name": "factory/fan-rules-5",
-     "ahead": 12,
+     "ahead": 13,
      "date": "2026-11-25"
     },
     {
@@ -4787,7 +4787,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T19:30:08.000Z",
+    "lastRun": "2026-11-25T19:40:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4798,8 +4798,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T19:05:12.000Z",
-    "nextRun": "2026-11-25T19:35:00.000Z",
+    "lastRun": "2026-11-25T19:35:10.000Z",
+    "nextRun": "2026-11-25T20:05:00.000Z",
     "lastNote": null
    },
    {
@@ -4959,6 +4959,20 @@
     }
    ],
    "last24": [
+    {
+     "hash": "ad376b6",
+     "time": "2026-11-25T20:38:55+01:00",
+     "subject": "factory stepfix rules crumblingcourt: Move/Battle paid on the leg / battle open (cancel keeps them), A3 empty corner = diagonal corner (mapQ",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "39b291f",
+     "time": "2026-11-25T20:35:35+01:00",
+     "subject": "factory hud croakers: no generic state card repeating the bottom-bar counters (its labels were below AA at 1366-1440)",
+     "agent": "factory",
+     "branch": "factory/fan-rules-5"
+    },
     {
      "hash": "28a6b20",
      "time": "2026-11-25T20:29:45+01:00",
@@ -5364,23 +5378,9 @@
      "subject": "cirque: wireframe shot",
      "agent": "lead",
      "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "7ec8d1a",
-     "time": "2026-11-25T15:39:04+01:00",
-     "subject": "collegiumalfaromancy: reveal off once the revealed cards are back in hand; Defamer counts every piece kind",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "b808915",
-     "time": "2026-11-25T15:38:51+01:00",
-     "subject": "factory: CLEAN hudCheck cirque",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
     }
    ],
-   "last24Count": 198
+   "last24Count": 199
   },
   "trust": {
    "tests": {
@@ -7580,10 +7580,10 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 968,
-    "output": 281888,
-    "cacheCreate": 4591257,
-    "cacheRead": 44960679,
+    "input": 972,
+    "output": 282412,
+    "cacheCreate": 4594444,
+    "cacheRead": 45081780,
     "stages": {
      "reader": {
       "input": 74,
@@ -7642,12 +7642,12 @@
       "total": 1790953
      },
      "wireframe": {
-      "input": 2,
-      "output": 130,
-      "cacheCreate": 59237,
-      "cacheRead": 0,
-      "fresh": 59369,
-      "total": 59369
+      "input": 6,
+      "output": 654,
+      "cacheCreate": 62424,
+      "cacheRead": 121101,
+      "fresh": 63084,
+      "total": 184185
      }
     },
     "runs": [
@@ -7664,8 +7664,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 4874113,
-    "total": 49834792
+    "fresh": 4877828,
+    "total": 49959608
    },
    "bumblebee": {
     "input": 3174,
@@ -7898,10 +7898,10 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 1588,
-    "output": 474856,
-    "cacheCreate": 7227790,
-    "cacheRead": 80487935,
+    "input": 1592,
+    "output": 476076,
+    "cacheCreate": 7230126,
+    "cacheRead": 80618894,
     "stages": {
      "reader": {
       "input": 80,
@@ -8008,12 +8008,12 @@
       "total": 10553580
      },
      "judge": {
-      "input": 34,
-      "output": 6391,
-      "cacheCreate": 472033,
-      "cacheRead": 764275,
-      "fresh": 478458,
-      "total": 1242733
+      "input": 38,
+      "output": 7611,
+      "cacheCreate": 474369,
+      "cacheRead": 895234,
+      "fresh": 482018,
+      "total": 1377252
      }
     },
     "runs": [
@@ -8030,8 +8030,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 7704234,
-    "total": 88192169
+    "fresh": 7707794,
+    "total": 88326688
    },
    "camarilla": {
     "input": 4048,
@@ -8472,10 +8472,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 604,
-    "output": 228116,
-    "cacheCreate": 2429035,
-    "cacheRead": 33192151,
+    "input": 624,
+    "output": 231938,
+    "cacheCreate": 2436054,
+    "cacheRead": 35043851,
     "stages": {
      "reader": {
       "input": 80,
@@ -8518,12 +8518,12 @@
       "total": 6783442
      },
      "hud": {
-      "input": 154,
-      "output": 36771,
-      "cacheCreate": 900469,
-      "cacheRead": 9887389,
-      "fresh": 937394,
-      "total": 10824783
+      "input": 174,
+      "output": 40593,
+      "cacheCreate": 907488,
+      "cacheRead": 11739089,
+      "fresh": 948255,
+      "total": 12687344
      }
     },
     "runs": [
@@ -8540,8 +8540,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2657755,
-    "total": 35849906
+    "fresh": 2668616,
+    "total": 37712467
    },
    "caninerepublic": {
     "input": 1960,
@@ -8760,10 +8760,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 310,
-    "output": 108818,
-    "cacheCreate": 873414,
-    "cacheRead": 16759587,
+    "input": 368,
+    "output": 128609,
+    "cacheCreate": 984141,
+    "cacheRead": 19274907,
     "stages": {
      "reader": {
       "input": 58,
@@ -8790,20 +8790,20 @@
       "total": 10601606
      },
      "rulescheck": {
-      "input": 62,
-      "output": 13957,
-      "cacheCreate": 116409,
-      "cacheRead": 2844051,
-      "fresh": 130428,
-      "total": 2974479
+      "input": 76,
+      "output": 18018,
+      "cacheCreate": 199499,
+      "cacheRead": 3252240,
+      "fresh": 217593,
+      "total": 3469833
      },
      "stepfix": {
-      "input": 14,
-      "output": 1536,
-      "cacheCreate": 59602,
-      "cacheRead": 441504,
-      "fresh": 61152,
-      "total": 502656
+      "input": 58,
+      "output": 17266,
+      "cacheCreate": 87239,
+      "cacheRead": 2548635,
+      "fresh": 104563,
+      "total": 2653198
      }
     },
     "runs": [
@@ -8811,17 +8811,17 @@
       "id": "wf_aadf05ca-a24",
       "first": "2026-11-25",
       "last": "2026-11-25",
-      "agents": 5
+      "agents": 6
      }
     ],
-    "agents": 5,
+    "agents": 6,
     "first": "2026-11-25",
     "last": "2026-11-25",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 982542,
-    "total": 17742129
+    "fresh": 1113118,
+    "total": 20388025
    },
    "chameleander": {
     "input": 2108,
