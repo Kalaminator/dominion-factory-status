@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T18:40:35.950Z",
+ "generatedAt": "2026-11-25T18:50:00.170Z",
  "stages": [
   {
    "id": "reader",
@@ -4693,9 +4693,9 @@
  },
  "overview": {
   "release": {
-   "live": "dominion-v262",
+   "live": null,
    "main": "dominion-v262",
-   "commitsSinceLive": 603
+   "commitsSinceLive": null
   },
   "branches": {
    "list": [
@@ -4716,7 +4716,7 @@
     },
     {
      "name": "factory/fan-rules-5",
-     "ahead": 9,
+     "ahead": 10,
      "date": "2026-11-25"
     },
     {
@@ -4764,7 +4764,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T18:40:35.000Z",
+    "lastRun": "2026-11-25T18:50:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4880,10 +4880,15 @@
     },
     {
      "date": "2026-11-25",
-     "commits": 120
+     "commits": 121
     }
    ],
    "latest": [
+    {
+     "hash": "fcff69b",
+     "date": "2026-11-25",
+     "subject": "status-push: commit only what changed on top of origin/main (amend + force push re-sent ~42 MB every 10 min, GitHub cut it off with 408); sq"
+    },
     {
      "hash": "f71c68f",
      "date": "2026-11-25",
@@ -4928,14 +4933,23 @@
      "hash": "b862a38",
      "date": "2026-11-25",
      "subject": "factory art chameleander: new chameleon head warrior, ego token repainted"
-    },
-    {
-     "hash": "f4c1f50",
-     "date": "2026-11-25",
-     "subject": "Merge branch 'fix/hud-coverage-hang' (browser-lock first-in first-out queue + --status; hud-coverage step timeouts name the hung step)"
     }
    ],
    "last24": [
+    {
+     "hash": "3389ad6",
+     "time": "2026-11-25T19:48:57+01:00",
+     "subject": "factory hud croakers: functional HUD build, plain look: spec checklist (20 tiles, 5 counters, 3 tracks), kit rows + drawn icons (gust, poof,",
+     "agent": "factory",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "fcff69b",
+     "time": "2026-11-25T19:42:36+01:00",
+     "subject": "status-push: commit only what changed on top of origin/main (amend + force push re-sent ~42 MB every 10 min, GitHub cut it off with 408); sq",
+     "agent": "lead",
+     "branch": "main"
+    },
     {
      "hash": "ebed39f",
      "time": "2026-11-25T19:38:08+01:00",
@@ -5341,20 +5355,6 @@
      "subject": "factory stepfix HUD cirque (p1 try 2): accent hue rig places the faction's art-bearing buildings/tokens when it has no warrior art (Cirque b",
      "agent": "factory",
      "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "0073e3e",
-     "time": "2026-11-25T14:27:23+01:00",
-     "subject": "caninecommonwealth judge fix p1 leg 2: next-step tile = the concept's pale icon well (no gold rim), right-action-card 71.1 PASS; End/Undo/st",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "2163a8a",
-     "time": "2026-11-25T14:27:18+01:00",
-     "subject": "factory collegiumalfaromancy rules step fix: craft pieces need 2+ warriors, bird Rainy Night names one suit, constructs count in battle only",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
     }
    ],
    "last24Count": 194
@@ -7557,10 +7557,10 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 936,
-    "output": 276742,
-    "cacheCreate": 4092436,
-    "cacheRead": 44327300,
+    "input": 944,
+    "output": 277450,
+    "cacheCreate": 4156624,
+    "cacheRead": 44510747,
     "stages": {
      "reader": {
       "input": 74,
@@ -7595,12 +7595,12 @@
       "total": 11684358
      },
      "stepfix": {
-      "input": 348,
-      "output": 77048,
-      "cacheCreate": 1706478,
-      "cacheRead": 14995054,
-      "fresh": 1783874,
-      "total": 16778928
+      "input": 356,
+      "output": 77756,
+      "cacheCreate": 1770666,
+      "cacheRead": 15178501,
+      "fresh": 1848778,
+      "total": 17027279
      },
      "hud": {
       "input": 136,
@@ -7633,8 +7633,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 4370114,
-    "total": 48697414
+    "fresh": 4435018,
+    "total": 48945765
    },
    "bumblebee": {
     "input": 3174,
@@ -7867,10 +7867,10 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 1506,
-    "output": 449257,
-    "cacheCreate": 6664398,
-    "cacheRead": 76803084,
+    "input": 1546,
+    "output": 463010,
+    "cacheCreate": 6772257,
+    "cacheRead": 78567386,
     "stages": {
      "reader": {
       "input": 80,
@@ -7905,12 +7905,12 @@
       "total": 11860301
      },
      "stepfix": {
-      "input": 568,
-      "output": 141861,
-      "cacheCreate": 2765602,
-      "cacheRead": 28659023,
-      "fresh": 2908031,
-      "total": 31567054
+      "input": 608,
+      "output": 155614,
+      "cacheCreate": 2873461,
+      "cacheRead": 30423325,
+      "fresh": 3029683,
+      "total": 33453008
      },
      "hud": {
       "input": 142,
@@ -7999,8 +7999,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 7115161,
-    "total": 83918245
+    "fresh": 7236813,
+    "total": 85804199
    },
    "camarilla": {
     "input": 4048,
@@ -8441,10 +8441,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 536,
-    "output": 211940,
-    "cacheCreate": 1658340,
-    "cacheRead": 28241497,
+    "input": 548,
+    "output": 217224,
+    "cacheCreate": 1795193,
+    "cacheRead": 29032575,
     "stages": {
      "reader": {
       "input": 80,
@@ -8487,12 +8487,12 @@
       "total": 6783442
      },
      "hud": {
-      "input": 86,
-      "output": 20595,
-      "cacheCreate": 129774,
-      "cacheRead": 4936735,
-      "fresh": 150455,
-      "total": 5087190
+      "input": 98,
+      "output": 25879,
+      "cacheCreate": 266627,
+      "cacheRead": 5727813,
+      "fresh": 292604,
+      "total": 6020417
      }
     },
     "runs": [
@@ -8509,8 +8509,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1870816,
-    "total": 30112313
+    "fresh": 2012965,
+    "total": 31045540
    },
    "caninerepublic": {
     "input": 1960,
@@ -8729,10 +8729,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 68,
-    "output": 27952,
-    "cacheCreate": 177114,
-    "cacheRead": 2999113,
+    "input": 70,
+    "output": 28285,
+    "cacheCreate": 178778,
+    "cacheRead": 3066004,
     "stages": {
      "reader": {
       "input": 58,
@@ -8743,12 +8743,12 @@
       "total": 2886074
      },
      "theme": {
-      "input": 10,
-      "output": 1819,
-      "cacheCreate": 66891,
-      "cacheRead": 249453,
-      "fresh": 68720,
-      "total": 318173
+      "input": 12,
+      "output": 2152,
+      "cacheCreate": 68555,
+      "cacheRead": 316344,
+      "fresh": 70719,
+      "total": 387063
      }
     },
     "runs": [
@@ -8765,8 +8765,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 205134,
-    "total": 3204247
+    "fresh": 207133,
+    "total": 3273137
    },
    "chameleander": {
     "input": 2108,
