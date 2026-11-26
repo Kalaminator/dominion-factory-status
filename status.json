@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T05:59:40.656Z",
+ "generatedAt": "2026-11-26T06:00:01.993Z",
  "stages": [
   {
    "id": "reader",
@@ -4857,8 +4857,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T05:50:19.000Z",
-    "nextRun": "2026-11-26T06:00:00.000Z",
+    "lastRun": "2026-11-26T06:00:01.000Z",
+    "nextRun": null,
     "lastNote": null
    },
    {
@@ -7762,10 +7762,10 @@
     "total": 157115423
    },
    "marquistadors": {
-    "input": 1344,
-    "output": 492184,
-    "cacheCreate": 2712056,
-    "cacheRead": 72927404,
+    "input": 1350,
+    "output": 493660,
+    "cacheCreate": 2719357,
+    "cacheRead": 73157438,
     "stages": {
      "reader": {
       "input": 64,
@@ -7800,12 +7800,12 @@
       "total": 7134129
      },
      "stepfix": {
-      "input": 484,
-      "output": 149965,
-      "cacheCreate": 738245,
-      "cacheRead": 26403551,
-      "fresh": 888694,
-      "total": 27292245
+      "input": 490,
+      "output": 151441,
+      "cacheCreate": 745546,
+      "cacheRead": 26633585,
+      "fresh": 897477,
+      "total": 27531062
      },
      "hud": {
       "input": 166,
@@ -7894,8 +7894,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3205584,
-    "total": 76132988
+    "fresh": 3214367,
+    "total": 76371805
    },
    "collegiumalfaromancy": {
     "input": 2426,
@@ -8112,18 +8112,18 @@
     "total": 120478676
    },
    "eagleking": {
-    "input": 38,
-    "output": 14270,
-    "cacheCreate": 81255,
-    "cacheRead": 1507111,
+    "input": 42,
+    "output": 19172,
+    "cacheCreate": 91031,
+    "cacheRead": 1715820,
     "stages": {
      "reader": {
-      "input": 38,
-      "output": 14270,
-      "cacheCreate": 81255,
-      "cacheRead": 1507111,
-      "fresh": 95563,
-      "total": 1602674
+      "input": 42,
+      "output": 19172,
+      "cacheCreate": 91031,
+      "cacheRead": 1715820,
+      "fresh": 110245,
+      "total": 1826065
      }
     },
     "runs": [
@@ -8140,8 +8140,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 95563,
-    "total": 1602674
+    "fresh": 110245,
+    "total": 1826065
    },
    "bumblebee": {
     "input": 3174,
@@ -9684,10 +9684,10 @@
     "total": 82043195
    },
    "doomsayers": {
-    "input": 952,
-    "output": 347867,
-    "cacheCreate": 1821980,
-    "cacheRead": 51436265,
+    "input": 956,
+    "output": 350760,
+    "cacheCreate": 1826602,
+    "cacheRead": 51641937,
     "stages": {
      "reader": {
       "input": 54,
@@ -9722,12 +9722,12 @@
       "total": 5483005
      },
      "stepfix": {
-      "input": 160,
-      "output": 40158,
-      "cacheCreate": 253617,
-      "cacheRead": 7261156,
-      "fresh": 293935,
-      "total": 7555091
+      "input": 164,
+      "output": 43051,
+      "cacheCreate": 258239,
+      "cacheRead": 7466828,
+      "fresh": 301454,
+      "total": 7768282
      },
      "hud": {
       "input": 128,
@@ -9816,8 +9816,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2170799,
-    "total": 53607064
+    "fresh": 2178318,
+    "total": 53820255
    },
    "chameleander": {
     "input": 2108,
@@ -10028,10 +10028,10 @@
     "total": 114930982
    },
    "darkforest": {
-    "input": 1450,
-    "output": 453956,
-    "cacheCreate": 2908689,
-    "cacheRead": 73654925,
+    "input": 1454,
+    "output": 457082,
+    "cacheCreate": 2912087,
+    "cacheRead": 73848170,
     "stages": {
      "reader": {
       "input": 56,
@@ -10202,12 +10202,20 @@
       "total": 331147
      },
      "ux": {
-      "input": 60,
-      "output": 10116,
-      "cacheCreate": 75168,
-      "cacheRead": 2426722,
-      "fresh": 85344,
-      "total": 2512066
+      "input": 64,
+      "output": 13242,
+      "cacheCreate": 78566,
+      "cacheRead": 2619967,
+      "fresh": 91872,
+      "total": 2711839
+     },
+     "approve": {
+      "input": 0,
+      "output": 0,
+      "cacheCreate": 0,
+      "cacheRead": 0,
+      "fresh": 0,
+      "total": 0
      }
     },
     "runs": [
@@ -10215,17 +10223,17 @@
       "id": "wf_ef0b50b7-b4c",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 33
+      "agents": 34
      }
     ],
-    "agents": 33,
+    "agents": 34,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 11,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3364095,
-    "total": 77019020
+    "fresh": 3370623,
+    "total": 77218793
    },
    "boroughkings": {
     "input": 4260,
