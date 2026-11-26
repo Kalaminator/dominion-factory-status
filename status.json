@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T01:00:00.203Z",
+ "generatedAt": "2026-11-26T01:10:00.214Z",
  "stages": [
   {
    "id": "reader",
@@ -4787,7 +4787,7 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 608
+   "commitsSinceLive": 615
   },
   "branches": {
    "list": [
@@ -4809,11 +4809,6 @@
     {
      "name": "factory/fan-rules-5",
      "ahead": 24,
-     "date": "2026-11-26"
-    },
-    {
-     "name": "speed/browser-jobs",
-     "ahead": 5,
      "date": "2026-11-26"
     },
     {
@@ -4861,7 +4856,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T01:00:00.000Z",
+    "lastRun": "2026-11-26T01:10:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4872,8 +4867,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T00:35:41.000Z",
-    "nextRun": "2026-11-26T01:05:00.000Z",
+    "lastRun": "2026-11-26T01:05:41.000Z",
+    "nextRun": "2026-11-26T01:35:00.000Z",
     "lastNote": null
    },
    {
@@ -4977,10 +4972,45 @@
     },
     {
      "date": "2026-11-26",
-     "commits": 1
+     "commits": 8
     }
    ],
    "latest": [
+    {
+     "hash": "42a6612",
+     "date": "2026-11-26",
+     "subject": "Merge speed/browser-jobs: browser jobs ~10x faster (3D board held still in shots, off in DOM-only checks; --no-bare on sweeps that never rea"
+    },
+    {
+     "hash": "e4b73d1",
+     "date": "2026-11-26",
+     "subject": "speed/browser-jobs: handoff with the before/after numbers"
+    },
+    {
+     "hash": "8dc80a4",
+     "date": "2026-11-26",
+     "subject": "test-hud-overflow, hud-coverage: 3D board off (DOM-only checks; the WebGL board ate the CPU)"
+    },
+    {
+     "hash": "aa22e1c",
+     "date": "2026-11-26",
+     "subject": "shot-hud-themes: hold the 3D board still once the HUD state is final; --seed now fixes the dealt hand"
+    },
+    {
+     "hash": "0fd47f6",
+     "date": "2026-11-26",
+     "subject": "factory hudCheck: the 1366 contrast shot skips the bare boxes (only the 1920 --hand 6 shot's are read)"
+    },
+    {
+     "hash": "72d3578",
+     "date": "2026-11-26",
+     "subject": "shot-hud-themes --no-bare: the breakpoint/phase sweeps skip the per-box bare shots nobody reads (bumblebee 10-breakpoint --panels sweep 17m1"
+    },
+    {
+     "hash": "c9c6da2",
+     "date": "2026-11-26",
+     "subject": "browser-lock: re-read the slot count on every try (waiters queued before the 2-slot change kept slot 2 empty)"
+    },
     {
      "hash": "a806a8f",
      "date": "2026-11-26",
@@ -4995,44 +5025,30 @@
      "hash": "8a0aef0",
      "date": "2026-11-25",
      "subject": "status page: earlier feedback shows its full text, a readable #link and a 'show N pins' button that draws its pins on the picture"
-    },
-    {
-     "hash": "71bdb0b",
-     "date": "2026-11-25",
-     "subject": "status page: GitHub list reads skip the browser cache (a refresh within 60 s showed 'None yet' after saving feedback)"
-    },
-    {
-     "hash": "fcff69b",
-     "date": "2026-11-25",
-     "subject": "status-push: commit only what changed on top of origin/main (amend + force push re-sent ~42 MB every 10 min, GitHub cut it off with 408); sq"
-    },
-    {
-     "hash": "f71c68f",
-     "date": "2026-11-25",
-     "subject": "token log: chameleander"
-    },
-    {
-     "hash": "21a40d8",
-     "date": "2026-11-25",
-     "subject": "Merge branch 'factory/fan-rules-2' (Chameleander)"
-    },
-    {
-     "hash": "764ea8b",
-     "date": "2026-11-25",
-     "subject": "learn chameleander: track-reward overflow check, judge/skin-end one browser turn, lessons merged to ~3.5k words"
-    },
-    {
-     "hash": "9257555",
-     "date": "2026-11-25",
-     "subject": "factory: approve chameleander (fan-rules-2 pass 1/1)"
-    },
-    {
-     "hash": "589a76b",
-     "date": "2026-11-25",
-     "subject": "factory: CLEAN code chameleander"
     }
    ],
    "last24": [
+    {
+     "hash": "42a6612",
+     "time": "2026-11-26T02:04:42+01:00",
+     "subject": "Merge speed/browser-jobs: browser jobs ~10x faster (3D board held still in shots, off in DOM-only checks; --no-bare on sweeps that never rea",
+     "agent": "lead",
+     "branch": "main"
+    },
+    {
+     "hash": "e4b73d1",
+     "time": "2026-11-26T02:02:18+01:00",
+     "subject": "speed/browser-jobs: handoff with the before/after numbers",
+     "agent": "lead",
+     "branch": "main"
+    },
+    {
+     "hash": "8dc80a4",
+     "time": "2026-11-26T01:54:20+01:00",
+     "subject": "test-hud-overflow, hud-coverage: 3D board off (DOM-only checks; the WebGL board ate the CPU)",
+     "agent": "lead",
+     "branch": "main"
+    },
     {
      "hash": "4e885d9",
      "time": "2026-11-26T01:52:46+01:00",
@@ -5074,6 +5090,13 @@
      "subject": "factory: judge p1.2 collegiumalfaromancy",
      "agent": "factory",
      "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "aa22e1c",
+     "time": "2026-11-26T01:45:57+01:00",
+     "subject": "shot-hud-themes: hold the 3D board still once the HUD state is final; --seed now fixes the dealt hand",
+     "agent": "lead",
+     "branch": "main"
     },
     {
      "hash": "0b3ebcc",
@@ -5125,6 +5148,13 @@
      "branch": "factory/fan-rules-4"
     },
     {
+     "hash": "0fd47f6",
+     "time": "2026-11-26T00:53:04+01:00",
+     "subject": "factory hudCheck: the 1366 contrast shot skips the bare boxes (only the 1920 --hand 6 shot's are read)",
+     "agent": "factory",
+     "branch": "main"
+    },
+    {
      "hash": "620ac2c",
      "time": "2026-11-26T00:51:51+01:00",
      "subject": "factory hud croakers step fix leg 2: counters fit at 768, abilities fold to names instead of a cut panel, full scoreboard at 768, phone badg",
@@ -5137,6 +5167,13 @@
      "subject": "collegiumalfaromancy judge fix p1.1 (leg 2, wip): abilities tab re-cut on its painted banner (open-edge ok), abilities text off the bottom r",
      "agent": "lead",
      "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "72d3578",
+     "time": "2026-11-26T00:37:13+01:00",
+     "subject": "shot-hud-themes --no-bare: the breakpoint/phase sweeps skip the per-box bare shots nobody reads (bumblebee 10-breakpoint --panels sweep 17m1",
+     "agent": "lead",
+     "branch": "main"
     },
     {
      "hash": "233b2cc",
@@ -5158,6 +5195,13 @@
      "subject": "collegiumalfaromancy judge fix p1.1 (leg 1): accent wash on End + title underlines, row tags, offline, crafted, score rows, action cards, gh",
      "agent": "lead",
      "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "c9c6da2",
+     "time": "2026-11-26T00:14:02+01:00",
+     "subject": "browser-lock: re-read the slot count on every try (waiters queued before the 2-slot change kept slot 2 empty)",
+     "agent": "lead",
+     "branch": "main"
     },
     {
      "hash": "a806a8f",
@@ -5403,58 +5447,9 @@
      "subject": "factory hud croakers: no generic state card repeating the bottom-bar counters (its labels were below AA at 1366-1440)",
      "agent": "factory",
      "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "28a6b20",
-     "time": "2026-11-25T20:29:45+01:00",
-     "subject": "cirque: step fix judge p1.1 leg 2 - score rows on the painted rows (no doubled bars), taller action cards, phone Accolades digit inside its ",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "1fcea44",
-     "time": "2026-11-25T20:26:24+01:00",
-     "subject": "factory rules crumblingcourt leg 1: all 20 ledger rows built to the card (Setup A3, Advanced Setup script, Mountain King pawn + traitor bloc",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "ecb9660",
-     "time": "2026-11-25T20:10:04+01:00",
-     "subject": "test-fan-croakers: cro_items cell shows the item emoji",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "ce2b19e",
-     "time": "2026-11-25T20:09:53+01:00",
-     "subject": "factory hud croakers: Crafted Items cells show the item emoji (no 7px '+' glyph), compact tiles below 1000px tall (13 Daylight tiles)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "19b65a6",
-     "time": "2026-11-25T20:02:55+01:00",
-     "subject": "crumblingcourt: hudTheme on, stub theme CSS, bundle",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "3fa760f",
-     "time": "2026-11-25T19:56:43+01:00",
-     "subject": "collegiumalfaromancy HUD step fix p1 t2: accent rig fails no-hue-slider / no-board-sprite only when the faction has piece art (Art stage add",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "3389ad6",
-     "time": "2026-11-25T19:48:57+01:00",
-     "subject": "factory hud croakers: functional HUD build, plain look: spec checklist (20 tiles, 5 counters, 3 tracks), kit rows + drawn icons (gust, poof,",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
     }
    ],
-   "last24Count": 208
+   "last24Count": 215
   },
   "trust": {
    "tests": {
@@ -7662,9 +7657,9 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 1570,
-    "output": 464516,
-    "cacheCreate": 8691930,
+    "input": 1572,
+    "output": 464949,
+    "cacheCreate": 8753970,
     "cacheRead": 71137094,
     "stages": {
      "reader": {
@@ -7812,12 +7807,12 @@
       "total": 250738
      },
      "shots": {
-      "input": 2,
-      "output": 252,
-      "cacheCreate": 58950,
+      "input": 4,
+      "output": 685,
+      "cacheCreate": 120990,
       "cacheRead": 0,
-      "fresh": 59204,
-      "total": 59204
+      "fresh": 121679,
+      "total": 121679
      }
     },
     "runs": [
@@ -7834,8 +7829,8 @@
     "pictures": 5,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 9158016,
-    "total": 80295110
+    "fresh": 9220491,
+    "total": 80357585
    },
    "bumblebee": {
     "input": 3174,
@@ -8068,9 +8063,9 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 2242,
-    "output": 625026,
-    "cacheCreate": 10992024,
+    "input": 2244,
+    "output": 625358,
+    "cacheCreate": 11057799,
     "cacheRead": 107259550,
     "stages": {
      "reader": {
@@ -8122,12 +8117,12 @@
       "total": 18002570
      },
      "hudcheck": {
-      "input": 92,
-      "output": 16263,
-      "cacheCreate": 1259473,
+      "input": 94,
+      "output": 16595,
+      "cacheCreate": 1325248,
       "cacheRead": 1934679,
-      "fresh": 1275828,
-      "total": 3210507
+      "fresh": 1341937,
+      "total": 3276616
      },
      "wireframe": {
       "input": 8,
@@ -8278,8 +8273,8 @@
     "pictures": 5,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 11619292,
-    "total": 118878842
+    "fresh": 11685401,
+    "total": 118944951
    },
    "camarilla": {
     "input": 4048,
@@ -8720,10 +8715,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 1146,
-    "output": 381218,
-    "cacheCreate": 6783065,
-    "cacheRead": 59211954,
+    "input": 1158,
+    "output": 384354,
+    "cacheCreate": 6898005,
+    "cacheRead": 59900502,
     "stages": {
      "reader": {
       "input": 80,
@@ -8822,12 +8817,12 @@
       "total": 397718
      },
      "skin": {
-      "input": 146,
-      "output": 66046,
-      "cacheCreate": 488310,
-      "cacheRead": 7678498,
-      "fresh": 554502,
-      "total": 8233000
+      "input": 158,
+      "output": 69182,
+      "cacheCreate": 603250,
+      "cacheRead": 8367046,
+      "fresh": 672590,
+      "total": 9039636
      }
     },
     "runs": [
@@ -8844,8 +8839,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 7165429,
-    "total": 66377383
+    "fresh": 7283517,
+    "total": 67184019
    },
    "caninerepublic": {
     "input": 1960,
@@ -9064,10 +9059,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 820,
-    "output": 227336,
-    "cacheCreate": 4428054,
-    "cacheRead": 39922001,
+    "input": 824,
+    "output": 230107,
+    "cacheCreate": 4560350,
+    "cacheRead": 40052968,
     "stages": {
      "reader": {
       "input": 58,
@@ -9102,12 +9097,12 @@
       "total": 5840962
      },
      "stepfix": {
-      "input": 328,
-      "output": 76644,
-      "cacheCreate": 2139410,
-      "cacheRead": 15515820,
-      "fresh": 2216382,
-      "total": 17732202
+      "input": 332,
+      "output": 79415,
+      "cacheCreate": 2271706,
+      "cacheRead": 15646787,
+      "fresh": 2351453,
+      "total": 17998240
      },
      "hud": {
       "input": 110,
@@ -9140,8 +9135,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 4656210,
-    "total": 44578211
+    "fresh": 4791281,
+    "total": 44844249
    },
    "chameleander": {
     "input": 2108,
