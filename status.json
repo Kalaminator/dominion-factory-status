@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T01:30:41.288Z",
+ "generatedAt": "2026-11-26T01:31:20.952Z",
  "stages": [
   {
    "id": "reader",
@@ -1941,7 +1941,7 @@
    },
    "img": "img/factions/collegiumalfaromancy.webp",
    "thumb": "img/factions/collegiumalfaromancy-thumb.webp",
-   "shotAt": "2026-11-26T01:21:58.843Z"
+   "shotAt": "2026-11-26T01:31:20.873Z"
   },
   {
    "key": "croakers",
@@ -4772,7 +4772,7 @@
     "ok": true,
     "exit": 0,
     "lastRun": "2026-11-26T01:30:41.000Z",
-    "nextRun": null,
+    "nextRun": "2026-11-26T01:40:00.000Z",
     "lastNote": null
    },
    {
@@ -7578,10 +7578,10 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 1714,
-    "output": 500291,
-    "cacheCreate": 9312304,
-    "cacheRead": 76478743,
+    "input": 1724,
+    "output": 502663,
+    "cacheCreate": 9321713,
+    "cacheRead": 76847030,
     "stages": {
      "reader": {
       "input": 78,
@@ -7600,12 +7600,12 @@
       "total": 647957
      },
      "rules": {
-      "input": 102,
-      "output": 61376,
-      "cacheCreate": 225823,
-      "cacheRead": 6752369,
-      "fresh": 287301,
-      "total": 7039670
+      "input": 112,
+      "output": 63748,
+      "cacheCreate": 235232,
+      "cacheRead": 7120656,
+      "fresh": 299092,
+      "total": 7419748
      },
      "rulescheck": {
       "input": 230,
@@ -7788,8 +7788,8 @@
     "pictures": 5,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 9814309,
-    "total": 86293052
+    "fresh": 9826100,
+    "total": 86673130
    },
    "bumblebee": {
     "input": 3174,
@@ -8674,10 +8674,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 1282,
-    "output": 426185,
-    "cacheCreate": 7326684,
-    "cacheRead": 66452785,
+    "input": 1288,
+    "output": 429671,
+    "cacheCreate": 7328845,
+    "cacheRead": 66923468,
     "stages": {
      "reader": {
       "input": 80,
@@ -8712,12 +8712,12 @@
       "total": 3276762
      },
      "stepfix": {
-      "input": 502,
-      "output": 148656,
-      "cacheCreate": 2902214,
-      "cacheRead": 26293544,
-      "fresh": 3051372,
-      "total": 29344916
+      "input": 508,
+      "output": 152142,
+      "cacheCreate": 2904375,
+      "cacheRead": 26764227,
+      "fresh": 3057025,
+      "total": 29821252
      },
      "hud": {
       "input": 190,
@@ -8806,8 +8806,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 7754151,
-    "total": 74206936
+    "fresh": 7759804,
+    "total": 74683272
    },
    "caninerepublic": {
     "input": 1960,
