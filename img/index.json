@@ -136,7 +136,7 @@
   "group": "factions",
   "file": "img/factions/dragon_cult.webp",
   "thumb": "img/factions/dragon_cult-thumb.webp",
-  "shotAt": "2026-11-22T09:24:06.821Z",
+  "shotAt": "2026-11-26T06:18:33.806Z",
   "caption": ""
  },
  "cryptic_circle": {
@@ -185,21 +185,21 @@
   "group": "factions",
   "file": "img/factions/pirates.webp",
   "thumb": "img/factions/pirates-thumb.webp",
-  "shotAt": "2026-11-22T10:35:58.844Z",
+  "shotAt": "2026-11-26T06:18:41.102Z",
   "caption": ""
  },
  "pirates2": {
   "group": "factions",
   "file": "img/factions/pirates2.webp",
   "thumb": "img/factions/pirates2-thumb.webp",
-  "shotAt": "2026-11-22T16:22:28.034Z",
+  "shotAt": "2026-11-26T06:18:55.832Z",
   "caption": ""
  },
  "blackpaw": {
   "group": "factions",
   "file": "img/factions/blackpaw.webp",
   "thumb": "img/factions/blackpaw-thumb.webp",
-  "shotAt": "2026-11-22T14:34:01.370Z",
+  "shotAt": "2026-11-26T06:18:48.733Z",
   "caption": ""
  },
  "blacktail": {
@@ -227,7 +227,7 @@
   "group": "factions",
   "file": "img/factions/bonepatrol.webp",
   "thumb": "img/factions/bonepatrol-thumb.webp",
-  "shotAt": "2026-11-23T14:10:41.999Z",
+  "shotAt": "2026-11-26T06:19:02.052Z",
   "caption": ""
  },
  "boroughkings": {
@@ -290,7 +290,7 @@
   "group": "factions",
   "file": "img/factions/collegiumalfaromancy.webp",
   "thumb": "img/factions/collegiumalfaromancy-thumb.webp",
-  "shotAt": "2026-11-26T03:10:16.312Z",
+  "shotAt": "2026-11-26T06:19:21.346Z",
   "caption": ""
  },
  "croakers": {
@@ -304,14 +304,14 @@
   "group": "factions",
   "file": "img/factions/crumblingcourt.webp",
   "thumb": "img/factions/crumblingcourt-thumb.webp",
-  "shotAt": "2026-11-26T04:07:01.120Z",
+  "shotAt": "2026-11-26T06:19:09.389Z",
   "caption": ""
  },
  "darkforest": {
   "group": "factions",
   "file": "img/factions/darkforest.webp",
   "thumb": "img/factions/darkforest-thumb.webp",
-  "shotAt": "2026-11-26T06:01:15.064Z",
+  "shotAt": "2026-11-26T06:19:15.016Z",
   "caption": ""
  },
  "marquistadors": {
