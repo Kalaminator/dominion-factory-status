@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T22:50:06.601Z",
+ "generatedAt": "2026-11-26T22:52:27.158Z",
  "stages": [
   {
    "id": "reader",
@@ -213,45 +213,24 @@
   }
  ],
  "run": {
-  "id": "wf_6e5665ed-9c7",
-  "modified": "2026-11-26T22:49:32.957Z",
+  "id": "wf_40ce25e7-080",
+  "modified": "2026-11-26T22:50:58.898Z",
   "running": 1,
-  "faction": "hyena_necrocracy",
+  "faction": "",
   "stageDone": [
-   "setup",
-   "reader",
-   "theme",
-   "rules",
-   "rulesCheck",
-   "stepfix",
-   "hud",
-   "hudCheck",
-   "wireframe",
-   "quota",
-   "overlay",
-   "plate",
-   "cut",
-   "judge",
-   "coverage",
-   "art",
-   "artCheck",
-   "gates",
-   "shots",
-   "code",
-   "ux",
-   "skin"
+   "setup"
   ]
  },
  "now": {
-  "label": "approve:hyena_necrocracy:p1",
-  "stage": "approve",
-  "faction": "hyena_necrocracy",
+  "label": "reader:lemmings",
+  "stage": "reader",
+  "faction": "",
   "pass": null,
   "try": null,
-  "phase": "Approve",
+  "phase": "Read",
   "model": "opus",
   "running": true,
-  "start": "2026-11-26T22:49:32.951Z",
+  "start": "2026-11-26T22:50:58.884Z",
   "end": null
  },
  "scores": [
@@ -589,8 +568,8 @@
   },
   {
    "key": "hyena_necrocracy",
-   "passes": 0,
-   "commit": "-",
+   "passes": 1,
+   "commit": "8fc0521",
    "state": "RUNNING"
   },
   {
@@ -916,10 +895,16 @@
  "doneCount": 40,
  "recentRuns": [
   {
-   "id": "wf_6e5665ed-9c7",
-   "modified": "2026-11-26T22:49:32.957Z",
+   "id": "wf_40ce25e7-080",
+   "modified": "2026-11-26T22:50:58.898Z",
    "running": 1,
-   "agents": 30
+   "agents": 2
+  },
+  {
+   "id": "wf_6e5665ed-9c7",
+   "modified": "2026-11-26T22:50:38.592Z",
+   "running": 1,
+   "agents": 31
   },
   {
    "id": "wf_ea8fced9-4b5",
@@ -980,30 +965,45 @@
    "modified": "2026-11-26T16:59:22.326Z",
    "running": 0,
    "agents": 35
-  },
-  {
-   "id": "wf_8c20f353-c9c",
-   "modified": "2026-11-26T16:37:08.919Z",
-   "running": 0,
-   "agents": 32
   }
  ],
  "factories": [
   {
+   "id": "wf_40ce25e7-080",
+   "batch": "fan-rules-2",
+   "faction": "",
+   "modified": "2026-11-26T22:50:58.898Z",
+   "now": {
+    "label": "reader:lemmings",
+    "stage": "reader",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Read",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-26T22:50:58.884Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup"
+   ]
+  },
+  {
    "id": "wf_6e5665ed-9c7",
    "batch": "fan-rules-3",
    "faction": "hyena_necrocracy",
-   "modified": "2026-11-26T22:49:32.957Z",
+   "modified": "2026-11-26T22:50:38.592Z",
    "now": {
-    "label": "approve:hyena_necrocracy:p1",
-    "stage": "approve",
-    "faction": "hyena_necrocracy",
+    "label": "learn:hyena_necrocracy",
+    "stage": "learn",
+    "faction": "",
     "pass": null,
     "try": null,
     "phase": "Approve",
     "model": "opus",
     "running": true,
-    "start": "2026-11-26T22:49:32.951Z",
+    "start": "2026-11-26T22:50:38.578Z",
     "end": null
    },
    "stageDone": [
@@ -1028,6 +1028,7 @@
     "shots",
     "code",
     "ux",
+    "approve",
     "skin"
    ]
   },
@@ -1129,6 +1130,42 @@
    "findings": 0
   },
   {
+   "label": "reader:lemmings",
+   "stage": "reader",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Read",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T22:50:58.884Z",
+   "end": null
+  },
+  {
+   "label": "setup:fan-rules-2",
+   "stage": "setup",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Setup",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T22:50:53.948Z",
+   "end": "2026-11-26T22:50:58.866Z"
+  },
+  {
+   "label": "learn:hyena_necrocracy",
+   "stage": "learn",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Approve",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T22:50:38.578Z",
+   "end": null
+  },
+  {
    "label": "approve:hyena_necrocracy:p1",
    "stage": "approve",
    "faction": "hyena_necrocracy",
@@ -1136,9 +1173,12 @@
    "try": null,
    "phase": "Approve",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T22:49:32.951Z",
-   "end": null
+   "end": "2026-11-26T22:50:38.314Z",
+   "score": null,
+   "approve": true,
+   "findings": 10
   },
   {
    "label": "ux:hyena_necrocracy:p1",
@@ -1466,49 +1506,6 @@
    "end": "2026-11-26T22:21:43.235Z",
    "score": null,
    "findings": 0
-  },
-  {
-   "label": "theme:tinklones",
-   "stage": "theme",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T22:10:54.013Z",
-   "end": "2026-11-26T22:12:31.191Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "hud:horseoftheapocalypse:p1.1",
-   "stage": "hud",
-   "faction": "horseoftheapocalypse",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T22:10:07.055Z",
-   "end": "2026-11-26T22:32:51.401Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rulescheck:horseoftheapocalypse:p1.2",
-   "stage": "rulesCheck",
-   "faction": "horseoftheapocalypse",
-   "pass": 1,
-   "try": 2,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T22:07:30.518Z",
-   "end": "2026-11-26T22:10:06.919Z",
-   "score": 9,
-   "pass_ok": true,
-   "findings": 2
   }
  ],
  "elements": [
@@ -2201,7 +2198,7 @@
    },
    "img": "img/factions/host.webp",
    "thumb": "img/factions/host-thumb.webp",
-   "shotAt": "2026-11-26T22:38:48.998Z"
+   "shotAt": "2026-11-26T22:52:27.072Z"
   },
   {
    "key": "horseoftheapocalypse",
@@ -2235,7 +2232,7 @@
    },
    "img": "img/factions/hyena_necrocracy.webp",
    "thumb": "img/factions/hyena_necrocracy-thumb.webp",
-   "shotAt": "2026-11-18T21:05:06.063Z"
+   "shotAt": "2026-11-26T22:50:25.674Z"
   },
   {
    "key": "tinklones",
@@ -4714,18 +4711,13 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 1234
+   "commitsSinceLive": 1258
   },
   "branches": {
    "list": [
     {
-     "name": "factory/fan-rules-2",
-     "ahead": 23,
-     "date": "2026-11-26"
-    },
-    {
      "name": "factory/fan-rules-3",
-     "ahead": 22,
+     "ahead": 23,
      "date": "2026-11-26"
     },
     {
@@ -4784,7 +4776,7 @@
     "ok": true,
     "exit": 0,
     "lastRun": "2026-11-26T22:50:06.000Z",
-    "nextRun": null,
+    "nextRun": "2026-11-26T23:00:00.000Z",
     "lastNote": null
    },
    {
@@ -4899,10 +4891,50 @@
     },
     {
      "date": "2026-11-26",
-     "commits": 540
+     "commits": 564
     }
    ],
    "latest": [
+    {
+     "hash": "261c2ba",
+     "date": "2026-11-26",
+     "subject": "Merge branch 'factory/fan-rules-2' (Host of Light, key host)"
+    },
+    {
+     "hash": "844fe81",
+     "date": "2026-11-26",
+     "subject": "learn host: mode-card overflow check (Free Leaders, Host), skin prompt frame inset + opaque off faces + crafted box on its paint, HUD prompt"
+    },
+    {
+     "hash": "ab78ddf",
+     "date": "2026-11-26",
+     "subject": "factory fan-rules-2 host: approver pass 1/1, APPROVED (DONE), open majors listed"
+    },
+    {
+     "hash": "c5354d2",
+     "date": "2026-11-26",
+     "subject": "factory: CLEAN code host"
+    },
+    {
+     "hash": "f9a35e9",
+     "date": "2026-11-26",
+     "subject": "factory: CLEAN artCheck host"
+    },
+    {
+     "hash": "5a29f22",
+     "date": "2026-11-26",
+     "subject": "host: art stage, drawn badger warrior head, repainted firebrand token"
+    },
+    {
+     "hash": "40083fd",
+     "date": "2026-11-26",
+     "subject": "factory: judge p1.2 host"
+    },
+    {
+     "hash": "79e547f",
+     "date": "2026-11-26",
+     "subject": "factory fan-rules-2 host: judge fix p1 try 1 leg 2 (panels re-cut at painted frames, right panel on its painted rows, ghost words filled; th"
+    },
     {
      "hash": "f9345a6",
      "date": "2026-11-26",
@@ -4912,49 +4944,23 @@
      "hash": "9720ac5",
      "date": "2026-11-26",
      "subject": "Merge branch 'factory/fan-rules-5' (Honeycomb Clergy, key honeycomb)"
-    },
-    {
-     "hash": "a4d6bca",
-     "date": "2026-11-26",
-     "subject": "bristling: Score / Draw auto tiles carry their count word (the auto-tile count check from fan-rules-4 flags them)"
-    },
-    {
-     "hash": "2a3786a",
-     "date": "2026-11-26",
-     "subject": "learn honeycomb: test-hud-overflow 'track state:' (cell states alike beyond text colour; fires on Honeycomb Penitence, Eagleking Advisors), "
-    },
-    {
-     "hash": "dc75d46",
-     "date": "2026-11-26",
-     "subject": "test-fan-advsetup: check the grizzly tree against the forests legal when it was placed, not the end-of-setup homelands (flaky)"
-    },
-    {
-     "hash": "063ecf1",
-     "date": "2026-11-26",
-     "subject": "token log: horseoftheapocalypse pass 1"
-    },
-    {
-     "hash": "8e96972",
-     "date": "2026-11-26",
-     "subject": "factory: approver honeycomb (fan-rules-5 pass 1/1, APPROVED, DONE)"
-    },
-    {
-     "hash": "9ba6481",
-     "date": "2026-11-26",
-     "subject": "factory: CLEAN code honeycomb"
-    },
-    {
-     "hash": "a11ae75",
-     "date": "2026-11-26",
-     "subject": "factory: CLEAN artCheck honeycomb"
-    },
-    {
-     "hash": "e1020ae",
-     "date": "2026-11-26",
-     "subject": "honeycomb art: bee warrior, cathedral tile, flower token (drawn new)"
     }
    ],
    "last24": [
+    {
+     "hash": "5cf6ce6",
+     "time": "2026-11-26T23:50:30+01:00",
+     "subject": "factory: approve hyena_necrocracy (fan-rules-3 pass 1/1, DONE)",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "261c2ba",
+     "time": "2026-11-26T23:50:23+01:00",
+     "subject": "Merge branch 'factory/fan-rules-2' (Host of Light, key host)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-2"
+    },
     {
      "hash": "8fc0521",
      "time": "2026-11-26T23:49:22+01:00",
@@ -5149,14 +5155,14 @@
      "time": "2026-11-26T23:04:48+01:00",
      "subject": "Merge branch 'fix/main-flakes'",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "9720ac5",
      "time": "2026-11-26T23:04:36+01:00",
      "subject": "Merge branch 'factory/fan-rules-5' (Honeycomb Clergy, key honeycomb)",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "58bd825",
@@ -5177,7 +5183,7 @@
      "time": "2026-11-26T23:01:58+01:00",
      "subject": "bristling: Score / Draw auto tiles carry their count word (the auto-tile count check from fan-rules-4 flags them)",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "3762cef",
@@ -5198,14 +5204,14 @@
      "time": "2026-11-26T22:57:25+01:00",
      "subject": "learn honeycomb: test-hud-overflow 'track state:' (cell states alike beyond text colour; fires on Honeycomb Penitence, Eagleking Advisors), ",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "dc75d46",
      "time": "2026-11-26T22:56:29+01:00",
      "subject": "test-fan-advsetup: check the grizzly tree against the forests legal when it was placed, not the end-of-setup homelands (flaky)",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "28346e9",
@@ -5226,7 +5232,7 @@
      "time": "2026-11-26T22:48:23+01:00",
      "subject": "token log: horseoftheapocalypse pass 1",
      "agent": "lead",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "21ec222",
@@ -5247,14 +5253,14 @@
      "time": "2026-11-26T22:46:05+01:00",
      "subject": "factory: approver honeycomb (fan-rules-5 pass 1/1, APPROVED, DONE)",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "9ba6481",
      "time": "2026-11-26T22:43:32+01:00",
      "subject": "factory: CLEAN code honeycomb",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "91e845f",
@@ -5275,14 +5281,14 @@
      "time": "2026-11-26T22:40:07+01:00",
      "subject": "factory: CLEAN artCheck honeycomb",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "e1020ae",
      "time": "2026-11-26T22:38:47+01:00",
      "subject": "honeycomb art: bee warrior, cathedral tile, flower token (drawn new)",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "1f10eb2",
@@ -5331,14 +5337,14 @@
      "time": "2026-11-26T22:33:51+01:00",
      "subject": "factory: judge honeycomb p1.2",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "398ad7f",
      "time": "2026-11-26T22:30:58+01:00",
      "subject": "factory: honeycomb judge fix leg 2c (concept phase/hint pills in the top bar, Pieces grid on the concept columns, phone VP ghost in flow; ha",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "ea5d36a",
@@ -5360,23 +5366,9 @@
      "subject": "factory: wireframe shot hyena_necrocracy",
      "agent": "factory",
      "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "ffaef48",
-     "time": "2026-11-26T22:27:02+01:00",
-     "subject": "factory: stepfix judge p1.1 leg 2 horseoftheapocalypse (ghost rows on their frames 57/64, off tiles no grayscale +5, FAN badge gold)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "6ab59bd",
-     "time": "2026-11-26T22:26:51+01:00",
-     "subject": "factory: CLEAN hudCheck hyena_necrocracy",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
     }
    ],
-   "last24Count": 625
+   "last24Count": 627
   },
   "trust": {
    "tests": {
@@ -6889,18 +6881,18 @@
  "tokens": {
   "factions": {
    "other": {
-    "input": 17829,
-    "output": 3813467,
-    "cacheCreate": 37962751,
-    "cacheRead": 503221335,
+    "input": 17833,
+    "output": 3813834,
+    "cacheCreate": 38003666,
+    "cacheRead": 503301074,
     "stages": {
      "setup": {
-      "input": 384,
-      "output": 32489,
-      "cacheCreate": 5073161,
-      "cacheRead": 6099427,
-      "fresh": 5106034,
-      "total": 11205461
+      "input": 388,
+      "output": 32856,
+      "cacheCreate": 5114076,
+      "cacheRead": 6179166,
+      "fresh": 5147320,
+      "total": 11326486
      },
      "spec": {
       "input": 3500,
@@ -7489,6 +7481,12 @@
       "agents": 2
      },
      {
+      "id": "wf_40ce25e7-080",
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "agents": 1
+     },
+     {
       "id": "wf_63367871-0f9",
       "first": "2026-11-26",
       "last": "2026-11-26",
@@ -7585,14 +7583,14 @@
       "agents": 2
      }
     ],
-    "agents": 390,
+    "agents": 391,
     "first": "2026-11-04",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": false,
-    "fresh": 41794047,
-    "total": 545015382
+    "fresh": 41835333,
+    "total": 545136407
    },
    "caninecommonwealth": {
     "input": 2984,
@@ -8453,10 +8451,10 @@
     "total": 133535124
    },
    "horseoftheapocalypse": {
-    "input": 1682,
-    "output": 580352,
-    "cacheCreate": 3787205,
-    "cacheRead": 89262051,
+    "input": 1690,
+    "output": 582961,
+    "cacheCreate": 3792315,
+    "cacheRead": 89841647,
     "stages": {
      "reader": {
       "input": 62,
@@ -8555,12 +8553,12 @@
       "total": 702115
      },
      "skin": {
-      "input": 296,
-      "output": 128923,
-      "cacheCreate": 417955,
-      "cacheRead": 17560588,
-      "fresh": 547174,
-      "total": 18107762
+      "input": 304,
+      "output": 131532,
+      "cacheCreate": 423065,
+      "cacheRead": 18140184,
+      "fresh": 554901,
+      "total": 18695085
      },
      "judge": {
       "input": 22,
@@ -8663,8 +8661,8 @@
     "pictures": 6,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 4369239,
-    "total": 93631290
+    "fresh": 4376966,
+    "total": 94218613
    },
    "eyriesend": {
     "input": 2630,
@@ -10186,6 +10184,38 @@
     "fresh": 3260881,
     "total": 75972503
    },
+   "lemmings": {
+    "input": 38,
+    "output": 7104,
+    "cacheCreate": 69983,
+    "cacheRead": 1349841,
+    "stages": {
+     "reader": {
+      "input": 38,
+      "output": 7104,
+      "cacheCreate": 69983,
+      "cacheRead": 1349841,
+      "fresh": 77125,
+      "total": 1426966
+     }
+    },
+    "runs": [
+     {
+      "id": "wf_40ce25e7-080",
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "agents": 1
+     }
+    ],
+    "agents": 1,
+    "first": "2026-11-26",
+    "last": "2026-11-26",
+    "pictures": 0,
+    "failedPictures": 0,
+    "isFaction": true,
+    "fresh": 77125,
+    "total": 1426966
+   },
    "croakers": {
     "input": 3416,
     "output": 984403,
@@ -10643,10 +10673,10 @@
     "total": 323774404
    },
    "hyena_necrocracy": {
-    "input": 1312,
-    "output": 450385,
-    "cacheCreate": 2580722,
-    "cacheRead": 74884240,
+    "input": 1362,
+    "output": 462243,
+    "cacheCreate": 2697384,
+    "cacheRead": 77088136,
     "stages": {
      "reader": {
       "input": 100,
@@ -10817,12 +10847,20 @@
       "total": 2887630
      },
      "approve": {
-      "input": 12,
-      "output": 2004,
-      "cacheCreate": 71908,
-      "cacheRead": 340053,
-      "fresh": 73924,
-      "total": 413977
+      "input": 18,
+      "output": 5905,
+      "cacheCreate": 75934,
+      "cacheRead": 560127,
+      "fresh": 81857,
+      "total": 641984
+     },
+     "learn": {
+      "input": 44,
+      "output": 7957,
+      "cacheCreate": 112636,
+      "cacheRead": 1983822,
+      "fresh": 120637,
+      "total": 2104459
      }
     },
     "runs": [
@@ -10830,17 +10868,17 @@
       "id": "wf_6e5665ed-9c7",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 29
+      "agents": 30
      }
     ],
-    "agents": 29,
+    "agents": 30,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 6,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3032419,
-    "total": 77916659
+    "fresh": 3160989,
+    "total": 80249125
    },
    "freeleaders": {
     "input": 1536,
@@ -12971,10 +13009,10 @@
     "total": 84883327
    },
    "tinklones": {
-    "input": 540,
-    "output": 206729,
-    "cacheCreate": 958829,
-    "cacheRead": 30651137,
+    "input": 548,
+    "output": 216023,
+    "cacheCreate": 972827,
+    "cacheRead": 31226155,
     "stages": {
      "reader": {
       "input": 52,
@@ -13017,12 +13055,12 @@
       "total": 2787412
      },
      "hud": {
-      "input": 62,
-      "output": 19017,
-      "cacheCreate": 117251,
-      "cacheRead": 3328072,
-      "fresh": 136330,
-      "total": 3464402
+      "input": 70,
+      "output": 28311,
+      "cacheCreate": 131249,
+      "cacheRead": 3903090,
+      "fresh": 159630,
+      "total": 4062720
      }
     },
     "runs": [
@@ -13039,8 +13077,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1166098,
-    "total": 31817235
+    "fresh": 1189398,
+    "total": 32415553
    },
    "darkforest": {
     "input": 1586,
