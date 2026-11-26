@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T23:10:00.854Z",
+ "generatedAt": "2026-11-26T23:20:00.179Z",
  "stages": [
   {
    "id": "reader",
@@ -213,10 +213,10 @@
   }
  ],
  "run": {
-  "id": "wf_12036dec-63e",
-  "modified": "2026-11-26T23:09:53.674Z",
+  "id": "wf_ea8fced9-4b5",
+  "modified": "2026-11-26T23:19:19.181Z",
   "running": 1,
-  "faction": "horseoftheapocalypse",
+  "faction": "tinklones",
   "stageDone": [
    "setup",
    "reader",
@@ -228,29 +228,50 @@
    "hudCheck",
    "wireframe",
    "quota",
-   "overlay",
-   "plate",
-   "cut",
-   "judge",
-   "coverage",
-   "art",
-   "artCheck",
-   "skin"
+   "overlay"
   ]
  },
  "now": {
-  "label": "gates:horseoftheapocalypse:p1",
-  "stage": "gates",
-  "faction": "horseoftheapocalypse",
+  "label": "plate:tinklones",
+  "stage": "plate",
+  "faction": "",
   "pass": null,
   "try": null,
-  "phase": "Review",
+  "phase": "Art",
   "model": "sonnet",
   "running": true,
-  "start": "2026-11-26T23:09:53.668Z",
+  "start": "2026-11-26T23:19:19.177Z",
   "end": null
  },
  "scores": [
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:tinklones:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 6.5
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:tinklones:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 8
+  },
+  {
+   "stage": "hudCheck",
+   "label": "hudcheck:tinklones:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 9
+  },
+  {
+   "stage": "hudCheck",
+   "label": "hudcheck:tinklones:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 10
+  },
   {
    "stage": "rulesCheck",
    "label": "rulescheck:horseoftheapocalypse:p1.1",
@@ -294,25 +315,11 @@
    "score": 8
   },
   {
-   "stage": "rulesCheck",
-   "label": "rulescheck:tinklones:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 6.5
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:tinklones:p1.2",
-   "pass": 1,
-   "try": 2,
+   "stage": "ux",
+   "label": "ux:horseoftheapocalypse:p1",
+   "pass": null,
+   "try": null,
    "score": 8
-  },
-  {
-   "stage": "hudCheck",
-   "label": "hudcheck:tinklones:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 9
   }
  ],
  "factions": [
@@ -553,7 +560,7 @@
   {
    "key": "horseoftheapocalypse",
    "passes": 1,
-   "commit": "a735c5b",
+   "commit": "c149732",
    "state": "RUNNING"
   },
   {
@@ -582,9 +589,9 @@
   },
   {
    "key": "lostpowers",
-   "state": "TODO",
    "passes": 0,
-   "commit": "-"
+   "commit": "-",
+   "state": "RUNNING"
   },
   {
    "key": "necropossums",
@@ -884,35 +891,35 @@
  "counts": {
   "DONE": 36,
   "DONE-OPEN": 5,
-  "RUNNING": 3,
-  "TODO": 50
+  "RUNNING": 4,
+  "TODO": 49
  },
  "total": 94,
  "doneCount": 41,
  "recentRuns": [
   {
-   "id": "wf_12036dec-63e",
-   "modified": "2026-11-26T23:09:53.674Z",
-   "running": 1,
-   "agents": 24
-  },
-  {
    "id": "wf_ea8fced9-4b5",
-   "modified": "2026-11-26T23:07:30.126Z",
+   "modified": "2026-11-26T23:19:19.181Z",
    "running": 1,
-   "agents": 12
-  },
-  {
-   "id": "wf_47d7b24a-41e",
-   "modified": "2026-11-26T23:07:12.978Z",
-   "running": 1,
-   "agents": 2
+   "agents": 17
   },
   {
    "id": "wf_40ce25e7-080",
-   "modified": "2026-11-26T23:07:09.668Z",
+   "modified": "2026-11-26T23:18:11.836Z",
    "running": 1,
-   "agents": 5
+   "agents": 6
+  },
+  {
+   "id": "wf_12036dec-63e",
+   "modified": "2026-11-26T23:15:37.835Z",
+   "running": 1,
+   "agents": 29
+  },
+  {
+   "id": "wf_47d7b24a-41e",
+   "modified": "2026-11-26T23:12:16.457Z",
+   "running": 1,
+   "agents": 4
   },
   {
    "id": "wf_6e5665ed-9c7",
@@ -965,20 +972,75 @@
  ],
  "factories": [
   {
+   "id": "wf_ea8fced9-4b5",
+   "batch": "fan-rules-5",
+   "faction": "tinklones",
+   "modified": "2026-11-26T23:19:19.181Z",
+   "now": {
+    "label": "plate:tinklones",
+    "stage": "plate",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Art",
+    "model": "sonnet",
+    "running": true,
+    "start": "2026-11-26T23:19:19.177Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix",
+    "hud",
+    "hudCheck",
+    "wireframe",
+    "quota",
+    "overlay"
+   ]
+  },
+  {
+   "id": "wf_40ce25e7-080",
+   "batch": "fan-rules-2",
+   "faction": "lemmings",
+   "modified": "2026-11-26T23:18:11.836Z",
+   "now": {
+    "label": "rulescheck:lemmings:p1.1",
+    "stage": "rulesCheck",
+    "faction": "lemmings",
+    "pass": 1,
+    "try": 1,
+    "phase": "Review",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-26T23:18:11.823Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules"
+   ]
+  },
+  {
    "id": "wf_12036dec-63e",
    "batch": "fan-rules-4",
    "faction": "horseoftheapocalypse",
-   "modified": "2026-11-26T23:09:53.674Z",
+   "modified": "2026-11-26T23:15:37.835Z",
    "now": {
-    "label": "gates:horseoftheapocalypse:p1",
-    "stage": "gates",
-    "faction": "horseoftheapocalypse",
+    "label": "learn:horseoftheapocalypse",
+    "stage": "learn",
+    "faction": "",
     "pass": null,
     "try": null,
-    "phase": "Review",
-    "model": "sonnet",
+    "phase": "Approve",
+    "model": "opus",
     "running": true,
-    "start": "2026-11-26T23:09:53.668Z",
+    "start": "2026-11-26T23:15:37.829Z",
     "end": null
    },
    "stageDone": [
@@ -999,80 +1061,35 @@
     "coverage",
     "art",
     "artCheck",
+    "gates",
+    "shots",
+    "code",
+    "ux",
+    "approve",
     "skin"
-   ]
-  },
-  {
-   "id": "wf_ea8fced9-4b5",
-   "batch": "fan-rules-5",
-   "faction": "tinklones",
-   "modified": "2026-11-26T23:07:30.126Z",
-   "now": {
-    "label": "hudcheck:tinklones:p1.2",
-    "stage": "hudCheck",
-    "faction": "tinklones",
-    "pass": 1,
-    "try": 2,
-    "phase": "Review",
-    "model": "sonnet",
-    "running": true,
-    "start": "2026-11-26T23:07:30.121Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix",
-    "hud",
-    "hudCheck"
    ]
   },
   {
    "id": "wf_47d7b24a-41e",
    "batch": "fan-rules-3",
-   "faction": "",
-   "modified": "2026-11-26T23:07:12.978Z",
+   "faction": "lostpowers",
+   "modified": "2026-11-26T23:12:16.457Z",
    "now": {
-    "label": "reader:lostpowers",
-    "stage": "reader",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Read",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-26T23:07:12.973Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup"
-   ]
-  },
-  {
-   "id": "wf_40ce25e7-080",
-   "batch": "fan-rules-2",
-   "faction": "lemmings",
-   "modified": "2026-11-26T23:07:09.668Z",
-   "now": {
-    "label": "rules:lemmings:p1.2",
+    "label": "rules:lostpowers:p1.1",
     "stage": "rules",
-    "faction": "lemmings",
+    "faction": "lostpowers",
     "pass": 1,
-    "try": 2,
+    "try": 1,
     "phase": "Build",
     "model": "opus",
     "running": true,
-    "start": "2026-11-26T23:07:09.651Z",
+    "start": "2026-11-26T23:12:16.452Z",
     "end": null
    },
    "stageDone": [
     "setup",
     "reader",
-    "theme",
-    "rules"
+    "theme"
    ]
   }
  ],
@@ -1091,6 +1108,181 @@
    "findings": 0
   },
   {
+   "label": "plate:tinklones",
+   "stage": "plate",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Art",
+   "model": "sonnet",
+   "running": true,
+   "start": "2026-11-26T23:19:19.177Z",
+   "end": null
+  },
+  {
+   "label": "quota:tinklones:plate",
+   "stage": "quota",
+   "faction": "tinklones",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T23:19:10.391Z",
+   "end": "2026-11-26T23:19:18.997Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "rulescheck:lemmings:p1.1",
+   "stage": "rulesCheck",
+   "faction": "lemmings",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T23:18:11.823Z",
+   "end": null
+  },
+  {
+   "label": "learn:horseoftheapocalypse",
+   "stage": "learn",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Approve",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T23:15:37.829Z",
+   "end": null
+  },
+  {
+   "label": "approve:horseoftheapocalypse:p1",
+   "stage": "approve",
+   "faction": "horseoftheapocalypse",
+   "pass": null,
+   "try": null,
+   "phase": "Approve",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T23:14:13.803Z",
+   "end": "2026-11-26T23:15:37.722Z",
+   "score": null,
+   "approve": true,
+   "findings": 9
+  },
+  {
+   "label": "rules:lostpowers:p1.1",
+   "stage": "rules",
+   "faction": "lostpowers",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T23:12:16.452Z",
+   "end": null
+  },
+  {
+   "label": "ux:horseoftheapocalypse:p1",
+   "stage": "ux",
+   "faction": "horseoftheapocalypse",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T23:11:55.141Z",
+   "end": "2026-11-26T23:14:13.677Z",
+   "score": 8,
+   "pass_ok": true,
+   "findings": 6
+  },
+  {
+   "label": "code:horseoftheapocalypse:p1",
+   "stage": "code",
+   "faction": "horseoftheapocalypse",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T23:11:55.137Z",
+   "end": "2026-11-26T23:12:20.241Z",
+   "score": null,
+   "pass_ok": true,
+   "findings": 0
+  },
+  {
+   "label": "theme:lostpowers",
+   "stage": "theme",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Concept",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T23:11:38.449Z",
+   "end": "2026-11-26T23:12:16.356Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "overlay:tinklones",
+   "stage": "overlay",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Concept",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T23:11:31.611Z",
+   "end": "2026-11-26T23:19:10.256Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "quota:tinklones:overlay",
+   "stage": "quota",
+   "faction": "tinklones",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T23:11:23.387Z",
+   "end": "2026-11-26T23:11:31.349Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "wireframe:tinklones",
+   "stage": "wireframe",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Screenshot",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T23:11:06.695Z",
+   "end": "2026-11-26T23:11:23.161Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "shots:horseoftheapocalypse:p1",
+   "stage": "shots",
+   "faction": "horseoftheapocalypse",
+   "pass": null,
+   "try": null,
+   "phase": "Screenshot",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T23:10:48.339Z",
+   "end": "2026-11-26T23:11:55.126Z"
+  },
+  {
    "label": "gates:horseoftheapocalypse:p1",
    "stage": "gates",
    "faction": "horseoftheapocalypse",
@@ -1098,9 +1290,12 @@
    "try": null,
    "phase": "Review",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T23:09:53.668Z",
-   "end": null
+   "end": "2026-11-26T23:10:47.690Z",
+   "score": null,
+   "pass_ok": true,
+   "findings": 0
   },
   {
    "label": "artcheck:horseoftheapocalypse:p1.1",
@@ -1168,9 +1363,12 @@
    "try": 2,
    "phase": "Review",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T23:07:30.121Z",
-   "end": null
+   "end": "2026-11-26T23:11:05.037Z",
+   "score": 10,
+   "pass_ok": true,
+   "findings": 0
   },
   {
    "label": "reader:lostpowers",
@@ -1180,9 +1378,11 @@
    "try": null,
    "phase": "Read",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T23:07:12.973Z",
-   "end": null
+   "end": "2026-11-26T23:11:38.307Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "rules:lemmings:p1.2",
@@ -1192,9 +1392,11 @@
    "try": 2,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T23:07:09.651Z",
-   "end": null
+   "end": "2026-11-26T23:18:11.676Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "setup:fan-rules-3",
@@ -1308,189 +1510,6 @@
    "score": 7.1,
    "pass_ok": true,
    "findings": 14
-  },
-  {
-   "label": "reader:lemmings",
-   "stage": "reader",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Read",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T22:50:58.884Z",
-   "end": "2026-11-26T22:56:17.079Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "setup:fan-rules-2",
-   "stage": "setup",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Setup",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T22:50:53.948Z",
-   "end": "2026-11-26T22:50:58.866Z"
-  },
-  {
-   "label": "hud:tinklones:p1.1",
-   "stage": "hud",
-   "faction": "tinklones",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T22:44:34.199Z",
-   "end": "2026-11-26T23:01:52.412Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rulescheck:tinklones:p1.2",
-   "stage": "rulesCheck",
-   "faction": "tinklones",
-   "pass": 1,
-   "try": 2,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T22:41:46.252Z",
-   "end": "2026-11-26T22:44:34.104Z",
-   "score": 8,
-   "pass_ok": true,
-   "findings": 2
-  },
-  {
-   "label": "cut:horseoftheapocalypse",
-   "stage": "cut",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Art",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T22:37:19.084Z",
-   "end": "2026-11-26T22:37:23.000Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "plate:horseoftheapocalypse",
-   "stage": "plate",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Art",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T22:37:15.019Z",
-   "end": "2026-11-26T22:37:18.836Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:horseoftheapocalypse:plate",
-   "stage": "quota",
-   "faction": "horseoftheapocalypse",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T22:37:06.762Z",
-   "end": "2026-11-26T22:37:14.688Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "overlay:horseoftheapocalypse",
-   "stage": "overlay",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T22:37:02.313Z",
-   "end": "2026-11-26T22:37:06.500Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:horseoftheapocalypse:overlay",
-   "stage": "quota",
-   "faction": "horseoftheapocalypse",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T22:36:54.188Z",
-   "end": "2026-11-26T22:37:02.082Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "wireframe:horseoftheapocalypse",
-   "stage": "wireframe",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Screenshot",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T22:36:50.252Z",
-   "end": "2026-11-26T22:36:54.017Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "stepfix:tinklones:p1.1",
-   "stage": "stepfix",
-   "faction": "tinklones",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T22:36:18.351Z",
-   "end": "2026-11-26T22:41:46.164Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "hudcheck:horseoftheapocalypse:p1.1",
-   "stage": "hudCheck",
-   "faction": "horseoftheapocalypse",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T22:32:51.548Z",
-   "end": "2026-11-26T22:36:48.544Z",
-   "score": 10,
-   "pass_ok": true,
-   "findings": 0
-  },
-  {
-   "label": "rulescheck:tinklones:p1.1",
-   "stage": "rulesCheck",
-   "faction": "tinklones",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T22:32:08.625Z",
-   "end": "2026-11-26T22:36:18.257Z",
-   "score": 6.5,
-   "pass_ok": false,
-   "findings": 5
   }
  ],
  "elements": [
@@ -2217,7 +2236,7 @@
    },
    "img": "img/factions/horseoftheapocalypse.webp",
    "thumb": "img/factions/horseoftheapocalypse-thumb.webp",
-   "shotAt": "2026-11-26T21:42:22.968Z"
+   "shotAt": "2026-11-26T23:15:25.595Z"
   },
   {
    "key": "tinklones",
@@ -2252,6 +2271,23 @@
    "img": "img/factions/lemmings.webp",
    "thumb": "img/factions/lemmings-thumb.webp",
    "shotAt": "2026-11-18T21:05:19.979Z"
+  },
+  {
+   "key": "lostpowers",
+   "name": "Lostpowers",
+   "group": "Factions",
+   "what": "Fan faction.",
+   "state": "running",
+   "feedback": {
+    "open": 0,
+    "fixed": 0,
+    "queued": 0,
+    "needsLead": 0,
+    "issues": []
+   },
+   "img": "img/factions/lostpowers.webp",
+   "thumb": "img/factions/lostpowers-thumb.webp",
+   "shotAt": "2026-11-18T21:05:28.380Z"
   },
   {
    "key": "woodland",
@@ -2509,23 +2545,6 @@
    "img": "img/factions/croakers.webp",
    "thumb": "img/factions/croakers-thumb.webp",
    "shotAt": "2026-11-26T05:59:40.486Z"
-  },
-  {
-   "key": "lostpowers",
-   "name": "Lostpowers",
-   "group": "Factions",
-   "what": "Fan faction.",
-   "state": "waiting",
-   "feedback": {
-    "open": 0,
-    "fixed": 0,
-    "queued": 0,
-    "needsLead": 0,
-    "issues": []
-   },
-   "img": "img/factions/lostpowers.webp",
-   "thumb": "img/factions/lostpowers-thumb.webp",
-   "shotAt": "2026-11-18T21:05:28.380Z"
   },
   {
    "key": "necropossums",
@@ -4696,23 +4715,28 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 1284
+   "commitsSinceLive": 1286
   },
   "branches": {
    "list": [
     {
      "name": "factory/fan-rules-2",
-     "ahead": 3,
+     "ahead": 4,
+     "date": "2026-11-27"
+    },
+    {
+     "name": "factory/fan-rules-3",
+     "ahead": 2,
      "date": "2026-11-27"
     },
     {
      "name": "factory/fan-rules-4",
-     "ahead": 36,
+     "ahead": 39,
      "date": "2026-11-27"
     },
     {
      "name": "factory/fan-rules-5",
-     "ahead": 10,
+     "ahead": 13,
      "date": "2026-11-27"
     },
     {
@@ -4760,7 +4784,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T23:10:00.000Z",
+    "lastRun": "2026-11-26T23:20:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4782,9 +4806,9 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T19:17:00.000Z",
-    "nextRun": "2026-11-26T23:17:00.000Z",
-    "lastNote": "2026-11-26T20:17:00+01:00 skip: lock dominion-chromium held"
+    "lastRun": "2026-11-26T23:17:00.000Z",
+    "nextRun": "2026-11-27T03:17:00.000Z",
+    "lastNote": "2026-11-27T00:17:00+01:00 skip: factory worktree active in the last 45 min"
    },
    {
     "key": "hardener",
@@ -4881,6 +4905,16 @@
    ],
    "latest": [
     {
+     "hash": "64ceb1a",
+     "date": "2026-11-27",
+     "subject": "factory lessons: a setup placement is judged against the board at the pick, not END (two flaky tests today)"
+    },
+    {
+     "hash": "1469404",
+     "date": "2026-11-27",
+     "subject": "test-fan-advsetup: judge the hyena homeland against the enemy homelands at placement time, not end of setup (flaky)"
+    },
+    {
      "hash": "0a2b59f",
      "date": "2026-11-27",
      "subject": "Merge factory/fan-rules-3 (Hyena Necrocracy, approved)"
@@ -4919,19 +4953,86 @@
      "hash": "b546cb6",
      "date": "2026-11-26",
      "subject": "factory: CLEAN artCheck hyena_necrocracy"
-    },
-    {
-     "hash": "844fe81",
-     "date": "2026-11-26",
-     "subject": "learn host: mode-card overflow check (Free Leaders, Host), skin prompt frame inset + opaque off faces + crafted box on its paint, HUD prompt"
-    },
-    {
-     "hash": "0a8c5bd",
-     "date": "2026-11-26",
-     "subject": "hyena_necrocracy: crypt tile hue toward faction green (piece-art check ok)"
     }
    ],
    "last24": [
+    {
+     "hash": "c060ae7",
+     "time": "2026-11-27T00:19:07+01:00",
+     "subject": "tinklones: concept over wireframe (theme-judge PASS 7), overlay.md, theme brief",
+     "agent": "lead",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "dd7e667",
+     "time": "2026-11-27T00:18:00+01:00",
+     "subject": "lemmings rules build leg 2: cache removal rule (fanPieceSafe ctx {ci, remover}), Scouting Reward per kind + Raided on every removal (battle,",
+     "agent": "lead",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "360c2f8",
+     "time": "2026-11-27T00:15:29+01:00",
+     "subject": "factory: approver horseoftheapocalypse (fan-rules-4 pass 1/1, APPROVED, DONE; minors listed)",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "c149732",
+     "time": "2026-11-27T00:14:03+01:00",
+     "subject": "factory: CLEAN ux horseoftheapocalypse",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "7d99b07",
+     "time": "2026-11-27T00:12:20+01:00",
+     "subject": "factory: CLEAN code horseoftheapocalypse",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "54f96ed",
+     "time": "2026-11-27T00:12:12+01:00",
+     "subject": "lostpowers: hudTheme on + neutral theme stub",
+     "agent": "lead",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "3f1fde6",
+     "time": "2026-11-27T00:11:28+01:00",
+     "subject": "card reader lostpowers (fan-rules-3): ledger 26 rows, brief, Vault fixed to the card (8 Old Friends, deck of 4), user-list",
+     "agent": "lead",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "b4d8065",
+     "time": "2026-11-27T00:11:21+01:00",
+     "subject": "tinklones: wireframe shot",
+     "agent": "lead",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "aa4b2ef",
+     "time": "2026-11-27T00:11:05+01:00",
+     "subject": "factory: CLEAN hudCheck tinklones",
+     "agent": "factory",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "64ceb1a",
+     "time": "2026-11-27T00:10:37+01:00",
+     "subject": "factory lessons: a setup placement is judged against the board at the pick, not END (two flaky tests today)",
+     "agent": "factory",
+     "branch": "main"
+    },
+    {
+     "hash": "1469404",
+     "time": "2026-11-27T00:10:20+01:00",
+     "subject": "test-fan-advsetup: judge the hyena homeland against the enemy homelands at placement time, not end of setup (flaky)",
+     "agent": "lead",
+     "branch": "main"
+    },
     {
      "hash": "bb3294e",
      "time": "2026-11-27T00:09:48+01:00",
@@ -5274,86 +5375,9 @@
      "subject": "horseoftheapocalypse rules fix 2: stand up on any enemy turn, Corrupted Items scores no points + hits only the crafting clearing, quick setu",
      "agent": "lead",
      "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "2a3786a",
-     "time": "2026-11-26T22:57:25+01:00",
-     "subject": "learn honeycomb: test-hud-overflow 'track state:' (cell states alike beyond text colour; fires on Honeycomb Penitence, Eagleking Advisors), ",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "dc75d46",
-     "time": "2026-11-26T22:56:29+01:00",
-     "subject": "test-fan-advsetup: check the grizzly tree against the forests legal when it was placed, not the end-of-setup homelands (flaky)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "28346e9",
-     "time": "2026-11-26T22:54:51+01:00",
-     "subject": "Merge main into factory/fan-rules-4 (Horse of the Apocalypse)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "0559bb8",
-     "time": "2026-11-26T22:48:42+01:00",
-     "subject": "factory fan-rules-2 host: judge fix p1 try 1 (frame insets at every breakpoint, overflow 10/10 PASS, accent 1.94%, tracker plate whole with ",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "063ecf1",
-     "time": "2026-11-26T22:48:23+01:00",
-     "subject": "token log: horseoftheapocalypse pass 1",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "21ec222",
-     "time": "2026-11-26T22:47:47+01:00",
-     "subject": "learn horseoftheapocalypse: art stage re-runs test-hud-overflow (piece art shrank swarm cells to 19px), auto-tile count check in test-hud-ac",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "08a8b4e",
-     "time": "2026-11-26T22:47:16+01:00",
-     "subject": "hyena_necrocracy skin leg 1: hn-skin-parts.py (painted-box parts, right column twins cleared), theme skin block; overflow 10/10 PASS (fan-ru",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "8e96972",
-     "time": "2026-11-26T22:46:05+01:00",
-     "subject": "factory: approver honeycomb (fan-rules-5 pass 1/1, APPROVED, DONE)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "9ba6481",
-     "time": "2026-11-26T22:43:32+01:00",
-     "subject": "factory: CLEAN code honeycomb",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "91e845f",
-     "time": "2026-11-26T22:41:55+01:00",
-     "subject": "factory: approver horseoftheapocalypse (fan-rules-4 pass 1/1, NOT APPROVED, DONE-OPEN: swarm track cells under 20px)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "a735c5b",
-     "time": "2026-11-26T22:40:59+01:00",
-     "subject": "factory: CLEAN ux horseoftheapocalypse",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
     }
    ],
-   "last24Count": 639
+   "last24Count": 647
   },
   "trust": {
    "tests": {
@@ -6125,11 +6149,11 @@
   },
   "chatgpt": {
    "quota": {
-    "seen": "2026-11-26T22:43:09.202Z",
+    "seen": "2026-11-26T23:17:21.285Z",
     "primary": {
-     "usedPercent": 4,
+     "usedPercent": 7,
      "windowMinutes": 300,
-     "resetsAt": "2026-11-27T03:24:02.000Z"
+     "resetsAt": "2026-11-27T03:24:01.000Z"
     },
     "secondary": {
      "usedPercent": 3,
@@ -6138,8 +6162,8 @@
     }
    },
    "calls": {
-    "today": 133,
-    "last7": 299,
+    "today": 135,
+    "last7": 301,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
@@ -6182,7 +6206,8 @@
      "horseoftheapocalypse": 6,
      "honeycomb": 8,
      "host": 5,
-     "hyena_necrocracy": 6
+     "hyena_necrocracy": 6,
+     "tinklones": 2
     },
     "failed": 1
    }
@@ -8442,10 +8467,10 @@
     "total": 133535124
    },
    "horseoftheapocalypse": {
-    "input": 1834,
-    "output": 629265,
-    "cacheCreate": 4331537,
-    "cacheRead": 96246364,
+    "input": 2002,
+    "output": 666061,
+    "cacheCreate": 4727416,
+    "cacheRead": 103410946,
     "stages": {
      "reader": {
       "input": 62,
@@ -8584,52 +8609,52 @@
       "total": 1220410
      },
      "gates": {
-      "input": 14,
-      "output": 2092,
-      "cacheCreate": 85247,
-      "cacheRead": 348109,
-      "fresh": 87353,
-      "total": 435462
+      "input": 18,
+      "output": 2373,
+      "cacheCreate": 87135,
+      "cacheRead": 474409,
+      "fresh": 89526,
+      "total": 563935
      },
      "shots": {
-      "input": 4,
-      "output": 459,
-      "cacheCreate": 62569,
-      "cacheRead": 58946,
-      "fresh": 63032,
-      "total": 121978
+      "input": 8,
+      "output": 939,
+      "cacheCreate": 104334,
+      "cacheRead": 138678,
+      "fresh": 105281,
+      "total": 243959
      },
      "code": {
-      "input": 14,
-      "output": 2067,
-      "cacheCreate": 52556,
-      "cacheRead": 423251,
-      "fresh": 54637,
-      "total": 477888
+      "input": 30,
+      "output": 4380,
+      "cacheCreate": 112136,
+      "cacheRead": 928573,
+      "fresh": 116546,
+      "total": 1045119
      },
      "ux": {
-      "input": 56,
-      "output": 13493,
-      "cacheCreate": 86650,
-      "cacheRead": 2427446,
-      "fresh": 100199,
-      "total": 2527645
+      "input": 118,
+      "output": 25495,
+      "cacheCreate": 168096,
+      "cacheRead": 5082784,
+      "fresh": 193709,
+      "total": 5276493
      },
      "approve": {
-      "input": 12,
-      "output": 6655,
-      "cacheCreate": 77492,
-      "cacheRead": 350874,
-      "fresh": 84159,
-      "total": 435033
+      "input": 36,
+      "output": 13925,
+      "cacheCreate": 157252,
+      "cacheRead": 1142459,
+      "fresh": 171213,
+      "total": 1313672
      },
      "learn": {
-      "input": 86,
-      "output": 25795,
-      "cacheCreate": 145381,
-      "cacheRead": 4289148,
-      "fresh": 171262,
-      "total": 4460410
+      "input": 144,
+      "output": 40245,
+      "cacheCreate": 276821,
+      "cacheRead": 7295453,
+      "fresh": 317210,
+      "total": 7612663
      }
     },
     "runs": [
@@ -8637,7 +8662,7 @@
       "id": "wf_12036dec-63e",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 23
+      "agents": 28
      },
      {
       "id": "wf_3ba7982f-745",
@@ -8646,14 +8671,14 @@
       "agents": 28
      }
     ],
-    "agents": 51,
+    "agents": 56,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 6,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 4962636,
-    "total": 101209000
+    "fresh": 5395479,
+    "total": 108806425
    },
    "eyriesend": {
     "input": 2630,
@@ -10176,10 +10201,10 @@
     "total": 75972503
    },
    "lemmings": {
-    "input": 266,
-    "output": 100690,
-    "cacheCreate": 437789,
-    "cacheRead": 14391100,
+    "input": 342,
+    "output": 146550,
+    "cacheCreate": 566127,
+    "cacheRead": 18955924,
     "stages": {
      "reader": {
       "input": 80,
@@ -10198,12 +10223,20 @@
       "total": 455591
      },
      "rules": {
-      "input": 172,
-      "output": 65675,
-      "cacheCreate": 257968,
-      "cacheRead": 10313950,
-      "fresh": 323815,
-      "total": 10637765
+      "input": 220,
+      "output": 102775,
+      "cacheCreate": 303133,
+      "cacheRead": 13740230,
+      "fresh": 406128,
+      "total": 14146358
+     },
+     "rulescheck": {
+      "input": 28,
+      "output": 8760,
+      "cacheCreate": 83173,
+      "cacheRead": 1138544,
+      "fresh": 91961,
+      "total": 1230505
      }
     },
     "runs": [
@@ -10211,31 +10244,47 @@
       "id": "wf_40ce25e7-080",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 4
+      "agents": 5
      }
     ],
-    "agents": 4,
+    "agents": 5,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 538745,
-    "total": 14929845
+    "fresh": 713019,
+    "total": 19668943
    },
    "lostpowers": {
-    "input": 52,
-    "output": 15837,
-    "cacheCreate": 95092,
-    "cacheRead": 2228977,
+    "input": 164,
+    "output": 74309,
+    "cacheCreate": 314042,
+    "cacheRead": 8611314,
     "stages": {
      "reader": {
-      "input": 52,
-      "output": 15837,
-      "cacheCreate": 95092,
-      "cacheRead": 2228977,
-      "fresh": 110981,
-      "total": 2339958
+      "input": 70,
+      "output": 28162,
+      "cacheCreate": 110149,
+      "cacheRead": 3348533,
+      "fresh": 138381,
+      "total": 3486914
+     },
+     "theme": {
+      "input": 10,
+      "output": 2088,
+      "cacheCreate": 47737,
+      "cacheRead": 274122,
+      "fresh": 49835,
+      "total": 323957
+     },
+     "rules": {
+      "input": 84,
+      "output": 44059,
+      "cacheCreate": 156156,
+      "cacheRead": 4988659,
+      "fresh": 200299,
+      "total": 5188958
      }
     },
     "runs": [
@@ -10243,17 +10292,17 @@
       "id": "wf_47d7b24a-41e",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 1
+      "agents": 3
      }
     ],
-    "agents": 1,
+    "agents": 3,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 110981,
-    "total": 2339958
+    "fresh": 388515,
+    "total": 8999829
    },
    "croakers": {
     "input": 3416,
@@ -13048,10 +13097,10 @@
     "total": 84883327
    },
    "tinklones": {
-    "input": 622,
-    "output": 237040,
-    "cacheCreate": 1164747,
-    "cacheRead": 34985604,
+    "input": 670,
+    "output": 244896,
+    "cacheCreate": 1410578,
+    "cacheRead": 36334251,
     "stages": {
      "reader": {
       "input": 52,
@@ -13102,12 +13151,44 @@
       "total": 6323707
      },
      "hudcheck": {
-      "input": 10,
-      "output": 3121,
-      "cacheCreate": 111660,
-      "cacheRead": 207545,
-      "fresh": 114791,
-      "total": 322336
+      "input": 12,
+      "output": 3572,
+      "cacheCreate": 114483,
+      "cacheRead": 272295,
+      "fresh": 118067,
+      "total": 390362
+     },
+     "wireframe": {
+      "input": 8,
+      "output": 750,
+      "cacheCreate": 41963,
+      "cacheRead": 204129,
+      "fresh": 42721,
+      "total": 246850
+     },
+     "quota": {
+      "input": 8,
+      "output": 308,
+      "cacheCreate": 101337,
+      "cacheRead": 137305,
+      "fresh": 101653,
+      "total": 238958
+     },
+     "overlay": {
+      "input": 24,
+      "output": 5711,
+      "cacheCreate": 57800,
+      "cacheRead": 800249,
+      "fresh": 63535,
+      "total": 863784
+     },
+     "plate": {
+      "input": 6,
+      "output": 636,
+      "cacheCreate": 41908,
+      "cacheRead": 142214,
+      "fresh": 42550,
+      "total": 184764
      }
     },
     "runs": [
@@ -13115,17 +13196,17 @@
       "id": "wf_ea8fced9-4b5",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 11
+      "agents": 16
      }
     ],
-    "agents": 11,
+    "agents": 16,
     "first": "2026-11-26",
     "last": "2026-11-26",
-    "pictures": 0,
+    "pictures": 2,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1402409,
-    "total": 36388013
+    "fresh": 1656144,
+    "total": 37990395
    },
    "darkforest": {
     "input": 1586,
