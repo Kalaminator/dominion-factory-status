@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T04:07:01.187Z",
+ "generatedAt": "2026-11-26T04:10:00.258Z",
  "stages": [
   {
    "id": "reader",
@@ -4771,8 +4771,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T04:00:41.000Z",
-    "nextRun": "2026-11-26T04:10:00.000Z",
+    "lastRun": "2026-11-26T04:10:00.000Z",
+    "nextRun": null,
     "lastNote": null
    },
    {
@@ -6124,9 +6124,9 @@
   },
   "chatgpt": {
    "quota": {
-    "seen": "2026-11-26T03:50:44.568Z",
+    "seen": "2026-11-26T04:08:43.145Z",
     "primary": {
-     "usedPercent": 13,
+     "usedPercent": 14,
      "windowMinutes": 300,
      "resetsAt": "2026-11-26T05:49:46.000Z"
     },
@@ -6137,8 +6137,8 @@
     }
    },
    "calls": {
-    "today": 18,
-    "last7": 201,
+    "today": 19,
+    "last7": 202,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
@@ -6165,7 +6165,8 @@
      "cirque": 5,
      "collegiumalfaromancy": 5,
      "croakers": 7,
-     "crumblingcourt": 9
+     "crumblingcourt": 9,
+     "darkforest": 1
     },
     "failed": 1
    }
@@ -7661,10 +7662,10 @@
     "total": 157115423
    },
    "marquistadors": {
-    "input": 742,
-    "output": 266556,
-    "cacheCreate": 1262991,
-    "cacheRead": 40771476,
+    "input": 756,
+    "output": 271486,
+    "cacheCreate": 1269590,
+    "cacheRead": 41887836,
     "stages": {
      "reader": {
       "input": 64,
@@ -7707,12 +7708,12 @@
       "total": 10432770
      },
      "hud": {
-      "input": 146,
-      "output": 33391,
-      "cacheCreate": 136724,
-      "cacheRead": 8734320,
-      "fresh": 170261,
-      "total": 8904581
+      "input": 160,
+      "output": 38321,
+      "cacheCreate": 143323,
+      "cacheRead": 9850680,
+      "fresh": 181804,
+      "total": 10032484
      }
     },
     "runs": [
@@ -7729,8 +7730,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1530289,
-    "total": 42301765
+    "fresh": 1541832,
+    "total": 43429668
    },
    "collegiumalfaromancy": {
     "input": 2426,
@@ -8607,10 +8608,10 @@
     "total": 212711175
    },
    "croakers": {
-    "input": 2348,
-    "output": 713629,
-    "cacheCreate": 10801216,
-    "cacheRead": 119639828,
+    "input": 2360,
+    "output": 715530,
+    "cacheCreate": 10804074,
+    "cacheRead": 120518177,
     "stages": {
      "reader": {
       "input": 92,
@@ -8645,12 +8646,12 @@
       "total": 7130804
      },
      "stepfix": {
-      "input": 788,
-      "output": 241529,
-      "cacheCreate": 4368317,
-      "cacheRead": 43817862,
-      "fresh": 4610634,
-      "total": 48428496
+      "input": 800,
+      "output": 243430,
+      "cacheCreate": 4371175,
+      "cacheRead": 44696211,
+      "fresh": 4615405,
+      "total": 49311616
      },
      "hud": {
       "input": 190,
@@ -8837,8 +8838,8 @@
     "pictures": 7,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 11517193,
-    "total": 131157021
+    "fresh": 11521964,
+    "total": 132040141
    },
    "bristling": {
     "input": 5840,
@@ -9487,18 +9488,18 @@
     "total": 82043195
    },
    "doomsayers": {
-    "input": 2,
-    "output": 198,
-    "cacheCreate": 39500,
-    "cacheRead": 20577,
+    "input": 42,
+    "output": 17043,
+    "cacheCreate": 94931,
+    "cacheRead": 1636350,
     "stages": {
      "reader": {
-      "input": 2,
-      "output": 198,
-      "cacheCreate": 39500,
-      "cacheRead": 20577,
-      "fresh": 39700,
-      "total": 60277
+      "input": 42,
+      "output": 17043,
+      "cacheCreate": 94931,
+      "cacheRead": 1636350,
+      "fresh": 112016,
+      "total": 1748366
      }
     },
     "runs": [
@@ -9515,8 +9516,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 39700,
-    "total": 60277
+    "fresh": 112016,
+    "total": 1748366
    },
    "chameleander": {
     "input": 2108,
@@ -9824,7 +9825,7 @@
     "agents": 14,
     "first": "2026-11-26",
     "last": "2026-11-26",
-    "pictures": 0,
+    "pictures": 1,
     "failedPictures": 0,
     "isFaction": true,
     "fresh": 1383031,
