@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T03:50:04.574Z",
+ "generatedAt": "2026-11-26T04:00:41.281Z",
  "stages": [
   {
    "id": "reader",
@@ -213,29 +213,47 @@
   }
  ],
  "run": {
-  "id": "wf_6bb86601-1df",
-  "modified": "2026-11-26T03:47:45.355Z",
+  "id": "wf_ef0b50b7-b4c",
+  "modified": "2026-11-26T03:59:12.540Z",
   "running": 1,
-  "faction": "croakers",
+  "faction": "darkforest",
   "stageDone": [
    "setup",
    "reader",
-   "theme"
+   "theme",
+   "rules",
+   "rulesCheck",
+   "stepfix",
+   "hud"
   ]
  },
  "now": {
-  "label": "rules:croakers:p1.1",
-  "stage": "rules",
-  "faction": "croakers",
+  "label": "hudcheck:darkforest:p1.1",
+  "stage": "hudCheck",
+  "faction": "darkforest",
   "pass": 1,
   "try": 1,
-  "phase": "Build",
-  "model": "opus",
+  "phase": "Review",
+  "model": "sonnet",
   "running": true,
-  "start": "2026-11-26T03:47:45.352Z",
+  "start": "2026-11-26T03:59:12.538Z",
   "end": null
  },
  "scores": [
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:darkforest:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 7
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:darkforest:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 8.8
+  },
   {
    "stage": "rulesCheck",
    "label": "rulescheck:crumblingcourt:p1.1",
@@ -286,6 +304,20 @@
    "score": 5.5
   },
   {
+   "stage": "artCheck",
+   "label": "artcheck:crumblingcourt:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 8
+  },
+  {
+   "stage": "ux",
+   "label": "ux:crumblingcourt:p1",
+   "pass": null,
+   "try": null,
+   "score": 6
+  },
+  {
    "stage": "rulesCheck",
    "label": "rulescheck:marquistadors:p1.1",
    "pass": 1,
@@ -301,17 +333,10 @@
   },
   {
    "stage": "rulesCheck",
-   "label": "rulescheck:darkforest:p1.1",
+   "label": "rulescheck:marquistadors:p1.3",
    "pass": 1,
-   "try": 1,
-   "score": 7
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:darkforest:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 8.8
+   "try": 3,
+   "score": 9.2
   }
  ],
  "factions": [
@@ -467,8 +492,8 @@
   },
   {
    "key": "crumblingcourt",
-   "passes": 0,
-   "commit": "-",
+   "passes": 1,
+   "commit": "bf71f75",
    "state": "RUNNING"
   },
   {
@@ -890,22 +915,28 @@
  "doneCount": 24,
  "recentRuns": [
   {
-   "id": "wf_6bb86601-1df",
-   "modified": "2026-11-26T03:47:45.355Z",
+   "id": "wf_ef0b50b7-b4c",
+   "modified": "2026-11-26T03:59:12.540Z",
    "running": 1,
-   "agents": 4
+   "agents": 10
   },
   {
    "id": "wf_aadf05ca-a24",
-   "modified": "2026-11-26T03:47:21.128Z",
+   "modified": "2026-11-26T03:58:55.218Z",
    "running": 1,
-   "agents": 27
+   "agents": 35
   },
   {
    "id": "wf_080e4eac-339",
-   "modified": "2026-11-26T03:46:07.585Z",
+   "modified": "2026-11-26T03:58:17.912Z",
    "running": 1,
-   "agents": 9
+   "agents": 12
+  },
+  {
+   "id": "wf_6bb86601-1df",
+   "modified": "2026-11-26T03:58:11.301Z",
+   "running": 1,
+   "agents": 5
   },
   {
    "id": "wf_8611c1e4-efc",
@@ -918,12 +949,6 @@
    "modified": "2026-11-26T03:41:26.814Z",
    "running": 1,
    "agents": 4
-  },
-  {
-   "id": "wf_ef0b50b7-b4c",
-   "modified": "2026-11-26T03:36:21.589Z",
-   "running": 1,
-   "agents": 8
   },
   {
    "id": "wf_8cad20e0-2b9",
@@ -964,43 +989,47 @@
  ],
  "factories": [
   {
-   "id": "wf_6bb86601-1df",
-   "batch": "fan-rules-5",
-   "faction": "croakers",
-   "modified": "2026-11-26T03:47:45.355Z",
+   "id": "wf_ef0b50b7-b4c",
+   "batch": "fan-rules-4",
+   "faction": "darkforest",
+   "modified": "2026-11-26T03:59:12.540Z",
    "now": {
-    "label": "rules:croakers:p1.1",
-    "stage": "rules",
-    "faction": "croakers",
+    "label": "hudcheck:darkforest:p1.1",
+    "stage": "hudCheck",
+    "faction": "darkforest",
     "pass": 1,
     "try": 1,
-    "phase": "Build",
-    "model": "opus",
+    "phase": "Review",
+    "model": "sonnet",
     "running": true,
-    "start": "2026-11-26T03:47:45.352Z",
+    "start": "2026-11-26T03:59:12.538Z",
     "end": null
    },
    "stageDone": [
     "setup",
     "reader",
-    "theme"
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix",
+    "hud"
    ]
   },
   {
    "id": "wf_aadf05ca-a24",
    "batch": "fan-rules-2",
    "faction": "crumblingcourt",
-   "modified": "2026-11-26T03:47:21.128Z",
+   "modified": "2026-11-26T03:58:55.218Z",
    "now": {
-    "label": "art:crumblingcourt",
-    "stage": "art",
+    "label": "learn:crumblingcourt",
+    "stage": "learn",
     "faction": "",
     "pass": null,
     "try": null,
-    "phase": "Art",
-    "model": "sonnet",
+    "phase": "Approve",
+    "model": "opus",
     "running": true,
-    "start": "2026-11-26T03:47:21.125Z",
+    "start": "2026-11-26T03:58:55.216Z",
     "end": null
    },
    "stageDone": [
@@ -1019,24 +1048,31 @@
     "cut",
     "skin",
     "judge",
-    "coverage"
+    "coverage",
+    "art",
+    "artCheck",
+    "gates",
+    "shots",
+    "code",
+    "ux",
+    "approve"
    ]
   },
   {
    "id": "wf_080e4eac-339",
    "batch": "fan-rules-3",
    "faction": "marquistadors",
-   "modified": "2026-11-26T03:46:07.585Z",
+   "modified": "2026-11-26T03:58:17.912Z",
    "now": {
-    "label": "stepfix:marquistadors:p1.1",
-    "stage": "stepfix",
+    "label": "hud:marquistadors:p1.1",
+    "stage": "hud",
     "faction": "marquistadors",
     "pass": 1,
-    "try": 2,
+    "try": 1,
     "phase": "Build",
     "model": "opus",
     "running": true,
-    "start": "2026-11-26T03:46:07.583Z",
+    "start": "2026-11-26T03:58:17.909Z",
     "end": null
    },
    "stageDone": [
@@ -1046,6 +1082,30 @@
     "rules",
     "rulesCheck",
     "stepfix"
+   ]
+  },
+  {
+   "id": "wf_6bb86601-1df",
+   "batch": "fan-rules-5",
+   "faction": "croakers",
+   "modified": "2026-11-26T03:58:11.301Z",
+   "now": {
+    "label": "rulescheck:croakers:p1.1",
+    "stage": "rulesCheck",
+    "faction": "croakers",
+    "pass": 1,
+    "try": 1,
+    "phase": "Review",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-26T03:58:11.298Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules"
    ]
   },
   {
@@ -1093,35 +1153,201 @@
     "reader",
     "theme"
    ]
-  },
-  {
-   "id": "wf_ef0b50b7-b4c",
-   "batch": "fan-rules-4",
-   "faction": "darkforest",
-   "modified": "2026-11-26T03:36:21.589Z",
-   "now": {
-    "label": "hud:darkforest:p1.1",
-    "stage": "hud",
-    "faction": "darkforest",
-    "pass": 1,
-    "try": 1,
-    "phase": "Build",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-26T03:36:21.586Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix"
-   ]
   }
  ],
  "agents": [
+  {
+   "label": "hudcheck:darkforest:p1.1",
+   "stage": "hudCheck",
+   "faction": "darkforest",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": true,
+   "start": "2026-11-26T03:59:12.538Z",
+   "end": null
+  },
+  {
+   "label": "learn:crumblingcourt",
+   "stage": "learn",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Approve",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T03:58:55.216Z",
+   "end": null
+  },
+  {
+   "label": "hud:marquistadors:p1.1",
+   "stage": "hud",
+   "faction": "marquistadors",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T03:58:17.909Z",
+   "end": null
+  },
+  {
+   "label": "rulescheck:croakers:p1.1",
+   "stage": "rulesCheck",
+   "faction": "croakers",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T03:58:11.298Z",
+   "end": null
+  },
+  {
+   "label": "approve:crumblingcourt:p1",
+   "stage": "approve",
+   "faction": "crumblingcourt",
+   "pass": null,
+   "try": null,
+   "phase": "Approve",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T03:57:22.941Z",
+   "end": "2026-11-26T03:58:55.098Z",
+   "score": null,
+   "approve": true,
+   "findings": 11
+  },
+  {
+   "label": "rulescheck:marquistadors:p1.3",
+   "stage": "rulesCheck",
+   "faction": "marquistadors",
+   "pass": 1,
+   "try": 3,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T03:55:45.818Z",
+   "end": "2026-11-26T03:58:17.791Z",
+   "score": 9.2,
+   "pass_ok": true,
+   "findings": 2
+  },
+  {
+   "label": "ux:crumblingcourt:p1",
+   "stage": "ux",
+   "faction": "crumblingcourt",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T03:54:17.045Z",
+   "end": "2026-11-26T03:57:22.840Z",
+   "score": 6,
+   "pass_ok": false,
+   "findings": 8
+  },
+  {
+   "label": "code:crumblingcourt:p1",
+   "stage": "code",
+   "faction": "crumblingcourt",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T03:54:17.043Z",
+   "end": "2026-11-26T03:54:39.480Z",
+   "score": null,
+   "pass_ok": true,
+   "findings": 1
+  },
+  {
+   "label": "shots:crumblingcourt:p1",
+   "stage": "shots",
+   "faction": "crumblingcourt",
+   "pass": null,
+   "try": null,
+   "phase": "Screenshot",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T03:52:56.800Z",
+   "end": "2026-11-26T03:54:17.035Z"
+  },
+  {
+   "label": "hud:darkforest:p1.1",
+   "stage": "hud",
+   "faction": "darkforest",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T03:52:29.299Z",
+   "end": "2026-11-26T03:59:12.449Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "stepfix:marquistadors:p1.1",
+   "stage": "stepfix",
+   "faction": "marquistadors",
+   "pass": 1,
+   "try": 2,
+   "phase": "Build",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T03:52:29.142Z",
+   "end": "2026-11-26T03:55:45.707Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "gates:crumblingcourt:p1",
+   "stage": "gates",
+   "faction": "crumblingcourt",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T03:51:52.638Z",
+   "end": "2026-11-26T03:52:56.139Z",
+   "score": null,
+   "pass_ok": true,
+   "findings": 0
+  },
+  {
+   "label": "artcheck:crumblingcourt:p1.1",
+   "stage": "artCheck",
+   "faction": "crumblingcourt",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T03:51:04.698Z",
+   "end": "2026-11-26T03:51:52.538Z",
+   "score": 8,
+   "pass_ok": true,
+   "findings": 2
+  },
+  {
+   "label": "quota:crumblingcourt:art-p1",
+   "stage": "quota",
+   "faction": "crumblingcourt",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T03:50:56.271Z",
+   "end": "2026-11-26T03:51:04.436Z",
+   "score": null,
+   "findings": 0
+  },
   {
    "label": "rules:croakers:p1.1",
    "stage": "rules",
@@ -1130,9 +1356,11 @@
    "try": 1,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T03:47:45.352Z",
-   "end": null
+   "end": "2026-11-26T03:58:11.133Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "theme:croakers",
@@ -1182,9 +1410,11 @@
    "try": null,
    "phase": "Art",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T03:47:21.125Z",
-   "end": null
+   "end": "2026-11-26T03:50:56.162Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "coverage:crumblingcourt:p1",
@@ -1200,18 +1430,6 @@
    "score": null,
    "pass_ok": true,
    "findings": 0
-  },
-  {
-   "label": "stepfix:marquistadors:p1.1",
-   "stage": "stepfix",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 2,
-   "phase": "Build",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-26T03:46:07.583Z",
-   "end": null
   },
   {
    "label": "rules:croakers:p1.1",
@@ -1333,18 +1551,6 @@
    "end": "2026-11-26T03:41:14.325Z"
   },
   {
-   "label": "hud:darkforest:p1.1",
-   "stage": "hud",
-   "faction": "darkforest",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-26T03:36:21.586Z",
-   "end": null
-  },
-  {
    "label": "stepfix:marquistadors:p1.1",
    "stage": "stepfix",
    "faction": "marquistadors",
@@ -1357,176 +1563,6 @@
    "end": "2026-11-26T03:43:06.602Z",
    "score": null,
    "findings": 0
-  },
-  {
-   "label": "rulescheck:darkforest:p1.2",
-   "stage": "rulesCheck",
-   "faction": "darkforest",
-   "pass": 1,
-   "try": 2,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:32:32.434Z",
-   "end": "2026-11-26T03:36:21.441Z",
-   "score": 8.8,
-   "pass_ok": true,
-   "findings": 3
-  },
-  {
-   "label": "rulescheck:marquistadors:p1.1",
-   "stage": "rulesCheck",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:31:56.774Z",
-   "end": "2026-11-26T03:34:59.915Z",
-   "score": 7.5,
-   "pass_ok": false,
-   "findings": 8
-  },
-  {
-   "label": "stepfix:darkforest:p1.1",
-   "stage": "stepfix",
-   "faction": "darkforest",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:26:33.466Z",
-   "end": "2026-11-26T03:32:32.321Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "judge:crumblingcourt:p1.2",
-   "stage": "judge",
-   "faction": "crumblingcourt",
-   "pass": 1,
-   "try": 2,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T03:26:21.579Z",
-   "end": "2026-11-26T03:46:55.877Z",
-   "score": 5.5,
-   "pass_ok": false,
-   "findings": 13
-  },
-  {
-   "label": "rules:marquistadors:p1.2",
-   "stage": "rules",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 2,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:24:57.588Z",
-   "end": "2026-11-26T03:31:56.660Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rulescheck:darkforest:p1.1",
-   "stage": "rulesCheck",
-   "faction": "darkforest",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:23:04.844Z",
-   "end": "2026-11-26T03:26:33.307Z",
-   "score": 7,
-   "pass_ok": false,
-   "findings": 5
-  },
-  {
-   "label": "rules:marquistadors:p1.1",
-   "stage": "rules",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:15:10.258Z",
-   "end": "2026-11-26T03:24:57.495Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "theme:marquistadors",
-   "stage": "theme",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T03:14:30.744Z",
-   "end": "2026-11-26T03:15:10.035Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rules:darkforest:p1.1",
-   "stage": "rules",
-   "faction": "darkforest",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:11:35.676Z",
-   "end": "2026-11-26T03:23:04.741Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "theme:darkforest",
-   "stage": "theme",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T03:10:55.242Z",
-   "end": "2026-11-26T03:11:35.566Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "reader:marquistadors",
-   "stage": "reader",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Read",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:10:06.924Z",
-   "end": "2026-11-26T03:14:30.533Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "setup:fan-rules-3",
-   "stage": "setup",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Setup",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T03:10:02.151Z",
-   "end": "2026-11-26T03:10:06.917Z"
   }
  ],
  "elements": [
@@ -1994,7 +2030,7 @@
    },
    "img": "img/factions/crumblingcourt.webp",
    "thumb": "img/factions/crumblingcourt-thumb.webp",
-   "shotAt": "2026-11-18T21:03:04.365Z"
+   "shotAt": "2026-11-26T03:58:42.772Z"
   },
   {
    "key": "darkforest",
@@ -4738,28 +4774,28 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 719
+   "commitsSinceLive": 720
   },
   "branches": {
    "list": [
     {
      "name": "factory/fan-rules-2",
-     "ahead": 22,
+     "ahead": 26,
      "date": "2026-11-26"
     },
     {
      "name": "factory/fan-rules-3",
-     "ahead": 6,
+     "ahead": 8,
      "date": "2026-11-26"
     },
     {
      "name": "factory/fan-rules-4",
-     "ahead": 5,
+     "ahead": 6,
      "date": "2026-11-26"
     },
     {
      "name": "factory/fan-rules-5",
-     "ahead": 37,
+     "ahead": 39,
      "date": "2026-11-26"
     },
     {
@@ -4807,7 +4843,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T03:50:04.000Z",
+    "lastRun": "2026-11-26T04:00:41.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4923,10 +4959,15 @@
     },
     {
      "date": "2026-11-26",
-     "commits": 51
+     "commits": 52
     }
    ],
    "latest": [
+    {
+     "hash": "c4b9e55",
+     "date": "2026-11-26",
+     "subject": "factory: concept brief says frames are a heavy ornamented frame in the faction material, never the board's flat ground; tab-rule FAIL says f"
+    },
     {
      "hash": "5f91d76",
      "date": "2026-11-26",
@@ -4971,14 +5012,79 @@
      "hash": "e5b97b6",
      "date": "2026-11-26",
      "subject": "factory: approve cirque (fan-rules-4 pass 1/1, after fix run 2)"
-    },
-    {
-     "hash": "43c9413",
-     "date": "2026-11-26",
-     "subject": "factory: CLEAN code collegiumalfaromancy"
     }
    ],
    "last24": [
+    {
+     "hash": "5da4ac7",
+     "time": "2026-11-26T04:59:03+01:00",
+     "subject": "factory: HUD build darkforest (fan-rules-4): spec, df_* kit tiles + icons, auto tiles, off looks, comma ability names",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "8c4e96a",
+     "time": "2026-11-26T04:58:46+01:00",
+     "subject": "factory: approve crumblingcourt (fan-rules-2 pass 1/1, DONE)",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "9da6507",
+     "time": "2026-11-26T04:58:12+01:00",
+     "subject": "factory: CLEAN rulesCheck marquistadors",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "1a7a0e9",
+     "time": "2026-11-26T04:58:01+01:00",
+     "subject": "croakers handoff: rules fix run 2",
+     "agent": "lead",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "9e8a516",
+     "time": "2026-11-26T04:57:47+01:00",
+     "subject": "croakers fix run 2: Mudman hit die 0,1,1,1,2,2 + Dazzle on it, battle-start question holds the roll, Mudman head art, previewBoard hook",
+     "agent": "lead",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "f745521",
+     "time": "2026-11-26T04:55:38+01:00",
+     "subject": "marquistadors rules step fix 2: Exploit craft respects the item supply, player picks each setup wood forest, treaty warriors-first order as ",
+     "agent": "lead",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "bf71f75",
+     "time": "2026-11-26T04:54:37+01:00",
+     "subject": "factory: CLEAN code crumblingcourt",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "c4b9e55",
+     "time": "2026-11-26T04:51:54+01:00",
+     "subject": "factory: concept brief says frames are a heavy ornamented frame in the faction material, never the board's flat ground; tab-rule FAIL says f",
+     "agent": "factory",
+     "branch": "main"
+    },
+    {
+     "hash": "be9bb6e",
+     "time": "2026-11-26T04:51:47+01:00",
+     "subject": "factory: CLEAN artCheck crumblingcourt",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "a1dc705",
+     "time": "2026-11-26T04:50:52+01:00",
+     "subject": "crumblingcourt art stage: ferret warrior head, hall, forge, loyalty pieces",
+     "agent": "lead",
+     "branch": "factory/fan-rules-2"
+    },
     {
      "hash": "1da29fe",
      "time": "2026-11-26T04:46:55+01:00",
@@ -5328,79 +5434,9 @@
      "subject": "factory: crumblingcourt cut plate (19 parts)",
      "agent": "factory",
      "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "c30d56d",
-     "time": "2026-11-26T02:54:06+01:00",
-     "subject": "crumblingcourt: clean plate",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "e9a70d2",
-     "time": "2026-11-26T02:53:37+01:00",
-     "subject": "collegiumalfaromancy HUD fix run 2: Undo inset >= 4 px at 1920 (overflow 10/10), gap under the score rows below 1900 px",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "75efde7",
-     "time": "2026-11-26T02:52:16+01:00",
-     "subject": "crumblingcourt: overlay concept, theme brief",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "191f5df",
-     "time": "2026-11-26T02:40:04+01:00",
-     "subject": "factory: CLEAN rulesCheck collegiumalfaromancy",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "be6ac00",
-     "time": "2026-11-26T02:38:57+01:00",
-     "subject": "crumblingcourt: wireframe shot",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "69574d2",
-     "time": "2026-11-26T02:37:27+01:00",
-     "subject": "factory: SKIN fix run 2 cirque - phase pill 17 px, drop button keeps its box (abilities at 768), handoff SKIN BUILD: DONE",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "8da4683",
-     "time": "2026-11-26T02:37:27+01:00",
-     "subject": "collegiumalfaromancy fix run 2 rules: Defamer sees Corvid plots + Hundreds mobs, Vagabond picks the Sentinel item, track end chip bonusN",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "3aa3769",
-     "time": "2026-11-26T02:36:57+01:00",
-     "subject": "factory: CLEAN hudCheck crumblingcourt",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "2106f71",
-     "time": "2026-11-26T02:29:55+01:00",
-     "subject": "Merge main into factory/fan-rules-3",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "6783cd9",
-     "time": "2026-11-26T02:27:37+01:00",
-     "subject": "token log: collegiumalfaromancy pass 1",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
     }
    ],
-   "last24Count": 261
+   "last24Count": 271
   },
   "trust": {
    "tests": {
@@ -6160,21 +6196,21 @@
   },
   "chatgpt": {
    "quota": {
-    "seen": "2026-11-26T03:49:19.689Z",
+    "seen": "2026-11-26T03:50:44.568Z",
     "primary": {
-     "usedPercent": 12,
+     "usedPercent": 13,
      "windowMinutes": 300,
      "resetsAt": "2026-11-26T05:49:46.000Z"
     },
     "secondary": {
-     "usedPercent": 27,
+     "usedPercent": 28,
      "windowMinutes": 10080,
      "resetsAt": "2026-11-26T20:21:17.000Z"
     }
    },
    "calls": {
-    "today": 16,
-    "last7": 199,
+    "today": 18,
+    "last7": 201,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
@@ -6201,7 +6237,7 @@
      "cirque": 5,
      "collegiumalfaromancy": 5,
      "croakers": 7,
-     "crumblingcourt": 7
+     "crumblingcourt": 9
     },
     "failed": 1
    }
@@ -7691,10 +7727,10 @@
     "total": 157115423
    },
    "marquistadors": {
-    "input": 518,
-    "output": 210876,
-    "cacheCreate": 954267,
-    "cacheRead": 28430542,
+    "input": 650,
+    "output": 243303,
+    "cacheCreate": 1218760,
+    "cacheRead": 34493500,
     "stages": {
      "reader": {
       "input": 64,
@@ -7721,20 +7757,28 @@
       "total": 12075512
      },
      "rulescheck": {
-      "input": 102,
-      "output": 33021,
-      "cacheCreate": 251768,
-      "cacheRead": 4852131,
-      "fresh": 284891,
-      "total": 5137022
+      "input": 142,
+      "output": 46214,
+      "cacheCreate": 351820,
+      "cacheRead": 6735953,
+      "fresh": 398176,
+      "total": 7134129
      },
      "stepfix": {
-      "input": 146,
-      "output": 54833,
-      "cacheCreate": 245318,
-      "cacheRead": 8328599,
-      "fresh": 300297,
-      "total": 8628896
+      "input": 184,
+      "output": 63929,
+      "cacheCreate": 317266,
+      "cacheRead": 10051391,
+      "fresh": 381379,
+      "total": 10432770
+     },
+     "hud": {
+      "input": 54,
+      "output": 10138,
+      "cacheCreate": 92493,
+      "cacheRead": 2456344,
+      "fresh": 102685,
+      "total": 2559029
      }
     },
     "runs": [
@@ -7742,17 +7786,17 @@
       "id": "wf_080e4eac-339",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 8
+      "agents": 11
      }
     ],
-    "agents": 8,
+    "agents": 11,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1165661,
-    "total": 29596203
+    "fresh": 1462713,
+    "total": 35956213
    },
    "collegiumalfaromancy": {
     "input": 2426,
@@ -8629,10 +8673,10 @@
     "total": 212711175
    },
    "croakers": {
-    "input": 2070,
-    "output": 639269,
-    "cacheCreate": 10498663,
-    "cacheRead": 101907250,
+    "input": 2252,
+    "output": 685979,
+    "cacheCreate": 10670721,
+    "cacheRead": 114063884,
     "stages": {
      "reader": {
       "input": 92,
@@ -8651,20 +8695,20 @@
       "total": 1274453
      },
      "rules": {
-      "input": 354,
-      "output": 140970,
-      "cacheCreate": 940303,
-      "cacheRead": 18232448,
-      "fresh": 1081627,
-      "total": 19314075
+      "input": 480,
+      "output": 175793,
+      "cacheCreate": 1003749,
+      "cacheRead": 27450192,
+      "fresh": 1180022,
+      "total": 28630214
      },
      "rulescheck": {
-      "input": 60,
-      "output": 19339,
-      "cacheCreate": 126442,
-      "cacheRead": 3130921,
-      "fresh": 145841,
-      "total": 3276762
+      "input": 116,
+      "output": 31226,
+      "cacheCreate": 235054,
+      "cacheRead": 6069811,
+      "fresh": 266396,
+      "total": 6336207
      },
      "stepfix": {
       "input": 704,
@@ -8844,7 +8888,7 @@
       "id": "wf_6bb86601-1df",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 3
+      "agents": 4
      },
      {
       "id": "wf_8611c1e4-efc",
@@ -8853,14 +8897,14 @@
       "agents": 3
      }
     ],
-    "agents": 49,
+    "agents": 50,
     "first": "2026-11-25",
     "last": "2026-11-26",
     "pictures": 7,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 11140002,
-    "total": 113047252
+    "fresh": 11358952,
+    "total": 125422836
    },
    "bristling": {
     "input": 5840,
@@ -9301,10 +9345,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 1342,
-    "output": 420650,
-    "cacheCreate": 6333149,
-    "cacheRead": 64054440,
+    "input": 1532,
+    "output": 461431,
+    "cacheCreate": 6926128,
+    "cacheRead": 71550889,
     "stages": {
      "reader": {
       "input": 58,
@@ -9371,12 +9415,12 @@
       "total": 251757
      },
      "quota": {
-      "input": 8,
-      "output": 308,
-      "cacheCreate": 121884,
-      "cacheRead": 116746,
-      "fresh": 122200,
-      "total": 238946
+      "input": 12,
+      "output": 462,
+      "cacheCreate": 182764,
+      "cacheRead": 175057,
+      "fresh": 183238,
+      "total": 358295
      },
      "overlay": {
       "input": 22,
@@ -9427,12 +9471,68 @@
       "total": 120449
      },
      "art": {
+      "input": 32,
+      "output": 7203,
+      "cacheCreate": 66384,
+      "cacheRead": 1164824,
+      "fresh": 73619,
+      "total": 1238443
+     },
+     "artcheck": {
+      "input": 20,
+      "output": 4034,
+      "cacheCreate": 51357,
+      "cacheRead": 619875,
+      "fresh": 55411,
+      "total": 675286
+     },
+     "gates": {
+      "input": 8,
+      "output": 1216,
+      "cacheCreate": 43700,
+      "cacheRead": 205507,
+      "fresh": 44924,
+      "total": 250431
+     },
+     "shots": {
+      "input": 4,
+      "output": 433,
+      "cacheCreate": 62273,
+      "cacheRead": 58763,
+      "fresh": 62710,
+      "total": 121473
+     },
+     "code": {
+      "input": 14,
+      "output": 2160,
+      "cacheCreate": 75259,
+      "cacheRead": 406941,
+      "fresh": 77433,
+      "total": 484374
+     },
+     "ux": {
+      "input": 72,
+      "output": 16060,
+      "cacheCreate": 94892,
+      "cacheRead": 3416970,
+      "fresh": 111024,
+      "total": 3527994
+     },
+     "approve": {
       "input": 26,
-      "output": 6019,
-      "cacheCreate": 63494,
-      "cacheRead": 908569,
-      "fresh": 69539,
-      "total": 978108
+      "output": 7839,
+      "cacheCreate": 90026,
+      "cacheRead": 959027,
+      "fresh": 97891,
+      "total": 1056918
+     },
+     "learn": {
+      "input": 36,
+      "output": 7701,
+      "cacheCreate": 111702,
+      "cacheRead": 1514800,
+      "fresh": 119439,
+      "total": 1634239
      }
     },
     "runs": [
@@ -9440,17 +9540,17 @@
       "id": "wf_aadf05ca-a24",
       "first": "2026-11-25",
       "last": "2026-11-26",
-      "agents": 26
+      "agents": 34
      }
     ],
-    "agents": 26,
+    "agents": 34,
     "first": "2026-11-25",
     "last": "2026-11-26",
-    "pictures": 7,
+    "pictures": 9,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 6755141,
-    "total": 70809581
+    "fresh": 7389091,
+    "total": 78939980
    },
    "chameleander": {
     "input": 2108,
@@ -9661,10 +9761,10 @@
     "total": 114930982
    },
    "darkforest": {
-    "input": 524,
-    "output": 177048,
-    "cacheCreate": 747186,
-    "cacheRead": 28504869,
+    "input": 630,
+    "output": 201530,
+    "cacheCreate": 891540,
+    "cacheRead": 33913839,
     "stages": {
      "reader": {
       "input": 56,
@@ -9707,12 +9807,20 @@
       "total": 3390268
      },
      "hud": {
-      "input": 162,
-      "output": 38128,
-      "cacheCreate": 147272,
-      "cacheRead": 9995127,
-      "fresh": 185562,
-      "total": 10180689
+      "input": 264,
+      "output": 61349,
+      "cacheCreate": 249108,
+      "cacheRead": 15322839,
+      "fresh": 310721,
+      "total": 15633560
+     },
+     "hudcheck": {
+      "input": 4,
+      "output": 1261,
+      "cacheCreate": 42518,
+      "cacheRead": 81258,
+      "fresh": 43783,
+      "total": 125041
      }
     },
     "runs": [
@@ -9720,17 +9828,17 @@
       "id": "wf_ef0b50b7-b4c",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 7
+      "agents": 9
      }
     ],
-    "agents": 7,
+    "agents": 9,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 924758,
-    "total": 29429627
+    "fresh": 1093700,
+    "total": 35007539
    },
    "boroughkings": {
     "input": 4260,
