@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T06:20:06.034Z",
+ "generatedAt": "2026-11-26T06:30:41.273Z",
  "stages": [
   {
    "id": "reader",
@@ -213,10 +213,10 @@
   }
  ],
  "run": {
-  "id": "wf_080e4eac-339",
-  "modified": "2026-11-26T06:19:45.078Z",
+  "id": "wf_dec81e6b-505",
+  "modified": "2026-11-26T06:30:12.661Z",
   "running": 1,
-  "faction": "marquistadors",
+  "faction": "doomsayers",
   "stageDone": [
    "setup",
    "reader",
@@ -235,85 +235,26 @@
    "judge",
    "coverage",
    "art",
-   "artCheck"
+   "artCheck",
+   "artfix",
+   "gates",
+   "shots",
+   "code"
   ]
  },
  "now": {
-  "label": "gates:marquistadors:p1",
-  "stage": "gates",
-  "faction": "marquistadors",
+  "label": "ux:doomsayers:p1",
+  "stage": "ux",
+  "faction": "doomsayers",
   "pass": null,
   "try": null,
   "phase": "Review",
-  "model": "sonnet",
+  "model": "opus",
   "running": true,
-  "start": "2026-11-26T06:19:45.074Z",
+  "start": "2026-11-26T06:29:52.755Z",
   "end": null
  },
  "scores": [
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:marquistadors:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 7.5
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:marquistadors:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 8.4
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:marquistadors:p1.3",
-   "pass": 1,
-   "try": 3,
-   "score": 9.2
-  },
-  {
-   "stage": "hudCheck",
-   "label": "hudcheck:marquistadors:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 0
-  },
-  {
-   "stage": "hudCheck",
-   "label": "hudcheck:marquistadors:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 10
-  },
-  {
-   "stage": "judge",
-   "label": "judge:marquistadors:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 7
-  },
-  {
-   "stage": "judge",
-   "label": "judge:marquistadors:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 7.4
-  },
-  {
-   "stage": "artCheck",
-   "label": "artcheck:marquistadors:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 8
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:eagleking:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 6
-  },
   {
    "stage": "rulesCheck",
    "label": "rulescheck:doomsayers:p1.1",
@@ -348,6 +289,41 @@
    "pass": 1,
    "try": 1,
    "score": 7
+  },
+  {
+   "stage": "judge",
+   "label": "judge:doomsayers:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 7.2
+  },
+  {
+   "stage": "artCheck",
+   "label": "artcheck:doomsayers:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 6
+  },
+  {
+   "stage": "artCheck",
+   "label": "artcheck:doomsayers:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 8
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:eagleking:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 6
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:eagleking:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 8.8
   }
  ],
  "factions": [
@@ -515,9 +491,9 @@
   },
   {
    "key": "marquistadors",
-   "passes": 0,
-   "commit": "-",
-   "state": "RUNNING"
+   "state": "DONE",
+   "passes": 1,
+   "commit": "44c2586"
   },
   {
    "key": "doomsayers",
@@ -533,9 +509,9 @@
   },
   {
    "key": "eyriesend",
-   "state": "TODO",
    "passes": 0,
-   "commit": "-"
+   "commit": "-",
+   "state": "RUNNING"
   },
   {
    "key": "fangus",
@@ -917,37 +893,37 @@
   }
  ],
  "counts": {
-  "DONE": 22,
+  "DONE": 23,
   "DONE-OPEN": 5,
   "RUNNING": 3,
-  "TODO": 64
+  "TODO": 63
  },
  "total": 94,
- "doneCount": 27,
+ "doneCount": 28,
  "recentRuns": [
   {
-   "id": "wf_080e4eac-339",
-   "modified": "2026-11-26T06:19:45.078Z",
+   "id": "wf_dec81e6b-505",
+   "modified": "2026-11-26T06:30:12.661Z",
    "running": 1,
    "agents": 32
   },
   {
-   "id": "wf_08d21123-99b",
-   "modified": "2026-11-26T06:18:58.827Z",
-   "running": 1,
-   "agents": 7
-  },
-  {
-   "id": "wf_dec81e6b-505",
-   "modified": "2026-11-26T06:18:23.697Z",
-   "running": 1,
-   "agents": 22
-  },
-  {
    "id": "wf_df02cf26-2eb",
-   "modified": "2026-11-26T06:14:03.437Z",
+   "modified": "2026-11-26T06:29:56.402Z",
    "running": 1,
-   "agents": 2
+   "agents": 5
+  },
+  {
+   "id": "wf_080e4eac-339",
+   "modified": "2026-11-26T06:29:26.830Z",
+   "running": 0,
+   "agents": 38
+  },
+  {
+   "id": "wf_08d21123-99b",
+   "modified": "2026-11-26T06:21:31.285Z",
+   "running": 1,
+   "agents": 8
   },
   {
    "id": "wf_ef0b50b7-b4c",
@@ -1000,20 +976,20 @@
  ],
  "factories": [
   {
-   "id": "wf_080e4eac-339",
-   "batch": "fan-rules-3",
-   "faction": "marquistadors",
-   "modified": "2026-11-26T06:19:45.078Z",
+   "id": "wf_dec81e6b-505",
+   "batch": "fan-rules-2",
+   "faction": "doomsayers",
+   "modified": "2026-11-26T06:30:12.661Z",
    "now": {
-    "label": "gates:marquistadors:p1",
-    "stage": "gates",
-    "faction": "marquistadors",
+    "label": "ux:doomsayers:p1",
+    "stage": "ux",
+    "faction": "doomsayers",
     "pass": null,
     "try": null,
     "phase": "Review",
-    "model": "sonnet",
+    "model": "opus",
     "running": true,
-    "start": "2026-11-26T06:19:45.074Z",
+    "start": "2026-11-26T06:29:52.755Z",
     "end": null
    },
    "stageDone": [
@@ -1034,24 +1010,52 @@
     "judge",
     "coverage",
     "art",
-    "artCheck"
+    "artCheck",
+    "artfix",
+    "gates",
+    "shots",
+    "code"
+   ]
+  },
+  {
+   "id": "wf_df02cf26-2eb",
+   "batch": "fan-rules-4",
+   "faction": "eyriesend",
+   "modified": "2026-11-26T06:29:56.402Z",
+   "now": {
+    "label": "rules:eyriesend:p1.2",
+    "stage": "rules",
+    "faction": "eyriesend",
+    "pass": 1,
+    "try": 2,
+    "phase": "Build",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-26T06:29:56.398Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules"
    ]
   },
   {
    "id": "wf_08d21123-99b",
    "batch": "fan-rules-5",
    "faction": "eagleking",
-   "modified": "2026-11-26T06:18:58.827Z",
+   "modified": "2026-11-26T06:21:31.285Z",
    "now": {
-    "label": "rulescheck:eagleking:p1.2",
-    "stage": "rulesCheck",
+    "label": "hud:eagleking:p1.1",
+    "stage": "hud",
     "faction": "eagleking",
     "pass": 1,
-    "try": 2,
-    "phase": "Review",
+    "try": 1,
+    "phase": "Build",
     "model": "opus",
     "running": true,
-    "start": "2026-11-26T06:18:58.822Z",
+    "start": "2026-11-26T06:21:31.280Z",
     "end": null
    },
    "stageDone": [
@@ -1062,76 +1066,201 @@
     "rulesCheck",
     "stepfix"
    ]
-  },
-  {
-   "id": "wf_dec81e6b-505",
-   "batch": "fan-rules-2",
-   "faction": "doomsayers",
-   "modified": "2026-11-26T06:18:23.697Z",
-   "now": {
-    "label": "judge:doomsayers:p1.2",
-    "stage": "judge",
-    "faction": "doomsayers",
-    "pass": 1,
-    "try": 2,
-    "phase": "Review",
-    "model": "sonnet",
-    "running": true,
-    "start": "2026-11-26T06:18:23.690Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix",
-    "hud",
-    "hudCheck",
-    "wireframe",
-    "quota",
-    "overlay",
-    "plate",
-    "cut",
-    "skin",
-    "judge"
-   ]
-  },
-  {
-   "id": "wf_df02cf26-2eb",
-   "batch": "fan-rules-4",
-   "faction": "",
-   "modified": "2026-11-26T06:14:03.437Z",
-   "now": {
-    "label": "reader:eyriesend",
-    "stage": "reader",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Read",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-26T06:14:03.432Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup"
-   ]
   }
  ],
  "agents": [
   {
-   "label": "gates:marquistadors:p1",
-   "stage": "gates",
-   "faction": "marquistadors",
+   "label": "rules:eyriesend:p1.2",
+   "stage": "rules",
+   "faction": "eyriesend",
+   "pass": 1,
+   "try": 2,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T06:29:56.398Z",
+   "end": null
+  },
+  {
+   "label": "ux:doomsayers:p1",
+   "stage": "ux",
+   "faction": "doomsayers",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T06:29:52.755Z",
+   "end": null
+  },
+  {
+   "label": "code:doomsayers:p1",
+   "stage": "code",
+   "faction": "doomsayers",
    "pass": null,
    "try": null,
    "phase": "Review",
    "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T06:29:52.754Z",
+   "end": "2026-11-26T06:30:10.846Z",
+   "score": null,
+   "pass_ok": true,
+   "findings": 1
+  },
+  {
+   "label": "shots:doomsayers:p1",
+   "stage": "shots",
+   "faction": "doomsayers",
+   "pass": null,
+   "try": null,
+   "phase": "Screenshot",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T06:28:49.603Z",
+   "end": "2026-11-26T06:29:52.737Z"
+  },
+  {
+   "label": "gates:doomsayers:p1",
+   "stage": "gates",
+   "faction": "doomsayers",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T06:27:46.228Z",
+   "end": "2026-11-26T06:28:49.509Z",
+   "score": null,
+   "pass_ok": true,
+   "findings": 0
+  },
+  {
+   "label": "artcheck:doomsayers:p1.2",
+   "stage": "artCheck",
+   "faction": "doomsayers",
+   "pass": 1,
+   "try": 2,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T06:26:58.876Z",
+   "end": "2026-11-26T06:27:45.947Z",
+   "score": 8,
+   "pass_ok": true,
+   "findings": 3
+  },
+  {
+   "label": "artfix:doomsayers:1784",
+   "stage": "artfix",
+   "faction": "doomsayers",
+   "pass": null,
+   "try": 1,
+   "phase": "Art",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T06:22:21.864Z",
+   "end": "2026-11-26T06:26:58.772Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "rules:eyriesend:p1.1",
+   "stage": "rules",
+   "faction": "eyriesend",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T06:21:35.454Z",
+   "end": "2026-11-26T06:29:56.296Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "hud:eagleking:p1.1",
+   "stage": "hud",
+   "faction": "eagleking",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
    "running": true,
-   "start": "2026-11-26T06:19:45.074Z",
+   "start": "2026-11-26T06:21:31.280Z",
    "end": null
+  },
+  {
+   "label": "artcheck:doomsayers:p1.1",
+   "stage": "artCheck",
+   "faction": "doomsayers",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T06:21:02.292Z",
+   "end": "2026-11-26T06:22:21.667Z",
+   "score": 6,
+   "pass_ok": false,
+   "findings": 3
+  },
+  {
+   "label": "theme:eyriesend",
+   "stage": "theme",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Concept",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T06:20:58.317Z",
+   "end": "2026-11-26T06:21:35.279Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "quota:doomsayers:art-p1",
+   "stage": "quota",
+   "faction": "doomsayers",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T06:20:53.817Z",
+   "end": "2026-11-26T06:21:02.052Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "art:doomsayers",
+   "stage": "art",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Art",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T06:20:49.656Z",
+   "end": "2026-11-26T06:20:53.561Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "coverage:doomsayers:p1",
+   "stage": "coverage",
+   "faction": "doomsayers",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T06:20:31.984Z",
+   "end": "2026-11-26T06:20:49.238Z",
+   "score": null,
+   "pass_ok": true,
+   "findings": 0
   },
   {
    "label": "rulescheck:eagleking:p1.2",
@@ -1141,38 +1270,12 @@
    "try": 2,
    "phase": "Review",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T06:18:58.822Z",
-   "end": null
-  },
-  {
-   "label": "artcheck:marquistadors:p1.1",
-   "stage": "artCheck",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T06:18:40.469Z",
-   "end": "2026-11-26T06:19:44.992Z",
-   "score": 8,
+   "end": "2026-11-26T06:21:31.188Z",
+   "score": 8.8,
    "pass_ok": true,
-   "findings": 2
-  },
-  {
-   "label": "quota:marquistadors:art-p1",
-   "stage": "quota",
-   "faction": "marquistadors",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T06:18:31.994Z",
-   "end": "2026-11-26T06:18:40.297Z",
-   "score": null,
-   "findings": 0
+   "findings": 3
   },
   {
    "label": "judge:doomsayers:p1.2",
@@ -1182,38 +1285,12 @@
    "try": 2,
    "phase": "Review",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T06:18:23.690Z",
-   "end": null
-  },
-  {
-   "label": "art:marquistadors",
-   "stage": "art",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Art",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T06:16:57.499Z",
-   "end": "2026-11-26T06:18:31.909Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "coverage:marquistadors:p1",
-   "stage": "coverage",
-   "faction": "marquistadors",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T06:16:37.949Z",
-   "end": "2026-11-26T06:16:56.923Z",
-   "score": null,
+   "end": "2026-11-26T06:20:31.889Z",
+   "score": 7.2,
    "pass_ok": true,
-   "findings": 0
+   "findings": 10
   },
   {
    "label": "stepfix:eagleking:p1.1",
@@ -1230,21 +1307,6 @@
    "findings": 0
   },
   {
-   "label": "judge:marquistadors:p1.2",
-   "stage": "judge",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 2,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T06:14:13.703Z",
-   "end": "2026-11-26T06:16:36.190Z",
-   "score": 7.4,
-   "pass_ok": true,
-   "findings": 21
-  },
-  {
    "label": "reader:eyriesend",
    "stage": "reader",
    "faction": "",
@@ -1252,9 +1314,11 @@
    "try": null,
    "phase": "Read",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T06:14:03.432Z",
-   "end": null
+   "end": "2026-11-26T06:20:58.090Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "setup:fan-rules-4",
@@ -1308,20 +1372,6 @@
    "running": false,
    "start": "2026-11-26T06:01:06.718Z",
    "end": "2026-11-26T06:01:51.833Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "stepfix:marquistadors:p1.2",
-   "stage": "stepfix",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 2,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T05:59:21.128Z",
-   "end": "2026-11-26T06:14:13.497Z",
    "score": null,
    "findings": 0
   },
@@ -1381,20 +1431,6 @@
    "findings": 12
   },
   {
-   "label": "stepfix:marquistadors:p1.1",
-   "stage": "stepfix",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 2,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T05:44:37.950Z",
-   "end": "2026-11-26T05:59:21.015Z",
-   "score": null,
-   "findings": 0
-  },
-  {
    "label": "skin:doomsayers:p1.2",
    "stage": "skin",
    "faction": "doomsayers",
@@ -1407,21 +1443,6 @@
    "end": "2026-11-26T05:54:23.300Z",
    "score": null,
    "findings": 0
-  },
-  {
-   "label": "judge:marquistadors:p1.1",
-   "stage": "judge",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T05:32:10.496Z",
-   "end": "2026-11-26T05:44:36.174Z",
-   "score": 7,
-   "pass_ok": true,
-   "findings": 6
   },
   {
    "label": "skin:doomsayers:p1.1",
@@ -1462,76 +1483,6 @@
    "running": false,
    "start": "2026-11-26T05:27:41.936Z",
    "end": "2026-11-26T05:29:31.464Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:doomsayers:plate",
-   "stage": "quota",
-   "faction": "doomsayers",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T05:27:32.757Z",
-   "end": "2026-11-26T05:27:41.489Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "overlay:doomsayers",
-   "stage": "overlay",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T05:18:54.755Z",
-   "end": "2026-11-26T05:27:32.585Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:doomsayers:overlay",
-   "stage": "quota",
-   "faction": "doomsayers",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T05:18:44.583Z",
-   "end": "2026-11-26T05:18:54.391Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "wireframe:doomsayers",
-   "stage": "wireframe",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Screenshot",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T05:18:19.515Z",
-   "end": "2026-11-26T05:18:43.902Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "skin:marquistadors:p1.2",
-   "stage": "skin",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 2,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T05:18:18.492Z",
-   "end": "2026-11-26T05:32:10.389Z",
    "score": null,
    "findings": 0
   }
@@ -2008,7 +1959,7 @@
    "name": "Marquistadors",
    "group": "Factions",
    "what": "Fan faction.",
-   "state": "running",
+   "state": "finished",
    "feedback": {
     "open": 0,
     "fixed": 0,
@@ -2018,7 +1969,7 @@
    },
    "img": "img/factions/marquistadors.webp",
    "thumb": "img/factions/marquistadors-thumb.webp",
-   "shotAt": "2026-11-18T21:03:19.761Z"
+   "shotAt": "2026-11-26T06:25:24.530Z"
   },
   {
    "key": "doomsayers",
@@ -2053,6 +2004,23 @@
    "img": "img/factions/eagleking.webp",
    "thumb": "img/factions/eagleking-thumb.webp",
    "shotAt": "2026-11-18T21:03:36.874Z"
+  },
+  {
+   "key": "eyriesend",
+   "name": "Eyriesend",
+   "group": "Factions",
+   "what": "Fan faction.",
+   "state": "running",
+   "feedback": {
+    "open": 0,
+    "fixed": 0,
+    "queued": 0,
+    "needsLead": 0,
+    "issues": []
+   },
+   "img": "img/factions/eyriesend.webp",
+   "thumb": "img/factions/eyriesend-thumb.webp",
+   "shotAt": "2026-11-18T21:03:45.412Z"
   },
   {
    "key": "woodland",
@@ -2308,23 +2276,6 @@
    "img": "img/factions/croakers.webp",
    "thumb": "img/factions/croakers-thumb.webp",
    "shotAt": "2026-11-26T05:59:40.486Z"
-  },
-  {
-   "key": "eyriesend",
-   "name": "Eyriesend",
-   "group": "Factions",
-   "what": "Fan faction.",
-   "state": "waiting",
-   "feedback": {
-    "open": 0,
-    "fixed": 0,
-    "queued": 0,
-    "needsLead": 0,
-    "issues": []
-   },
-   "img": "img/factions/eyriesend.webp",
-   "thumb": "img/factions/eyriesend-thumb.webp",
-   "shotAt": "2026-11-18T21:03:45.412Z"
   },
   {
    "key": "fangus",
@@ -4751,17 +4702,22 @@
    "list": [
     {
      "name": "factory/fan-rules-2",
-     "ahead": 18,
+     "ahead": 23,
      "date": "2026-11-26"
     },
     {
      "name": "factory/fan-rules-3",
-     "ahead": 25,
+     "ahead": 28,
+     "date": "2026-11-26"
+    },
+    {
+     "name": "factory/fan-rules-4",
+     "ahead": 3,
      "date": "2026-11-26"
     },
     {
      "name": "factory/fan-rules-5",
-     "ahead": 4,
+     "ahead": 5,
      "date": "2026-11-26"
     },
     {
@@ -4809,7 +4765,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T06:20:05.000Z",
+    "lastRun": "2026-11-26T06:30:41.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4981,6 +4937,90 @@
     }
    ],
    "last24": [
+    {
+     "hash": "6268e2e",
+     "time": "2026-11-26T07:30:10+01:00",
+     "subject": "factory: CLEAN code doomsayers",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "2bfc887",
+     "time": "2026-11-26T07:29:45+01:00",
+     "subject": "eyriesend rules leg 1: Decree + Turmoil, 6 leaders, random warrior/Cardinal supply, Roosts track, caravans, Lords of Corruption (28/36 ledge",
+     "agent": "lead",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "3a552d8",
+     "time": "2026-11-26T07:28:52+01:00",
+     "subject": "learn marquistadors: track count >= 11px check, tabs-above-bar + judge text sweep in the skin prompt, lessons merged",
+     "agent": "lead",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "3907315",
+     "time": "2026-11-26T07:27:40+01:00",
+     "subject": "factory: CLEAN artCheck doomsayers",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "575ec08",
+     "time": "2026-11-26T07:26:53+01:00",
+     "subject": "doomsayers art: church tile on faction-grey so the colour check passes",
+     "agent": "lead",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "ec3d3ef",
+     "time": "2026-11-26T07:26:48+01:00",
+     "subject": "doomsayers art: summoningCircle round token and church tile repainted, cut, factory.json slots",
+     "agent": "lead",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "f21aad1",
+     "time": "2026-11-26T07:25:30+01:00",
+     "subject": "factory: approver marquistadors (fan-rules-3 pass 1/1, DONE)",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "44c2586",
+     "time": "2026-11-26T07:22:17+01:00",
+     "subject": "factory: CLEAN code marquistadors",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "6c667ab",
+     "time": "2026-11-26T07:21:32+01:00",
+     "subject": "eyriesend: hudTheme on + stub theme CSS, first shot",
+     "agent": "lead",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "6c1dff6",
+     "time": "2026-11-26T07:21:23+01:00",
+     "subject": "factory: CLEAN rulesCheck eagleking",
+     "agent": "factory",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "e3fc060",
+     "time": "2026-11-26T07:20:46+01:00",
+     "subject": "factory: card reader eyriesend (fan-rules-4): ledger 36 rows, brief, Vault board transcription, 9 card-vs-Vault conflicts",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "d81d44e",
+     "time": "2026-11-26T07:20:27+01:00",
+     "subject": "factory: judge p1.2 doomsayers",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
     {
      "hash": "647e5aa",
      "time": "2026-11-26T07:19:40+01:00",
@@ -5316,93 +5356,9 @@
      "subject": "factory: CLEAN hudCheck doomsayers",
      "agent": "factory",
      "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "62cde88",
-     "time": "2026-11-26T06:18:09+01:00",
-     "subject": "factory skin marquistadors leg 1 (partial): parts re-cut at their painted boxes, panels as scene-corner 9-slices, right panel and top bar on",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "31a89d3",
-     "time": "2026-11-26T06:15:25+01:00",
-     "subject": "factory stepfix hud doomsayers: accent hand name on a bone chip, one title font/size centred (tab-rule), abilities fold to names in a list b",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "725183a",
-     "time": "2026-11-26T06:03:43+01:00",
-     "subject": "factory: CLEAN hudCheck croakers",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "6f30f1a",
-     "time": "2026-11-26T06:00:43+01:00",
-     "subject": "croakers step fix HUD p1.1: End plate takes the full faction colour (color blend), accent share 1.70%, End 79.7%",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "10e3fe9",
-     "time": "2026-11-26T05:56:45+01:00",
-     "subject": "doomsayers HUD build: spec.md control checklist, Evening auto tiles (Summon/Score/Draw N), die counts on Daylight words, kit rows + cost chi",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "dd4b28f",
-     "time": "2026-11-26T05:56:31+01:00",
-     "subject": "factory cut marquistadors: 10 fixed, 10 repeated, 8 9-slice",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "0783fc4",
-     "time": "2026-11-26T05:56:08+01:00",
-     "subject": "factory marquistadors: clean plate",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "5879a4c",
-     "time": "2026-11-26T05:54:06+01:00",
-     "subject": "factory concept marquistadors: overlay concept (theme median 6, 7 panels moved)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "10541be",
-     "time": "2026-11-26T05:53:27+01:00",
-     "subject": "croakers HUD fix run 2: opaque off tiles, Pieces tracks enlarged, Crafted Items once + in Abilities, clip check scales frame bands by the UI",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "df4c51c",
-     "time": "2026-11-26T05:40:41+01:00",
-     "subject": "factory: wireframe shot marquistadors (fan-rules-3)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "a5bf4d3",
-     "time": "2026-11-26T05:40:22+01:00",
-     "subject": "factory: CLEAN hudCheck marquistadors",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "a726347",
-     "time": "2026-11-26T05:38:39+01:00",
-     "subject": "factory: judge darkforest p1.1",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
     }
    ],
-   "last24Count": 332
+   "last24Count": 342
   },
   "trust": {
    "tests": {
@@ -6174,21 +6130,21 @@
   },
   "chatgpt": {
    "quota": {
-    "seen": "2026-11-26T06:18:08.873Z",
+    "seen": "2026-11-26T06:26:10.491Z",
     "primary": {
-     "usedPercent": 2,
+     "usedPercent": 4,
      "windowMinutes": 300,
      "resetsAt": "2026-11-26T10:49:46.000Z"
     },
     "secondary": {
-     "usedPercent": 30,
+     "usedPercent": 31,
      "windowMinutes": 10080,
      "resetsAt": "2026-11-26T20:21:17.000Z"
     }
    },
    "calls": {
-    "today": 38,
-    "last7": 221,
+    "today": 40,
+    "last7": 223,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
@@ -6218,7 +6174,7 @@
      "crumblingcourt": 9,
      "darkforest": 11,
      "marquistadors": 4,
-     "doomsayers": 3
+     "doomsayers": 5
     },
     "failed": 1
    }
@@ -6902,10 +6858,10 @@
  "tokens": {
   "factions": {
    "other": {
-    "input": 17649,
-    "output": 3768088,
-    "cacheCreate": 35866606,
-    "cacheRead": 499698872,
+    "input": 17655,
+    "output": 3769988,
+    "cacheCreate": 35936229,
+    "cacheRead": 499823413,
     "stages": {
      "setup": {
       "input": 320,
@@ -6940,12 +6896,12 @@
       "total": 3427768
      },
      "gate": {
-      "input": 764,
-      "output": 180058,
-      "cacheCreate": 3907542,
-      "cacheRead": 8406117,
-      "fresh": 4088364,
-      "total": 12494481
+      "input": 770,
+      "output": 181958,
+      "cacheCreate": 3977165,
+      "cacheRead": 8530658,
+      "fresh": 4159893,
+      "total": 12690551
      },
      "shots": {
       "input": 42,
@@ -7451,7 +7407,7 @@
       "id": "wf_080e4eac-339",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 1
+      "agents": 2
      },
      {
       "id": "wf_08977948-0c1",
@@ -7502,14 +7458,14 @@
       "agents": 2
      }
     ],
-    "agents": 353,
+    "agents": 354,
     "first": "2026-11-04",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": false,
-    "fresh": 39652343,
-    "total": 539351215
+    "fresh": 39723872,
+    "total": 539547285
    },
    "caninecommonwealth": {
     "input": 2984,
@@ -7726,10 +7682,10 @@
     "total": 157115423
    },
    "marquistadors": {
-    "input": 1544,
-    "output": 551328,
-    "cacheCreate": 3166424,
-    "cacheRead": 82481268,
+    "input": 1686,
+    "output": 588520,
+    "cacheCreate": 3577909,
+    "cacheRead": 88530990,
     "stages": {
      "reader": {
       "input": 64,
@@ -7868,12 +7824,52 @@
       "total": 953568
      },
      "gates": {
-      "input": 8,
-      "output": 946,
-      "cacheCreate": 42592,
-      "cacheRead": 205459,
-      "fresh": 43546,
-      "total": 249005
+      "input": 12,
+      "output": 1164,
+      "cacheCreate": 44065,
+      "cacheRead": 332805,
+      "fresh": 45241,
+      "total": 378046
+     },
+     "shots": {
+      "input": 4,
+      "output": 407,
+      "cacheCreate": 62092,
+      "cacheRead": 58917,
+      "fresh": 62503,
+      "total": 121420
+     },
+     "code": {
+      "input": 14,
+      "output": 2258,
+      "cacheCreate": 55629,
+      "cacheRead": 435185,
+      "fresh": 57901,
+      "total": 493086
+     },
+     "ux": {
+      "input": 56,
+      "output": 12478,
+      "cacheCreate": 95167,
+      "cacheRead": 2625387,
+      "fresh": 107701,
+      "total": 2733088
+     },
+     "approve": {
+      "input": 18,
+      "output": 5828,
+      "cacheCreate": 76489,
+      "cacheRead": 561390,
+      "fresh": 82335,
+      "total": 643725
+     },
+     "learn": {
+      "input": 46,
+      "output": 16003,
+      "cacheCreate": 120635,
+      "cacheRead": 2241497,
+      "fresh": 136684,
+      "total": 2378181
      }
     },
     "runs": [
@@ -7881,17 +7877,17 @@
       "id": "wf_080e4eac-339",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 31
+      "agents": 36
      }
     ],
-    "agents": 31,
+    "agents": 36,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 4,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3719296,
-    "total": 86200564
+    "fresh": 4168115,
+    "total": 92699105
    },
    "collegiumalfaromancy": {
     "input": 2426,
@@ -8108,10 +8104,10 @@
     "total": 120478676
    },
    "eagleking": {
-    "input": 254,
-    "output": 125042,
-    "cacheCreate": 606513,
-    "cacheRead": 12381662,
+    "input": 380,
+    "output": 159383,
+    "cacheCreate": 751984,
+    "cacheRead": 19347455,
     "stages": {
      "reader": {
       "input": 54,
@@ -8138,12 +8134,12 @@
       "total": 4394606
      },
      "rulescheck": {
-      "input": 52,
-      "output": 24281,
-      "cacheCreate": 192854,
-      "cacheRead": 2188345,
-      "fresh": 217187,
-      "total": 2405532
+      "input": 74,
+      "output": 31680,
+      "cacheCreate": 208522,
+      "cacheRead": 3301383,
+      "fresh": 240276,
+      "total": 3541659
      },
      "stepfix": {
       "input": 62,
@@ -8152,6 +8148,14 @@
       "cacheRead": 3138287,
       "fresh": 121069,
       "total": 3259356
+     },
+     "hud": {
+      "input": 104,
+      "output": 26942,
+      "cacheCreate": 129803,
+      "cacheRead": 5852755,
+      "fresh": 156849,
+      "total": 6009604
      }
     },
     "runs": [
@@ -8159,17 +8163,17 @@
       "id": "wf_08d21123-99b",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 6
+      "agents": 7
      }
     ],
-    "agents": 6,
+    "agents": 7,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 731809,
-    "total": 13113471
+    "fresh": 911747,
+    "total": 20259202
    },
    "bumblebee": {
     "input": 3174,
@@ -9712,10 +9716,10 @@
     "total": 82043195
    },
    "doomsayers": {
-    "input": 1050,
-    "output": 396091,
-    "cacheCreate": 1940728,
-    "cacheRead": 58280765,
+    "input": 1188,
+    "output": 422264,
+    "cacheCreate": 2450920,
+    "cacheRead": 62462768,
     "stages": {
      "reader": {
       "input": 54,
@@ -9782,12 +9786,12 @@
       "total": 247473
      },
      "quota": {
-      "input": 8,
-      "output": 308,
+      "input": 12,
+      "output": 462,
       "cacheCreate": 121918,
-      "cacheRead": 116780,
-      "fresh": 122234,
-      "total": 239014
+      "cacheRead": 236085,
+      "fresh": 122392,
+      "total": 358477
      },
      "overlay": {
       "input": 20,
@@ -9822,12 +9826,76 @@
       "total": 16858567
      },
      "judge": {
-      "input": 12,
-      "output": 3875,
-      "cacheCreate": 115038,
-      "cacheRead": 276584,
-      "fresh": 118925,
-      "total": 395509
+      "input": 18,
+      "output": 5900,
+      "cacheCreate": 119980,
+      "cacheRead": 477824,
+      "fresh": 125898,
+      "total": 603722
+     },
+     "coverage": {
+      "input": 4,
+      "output": 308,
+      "cacheCreate": 41046,
+      "cacheRead": 79351,
+      "fresh": 41358,
+      "total": 120709
+     },
+     "art": {
+      "input": 4,
+      "output": 262,
+      "cacheCreate": 42005,
+      "cacheRead": 80551,
+      "fresh": 42271,
+      "total": 122822
+     },
+     "artcheck": {
+      "input": 56,
+      "output": 9977,
+      "cacheCreate": 109135,
+      "cacheRead": 1836382,
+      "fresh": 119168,
+      "total": 1955550
+     },
+     "artfix": {
+      "input": 26,
+      "output": 7916,
+      "cacheCreate": 57777,
+      "cacheRead": 879874,
+      "fresh": 65719,
+      "total": 945593
+     },
+     "gates": {
+      "input": 10,
+      "output": 1398,
+      "cacheCreate": 64276,
+      "cacheRead": 247156,
+      "fresh": 65684,
+      "total": 312840
+     },
+     "shots": {
+      "input": 4,
+      "output": 437,
+      "cacheCreate": 62369,
+      "cacheRead": 58917,
+      "fresh": 62810,
+      "total": 121727
+     },
+     "code": {
+      "input": 10,
+      "output": 1689,
+      "cacheCreate": 72375,
+      "cacheRead": 260633,
+      "fresh": 74074,
+      "total": 334707
+     },
+     "ux": {
+      "input": 14,
+      "output": 2007,
+      "cacheCreate": 56267,
+      "cacheRead": 418594,
+      "fresh": 58288,
+      "total": 476882
      }
     },
     "runs": [
@@ -9835,31 +9903,47 @@
       "id": "wf_dec81e6b-505",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 21
+      "agents": 31
      }
     ],
-    "agents": 21,
+    "agents": 31,
     "first": "2026-11-26",
     "last": "2026-11-26",
-    "pictures": 3,
+    "pictures": 5,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2337869,
-    "total": 60618634
+    "fresh": 2874372,
+    "total": 65337140
    },
    "eyriesend": {
-    "input": 78,
-    "output": 35387,
-    "cacheCreate": 123734,
-    "cacheRead": 3923690,
+    "input": 182,
+    "output": 93242,
+    "cacheCreate": 389702,
+    "cacheRead": 9305585,
     "stages": {
      "reader": {
-      "input": 78,
-      "output": 35387,
-      "cacheCreate": 123734,
-      "cacheRead": 3923690,
-      "fresh": 159199,
-      "total": 4082889
+      "input": 90,
+      "output": 42370,
+      "cacheCreate": 131742,
+      "cacheRead": 4811004,
+      "fresh": 174202,
+      "total": 4985206
+     },
+     "theme": {
+      "input": 12,
+      "output": 1824,
+      "cacheCreate": 46563,
+      "cacheRead": 339031,
+      "fresh": 48399,
+      "total": 387430
+     },
+     "rules": {
+      "input": 80,
+      "output": 49048,
+      "cacheCreate": 211397,
+      "cacheRead": 4155550,
+      "fresh": 260525,
+      "total": 4416075
      }
     },
     "runs": [
@@ -9867,17 +9951,17 @@
       "id": "wf_df02cf26-2eb",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 1
+      "agents": 4
      }
     ],
-    "agents": 1,
+    "agents": 4,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 159199,
-    "total": 4082889
+    "fresh": 483126,
+    "total": 9788711
    },
    "chameleander": {
     "input": 2108,
