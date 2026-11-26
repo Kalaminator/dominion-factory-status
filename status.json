@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T04:30:15.965Z",
+ "generatedAt": "2026-11-26T04:40:16.032Z",
  "stages": [
   {
    "id": "reader",
@@ -213,44 +213,41 @@
   }
  ],
  "run": {
-  "id": "wf_dec81e6b-505",
-  "modified": "2026-11-26T04:28:17.216Z",
+  "id": "wf_ef0b50b7-b4c",
+  "modified": "2026-11-26T04:38:40.869Z",
   "running": 1,
-  "faction": "doomsayers",
+  "faction": "darkforest",
   "stageDone": [
    "setup",
    "reader",
    "theme",
-   "rules"
+   "rules",
+   "rulesCheck",
+   "stepfix",
+   "hud",
+   "hudCheck",
+   "wireframe",
+   "quota",
+   "overlay",
+   "plate",
+   "cut",
+   "skin",
+   "judge"
   ]
  },
  "now": {
-  "label": "rulescheck:doomsayers:p1.1",
-  "stage": "rulesCheck",
-  "faction": "doomsayers",
+  "label": "stepfix:darkforest:p1.1",
+  "stage": "stepfix",
+  "faction": "darkforest",
   "pass": 1,
-  "try": 1,
-  "phase": "Review",
+  "try": 2,
+  "phase": "Build",
   "model": "opus",
   "running": true,
-  "start": "2026-11-26T04:28:17.213Z",
+  "start": "2026-11-26T04:38:40.867Z",
   "end": null
  },
  "scores": [
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:croakers:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 7
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:croakers:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 7
-  },
   {
    "stage": "rulesCheck",
    "label": "rulescheck:darkforest:p1.1",
@@ -280,6 +277,13 @@
    "score": 10
   },
   {
+   "stage": "judge",
+   "label": "judge:darkforest:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 2
+  },
+  {
    "stage": "rulesCheck",
    "label": "rulescheck:marquistadors:p1.1",
    "pass": 1,
@@ -306,6 +310,41 @@
    "pass": 1,
    "try": 1,
    "score": 0
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:doomsayers:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 7
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:doomsayers:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 9.2
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:croakers:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 7
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:croakers:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 7
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:croakers:p1.3",
+   "pass": 1,
+   "try": 3,
+   "score": 9
   }
  ],
  "factions": [
@@ -884,28 +923,28 @@
  "doneCount": 25,
  "recentRuns": [
   {
-   "id": "wf_dec81e6b-505",
-   "modified": "2026-11-26T04:28:17.216Z",
-   "running": 1,
-   "agents": 5
-  },
-  {
-   "id": "wf_6bb86601-1df",
-   "modified": "2026-11-26T04:28:01.170Z",
-   "running": 1,
-   "agents": 10
-  },
-  {
    "id": "wf_ef0b50b7-b4c",
-   "modified": "2026-11-26T04:24:32.154Z",
+   "modified": "2026-11-26T04:38:40.869Z",
    "running": 1,
-   "agents": 20
+   "agents": 22
   },
   {
    "id": "wf_080e4eac-339",
-   "modified": "2026-11-26T04:15:07.338Z",
+   "modified": "2026-11-26T04:37:41.783Z",
    "running": 1,
-   "agents": 14
+   "agents": 15
+  },
+  {
+   "id": "wf_dec81e6b-505",
+   "modified": "2026-11-26T04:37:23.796Z",
+   "running": 1,
+   "agents": 8
+  },
+  {
+   "id": "wf_6bb86601-1df",
+   "modified": "2026-11-26T04:30:56.241Z",
+   "running": 1,
+   "agents": 11
   },
   {
    "id": "wf_aadf05ca-a24",
@@ -958,70 +997,20 @@
  ],
  "factories": [
   {
-   "id": "wf_dec81e6b-505",
-   "batch": "fan-rules-2",
-   "faction": "doomsayers",
-   "modified": "2026-11-26T04:28:17.216Z",
-   "now": {
-    "label": "rulescheck:doomsayers:p1.1",
-    "stage": "rulesCheck",
-    "faction": "doomsayers",
-    "pass": 1,
-    "try": 1,
-    "phase": "Review",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-26T04:28:17.213Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules"
-   ]
-  },
-  {
-   "id": "wf_6bb86601-1df",
-   "batch": "fan-rules-5",
-   "faction": "croakers",
-   "modified": "2026-11-26T04:28:01.170Z",
-   "now": {
-    "label": "rulescheck:croakers:p1.3",
-    "stage": "rulesCheck",
-    "faction": "croakers",
-    "pass": 1,
-    "try": 3,
-    "phase": "Review",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-26T04:28:01.167Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix"
-   ]
-  },
-  {
    "id": "wf_ef0b50b7-b4c",
    "batch": "fan-rules-4",
    "faction": "darkforest",
-   "modified": "2026-11-26T04:24:32.154Z",
+   "modified": "2026-11-26T04:38:40.869Z",
    "now": {
-    "label": "skin:darkforest:p1.2",
-    "stage": "skin",
+    "label": "stepfix:darkforest:p1.1",
+    "stage": "stepfix",
     "faction": "darkforest",
     "pass": 1,
     "try": 2,
     "phase": "Build",
     "model": "opus",
     "running": true,
-    "start": "2026-11-26T04:24:32.148Z",
+    "start": "2026-11-26T04:38:40.867Z",
     "end": null
    },
    "stageDone": [
@@ -1038,24 +1027,25 @@
     "overlay",
     "plate",
     "cut",
-    "skin"
+    "skin",
+    "judge"
    ]
   },
   {
    "id": "wf_080e4eac-339",
    "batch": "fan-rules-3",
    "faction": "marquistadors",
-   "modified": "2026-11-26T04:15:07.338Z",
+   "modified": "2026-11-26T04:37:41.783Z",
    "now": {
-    "label": "stepfix:marquistadors:p1.1",
-    "stage": "stepfix",
+    "label": "hudcheck:marquistadors:p1.2",
+    "stage": "hudCheck",
     "faction": "marquistadors",
     "pass": 1,
-    "try": 1,
-    "phase": "Build",
-    "model": "opus",
+    "try": 2,
+    "phase": "Review",
+    "model": "sonnet",
     "running": true,
-    "start": "2026-11-26T04:15:07.336Z",
+    "start": "2026-11-26T04:37:41.781Z",
     "end": null
    },
    "stageDone": [
@@ -1067,6 +1057,58 @@
     "stepfix",
     "hud",
     "hudCheck"
+   ]
+  },
+  {
+   "id": "wf_dec81e6b-505",
+   "batch": "fan-rules-2",
+   "faction": "doomsayers",
+   "modified": "2026-11-26T04:37:23.796Z",
+   "now": {
+    "label": "hud:doomsayers:p1.1",
+    "stage": "hud",
+    "faction": "doomsayers",
+    "pass": 1,
+    "try": 1,
+    "phase": "Build",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-26T04:37:23.794Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix"
+   ]
+  },
+  {
+   "id": "wf_6bb86601-1df",
+   "batch": "fan-rules-5",
+   "faction": "croakers",
+   "modified": "2026-11-26T04:30:56.241Z",
+   "now": {
+    "label": "hud:croakers:p1.1",
+    "stage": "hud",
+    "faction": "croakers",
+    "pass": 1,
+    "try": 1,
+    "phase": "Build",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-26T04:30:56.237Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix"
    ]
   },
   {
@@ -1118,6 +1160,98 @@
  ],
  "agents": [
   {
+   "label": "stepfix:darkforest:p1.1",
+   "stage": "stepfix",
+   "faction": "darkforest",
+   "pass": 1,
+   "try": 2,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T04:38:40.867Z",
+   "end": null
+  },
+  {
+   "label": "hudcheck:marquistadors:p1.2",
+   "stage": "hudCheck",
+   "faction": "marquistadors",
+   "pass": 1,
+   "try": 2,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": true,
+   "start": "2026-11-26T04:37:41.781Z",
+   "end": null
+  },
+  {
+   "label": "hud:doomsayers:p1.1",
+   "stage": "hud",
+   "faction": "doomsayers",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T04:37:23.794Z",
+   "end": null
+  },
+  {
+   "label": "judge:darkforest:p1.1",
+   "stage": "judge",
+   "faction": "darkforest",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T04:36:23.133Z",
+   "end": "2026-11-26T04:38:39.190Z",
+   "score": 2,
+   "pass_ok": false,
+   "findings": 15
+  },
+  {
+   "label": "rulescheck:doomsayers:p1.2",
+   "stage": "rulesCheck",
+   "faction": "doomsayers",
+   "pass": 1,
+   "try": 2,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T04:34:29.682Z",
+   "end": "2026-11-26T04:37:23.688Z",
+   "score": 9.2,
+   "pass_ok": true,
+   "findings": 1
+  },
+  {
+   "label": "stepfix:doomsayers:p1.1",
+   "stage": "stepfix",
+   "faction": "doomsayers",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T04:31:37.248Z",
+   "end": "2026-11-26T04:34:29.589Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "hud:croakers:p1.1",
+   "stage": "hud",
+   "faction": "croakers",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T04:30:56.237Z",
+   "end": null
+  },
+  {
    "label": "rulescheck:doomsayers:p1.1",
    "stage": "rulesCheck",
    "faction": "doomsayers",
@@ -1125,9 +1259,12 @@
    "try": 1,
    "phase": "Review",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T04:28:17.213Z",
-   "end": null
+   "end": "2026-11-26T04:31:37.091Z",
+   "score": 7,
+   "pass_ok": false,
+   "findings": 3
   },
   {
    "label": "rulescheck:croakers:p1.3",
@@ -1137,9 +1274,12 @@
    "try": 3,
    "phase": "Review",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T04:28:01.167Z",
-   "end": null
+   "end": "2026-11-26T04:30:56.101Z",
+   "score": 9,
+   "pass_ok": true,
+   "findings": 2
   },
   {
    "label": "skin:darkforest:p1.2",
@@ -1149,9 +1289,11 @@
    "try": 2,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T04:24:32.148Z",
-   "end": null
+   "end": "2026-11-26T04:36:23.017Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "stepfix:croakers:p1.1",
@@ -1218,9 +1360,11 @@
    "try": 1,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T04:15:07.336Z",
-   "end": null
+   "end": "2026-11-26T04:37:41.683Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "plate:darkforest",
@@ -1432,106 +1576,6 @@
    "score": 9,
    "pass_ok": false,
    "findings": 1
-  },
-  {
-   "label": "hud:marquistadors:p1.1",
-   "stage": "hud",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:58:17.909Z",
-   "end": "2026-11-26T04:11:18.283Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rulescheck:croakers:p1.1",
-   "stage": "rulesCheck",
-   "faction": "croakers",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:58:11.298Z",
-   "end": "2026-11-26T04:01:52.787Z",
-   "score": 7,
-   "pass_ok": false,
-   "findings": 4
-  },
-  {
-   "label": "rulescheck:marquistadors:p1.3",
-   "stage": "rulesCheck",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 3,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:55:45.818Z",
-   "end": "2026-11-26T03:58:17.791Z",
-   "score": 9.2,
-   "pass_ok": true,
-   "findings": 2
-  },
-  {
-   "label": "hud:darkforest:p1.1",
-   "stage": "hud",
-   "faction": "darkforest",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:52:29.299Z",
-   "end": "2026-11-26T03:59:12.449Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "stepfix:marquistadors:p1.1",
-   "stage": "stepfix",
-   "faction": "marquistadors",
-   "pass": 1,
-   "try": 2,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:52:29.142Z",
-   "end": "2026-11-26T03:55:45.707Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rules:croakers:p1.1",
-   "stage": "rules",
-   "faction": "croakers",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T03:47:45.352Z",
-   "end": "2026-11-26T03:58:11.133Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "theme:croakers",
-   "stage": "theme",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T03:47:40.986Z",
-   "end": "2026-11-26T03:47:44.996Z",
-   "score": null,
-   "findings": 0
   }
  ],
  "elements": [
@@ -4749,22 +4793,22 @@
    "list": [
     {
      "name": "factory/fan-rules-2",
-     "ahead": 3,
+     "ahead": 5,
      "date": "2026-11-26"
     },
     {
      "name": "factory/fan-rules-3",
-     "ahead": 9,
+     "ahead": 10,
      "date": "2026-11-26"
     },
     {
      "name": "factory/fan-rules-4",
-     "ahead": 13,
+     "ahead": 15,
      "date": "2026-11-26"
     },
     {
      "name": "factory/fan-rules-5",
-     "ahead": 43,
+     "ahead": 44,
      "date": "2026-11-26"
     },
     {
@@ -4812,7 +4856,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T04:30:15.000Z",
+    "lastRun": "2026-11-26T04:40:15.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4823,8 +4867,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T04:05:06.000Z",
-    "nextRun": "2026-11-26T04:35:00.000Z",
+    "lastRun": "2026-11-26T04:35:14.000Z",
+    "nextRun": "2026-11-26T05:05:00.000Z",
     "lastNote": null
    },
    {
@@ -4984,6 +5028,48 @@
     }
    ],
    "last24": [
+    {
+     "hash": "a726347",
+     "time": "2026-11-26T05:38:39+01:00",
+     "subject": "factory: judge darkforest p1.1",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "3e55bfd",
+     "time": "2026-11-26T05:37:33+01:00",
+     "subject": "marquistadors HUD step fix p1: accent = player colour (hand name on a dark chip, tint for dark-frame text), tab titles one font/size centred",
+     "agent": "lead",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "851d7a3",
+     "time": "2026-11-26T05:37:20+01:00",
+     "subject": "factory: CLEAN rulesCheck doomsayers",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "5722339",
+     "time": "2026-11-26T05:36:10+01:00",
+     "subject": "factory skin darkforest (partial, leg 2): right column + top bar + bottom left on the paint, top buttons cut from the concept",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "cb247a0",
+     "time": "2026-11-26T05:34:19+01:00",
+     "subject": "factory stepfix rules doomsayers: Morale Drop on attack too, Crusade pays after its battle/move, 2 open readings listed",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "bce6e77",
+     "time": "2026-11-26T05:30:51+01:00",
+     "subject": "factory: CLEAN rulesCheck croakers",
+     "agent": "factory",
+     "branch": "factory/fan-rules-5"
+    },
     {
      "hash": "5a00c45",
      "time": "2026-11-26T05:28:01+01:00",
@@ -5361,51 +5447,9 @@
      "subject": "croakers step fix judge p1.1 leg 2: top buttons on their painted rims (plate re-cut, inside toned to the concept), faction tab name + crest ",
      "agent": "lead",
      "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "c605c8e",
-     "time": "2026-11-26T04:04:12+01:00",
-     "subject": "learn collegiumalfaromancy: nameplate FAN-badge/clip check, concept theme gate stops soft concepts, rules build cancel/order line; lessons m",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "d67a5d1",
-     "time": "2026-11-26T04:03:30+01:00",
-     "subject": "crumblingcourt judge fix p1.1 (partial): accent gate (End outline + inlays), Abilities unclipped, tab titles, small-size state card plate, s",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "44974b1",
-     "time": "2026-11-26T04:03:30+01:00",
-     "subject": "learn cirque: track-cell overflow check, theme-judge stale-shot refusal, gate re-runs harness errors, top-bar skin line; lessons merged to 3",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "93e8365",
-     "time": "2026-11-26T04:00:24+01:00",
-     "subject": "factory: approver collegiumalfaromancy pass 1/1 re-run: DONE-OPEN (theme-judge 5)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "a49920d",
-     "time": "2026-11-26T03:59:24+01:00",
-     "subject": "factory: CLEAN ux collegiumalfaromancy",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "e5b97b6",
-     "time": "2026-11-26T03:58:57+01:00",
-     "subject": "factory: approve cirque (fan-rules-4 pass 1/1, after fix run 2)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 284
+   "last24Count": 289
   },
   "trust": {
    "tests": {
@@ -7703,10 +7747,10 @@
     "total": 157115423
    },
    "marquistadors": {
-    "input": 890,
-    "output": 303939,
-    "cacheCreate": 1555294,
-    "cacheRead": 48309338,
+    "input": 924,
+    "output": 312763,
+    "cacheCreate": 1610380,
+    "cacheRead": 50432164,
     "stages": {
      "reader": {
       "input": 64,
@@ -7741,12 +7785,12 @@
       "total": 7134129
      },
      "stepfix": {
-      "input": 304,
-      "output": 90771,
-      "cacheCreate": 530949,
-      "cacheRead": 15785292,
-      "fresh": 622024,
-      "total": 16407316
+      "input": 334,
+      "output": 98334,
+      "cacheCreate": 542150,
+      "cacheRead": 17826539,
+      "fresh": 640818,
+      "total": 18467357
      },
      "hud": {
       "input": 166,
@@ -7757,12 +7801,12 @@
       "total": 10531953
      },
      "hudcheck": {
-      "input": 8,
-      "output": 2822,
-      "cacheCreate": 69075,
-      "cacheRead": 193873,
-      "fresh": 71905,
-      "total": 265778
+      "input": 12,
+      "output": 4083,
+      "cacheCreate": 112960,
+      "cacheRead": 275452,
+      "fresh": 117055,
+      "total": 392507
      }
     },
     "runs": [
@@ -7770,17 +7814,17 @@
       "id": "wf_080e4eac-339",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 13
+      "agents": 14
      }
     ],
-    "agents": 13,
+    "agents": 14,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1860123,
-    "total": 50169461
+    "fresh": 1924067,
+    "total": 52356231
    },
    "collegiumalfaromancy": {
     "input": 2426,
@@ -8657,10 +8701,10 @@
     "total": 212711175
    },
    "croakers": {
-    "input": 2658,
-    "output": 793576,
-    "cacheCreate": 11290647,
-    "cacheRead": 136421875,
+    "input": 2778,
+    "output": 826177,
+    "cacheCreate": 11425685,
+    "cacheRead": 143007180,
     "stages": {
      "reader": {
       "input": 92,
@@ -8687,12 +8731,12 @@
       "total": 28630214
      },
      "rulescheck": {
-      "input": 232,
-      "output": 63578,
-      "cacheCreate": 502847,
-      "cacheRead": 12298731,
-      "fresh": 566657,
-      "total": 12865388
+      "input": 244,
+      "output": 67474,
+      "cacheCreate": 513215,
+      "cacheRead": 13052581,
+      "fresh": 580933,
+      "total": 13633514
      },
      "stepfix": {
       "input": 994,
@@ -8703,12 +8747,12 @@
       "total": 60045647
      },
      "hud": {
-      "input": 190,
-      "output": 44273,
-      "cacheCreate": 1635348,
-      "cacheRead": 12543458,
-      "fresh": 1679811,
-      "total": 14223269
+      "input": 298,
+      "output": 72978,
+      "cacheCreate": 1760018,
+      "cacheRead": 18374913,
+      "fresh": 1833294,
+      "total": 20208207
      },
      "hudcheck": {
       "input": 16,
@@ -8872,7 +8916,7 @@
       "id": "wf_6bb86601-1df",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 9
+      "agents": 10
      },
      {
       "id": "wf_8611c1e4-efc",
@@ -8881,14 +8925,14 @@
       "agents": 3
      }
     ],
-    "agents": 55,
+    "agents": 56,
     "first": "2026-11-25",
     "last": "2026-11-26",
     "pictures": 7,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 12086881,
-    "total": 148508756
+    "fresh": 12254640,
+    "total": 155261820
    },
    "bristling": {
     "input": 5840,
@@ -9537,10 +9581,10 @@
     "total": 82043195
    },
    "doomsayers": {
-    "input": 244,
-    "output": 110568,
-    "cacheCreate": 425851,
-    "cacheRead": 14700568,
+    "input": 398,
+    "output": 157107,
+    "cacheCreate": 659580,
+    "cacheRead": 21920110,
     "stages": {
      "reader": {
       "input": 54,
@@ -9567,12 +9611,28 @@
       "total": 10895367
      },
      "rulescheck": {
-      "input": 32,
-      "output": 9471,
-      "cacheCreate": 88459,
-      "cacheRead": 1370213,
-      "fresh": 97962,
-      "total": 1468175
+      "input": 106,
+      "output": 32463,
+      "cacheCreate": 167560,
+      "cacheRead": 5282876,
+      "fresh": 200129,
+      "total": 5483005
+     },
+     "stepfix": {
+      "input": 30,
+      "output": 10272,
+      "cacheCreate": 66686,
+      "cacheRead": 1126162,
+      "fresh": 76988,
+      "total": 1203150
+     },
+     "hud": {
+      "input": 50,
+      "output": 13275,
+      "cacheCreate": 87942,
+      "cacheRead": 2180717,
+      "fresh": 101267,
+      "total": 2281984
      }
     },
     "runs": [
@@ -9580,17 +9640,17 @@
       "id": "wf_dec81e6b-505",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 4
+      "agents": 7
      }
     ],
-    "agents": 4,
+    "agents": 7,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 536663,
-    "total": 15237231
+    "fresh": 817085,
+    "total": 22737195
    },
    "chameleander": {
     "input": 2108,
@@ -9801,10 +9861,10 @@
     "total": 114930982
    },
    "darkforest": {
-    "input": 904,
-    "output": 285705,
-    "cacheCreate": 1561068,
-    "cacheRead": 45887311,
+    "input": 1006,
+    "output": 318238,
+    "cacheCreate": 1752359,
+    "cacheRead": 51929622,
     "stages": {
      "reader": {
       "input": 56,
@@ -9839,12 +9899,12 @@
       "total": 5989566
      },
      "stepfix": {
-      "input": 94,
-      "output": 25318,
-      "cacheCreate": 150691,
-      "cacheRead": 4108070,
-      "fresh": 176103,
-      "total": 4284173
+      "input": 134,
+      "output": 31962,
+      "cacheCreate": 239212,
+      "cacheRead": 5858161,
+      "fresh": 271308,
+      "total": 6129469
      },
      "hud": {
       "input": 264,
@@ -9903,12 +9963,20 @@
       "total": 397153
      },
      "skin": {
-      "input": 180,
-      "output": 66345,
-      "cacheCreate": 234234,
-      "cacheRead": 9294696,
-      "fresh": 300759,
-      "total": 9595455
+      "input": 232,
+      "output": 89276,
+      "cacheCreate": 266979,
+      "cacheRead": 13329204,
+      "fresh": 356487,
+      "total": 13685691
+     },
+     "judge": {
+      "input": 10,
+      "output": 2958,
+      "cacheCreate": 70025,
+      "cacheRead": 257712,
+      "fresh": 72993,
+      "total": 330705
      }
     },
     "runs": [
@@ -9916,17 +9984,17 @@
       "id": "wf_ef0b50b7-b4c",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 19
+      "agents": 21
      }
     ],
-    "agents": 19,
+    "agents": 21,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1847677,
-    "total": 47734988
+    "fresh": 2071603,
+    "total": 54001225
    },
    "boroughkings": {
     "input": 4260,
