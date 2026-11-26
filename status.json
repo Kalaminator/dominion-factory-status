@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T19:19:47.483Z",
+ "generatedAt": "2026-11-26T19:20:33.158Z",
  "stages": [
   {
    "id": "reader",
@@ -4773,8 +4773,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T19:10:08.000Z",
-    "nextRun": "2026-11-26T19:20:00.000Z",
+    "lastRun": "2026-11-26T19:20:33.000Z",
+    "nextRun": null,
     "lastNote": null
    },
    {
@@ -9519,18 +9519,18 @@
     "total": 212711175
    },
    "horseoftheapocalypse": {
-    "input": 4,
-    "output": 568,
-    "cacheCreate": 42640,
-    "cacheRead": 80655,
+    "input": 22,
+    "output": 3597,
+    "cacheCreate": 60485,
+    "cacheRead": 738652,
     "stages": {
      "reader": {
-      "input": 4,
-      "output": 568,
-      "cacheCreate": 42640,
-      "cacheRead": 80655,
-      "fresh": 43212,
-      "total": 123867
+      "input": 22,
+      "output": 3597,
+      "cacheCreate": 60485,
+      "cacheRead": 738652,
+      "fresh": 64104,
+      "total": 802756
      }
     },
     "runs": [
@@ -9547,8 +9547,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 43212,
-    "total": 123867
+    "fresh": 64104,
+    "total": 802756
    },
    "pretenders": {
     "input": 1192,
@@ -10367,10 +10367,10 @@
     "total": 84918821
    },
    "honeycomb": {
-    "input": 182,
-    "output": 78403,
-    "cacheCreate": 336510,
-    "cacheRead": 10169243,
+    "input": 184,
+    "output": 79158,
+    "cacheCreate": 337021,
+    "cacheRead": 10348506,
     "stages": {
      "reader": {
       "input": 54,
@@ -10389,12 +10389,12 @@
       "total": 391510
      },
      "rules": {
-      "input": 116,
-      "output": 46608,
-      "cacheCreate": 158686,
-      "cacheRead": 7345020,
-      "fresh": 205410,
-      "total": 7550430
+      "input": 118,
+      "output": 47363,
+      "cacheCreate": 159197,
+      "cacheRead": 7524283,
+      "fresh": 206678,
+      "total": 7730961
      }
     },
     "runs": [
@@ -10411,8 +10411,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 415095,
-    "total": 10584338
+    "fresh": 416363,
+    "total": 10764869
    },
    "caninerepublic": {
     "input": 1960,
@@ -11055,10 +11055,10 @@
     "total": 85862901
    },
    "grizzly_tribe": {
-    "input": 1364,
-    "output": 466498,
-    "cacheCreate": 2500358,
-    "cacheRead": 73159865,
+    "input": 1370,
+    "output": 470974,
+    "cacheCreate": 2504964,
+    "cacheRead": 73556525,
     "stages": {
      "reader": {
       "input": 82,
@@ -11093,12 +11093,12 @@
       "total": 15694736
      },
      "stepfix": {
-      "input": 312,
-      "output": 102333,
-      "cacheCreate": 490859,
-      "cacheRead": 14666035,
-      "fresh": 593504,
-      "total": 15259539
+      "input": 318,
+      "output": 106809,
+      "cacheCreate": 495465,
+      "cacheRead": 15062695,
+      "fresh": 602592,
+      "total": 15665287
      },
      "hud": {
       "input": 150,
@@ -11187,8 +11187,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2968220,
-    "total": 76128085
+    "fresh": 2977308,
+    "total": 76533833
    },
    "fangus": {
     "input": 1658,
