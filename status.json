@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T03:10:16.393Z",
+ "generatedAt": "2026-11-26T03:20:00.180Z",
  "stages": [
   {
    "id": "reader",
@@ -213,24 +213,42 @@
   }
  ],
  "run": {
-  "id": "wf_080e4eac-339",
-  "modified": "2026-11-26T03:10:06.926Z",
+  "id": "wf_8cad20e0-2b9",
+  "modified": "2026-11-26T03:19:15.415Z",
   "running": 1,
-  "faction": "",
+  "faction": "croakers",
   "stageDone": [
-   "setup"
+   "setup",
+   "reader",
+   "theme",
+   "rules",
+   "rulesCheck",
+   "stepfix",
+   "hud",
+   "hudCheck",
+   "wireframe",
+   "quota",
+   "overlay",
+   "plate",
+   "cut",
+   "skin",
+   "judge",
+   "coverage",
+   "art",
+   "artCheck",
+   "artfix"
   ]
  },
  "now": {
-  "label": "reader:marquistadors",
-  "stage": "reader",
-  "faction": "",
+  "label": "gates:croakers:p1",
+  "stage": "gates",
+  "faction": "croakers",
   "pass": null,
   "try": null,
-  "phase": "Read",
-  "model": "opus",
+  "phase": "Review",
+  "model": "sonnet",
   "running": true,
-  "start": "2026-11-26T03:10:06.924Z",
+  "start": "2026-11-26T03:19:15.413Z",
   "end": null
  },
  "scores": [
@@ -268,6 +286,27 @@
    "pass": 1,
    "try": 1,
    "score": 4
+  },
+  {
+   "stage": "artCheck",
+   "label": "artcheck:croakers:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 5.5
+  },
+  {
+   "stage": "artCheck",
+   "label": "artcheck:croakers:p1.3",
+   "pass": 1,
+   "try": 3,
+   "score": 7
+  },
+  {
+   "stage": "artCheck",
+   "label": "artcheck:croakers:p1.4",
+   "pass": 1,
+   "try": 4,
+   "score": 8
   },
   {
    "stage": "rulesCheck",
@@ -471,15 +510,15 @@
   },
   {
    "key": "darkforest",
-   "state": "TODO",
    "passes": 0,
-   "commit": "-"
+   "commit": "-",
+   "state": "RUNNING"
   },
   {
    "key": "marquistadors",
-   "state": "TODO",
    "passes": 0,
-   "commit": "-"
+   "commit": "-",
+   "state": "RUNNING"
   },
   {
    "key": "doomsayers",
@@ -881,29 +920,29 @@
  "counts": {
   "DONE": 20,
   "DONE-OPEN": 4,
-  "RUNNING": 2,
-  "TODO": 68
+  "RUNNING": 4,
+  "TODO": 66
  },
  "total": 94,
  "doneCount": 24,
  "recentRuns": [
   {
-   "id": "wf_080e4eac-339",
-   "modified": "2026-11-26T03:10:06.926Z",
+   "id": "wf_8cad20e0-2b9",
+   "modified": "2026-11-26T03:19:15.415Z",
    "running": 1,
-   "agents": 2
+   "agents": 35
   },
   {
-   "id": "wf_8cad20e0-2b9",
-   "modified": "2026-11-26T03:09:52.521Z",
+   "id": "wf_080e4eac-339",
+   "modified": "2026-11-26T03:15:10.260Z",
    "running": 1,
-   "agents": 29
+   "agents": 4
   },
   {
    "id": "wf_ef0b50b7-b4c",
-   "modified": "2026-11-26T03:07:11.916Z",
+   "modified": "2026-11-26T03:11:35.677Z",
    "running": 1,
-   "agents": 2
+   "agents": 4
   },
   {
    "id": "wf_08977948-0c1",
@@ -962,41 +1001,20 @@
  ],
  "factories": [
   {
-   "id": "wf_080e4eac-339",
-   "batch": "fan-rules-3",
-   "faction": "",
-   "modified": "2026-11-26T03:10:06.926Z",
-   "now": {
-    "label": "reader:marquistadors",
-    "stage": "reader",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Read",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-26T03:10:06.924Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup"
-   ]
-  },
-  {
    "id": "wf_8cad20e0-2b9",
    "batch": "fan-rules-5",
    "faction": "croakers",
-   "modified": "2026-11-26T03:09:52.521Z",
+   "modified": "2026-11-26T03:19:15.415Z",
    "now": {
-    "label": "artfix:croakers:2135",
-    "stage": "artfix",
+    "label": "gates:croakers:p1",
+    "stage": "gates",
     "faction": "croakers",
     "pass": null,
-    "try": 1,
-    "phase": "Art",
+    "try": null,
+    "phase": "Review",
     "model": "sonnet",
     "running": true,
-    "start": "2026-11-26T03:09:52.518Z",
+    "start": "2026-11-26T03:19:15.413Z",
     "end": null
    },
    "stageDone": [
@@ -1017,28 +1035,54 @@
     "judge",
     "coverage",
     "art",
-    "artCheck"
+    "artCheck",
+    "artfix"
+   ]
+  },
+  {
+   "id": "wf_080e4eac-339",
+   "batch": "fan-rules-3",
+   "faction": "marquistadors",
+   "modified": "2026-11-26T03:15:10.260Z",
+   "now": {
+    "label": "rules:marquistadors:p1.1",
+    "stage": "rules",
+    "faction": "marquistadors",
+    "pass": 1,
+    "try": 1,
+    "phase": "Build",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-26T03:15:10.258Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme"
    ]
   },
   {
    "id": "wf_ef0b50b7-b4c",
    "batch": "fan-rules-4",
-   "faction": "",
-   "modified": "2026-11-26T03:07:11.916Z",
+   "faction": "darkforest",
+   "modified": "2026-11-26T03:11:35.677Z",
    "now": {
-    "label": "reader:darkforest",
-    "stage": "reader",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Read",
+    "label": "rules:darkforest:p1.1",
+    "stage": "rules",
+    "faction": "darkforest",
+    "pass": 1,
+    "try": 1,
+    "phase": "Build",
     "model": "opus",
     "running": true,
-    "start": "2026-11-26T03:07:11.913Z",
+    "start": "2026-11-26T03:11:35.676Z",
     "end": null
    },
    "stageDone": [
-    "setup"
+    "setup",
+    "reader",
+    "theme"
    ]
   },
   {
@@ -1079,6 +1123,143 @@
  ],
  "agents": [
   {
+   "label": "gates:croakers:p1",
+   "stage": "gates",
+   "faction": "croakers",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": true,
+   "start": "2026-11-26T03:19:15.413Z",
+   "end": null
+  },
+  {
+   "label": "artcheck:croakers:p1.4",
+   "stage": "artCheck",
+   "faction": "croakers",
+   "pass": 1,
+   "try": 4,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T03:18:15.285Z",
+   "end": "2026-11-26T03:19:15.328Z",
+   "score": 8,
+   "pass_ok": true,
+   "findings": 3
+  },
+  {
+   "label": "artfix:croakers:1220",
+   "stage": "artfix",
+   "faction": "croakers",
+   "pass": null,
+   "try": 3,
+   "phase": "Art",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T03:17:40.998Z",
+   "end": "2026-11-26T03:18:15.224Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "artcheck:croakers:p1.3",
+   "stage": "artCheck",
+   "faction": "croakers",
+   "pass": 1,
+   "try": 3,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T03:16:49.351Z",
+   "end": "2026-11-26T03:17:40.895Z",
+   "score": 7,
+   "pass_ok": false,
+   "findings": 2
+  },
+  {
+   "label": "artfix:croakers:1725",
+   "stage": "artfix",
+   "faction": "croakers",
+   "pass": null,
+   "try": 2,
+   "phase": "Art",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T03:16:00.077Z",
+   "end": "2026-11-26T03:16:49.188Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "rules:marquistadors:p1.1",
+   "stage": "rules",
+   "faction": "marquistadors",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T03:15:10.258Z",
+   "end": null
+  },
+  {
+   "label": "artcheck:croakers:p1.2",
+   "stage": "artCheck",
+   "faction": "croakers",
+   "pass": 1,
+   "try": 2,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-26T03:14:47.703Z",
+   "end": "2026-11-26T03:15:59.976Z",
+   "score": 5.5,
+   "pass_ok": false,
+   "findings": 3
+  },
+  {
+   "label": "theme:marquistadors",
+   "stage": "theme",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Concept",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T03:14:30.744Z",
+   "end": "2026-11-26T03:15:10.035Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "rules:darkforest:p1.1",
+   "stage": "rules",
+   "faction": "darkforest",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T03:11:35.676Z",
+   "end": null
+  },
+  {
+   "label": "theme:darkforest",
+   "stage": "theme",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Concept",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T03:10:55.242Z",
+   "end": "2026-11-26T03:11:35.566Z",
+   "score": null,
+   "findings": 0
+  },
+  {
    "label": "reader:marquistadors",
    "stage": "reader",
    "faction": "",
@@ -1086,9 +1267,11 @@
    "try": null,
    "phase": "Read",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T03:10:06.924Z",
-   "end": null
+   "end": "2026-11-26T03:14:30.533Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "setup:fan-rules-3",
@@ -1110,9 +1293,11 @@
    "try": 1,
    "phase": "Art",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T03:09:52.518Z",
-   "end": null
+   "end": "2026-11-26T03:14:47.609Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "artcheck:croakers:p1.1",
@@ -1180,9 +1365,11 @@
    "try": null,
    "phase": "Read",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-26T03:07:11.913Z",
-   "end": null
+   "end": "2026-11-26T03:10:55.149Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "setup:fan-rules-4",
@@ -1347,148 +1534,6 @@
    "running": false,
    "start": "2026-11-26T01:39:08.539Z",
    "end": "2026-11-26T01:52:19.391Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:crumblingcourt:overlay",
-   "stage": "quota",
-   "faction": "crumblingcourt",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T01:38:59.879Z",
-   "end": "2026-11-26T01:39:07.970Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "wireframe:crumblingcourt",
-   "stage": "wireframe",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Screenshot",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T01:36:59.722Z",
-   "end": "2026-11-26T01:38:59.766Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "stepfix:croakers:p1.1",
-   "stage": "stepfix",
-   "faction": "croakers",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T01:17:13.035Z",
-   "end": "2026-11-26T02:15:27.248Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "hudcheck:crumblingcourt:p1.3",
-   "stage": "hudCheck",
-   "faction": "crumblingcourt",
-   "pass": 1,
-   "try": 3,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T01:14:35.008Z",
-   "end": "2026-11-26T01:36:57.889Z",
-   "score": 10,
-   "pass_ok": true,
-   "findings": 0
-  },
-  {
-   "label": "judge:croakers:p1.1",
-   "stage": "judge",
-   "faction": "croakers",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T01:14:27.420Z",
-   "end": "2026-11-26T01:17:11.309Z",
-   "score": 5.6,
-   "pass_ok": false,
-   "findings": 9
-  },
-  {
-   "label": "skin:croakers:p1.2",
-   "stage": "skin",
-   "faction": "croakers",
-   "pass": 1,
-   "try": 2,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T00:50:12.647Z",
-   "end": "2026-11-26T01:14:27.182Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "skin:croakers:p1.1",
-   "stage": "skin",
-   "faction": "croakers",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T00:30:00.448Z",
-   "end": "2026-11-26T00:50:12.538Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "cut:croakers",
-   "stage": "cut",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Art",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T00:29:38.199Z",
-   "end": "2026-11-26T00:30:00.363Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "plate:croakers",
-   "stage": "plate",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Art",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T00:28:01.966Z",
-   "end": "2026-11-26T00:29:37.875Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:croakers:plate",
-   "stage": "quota",
-   "faction": "croakers",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T00:27:53.315Z",
-   "end": "2026-11-26T00:28:01.664Z",
    "score": null,
    "findings": 0
   }
@@ -1961,6 +2006,40 @@
    "shotAt": "2026-11-18T21:03:04.365Z"
   },
   {
+   "key": "darkforest",
+   "name": "Darkforest",
+   "group": "Factions",
+   "what": "Fan faction.",
+   "state": "running",
+   "feedback": {
+    "open": 0,
+    "fixed": 0,
+    "queued": 0,
+    "needsLead": 0,
+    "issues": []
+   },
+   "img": "img/factions/darkforest.webp",
+   "thumb": "img/factions/darkforest-thumb.webp",
+   "shotAt": "2026-11-18T21:03:11.345Z"
+  },
+  {
+   "key": "marquistadors",
+   "name": "Marquistadors",
+   "group": "Factions",
+   "what": "Fan faction.",
+   "state": "running",
+   "feedback": {
+    "open": 0,
+    "fixed": 0,
+    "queued": 0,
+    "needsLead": 0,
+    "issues": []
+   },
+   "img": "img/factions/marquistadors.webp",
+   "thumb": "img/factions/marquistadors-thumb.webp",
+   "shotAt": "2026-11-18T21:03:19.761Z"
+  },
+  {
    "key": "woodland",
    "name": "Woodland",
    "group": "Factions",
@@ -2197,40 +2276,6 @@
    "img": "img/factions/collegiumalfaromancy.webp",
    "thumb": "img/factions/collegiumalfaromancy-thumb.webp",
    "shotAt": "2026-11-26T03:10:16.312Z"
-  },
-  {
-   "key": "darkforest",
-   "name": "Darkforest",
-   "group": "Factions",
-   "what": "Fan faction.",
-   "state": "waiting",
-   "feedback": {
-    "open": 0,
-    "fixed": 0,
-    "queued": 0,
-    "needsLead": 0,
-    "issues": []
-   },
-   "img": "img/factions/darkforest.webp",
-   "thumb": "img/factions/darkforest-thumb.webp",
-   "shotAt": "2026-11-18T21:03:11.345Z"
-  },
-  {
-   "key": "marquistadors",
-   "name": "Marquistadors",
-   "group": "Factions",
-   "what": "Fan faction.",
-   "state": "waiting",
-   "feedback": {
-    "open": 0,
-    "fixed": 0,
-    "queued": 0,
-    "needsLead": 0,
-    "issues": []
-   },
-   "img": "img/factions/marquistadors.webp",
-   "thumb": "img/factions/marquistadors-thumb.webp",
-   "shotAt": "2026-11-18T21:03:19.761Z"
   },
   {
    "key": "doomsayers",
@@ -4712,8 +4757,18 @@
      "date": "2026-11-26"
     },
     {
+     "name": "factory/fan-rules-3",
+     "ahead": 2,
+     "date": "2026-11-26"
+    },
+    {
+     "name": "factory/fan-rules-4",
+     "ahead": 2,
+     "date": "2026-11-26"
+    },
+    {
      "name": "factory/fan-rules-5",
-     "ahead": 29,
+     "ahead": 33,
      "date": "2026-11-26"
     },
     {
@@ -4761,8 +4816,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T03:10:00.000Z",
-    "nextRun": "2026-11-26T03:20:00.000Z",
+    "lastRun": "2026-11-26T03:20:00.000Z",
+    "nextRun": null,
     "lastNote": null
    },
    {
@@ -4783,9 +4838,9 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-25T23:17:00.000Z",
-    "nextRun": "2026-11-26T03:17:00.000Z",
-    "lastNote": "2026-11-26T00:17:00+01:00 skip: lock dominion-chromium held"
+    "lastRun": "2026-11-26T03:17:00.000Z",
+    "nextRun": "2026-11-26T07:17:00.000Z",
+    "lastNote": "2026-11-26T04:17:00+01:00 skip: lock dominion-chromium held"
    },
    {
     "key": "hardener",
@@ -4933,6 +4988,62 @@
     }
    ],
    "last24": [
+    {
+     "hash": "27db808",
+     "time": "2026-11-26T04:19:09+01:00",
+     "subject": "factory: CLEAN artCheck croakers",
+     "agent": "factory",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "dd491ce",
+     "time": "2026-11-26T04:18:10+01:00",
+     "subject": "croakers art: magic token re-cut on the statue disc template (no alpha gap, centred ring)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "420deea",
+     "time": "2026-11-26T04:16:44+01:00",
+     "subject": "croakers art fix: school on a faction-colour tile, statue and magic on matching round discs",
+     "agent": "lead",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "4929584",
+     "time": "2026-11-26T04:15:06+01:00",
+     "subject": "marquistadors: hudTheme on + neutral theme stub (15 --ht-* vars)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "64c17b9",
+     "time": "2026-11-26T04:14:43+01:00",
+     "subject": "croakers art: school, statue, magic re-cut (flat cartoon, round tokens)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "d251f0d",
+     "time": "2026-11-26T04:14:23+01:00",
+     "subject": "card reader marquistadors: ledger 28 rows (3 coded, 22 MISSING, 3 WRONG), 12 card-vs-Vault conflicts fixed to the card, brief",
+     "agent": "lead",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "bdec4c6",
+     "time": "2026-11-26T04:11:32+01:00",
+     "subject": "darkforest: hudTheme on + neutral theme stub (15 --ht-*)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "072d716",
+     "time": "2026-11-26T04:10:45+01:00",
+     "subject": "factory: card reader darkforest (fan-rules-4): ledger 22 rows, 4 conflicts built to the card, Vault board transcription",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
     {
      "hash": "d7c0b29",
      "time": "2026-11-26T04:09:29+01:00",
@@ -5296,65 +5407,9 @@
      "subject": "factory: HUD step fix cirque - phone Critics value wraps its [card+] chip under 'Cheers' (no cover/overlap on the label)",
      "agent": "factory",
      "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "564683c",
-     "time": "2026-11-26T01:50:04+01:00",
-     "subject": "croakers skin leg 1 handoff: painted boxes for the 1080 placement, STYLE-ONLY line",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "55e1b4a",
-     "time": "2026-11-26T01:49:49+01:00",
-     "subject": "croakers skin leg 1: panels re-cut at their painted boxes (croakers-skin-parts.py), theme CSS dresses every panel, row, tile and button in i",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "cbf2643",
-     "time": "2026-11-26T01:48:24+01:00",
-     "subject": "factory: judge p1.2 collegiumalfaromancy",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "aa22e1c",
-     "time": "2026-11-26T01:45:57+01:00",
-     "subject": "shot-hud-themes: hold the 3D board still once the HUD state is final; --seed now fixes the dealt hand",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "0b3ebcc",
-     "time": "2026-11-26T01:38:45+01:00",
-     "subject": "factory: CLEAN hudCheck cirque",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "be65b87",
-     "time": "2026-11-26T01:29:57+01:00",
-     "subject": "croakers: cut plate (6 fixed, 10 repeated, 8 9-slice)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "3de070b",
-     "time": "2026-11-26T01:29:35+01:00",
-     "subject": "croakers: clean plate",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "35fcb44",
-     "time": "2026-11-26T01:27:47+01:00",
-     "subject": "croakers: overlay concept (fan-rules-5)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
     }
    ],
-   "last24Count": 242
+   "last24Count": 250
   },
   "trust": {
    "tests": {
@@ -6114,21 +6169,21 @@
   },
   "chatgpt": {
    "quota": {
-    "seen": "2026-11-26T01:53:53.923Z",
+    "seen": "2026-11-26T03:14:25.772Z",
     "primary": {
-     "usedPercent": 5,
+     "usedPercent": 10,
      "windowMinutes": 300,
      "resetsAt": "2026-11-26T05:49:46.000Z"
     },
     "secondary": {
-     "usedPercent": 26,
+     "usedPercent": 27,
      "windowMinutes": 10080,
      "resetsAt": "2026-11-26T20:21:17.000Z"
     }
    },
    "calls": {
-    "today": 8,
-    "last7": 191,
+    "today": 12,
+    "last7": 195,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
@@ -6154,7 +6209,7 @@
      "chameleander": 5,
      "cirque": 5,
      "collegiumalfaromancy": 5,
-     "croakers": 3,
+     "croakers": 7,
      "crumblingcourt": 3
     },
     "failed": 1
@@ -7599,18 +7654,34 @@
     "total": 157115423
    },
    "marquistadors": {
-    "input": 4,
-    "output": 483,
-    "cacheCreate": 42372,
-    "cacheRead": 80632,
+    "input": 146,
+    "output": 52141,
+    "cacheCreate": 285078,
+    "cacheRead": 7021816,
     "stages": {
      "reader": {
-      "input": 4,
-      "output": 483,
-      "cacheCreate": 42372,
-      "cacheRead": 80632,
-      "fresh": 42859,
-      "total": 123491
+      "input": 64,
+      "output": 29829,
+      "cacheCreate": 111182,
+      "cacheRead": 3014737,
+      "fresh": 141075,
+      "total": 3155812
+     },
+     "theme": {
+      "input": 18,
+      "output": 2686,
+      "cacheCreate": 48997,
+      "cacheRead": 547260,
+      "fresh": 51701,
+      "total": 598961
+     },
+     "rules": {
+      "input": 64,
+      "output": 19626,
+      "cacheCreate": 124899,
+      "cacheRead": 3459819,
+      "fresh": 144589,
+      "total": 3604408
      }
     },
     "runs": [
@@ -7618,17 +7689,17 @@
       "id": "wf_080e4eac-339",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 1
+      "agents": 3
      }
     ],
-    "agents": 1,
+    "agents": 3,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 42859,
-    "total": 123491
+    "fresh": 337365,
+    "total": 7359181
    },
    "collegiumalfaromancy": {
     "input": 2426,
@@ -8727,10 +8798,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 1544,
-    "output": 509747,
-    "cacheCreate": 9057344,
-    "cacheRead": 80830643,
+    "input": 1686,
+    "output": 538652,
+    "cacheCreate": 9392967,
+    "cacheRead": 85447250,
     "stages": {
      "reader": {
       "input": 80,
@@ -8861,20 +8932,28 @@
       "total": 123462
      },
      "artcheck": {
-      "input": 28,
-      "output": 6236,
-      "cacheCreate": 80493,
-      "cacheRead": 914941,
-      "fresh": 86757,
-      "total": 1001698
+      "input": 110,
+      "output": 21833,
+      "cacheCreate": 244522,
+      "cacheRead": 3587904,
+      "fresh": 266465,
+      "total": 3854369
      },
      "artfix": {
-      "input": 12,
-      "output": 2270,
-      "cacheCreate": 52828,
-      "cacheRead": 360376,
-      "fresh": 55110,
-      "total": 415486
+      "input": 68,
+      "output": 14910,
+      "cacheCreate": 162084,
+      "cacheRead": 2245029,
+      "fresh": 177062,
+      "total": 2422091
+     },
+     "gates": {
+      "input": 4,
+      "output": 668,
+      "cacheCreate": 62338,
+      "cacheRead": 58991,
+      "fresh": 63010,
+      "total": 122001
      }
     },
     "runs": [
@@ -8882,17 +8961,17 @@
       "id": "wf_8cad20e0-2b9",
       "first": "2026-11-25",
       "last": "2026-11-26",
-      "agents": 28
+      "agents": 34
      }
     ],
-    "agents": 28,
+    "agents": 34,
     "first": "2026-11-25",
     "last": "2026-11-26",
-    "pictures": 3,
+    "pictures": 7,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 9568635,
-    "total": 90399278
+    "fresh": 9933305,
+    "total": 95380555
    },
    "caninerepublic": {
     "input": 1960,
@@ -9111,10 +9190,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 1224,
-    "output": 371341,
-    "cacheCreate": 5977228,
-    "cacheRead": 57881396,
+    "input": 1290,
+    "output": 402995,
+    "cacheCreate": 6017842,
+    "cacheRead": 62191631,
     "stages": {
      "reader": {
       "input": 58,
@@ -9149,12 +9228,12 @@
       "total": 5840962
      },
      "stepfix": {
-      "input": 462,
-      "output": 119482,
-      "cacheCreate": 2597894,
-      "cacheRead": 21676841,
-      "fresh": 2717838,
-      "total": 24394679
+      "input": 528,
+      "output": 151136,
+      "cacheCreate": 2638508,
+      "cacheRead": 25987076,
+      "fresh": 2790172,
+      "total": 28777248
      },
      "hud": {
       "input": 110,
@@ -9243,8 +9322,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 6349793,
-    "total": 64231189
+    "fresh": 6422127,
+    "total": 68613758
    },
    "chameleander": {
     "input": 2108,
@@ -9455,18 +9534,34 @@
     "total": 114930982
    },
    "darkforest": {
-    "input": 48,
-    "output": 19736,
-    "cacheCreate": 95341,
-    "cacheRead": 2015280,
+    "input": 158,
+    "output": 72727,
+    "cacheCreate": 285704,
+    "cacheRead": 8004405,
     "stages": {
      "reader": {
-      "input": 48,
-      "output": 19736,
-      "cacheCreate": 95341,
-      "cacheRead": 2015280,
-      "fresh": 115125,
-      "total": 2130405
+      "input": 56,
+      "output": 24520,
+      "cacheCreate": 101414,
+      "cacheRead": 2489690,
+      "fresh": 125990,
+      "total": 2615680
+     },
+     "theme": {
+      "input": 14,
+      "output": 2223,
+      "cacheCreate": 46638,
+      "cacheRead": 402823,
+      "fresh": 48875,
+      "total": 451698
+     },
+     "rules": {
+      "input": 88,
+      "output": 45984,
+      "cacheCreate": 137652,
+      "cacheRead": 5111892,
+      "fresh": 183724,
+      "total": 5295616
      }
     },
     "runs": [
@@ -9474,17 +9569,17 @@
       "id": "wf_ef0b50b7-b4c",
       "first": "2026-11-26",
       "last": "2026-11-26",
-      "agents": 1
+      "agents": 3
      }
     ],
-    "agents": 1,
+    "agents": 3,
     "first": "2026-11-26",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 115125,
-    "total": 2130405
+    "fresh": 358589,
+    "total": 8362994
    },
    "boroughkings": {
     "input": 4260,
