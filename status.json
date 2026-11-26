@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T03:10:00.191Z",
+ "generatedAt": "2026-11-26T03:10:16.393Z",
  "stages": [
   {
    "id": "reader",
@@ -213,41 +213,24 @@
   }
  ],
  "run": {
-  "id": "wf_8cad20e0-2b9",
-  "modified": "2026-11-26T03:09:52.521Z",
+  "id": "wf_080e4eac-339",
+  "modified": "2026-11-26T03:10:06.926Z",
   "running": 1,
-  "faction": "croakers",
+  "faction": "",
   "stageDone": [
-   "setup",
-   "reader",
-   "theme",
-   "rules",
-   "rulesCheck",
-   "stepfix",
-   "hud",
-   "hudCheck",
-   "wireframe",
-   "quota",
-   "overlay",
-   "plate",
-   "cut",
-   "skin",
-   "judge",
-   "coverage",
-   "art",
-   "artCheck"
+   "setup"
   ]
  },
  "now": {
-  "label": "artfix:croakers:2135",
-  "stage": "artfix",
-  "faction": "croakers",
+  "label": "reader:marquistadors",
+  "stage": "reader",
+  "faction": "",
   "pass": null,
-  "try": 1,
-  "phase": "Art",
-  "model": "sonnet",
+  "try": null,
+  "phase": "Read",
+  "model": "opus",
   "running": true,
-  "start": "2026-11-26T03:09:52.518Z",
+  "start": "2026-11-26T03:10:06.924Z",
   "end": null
  },
  "scores": [
@@ -905,6 +888,12 @@
  "doneCount": 24,
  "recentRuns": [
   {
+   "id": "wf_080e4eac-339",
+   "modified": "2026-11-26T03:10:06.926Z",
+   "running": 1,
+   "agents": 2
+  },
+  {
    "id": "wf_8cad20e0-2b9",
    "modified": "2026-11-26T03:09:52.521Z",
    "running": 1,
@@ -969,15 +958,30 @@
    "modified": "2026-11-25T05:20:27.346Z",
    "running": 0,
    "agents": 35
-  },
-  {
-   "id": "wf_58f75c95-789",
-   "modified": "2026-11-25T01:12:53.396Z",
-   "running": 0,
-   "agents": 37
   }
  ],
  "factories": [
+  {
+   "id": "wf_080e4eac-339",
+   "batch": "fan-rules-3",
+   "faction": "",
+   "modified": "2026-11-26T03:10:06.926Z",
+   "now": {
+    "label": "reader:marquistadors",
+    "stage": "reader",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Read",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-26T03:10:06.924Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup"
+   ]
+  },
   {
    "id": "wf_8cad20e0-2b9",
    "batch": "fan-rules-5",
@@ -1074,6 +1078,30 @@
   }
  ],
  "agents": [
+  {
+   "label": "reader:marquistadors",
+   "stage": "reader",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Read",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T03:10:06.924Z",
+   "end": null
+  },
+  {
+   "label": "setup:fan-rules-3",
+   "stage": "setup",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Setup",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T03:10:02.151Z",
+   "end": "2026-11-26T03:10:06.917Z"
+  },
   {
    "label": "artfix:croakers:2135",
    "stage": "artfix",
@@ -1461,34 +1489,6 @@
    "running": false,
    "start": "2026-11-26T00:27:53.315Z",
    "end": "2026-11-26T00:28:01.664Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "overlay:croakers",
-   "stage": "overlay",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T00:12:27.972Z",
-   "end": "2026-11-26T00:27:53.087Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:croakers:overlay",
-   "stage": "quota",
-   "faction": "croakers",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-26T00:12:17.793Z",
-   "end": "2026-11-26T00:12:27.711Z",
    "score": null,
    "findings": 0
   }
@@ -1924,7 +1924,7 @@
    },
    "img": "img/factions/cirque.webp",
    "thumb": "img/factions/cirque-thumb.webp",
-   "shotAt": "2026-11-26T02:58:52.542Z"
+   "shotAt": "2026-11-26T03:10:09.268Z"
   },
   {
    "key": "croakers",
@@ -2196,7 +2196,7 @@
    },
    "img": "img/factions/collegiumalfaromancy.webp",
    "thumb": "img/factions/collegiumalfaromancy-thumb.webp",
-   "shotAt": "2026-11-26T03:00:21.676Z"
+   "shotAt": "2026-11-26T03:10:16.312Z"
   },
   {
    "key": "darkforest",
@@ -4762,7 +4762,7 @@
     "ok": true,
     "exit": 0,
     "lastRun": "2026-11-26T03:10:00.000Z",
-    "nextRun": null,
+    "nextRun": "2026-11-26T03:20:00.000Z",
     "lastNote": null
    },
    {
@@ -6811,18 +6811,18 @@
  "tokens": {
   "factions": {
    "other": {
-    "input": 17595,
-    "output": 3758475,
-    "cacheCreate": 35255383,
-    "cacheRead": 498649794,
+    "input": 17599,
+    "output": 3758811,
+    "cacheCreate": 35296350,
+    "cacheRead": 498729572,
     "stages": {
      "setup": {
-      "input": 292,
-      "output": 24799,
-      "cacheCreate": 3781872,
-      "cacheRead": 4622504,
-      "fresh": 3806963,
-      "total": 8429467
+      "input": 296,
+      "output": 25135,
+      "cacheCreate": 3822839,
+      "cacheRead": 4702282,
+      "fresh": 3848270,
+      "total": 8550552
      },
      "spec": {
       "input": 3500,
@@ -6954,12 +6954,6 @@
      }
     },
     "runs": [
-     {
-      "id": "wf_080e4eac-339",
-      "first": "",
-      "last": "",
-      "agents": 1
-     },
      {
       "id": "wf_af06425d-03f",
       "first": "2026-11-04",
@@ -7363,6 +7357,12 @@
       "agents": 2
      },
      {
+      "id": "wf_080e4eac-339",
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "agents": 1
+     },
+     {
       "id": "wf_08977948-0c1",
       "first": "2026-11-26",
       "last": "2026-11-26",
@@ -7381,8 +7381,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": false,
-    "fresh": 39031453,
-    "total": 537681247
+    "fresh": 39072760,
+    "total": 537802332
    },
    "caninecommonwealth": {
     "input": 2984,
@@ -7597,6 +7597,38 @@
     "isFaction": true,
     "fresh": 16869574,
     "total": 157115423
+   },
+   "marquistadors": {
+    "input": 4,
+    "output": 483,
+    "cacheCreate": 42372,
+    "cacheRead": 80632,
+    "stages": {
+     "reader": {
+      "input": 4,
+      "output": 483,
+      "cacheCreate": 42372,
+      "cacheRead": 80632,
+      "fresh": 42859,
+      "total": 123491
+     }
+    },
+    "runs": [
+     {
+      "id": "wf_080e4eac-339",
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "agents": 1
+     }
+    ],
+    "agents": 1,
+    "first": "2026-11-26",
+    "last": "2026-11-26",
+    "pictures": 0,
+    "failedPictures": 0,
+    "isFaction": true,
+    "fresh": 42859,
+    "total": 123491
    },
    "collegiumalfaromancy": {
     "input": 2426,
@@ -8695,10 +8727,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 1540,
-    "output": 508629,
-    "cacheCreate": 9054136,
-    "cacheRead": 80688161,
+    "input": 1544,
+    "output": 509747,
+    "cacheCreate": 9057344,
+    "cacheRead": 80830643,
     "stages": {
      "reader": {
       "input": 80,
@@ -8837,12 +8869,12 @@
       "total": 1001698
      },
      "artfix": {
-      "input": 8,
-      "output": 1152,
-      "cacheCreate": 49620,
-      "cacheRead": 217894,
-      "fresh": 50780,
-      "total": 268674
+      "input": 12,
+      "output": 2270,
+      "cacheCreate": 52828,
+      "cacheRead": 360376,
+      "fresh": 55110,
+      "total": 415486
      }
     },
     "runs": [
@@ -8859,8 +8891,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 9564305,
-    "total": 90252466
+    "fresh": 9568635,
+    "total": 90399278
    },
    "caninerepublic": {
     "input": 1960,
@@ -9079,10 +9111,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 1220,
-    "output": 370311,
-    "cacheCreate": 5974008,
-    "cacheRead": 57670133,
+    "input": 1224,
+    "output": 371341,
+    "cacheCreate": 5977228,
+    "cacheRead": 57881396,
     "stages": {
      "reader": {
       "input": 58,
@@ -9117,12 +9149,12 @@
       "total": 5840962
      },
      "stepfix": {
-      "input": 458,
-      "output": 118452,
-      "cacheCreate": 2594674,
-      "cacheRead": 21465578,
-      "fresh": 2713584,
-      "total": 24179162
+      "input": 462,
+      "output": 119482,
+      "cacheCreate": 2597894,
+      "cacheRead": 21676841,
+      "fresh": 2717838,
+      "total": 24394679
      },
      "hud": {
       "input": 110,
@@ -9211,8 +9243,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 6345539,
-    "total": 64015672
+    "fresh": 6349793,
+    "total": 64231189
    },
    "chameleander": {
     "input": 2108,
@@ -9423,18 +9455,18 @@
     "total": 114930982
    },
    "darkforest": {
-    "input": 44,
-    "output": 17551,
-    "cacheCreate": 91857,
-    "cacheRead": 1788542,
+    "input": 48,
+    "output": 19736,
+    "cacheCreate": 95341,
+    "cacheRead": 2015280,
     "stages": {
      "reader": {
-      "input": 44,
-      "output": 17551,
-      "cacheCreate": 91857,
-      "cacheRead": 1788542,
-      "fresh": 109452,
-      "total": 1897994
+      "input": 48,
+      "output": 19736,
+      "cacheCreate": 95341,
+      "cacheRead": 2015280,
+      "fresh": 115125,
+      "total": 2130405
      }
     },
     "runs": [
@@ -9451,8 +9483,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 109452,
-    "total": 1897994
+    "fresh": 115125,
+    "total": 2130405
    },
    "boroughkings": {
     "input": 4260,
