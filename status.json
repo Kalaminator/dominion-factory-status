@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T15:50:00.188Z",
+ "generatedAt": "2026-11-26T15:53:10.139Z",
  "stages": [
   {
    "id": "reader",
@@ -213,36 +213,24 @@
   }
  ],
  "run": {
-  "id": "wf_8cd2c558-5f6",
-  "modified": "2026-11-26T15:47:30.852Z",
+  "id": "wf_e4fd52c5-ef5",
+  "modified": "2026-11-26T15:53:01.733Z",
   "running": 1,
-  "faction": "freeleaders",
+  "faction": "",
   "stageDone": [
-   "setup",
-   "reader",
-   "theme",
-   "rules",
-   "rulesCheck",
-   "stepfix",
-   "hud",
-   "hudCheck",
-   "wireframe",
-   "quota",
-   "overlay",
-   "plate",
-   "cut"
+   "setup"
   ]
  },
  "now": {
-  "label": "skin:freeleaders:p1.1",
-  "stage": "skin",
-  "faction": "freeleaders",
-  "pass": 1,
-  "try": 1,
-  "phase": "Build",
+  "label": "reader:aviators",
+  "stage": "reader",
+  "faction": "",
+  "pass": null,
+  "try": null,
+  "phase": "Read",
   "model": "opus",
   "running": true,
-  "start": "2026-11-26T15:47:30.848Z",
+  "start": "2026-11-26T15:53:01.728Z",
   "end": null
  },
  "scores": [
@@ -872,6 +860,12 @@
  "doneCount": 32,
  "recentRuns": [
   {
+   "id": "wf_e4fd52c5-ef5",
+   "modified": "2026-11-26T15:53:01.733Z",
+   "running": 1,
+   "agents": 2
+  },
+  {
    "id": "wf_1c616cfe-318",
    "modified": "2026-11-26T15:48:33.650Z",
    "running": 0,
@@ -936,15 +930,30 @@
    "modified": "2026-11-26T06:29:26.830Z",
    "running": 0,
    "agents": 38
-  },
-  {
-   "id": "wf_ef0b50b7-b4c",
-   "modified": "2026-11-26T06:07:28.579Z",
-   "running": 0,
-   "agents": 37
   }
  ],
  "factories": [
+  {
+   "id": "wf_e4fd52c5-ef5",
+   "batch": "fan-rules-4",
+   "faction": "",
+   "modified": "2026-11-26T15:53:01.733Z",
+   "now": {
+    "label": "reader:aviators",
+    "stage": "reader",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Read",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-26T15:53:01.728Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup"
+   ]
+  },
   {
    "id": "wf_8cd2c558-5f6",
    "batch": "fan-rules-3",
@@ -1037,6 +1046,30 @@
   }
  ],
  "agents": [
+  {
+   "label": "reader:aviators",
+   "stage": "reader",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Read",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-26T15:53:01.728Z",
+   "end": null
+  },
+  {
+   "label": "setup:fan-rules-4",
+   "stage": "setup",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Setup",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-26T15:52:55.271Z",
+   "end": "2026-11-26T15:52:59.873Z"
+  },
   {
    "label": "skin:freeleaders:p1.1",
    "stage": "skin",
@@ -1423,35 +1456,6 @@
    "running": false,
    "start": "2026-11-26T14:43:59.086Z",
    "end": "2026-11-26T14:48:33.817Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rulescheck:freeleaders:p1.1",
-   "stage": "rulesCheck",
-   "faction": "freeleaders",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T14:39:46.795Z",
-   "end": "2026-11-26T14:43:57.307Z",
-   "score": 7.2,
-   "pass_ok": false,
-   "findings": 2
-  },
-  {
-   "label": "hud:farmlands:p1.1",
-   "stage": "hud",
-   "faction": "farmlands",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-26T14:38:42.738Z",
-   "end": "2026-11-26T15:01:54.461Z",
    "score": null,
    "findings": 0
   }
@@ -1993,7 +1997,7 @@
    },
    "img": "img/factions/eyriesend.webp",
    "thumb": "img/factions/eyriesend-thumb.webp",
-   "shotAt": "2026-11-26T15:41:49.365Z"
+   "shotAt": "2026-11-26T15:53:10.058Z"
   },
   {
    "key": "fangus",
@@ -4659,7 +4663,7 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 968
+   "commitsSinceLive": 1017
   },
   "branches": {
    "list": [
@@ -4671,11 +4675,6 @@
     {
      "name": "factory/fan-rules-3",
      "ahead": 15,
-     "date": "2026-11-26"
-    },
-    {
-     "name": "factory/fan-rules-4",
-     "ahead": 48,
      "date": "2026-11-26"
     },
     {
@@ -4729,7 +4728,7 @@
     "ok": true,
     "exit": 0,
     "lastRun": "2026-11-26T15:50:00.000Z",
-    "nextRun": null,
+    "nextRun": "2026-11-26T16:00:00.000Z",
     "lastNote": null
    },
    {
@@ -4844,14 +4843,44 @@
     },
     {
      "date": "2026-11-26",
-     "commits": 274
+     "commits": 323
     }
    ],
    "latest": [
     {
+     "hash": "1110e51",
+     "date": "2026-11-26",
+     "subject": "Merge branch 'factory/fan-rules-4' (Eyrie's End, key eyriesend)"
+    },
+    {
+     "hash": "3661f74",
+     "date": "2026-11-26",
+     "subject": "learn eyriesend run 2: FAN badge cut check (frame band straddle, word >= 9px), skin leaves no movable --buttons FAIL, lessons merged"
+    },
+    {
+     "hash": "4ab692f",
+     "date": "2026-11-26",
+     "subject": "factory: approver eyriesend (fan-rules-4 pass 1/1 run 2, DONE)"
+    },
+    {
+     "hash": "23b9452",
+     "date": "2026-11-26",
+     "subject": "factory: CLEAN ux eyriesend"
+    },
+    {
+     "hash": "ff14cbf",
+     "date": "2026-11-26",
+     "subject": "factory: CLEAN code eyriesend"
+    },
+    {
      "hash": "2fd69bb",
      "date": "2026-11-26",
      "subject": "Merge branch 'factory/fan-rules-5' (Eagle King's Court, key eagleking)"
+    },
+    {
+     "hash": "b369d7d",
+     "date": "2026-11-26",
+     "subject": "factory: judge p1.2 eyriesend"
     },
     {
      "hash": "09ee939",
@@ -4859,47 +4888,24 @@
      "subject": "learn eagleking round 2: ghost-row overflow check, Vault stale-line check, lessons merged"
     },
     {
+     "hash": "4b23afe",
+     "date": "2026-11-26",
+     "subject": "eyriesend judge fix p1 leg 2: painted track slot cut from the concept (9-slice on Decree + roost spaces), stat text on the concept spots, fa"
+    },
+    {
      "hash": "1772317",
      "date": "2026-11-26",
      "subject": "factory: approver eagleking (fan-rules-5 pass 1/1, DONE)"
-    },
-    {
-     "hash": "dc2f175",
-     "date": "2026-11-26",
-     "subject": "factory: CLEAN code eagleking"
-    },
-    {
-     "hash": "e9b7d4a",
-     "date": "2026-11-26",
-     "subject": "factory: CLEAN artCheck eagleking"
-    },
-    {
-     "hash": "4a14f89",
-     "date": "2026-11-26",
-     "subject": "factory: judge eagleking p1.2"
-    },
-    {
-     "hash": "7caf7f4",
-     "date": "2026-11-26",
-     "subject": "eagleking judge step fix p1 leg 2: bottom plates at the concept widths (1:1 9-slices), tracker top band from concept.png, Pieces + nameplate"
-    },
-    {
-     "hash": "861f315",
-     "date": "2026-11-26",
-     "subject": "eagleking judge step fix p1.1: stat rows on the painted rows (stats-panel-rows cut), nameplate on the frame top, phase/hint text at the conc"
-    },
-    {
-     "hash": "6b39cc5",
-     "date": "2026-11-26",
-     "subject": "factory: judge eagleking p1.1"
-    },
-    {
-     "hash": "e4cd107",
-     "date": "2026-11-26",
-     "subject": "eagleking skin fix run 2: gold End/Undo/phase text at 1920, nested off tiles get the off plate, handoff SKIN BUILD: DONE"
     }
    ],
    "last24": [
+    {
+     "hash": "1110e51",
+     "time": "2026-11-26T16:52:34+01:00",
+     "subject": "Merge branch 'factory/fan-rules-4' (Eyrie's End, key eyriesend)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-4"
+    },
     {
      "hash": "d7495ad",
      "time": "2026-11-26T16:49:05+01:00",
@@ -4989,7 +4995,7 @@
      "time": "2026-11-26T16:34:15+01:00",
      "subject": "Merge branch 'factory/fan-rules-5' (Eagle King's Court, key eagleking)",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "fcba07e",
@@ -5017,7 +5023,7 @@
      "time": "2026-11-26T16:30:17+01:00",
      "subject": "learn eagleking round 2: ghost-row overflow check, Vault stale-line check, lessons merged",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "4b23afe",
@@ -5031,7 +5037,7 @@
      "time": "2026-11-26T16:25:16+01:00",
      "subject": "factory: approver eagleking (fan-rules-5 pass 1/1, DONE)",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "ff63846",
@@ -5045,7 +5051,7 @@
      "time": "2026-11-26T16:18:03+01:00",
      "subject": "factory: CLEAN code eagleking",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "0e7ac54",
@@ -5059,21 +5065,21 @@
      "time": "2026-11-26T16:14:51+01:00",
      "subject": "factory: CLEAN artCheck eagleking",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "4a14f89",
      "time": "2026-11-26T16:12:46+01:00",
      "subject": "factory: judge eagleking p1.2",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "7caf7f4",
      "time": "2026-11-26T16:09:27+01:00",
      "subject": "eagleking judge step fix p1 leg 2: bottom plates at the concept widths (1:1 9-slices), tracker top band from concept.png, Pieces + nameplate",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "8602db8",
@@ -5143,7 +5149,7 @@
      "time": "2026-11-26T15:48:36+01:00",
      "subject": "eagleking judge step fix p1.1: stat rows on the painted rows (stats-panel-rows cut), nameplate on the frame top, phase/hint text at the conc",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "875f9eb",
@@ -5178,14 +5184,14 @@
      "time": "2026-11-26T15:38:22+01:00",
      "subject": "factory: judge eagleking p1.1",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "e4cd107",
      "time": "2026-11-26T15:35:43+01:00",
      "subject": "eagleking skin fix run 2: gold End/Undo/phase text at 1920, nested off tiles get the off plate, handoff SKIN BUILD: DONE",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "885544c",
@@ -5220,7 +5226,7 @@
      "time": "2026-11-26T15:30:59+01:00",
      "subject": "eagleking skin fix run 2: concept theme-judge PASS line, Offline pill cut from concept.png (text cleared), row tags on the wood at 1920, cas",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "dec8dfb",
@@ -5248,7 +5254,7 @@
      "time": "2026-11-26T15:25:12+01:00",
      "subject": "factory: CLEAN hudCheck eagleking",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "1011df1",
@@ -5262,7 +5268,7 @@
      "time": "2026-11-26T15:22:23+01:00",
      "subject": "eagleking HUD step fix: label chip rim inset (open-edge: Pieces / Abilities tabs framed on both sides)",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "d4b121f",
@@ -5297,7 +5303,7 @@
      "time": "2026-11-26T15:17:22+01:00",
      "subject": "eagleking HUD step fix: labels on velvet chips (text-overlap 0 at every breakpoint + phases), Undo fits, phone VP clear of Crafted box",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-4"
     },
     {
      "hash": "80bbb0b",
@@ -5312,16 +5318,9 @@
      "subject": "factory: CLEAN artCheck farmlands",
      "agent": "factory",
      "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "a1ad3ff",
-     "time": "2026-11-26T15:12:37+01:00",
-     "subject": "Merge branch 'factory/fan-rules-3' (Fangus Khan, key fangus)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 454
+   "last24Count": 455
   },
   "trust": {
    "tests": {
@@ -6826,18 +6825,18 @@
  "tokens": {
   "factions": {
    "other": {
-    "input": 17735,
-    "output": 3790498,
-    "cacheCreate": 36827438,
-    "cacheRead": 501435510,
+    "input": 17739,
+    "output": 3790801,
+    "cacheCreate": 36888653,
+    "cacheRead": 501493937,
     "stages": {
      "setup": {
-      "input": 348,
-      "output": 29560,
-      "cacheCreate": 4539731,
-      "cacheRead": 5549355,
-      "fresh": 4569639,
-      "total": 10118994
+      "input": 352,
+      "output": 29863,
+      "cacheCreate": 4600946,
+      "cacheRead": 5607782,
+      "fresh": 4631161,
+      "total": 10238943
      },
      "spec": {
       "input": 3500,
@@ -7462,20 +7461,26 @@
       "agents": 3
      },
      {
+      "id": "wf_e4fd52c5-ef5",
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "agents": 1
+     },
+     {
       "id": "wf_ef0b50b7-b4c",
       "first": "2026-11-26",
       "last": "2026-11-26",
       "agents": 2
      }
     ],
-    "agents": 372,
+    "agents": 373,
     "first": "2026-11-04",
     "last": "2026-11-26",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": false,
-    "fresh": 40635671,
-    "total": 542071181
+    "fresh": 40697193,
+    "total": 542191130
    },
    "caninecommonwealth": {
     "input": 2984,
@@ -9002,10 +9007,10 @@
     "total": 138606044
    },
    "farmlands": {
-    "input": 1946,
-    "output": 639693,
-    "cacheCreate": 4795913,
-    "cacheRead": 98543835,
+    "input": 1956,
+    "output": 645373,
+    "cacheCreate": 4802925,
+    "cacheRead": 99428594,
     "stages": {
      "reader": {
       "input": 68,
@@ -9112,12 +9117,12 @@
       "total": 698766
      },
      "skin": {
-      "input": 404,
-      "output": 167343,
-      "cacheCreate": 1042605,
-      "cacheRead": 23326704,
-      "fresh": 1210352,
-      "total": 24537056
+      "input": 414,
+      "output": 173023,
+      "cacheCreate": 1049617,
+      "cacheRead": 24211463,
+      "fresh": 1223054,
+      "total": 25434517
      },
      "judge": {
       "input": 26,
@@ -9220,8 +9225,8 @@
     "pictures": 10,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 5437552,
-    "total": 103981387
+    "fresh": 5450254,
+    "total": 104878848
    },
    "camarilla": {
     "input": 4048,
@@ -9896,10 +9901,10 @@
     "total": 323774404
    },
    "freeleaders": {
-    "input": 900,
-    "output": 297922,
-    "cacheCreate": 1612917,
-    "cacheRead": 49606645,
+    "input": 912,
+    "output": 317051,
+    "cacheCreate": 1635596,
+    "cacheRead": 50367164,
     "stages": {
      "reader": {
       "input": 74,
@@ -9998,12 +10003,12 @@
       "total": 556455
      },
      "skin": {
-      "input": 38,
-      "output": 9383,
-      "cacheCreate": 95931,
-      "cacheRead": 1677970,
-      "fresh": 105352,
-      "total": 1783322
+      "input": 50,
+      "output": 28512,
+      "cacheCreate": 118610,
+      "cacheRead": 2438489,
+      "fresh": 147172,
+      "total": 2585661
      }
     },
     "runs": [
@@ -10020,8 +10025,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1911739,
-    "total": 51518384
+    "fresh": 1953559,
+    "total": 52320723
    },
    "caninerepublic": {
     "input": 1960,
@@ -10448,10 +10453,10 @@
     "total": 82043195
    },
    "frosty": {
-    "input": 150,
-    "output": 87592,
-    "cacheCreate": 313736,
-    "cacheRead": 8079099,
+    "input": 168,
+    "output": 95942,
+    "cacheCreate": 324845,
+    "cacheRead": 9694207,
     "stages": {
      "reader": {
       "input": 68,
@@ -10470,12 +10475,12 @@
       "total": 382734
      },
      "rules": {
-      "input": 70,
-      "output": 51785,
-      "cacheCreate": 153263,
-      "cacheRead": 4556684,
-      "fresh": 205118,
-      "total": 4761802
+      "input": 88,
+      "output": 60135,
+      "cacheCreate": 164372,
+      "cacheRead": 6171792,
+      "fresh": 224595,
+      "total": 6396387
      }
     },
     "runs": [
@@ -10492,8 +10497,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 401478,
-    "total": 8480577
+    "fresh": 420955,
+    "total": 10115162
    },
    "fangus": {
     "input": 1658,
@@ -11142,6 +11147,38 @@
     "isFaction": true,
     "fresh": 11854922,
     "total": 114930982
+   },
+   "aviators": {
+    "input": 6,
+    "output": 879,
+    "cacheCreate": 44052,
+    "cacheRead": 143530,
+    "stages": {
+     "reader": {
+      "input": 6,
+      "output": 879,
+      "cacheCreate": 44052,
+      "cacheRead": 143530,
+      "fresh": 44937,
+      "total": 188467
+     }
+    },
+    "runs": [
+     {
+      "id": "wf_e4fd52c5-ef5",
+      "first": "2026-11-26",
+      "last": "2026-11-26",
+      "agents": 1
+     }
+    ],
+    "agents": 1,
+    "first": "2026-11-26",
+    "last": "2026-11-26",
+    "pictures": 0,
+    "failedPictures": 0,
+    "isFaction": true,
+    "fresh": 44937,
+    "total": 188467
    },
    "darkforest": {
     "input": 1586,
