@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T02:30:00.218Z",
+ "generatedAt": "2026-11-26T02:40:06.789Z",
  "stages": [
   {
    "id": "reader",
@@ -4846,7 +4846,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T02:30:00.000Z",
+    "lastRun": "2026-11-26T02:40:06.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4857,8 +4857,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-26T02:05:03.000Z",
-    "nextRun": "2026-11-26T02:35:00.000Z",
+    "lastRun": "2026-11-26T02:35:00.000Z",
+    "nextRun": "2026-11-26T03:05:00.000Z",
     "lastNote": null
    },
    {
@@ -7660,10 +7660,10 @@
     "total": 157115423
    },
    "collegiumalfaromancy": {
-    "input": 2106,
-    "output": 597406,
-    "cacheCreate": 10358346,
-    "cacheRead": 93494763,
+    "input": 2120,
+    "output": 599447,
+    "cacheCreate": 10472525,
+    "cacheRead": 94155665,
     "stages": {
      "reader": {
       "input": 78,
@@ -7714,12 +7714,12 @@
       "total": 2177119
      },
      "stepfix": {
-      "input": 696,
-      "output": 178279,
-      "cacheCreate": 3644977,
-      "cacheRead": 31108127,
-      "fresh": 3823952,
-      "total": 34932079
+      "input": 710,
+      "output": 180320,
+      "cacheCreate": 3759156,
+      "cacheRead": 31769029,
+      "fresh": 3940186,
+      "total": 35709215
      },
      "wireframe": {
       "input": 14,
@@ -7870,8 +7870,8 @@
     "pictures": 5,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 10957858,
-    "total": 104452621
+    "fresh": 11074092,
+    "total": 105229757
    },
    "bumblebee": {
     "input": 3174,
@@ -8104,9 +8104,9 @@
     "total": 164967335
    },
    "cirque": {
-    "input": 2452,
-    "output": 684016,
-    "cacheCreate": 12193508,
+    "input": 2454,
+    "output": 684194,
+    "cacheCreate": 12260414,
     "cacheRead": 115762494,
     "stages": {
      "reader": {
@@ -8214,12 +8214,12 @@
       "total": 14801651
      },
      "judge": {
-      "input": 74,
-      "output": 13700,
-      "cacheCreate": 1020650,
+      "input": 76,
+      "output": 13878,
+      "cacheCreate": 1087556,
       "cacheRead": 1610178,
-      "fresh": 1034424,
-      "total": 2644602
+      "fresh": 1101510,
+      "total": 2711688
      },
      "coverage": {
       "input": 10,
@@ -8314,8 +8314,8 @@
     "pictures": 5,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 12879976,
-    "total": 128642470
+    "fresh": 12947062,
+    "total": 128709556
    },
    "camarilla": {
     "input": 4048,
@@ -8756,10 +8756,10 @@
     "total": 323774404
    },
    "croakers": {
-    "input": 1430,
-    "output": 481397,
-    "cacheCreate": 8135274,
-    "cacheRead": 76048881,
+    "input": 1446,
+    "output": 484377,
+    "cacheCreate": 8271332,
+    "cacheRead": 76790103,
     "stages": {
      "reader": {
       "input": 80,
@@ -8794,12 +8794,12 @@
       "total": 3276762
      },
      "stepfix": {
-      "input": 650,
-      "output": 203868,
-      "cacheCreate": 3710804,
-      "cacheRead": 35889640,
-      "fresh": 3915322,
-      "total": 39804962
+      "input": 666,
+      "output": 206848,
+      "cacheCreate": 3846862,
+      "cacheRead": 36630862,
+      "fresh": 4054376,
+      "total": 40685238
      },
      "hud": {
       "input": 190,
@@ -8888,8 +8888,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 8618101,
-    "total": 84666982
+    "fresh": 8757155,
+    "total": 85547258
    },
    "caninerepublic": {
     "input": 1960,
@@ -9108,10 +9108,10 @@
     "total": 107401140
    },
    "crumblingcourt": {
-    "input": 1096,
-    "output": 331427,
-    "cacheCreate": 5686265,
-    "cacheRead": 52275040,
+    "input": 1098,
+    "output": 331823,
+    "cacheCreate": 5733369,
+    "cacheRead": 52295736,
     "stages": {
      "reader": {
       "input": 58,
@@ -9218,12 +9218,12 @@
       "total": 9598473
      },
      "judge": {
-      "input": 4,
-      "output": 1411,
-      "cacheCreate": 43274,
-      "cacheRead": 81767,
-      "fresh": 44689,
-      "total": 126456
+      "input": 6,
+      "output": 1807,
+      "cacheCreate": 90378,
+      "cacheRead": 102463,
+      "fresh": 92191,
+      "total": 194654
      }
     },
     "runs": [
@@ -9240,8 +9240,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 6018788,
-    "total": 58293828
+    "fresh": 6066290,
+    "total": 58362026
    },
    "chameleander": {
     "input": 2108,
