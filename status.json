@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T08:30:00.180Z",
+ "generatedAt": "2026-11-27T08:40:00.176Z",
  "stages": [
   {
    "id": "reader",
@@ -215,29 +215,21 @@
  "run": {
   "id": "wf_1f7f0033-c7a",
   "modified": "2026-11-27T07:34:20.377Z",
-  "running": 4,
-  "faction": "pigtroupe",
+  "running": 0,
+  "faction": "",
   "stageDone": [
    "setup",
    "reader",
    "theme",
    "rules",
    "rulesCheck",
-   "stepfix"
+   "stepfix",
+   "hud",
+   "record",
+   "gate"
   ]
  },
- "now": {
-  "label": "gate:fan-rules-4",
-  "stage": "gate",
-  "faction": "",
-  "pass": null,
-  "try": null,
-  "phase": "Human",
-  "model": "opus",
-  "running": true,
-  "start": "2026-11-27T07:34:20.372Z",
-  "end": null
- },
+ "now": null,
  "scores": [
   {
    "stage": "rulesCheck",
@@ -258,62 +250,6 @@
    "label": "rulescheck:pigtroupe:p1.3",
    "pass": 1,
    "try": 3,
-   "score": 8
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:order_of_the_scale:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 7
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:order_of_the_scale:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 8.5
-  },
-  {
-   "stage": "hudCheck",
-   "label": "hudcheck:order_of_the_scale:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 10
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:owls:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 6
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:owls:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 8.4
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:owls:p1.3",
-   "pass": 1,
-   "try": 3,
-   "score": 7.2
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:owls:p1.4",
-   "pass": 1,
-   "try": 4,
-   "score": 8
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:owls:p1.5",
-   "pass": 1,
-   "try": 5,
    "score": 8
   }
  ],
@@ -632,27 +568,27 @@
   },
   {
    "key": "order_of_the_scale",
+   "state": "TODO",
    "passes": 0,
-   "commit": "-",
-   "state": "RUNNING"
+   "commit": "-"
   },
   {
    "key": "owls",
+   "state": "TODO",
    "passes": 0,
-   "commit": "-",
-   "state": "RUNNING"
+   "commit": "-"
   },
   {
    "key": "pigtroupe",
+   "state": "TODO",
    "passes": 0,
-   "commit": "-",
-   "state": "RUNNING"
+   "commit": "-"
   },
   {
    "key": "plaguedoctors",
+   "state": "TODO",
    "passes": 0,
-   "commit": "-",
-   "state": "RUNNING"
+   "commit": "-"
   },
   {
    "key": "pond",
@@ -887,8 +823,7 @@
   "DONE": 46,
   "DONE-OPEN": 5,
   "PARKED": 1,
-  "RUNNING": 4,
-  "TODO": 38
+  "TODO": 42
  },
  "total": 94,
  "doneCount": 51,
@@ -896,25 +831,25 @@
   {
    "id": "wf_1f7f0033-c7a",
    "modified": "2026-11-27T07:34:20.377Z",
-   "running": 4,
+   "running": 0,
    "agents": 14
   },
   {
    "id": "wf_05b935aa-050",
    "modified": "2026-11-27T07:34:01.745Z",
-   "running": 3,
+   "running": 0,
    "agents": 18
   },
   {
    "id": "wf_ce4bfc00-ff3",
    "modified": "2026-11-27T07:34:00.004Z",
-   "running": 3,
+   "running": 0,
    "agents": 17
   },
   {
    "id": "wf_3d4273d8-5da",
    "modified": "2026-11-27T07:33:57.266Z",
-   "running": 3,
+   "running": 0,
    "agents": 6
   },
   {
@@ -966,329 +901,8 @@
    "agents": 7
   }
  ],
- "factories": [
-  {
-   "id": "wf_1f7f0033-c7a",
-   "batch": "fan-rules-4",
-   "faction": "pigtroupe",
-   "modified": "2026-11-27T07:34:20.377Z",
-   "now": {
-    "label": "gate:fan-rules-4",
-    "stage": "gate",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Human",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T07:34:20.372Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix"
-   ]
-  },
-  {
-   "id": "wf_05b935aa-050",
-   "batch": "fan-rules-3",
-   "faction": "order_of_the_scale",
-   "modified": "2026-11-27T07:34:01.745Z",
-   "now": {
-    "label": "gate:fan-rules-3",
-    "stage": "gate",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Human",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T07:34:01.738Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix",
-    "hud",
-    "hudCheck",
-    "wireframe",
-    "quota",
-    "overlay",
-    "plate"
-   ]
-  },
-  {
-   "id": "wf_ce4bfc00-ff3",
-   "batch": "fan-rules-2",
-   "faction": "owls",
-   "modified": "2026-11-27T07:34:00.004Z",
-   "now": {
-    "label": "gate:fan-rules-2",
-    "stage": "gate",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Human",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T07:33:59.998Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix"
-   ]
-  },
-  {
-   "id": "wf_3d4273d8-5da",
-   "batch": "fan-rules-5",
-   "faction": "plaguedoctors",
-   "modified": "2026-11-27T07:33:57.266Z",
-   "now": {
-    "label": "gate:fan-rules-5",
-    "stage": "gate",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Human",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T07:33:57.260Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme"
-   ]
-  }
- ],
+ "factories": [],
  "agents": [
-  {
-   "label": "gate:fan-rules-4",
-   "stage": "gate",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Human",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-27T07:34:20.372Z",
-   "end": null
-  },
-  {
-   "label": "record:pigtroupe",
-   "stage": "record",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Approve",
-   "model": "sonnet",
-   "running": true,
-   "start": "2026-11-27T07:34:20.027Z",
-   "end": null
-  },
-  {
-   "label": "hud:pigtroupe:p1.1",
-   "stage": "hud",
-   "faction": "pigtroupe",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-27T07:34:19.679Z",
-   "end": null
-  },
-  {
-   "label": "gate:fan-rules-3",
-   "stage": "gate",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Human",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-27T07:34:01.738Z",
-   "end": null
-  },
-  {
-   "label": "record:order_of_the_scale",
-   "stage": "record",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Approve",
-   "model": "sonnet",
-   "running": true,
-   "start": "2026-11-27T07:34:01.354Z",
-   "end": null
-  },
-  {
-   "label": "gate:fan-rules-2",
-   "stage": "gate",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Human",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-27T07:33:59.998Z",
-   "end": null
-  },
-  {
-   "label": "record:owls",
-   "stage": "record",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Approve",
-   "model": "sonnet",
-   "running": true,
-   "start": "2026-11-27T07:33:59.650Z",
-   "end": null
-  },
-  {
-   "label": "gate:fan-rules-5",
-   "stage": "gate",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Human",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-27T07:33:57.260Z",
-   "end": null
-  },
-  {
-   "label": "record:plaguedoctors",
-   "stage": "record",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Approve",
-   "model": "sonnet",
-   "running": true,
-   "start": "2026-11-27T07:33:56.910Z",
-   "end": null
-  },
-  {
-   "label": "hud:owls:p1.1",
-   "stage": "hud",
-   "faction": "owls",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-27T07:33:44.818Z",
-   "end": null
-  },
-  {
-   "label": "cut:order_of_the_scale",
-   "stage": "cut",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Art",
-   "model": "sonnet",
-   "running": true,
-   "start": "2026-11-27T07:33:38.877Z",
-   "end": null
-  },
-  {
-   "label": "plate:order_of_the_scale",
-   "stage": "plate",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Art",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T07:31:45.800Z",
-   "end": "2026-11-27T07:33:38.686Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:order_of_the_scale:plate",
-   "stage": "quota",
-   "faction": "order_of_the_scale",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T07:31:36.140Z",
-   "end": "2026-11-27T07:31:45.484Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rules:plaguedoctors:p1.1",
-   "stage": "rules",
-   "faction": "plaguedoctors",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-27T07:30:27.601Z",
-   "end": null
-  },
-  {
-   "label": "rulescheck:pigtroupe:p1.4",
-   "stage": "rulesCheck",
-   "faction": "pigtroupe",
-   "pass": 1,
-   "try": 4,
-   "phase": "Review",
-   "model": "opus",
-   "running": true,
-   "start": "2026-11-27T07:30:13.525Z",
-   "end": null
-  },
-  {
-   "label": "theme:plaguedoctors",
-   "stage": "theme",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T07:29:35.608Z",
-   "end": "2026-11-27T07:30:25.926Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rulescheck:owls:p1.5",
-   "stage": "rulesCheck",
-   "faction": "owls",
-   "pass": 1,
-   "try": 5,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T07:28:56.536Z",
-   "end": "2026-11-27T07:33:44.738Z",
-   "score": 8,
-   "pass_ok": false,
-   "findings": 2
-  },
   {
    "label": "stepfix:pigtroupe:p1.1",
    "stage": "stepfix",
@@ -1300,88 +914,6 @@
    "running": false,
    "start": "2026-11-27T07:25:11.437Z",
    "end": "2026-11-27T07:30:13.420Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "reader:plaguedoctors",
-   "stage": "reader",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Read",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T07:24:05.212Z",
-   "end": "2026-11-27T07:29:35.369Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "setup:fan-rules-5",
-   "stage": "setup",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Setup",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T07:23:59.211Z",
-   "end": "2026-11-27T07:24:05.203Z"
-  },
-  {
-   "label": "overlay:order_of_the_scale",
-   "stage": "overlay",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T07:23:57.014Z",
-   "end": "2026-11-27T07:31:36.038Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "stepfix:owls:p1.1",
-   "stage": "stepfix",
-   "faction": "owls",
-   "pass": 1,
-   "try": 4,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T07:23:56.442Z",
-   "end": "2026-11-27T07:28:56.422Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:order_of_the_scale:overlay",
-   "stage": "quota",
-   "faction": "order_of_the_scale",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T07:23:48.078Z",
-   "end": "2026-11-27T07:23:56.873Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "wireframe:order_of_the_scale",
-   "stage": "wireframe",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Screenshot",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T07:23:30.631Z",
-   "end": "2026-11-27T07:23:47.657Z",
    "score": null,
    "findings": 0
   },
@@ -1401,50 +933,6 @@
    "findings": 2
   },
   {
-   "label": "rulescheck:owls:p1.4",
-   "stage": "rulesCheck",
-   "faction": "owls",
-   "pass": 1,
-   "try": 4,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T07:21:17.941Z",
-   "end": "2026-11-27T07:23:56.326Z",
-   "score": 8,
-   "pass_ok": false,
-   "findings": 2
-  },
-  {
-   "label": "hudcheck:order_of_the_scale:p1.1",
-   "stage": "hudCheck",
-   "faction": "order_of_the_scale",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T07:19:55.011Z",
-   "end": "2026-11-27T07:23:28.958Z",
-   "score": 10,
-   "pass_ok": true,
-   "findings": 0
-  },
-  {
-   "label": "stepfix:owls:p1.1",
-   "stage": "stepfix",
-   "faction": "owls",
-   "pass": 1,
-   "try": 3,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T07:16:13.200Z",
-   "end": "2026-11-27T07:21:17.842Z",
-   "score": null,
-   "findings": 0
-  },
-  {
    "label": "stepfix:pigtroupe:p1.1",
    "stage": "stepfix",
    "faction": "pigtroupe",
@@ -1459,19 +947,102 @@
    "findings": 0
   },
   {
-   "label": "rulescheck:owls:p1.3",
+   "label": "rulescheck:pigtroupe:p1.2",
    "stage": "rulesCheck",
-   "faction": "owls",
+   "faction": "pigtroupe",
    "pass": 1,
-   "try": 3,
+   "try": 2,
    "phase": "Review",
    "model": "opus",
    "running": false,
-   "start": "2026-11-27T07:12:00.622Z",
-   "end": "2026-11-27T07:16:12.998Z",
-   "score": 7.2,
+   "start": "2026-11-27T07:10:49.445Z",
+   "end": "2026-11-27T07:13:45.743Z",
+   "score": 8,
    "pass_ok": false,
-   "findings": 5
+   "findings": 4
+  },
+  {
+   "label": "stepfix:pigtroupe:p1.1",
+   "stage": "stepfix",
+   "faction": "pigtroupe",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-27T07:02:15.823Z",
+   "end": "2026-11-27T07:10:49.224Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "rulescheck:pigtroupe:p1.1",
+   "stage": "rulesCheck",
+   "faction": "pigtroupe",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-27T06:57:44.109Z",
+   "end": "2026-11-27T07:02:15.595Z",
+   "score": 7,
+   "pass_ok": false,
+   "findings": 4
+  },
+  {
+   "label": "rules:pigtroupe:p1.1",
+   "stage": "rules",
+   "faction": "pigtroupe",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-27T06:46:15.505Z",
+   "end": "2026-11-27T06:57:43.967Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "theme:pigtroupe",
+   "stage": "theme",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Concept",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T06:45:32.898Z",
+   "end": "2026-11-27T06:46:15.419Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "reader:pigtroupe",
+   "stage": "reader",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Read",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-27T06:41:31.529Z",
+   "end": "2026-11-27T06:45:32.799Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "setup:fan-rules-4",
+   "stage": "setup",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Setup",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T06:41:26.790Z",
+   "end": "2026-11-27T06:41:31.523Z"
   }
  ],
  "elements": [
@@ -2354,74 +1925,6 @@
    "shotAt": "2026-11-27T07:24:06.331Z"
   },
   {
-   "key": "order_of_the_scale",
-   "name": "Order of the scale",
-   "group": "Factions",
-   "what": "Fan faction.",
-   "state": "running",
-   "feedback": {
-    "open": 0,
-    "fixed": 0,
-    "queued": 0,
-    "needsLead": 0,
-    "issues": []
-   },
-   "img": "img/factions/order_of_the_scale.webp",
-   "thumb": "img/factions/order_of_the_scale-thumb.webp",
-   "shotAt": "2026-11-18T21:07:42.147Z"
-  },
-  {
-   "key": "owls",
-   "name": "Owls",
-   "group": "Factions",
-   "what": "Fan faction.",
-   "state": "running",
-   "feedback": {
-    "open": 0,
-    "fixed": 0,
-    "queued": 0,
-    "needsLead": 0,
-    "issues": []
-   },
-   "img": "img/factions/owls.webp",
-   "thumb": "img/factions/owls-thumb.webp",
-   "shotAt": "2026-11-18T21:07:49.030Z"
-  },
-  {
-   "key": "pigtroupe",
-   "name": "Pigtroupe",
-   "group": "Factions",
-   "what": "Fan faction.",
-   "state": "running",
-   "feedback": {
-    "open": 0,
-    "fixed": 0,
-    "queued": 0,
-    "needsLead": 0,
-    "issues": []
-   },
-   "img": "img/factions/pigtroupe.webp",
-   "thumb": "img/factions/pigtroupe-thumb.webp",
-   "shotAt": "2026-11-18T21:07:56.127Z"
-  },
-  {
-   "key": "plaguedoctors",
-   "name": "Plaguedoctors",
-   "group": "Factions",
-   "what": "Fan faction.",
-   "state": "running",
-   "feedback": {
-    "open": 0,
-    "fixed": 0,
-    "queued": 0,
-    "needsLead": 0,
-    "issues": []
-   },
-   "img": "img/factions/plaguedoctors.webp",
-   "thumb": "img/factions/plaguedoctors-thumb.webp",
-   "shotAt": "2026-11-18T21:08:03.032Z"
-  },
-  {
    "key": "woodland",
    "name": "Woodland",
    "group": "Factions",
@@ -2694,6 +2197,74 @@
    "img": "img/factions/nomads.webp",
    "thumb": "img/factions/nomads-thumb.webp",
    "shotAt": "2026-11-18T21:05:51.186Z"
+  },
+  {
+   "key": "order_of_the_scale",
+   "name": "Order of the scale",
+   "group": "Factions",
+   "what": "Fan faction.",
+   "state": "waiting",
+   "feedback": {
+    "open": 0,
+    "fixed": 0,
+    "queued": 0,
+    "needsLead": 0,
+    "issues": []
+   },
+   "img": "img/factions/order_of_the_scale.webp",
+   "thumb": "img/factions/order_of_the_scale-thumb.webp",
+   "shotAt": "2026-11-18T21:07:42.147Z"
+  },
+  {
+   "key": "owls",
+   "name": "Owls",
+   "group": "Factions",
+   "what": "Fan faction.",
+   "state": "waiting",
+   "feedback": {
+    "open": 0,
+    "fixed": 0,
+    "queued": 0,
+    "needsLead": 0,
+    "issues": []
+   },
+   "img": "img/factions/owls.webp",
+   "thumb": "img/factions/owls-thumb.webp",
+   "shotAt": "2026-11-18T21:07:49.030Z"
+  },
+  {
+   "key": "pigtroupe",
+   "name": "Pigtroupe",
+   "group": "Factions",
+   "what": "Fan faction.",
+   "state": "waiting",
+   "feedback": {
+    "open": 0,
+    "fixed": 0,
+    "queued": 0,
+    "needsLead": 0,
+    "issues": []
+   },
+   "img": "img/factions/pigtroupe.webp",
+   "thumb": "img/factions/pigtroupe-thumb.webp",
+   "shotAt": "2026-11-18T21:07:56.127Z"
+  },
+  {
+   "key": "plaguedoctors",
+   "name": "Plaguedoctors",
+   "group": "Factions",
+   "what": "Fan faction.",
+   "state": "waiting",
+   "feedback": {
+    "open": 0,
+    "fixed": 0,
+    "queued": 0,
+    "needsLead": 0,
+    "issues": []
+   },
+   "img": "img/factions/plaguedoctors.webp",
+   "thumb": "img/factions/plaguedoctors-thumb.webp",
+   "shotAt": "2026-11-18T21:08:03.032Z"
   },
   {
    "key": "pond",
@@ -4751,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T08:30:00.000Z",
+    "lastRun": "2026-11-27T08:40:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4762,8 +4333,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T08:05:00.000Z",
-    "nextRun": "2026-11-27T08:35:00.000Z",
+    "lastRun": "2026-11-27T08:35:00.000Z",
+    "nextRun": "2026-11-27T09:05:00.000Z",
     "lastNote": null
    },
    {
