@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T22:50:00.179Z",
+ "generatedAt": "2026-11-27T23:00:00.178Z",
  "stages": [
   {
    "id": "reader",
@@ -4322,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T22:50:00.000Z",
+    "lastRun": "2026-11-27T23:00:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4915,7 +4915,7 @@
      "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 304
+   "last24Count": 297
   },
   "trust": {
    "tests": {
