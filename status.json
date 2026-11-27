@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T21:00:00.175Z",
+ "generatedAt": "2026-11-27T21:10:00.175Z",
  "stages": [
   {
    "id": "reader",
@@ -4322,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T21:00:00.000Z",
+    "lastRun": "2026-11-27T21:10:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4333,8 +4333,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T20:35:00.000Z",
-    "nextRun": "2026-11-27T21:05:00.000Z",
+    "lastRun": "2026-11-27T21:05:00.000Z",
+    "nextRun": "2026-11-27T21:35:00.000Z",
     "lastNote": null
    },
    {
@@ -4915,7 +4915,7 @@
      "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 375
+   "last24Count": 369
   },
   "trust": {
    "tests": {
