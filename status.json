@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T01:50:00.187Z",
+ "generatedAt": "2026-11-27T01:52:46.572Z",
  "stages": [
   {
    "id": "reader",
@@ -213,41 +213,41 @@
   }
  ],
  "run": {
-  "id": "wf_31b886d8-989",
-  "modified": "2026-11-27T01:47:25.022Z",
+  "id": "wf_130753d6-21f",
+  "modified": "2026-11-27T01:52:43.136Z",
   "running": 1,
-  "faction": "necropossums",
+  "faction": "",
   "stageDone": [
-   "setup",
-   "reader",
-   "theme",
-   "rules",
-   "rulesCheck",
-   "hud",
-   "hudCheck",
-   "wireframe",
-   "quota",
-   "overlay",
-   "plate",
-   "cut",
-   "judge",
-   "stepfix",
-   "skin"
+   "setup"
   ]
  },
  "now": {
-  "label": "judge:necropossums:p1.2",
-  "stage": "judge",
-  "faction": "necropossums",
-  "pass": 1,
-  "try": 2,
-  "phase": "Review",
-  "model": "sonnet",
+  "label": "reader:nomads",
+  "stage": "reader",
+  "faction": "",
+  "pass": null,
+  "try": null,
+  "phase": "Read",
+  "model": "opus",
   "running": true,
-  "start": "2026-11-27T01:47:25.013Z",
+  "start": "2026-11-27T01:52:43.127Z",
   "end": null
  },
  "scores": [
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:nocturnal:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 8
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:nocturnal:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 8
+  },
   {
    "stage": "rulesCheck",
    "label": "rulescheck:necropossums:p1.1",
@@ -270,18 +270,11 @@
    "score": 5.7
   },
   {
-   "stage": "rulesCheck",
-   "label": "rulescheck:nocturnal:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 8
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:nocturnal:p1.2",
+   "stage": "judge",
+   "label": "judge:necropossums:p1.2",
    "pass": 1,
    "try": 2,
-   "score": 8
+   "score": 5.7
   },
   {
    "stage": "rulesCheck",
@@ -902,16 +895,22 @@
  "doneCount": 44,
  "recentRuns": [
   {
-   "id": "wf_31b886d8-989",
-   "modified": "2026-11-27T01:47:25.022Z",
+   "id": "wf_130753d6-21f",
+   "modified": "2026-11-27T01:52:43.136Z",
    "running": 1,
-   "agents": 19
+   "agents": 2
   },
   {
    "id": "wf_f398c870-9a1",
-   "modified": "2026-11-27T01:46:41.512Z",
+   "modified": "2026-11-27T01:52:24.815Z",
    "running": 1,
-   "agents": 8
+   "agents": 9
+  },
+  {
+   "id": "wf_31b886d8-989",
+   "modified": "2026-11-27T01:50:18.649Z",
+   "running": 1,
+   "agents": 21
   },
   {
    "id": "wf_47d7b24a-41e",
@@ -966,30 +965,71 @@
    "modified": "2026-11-26T20:19:50.978Z",
    "running": 0,
    "agents": 44
-  },
-  {
-   "id": "wf_3d8439dc-089",
-   "modified": "2026-11-26T19:35:16.650Z",
-   "running": 0,
-   "agents": 34
   }
  ],
  "factories": [
   {
+   "id": "wf_130753d6-21f",
+   "batch": "fan-rules-3",
+   "faction": "",
+   "modified": "2026-11-27T01:52:43.136Z",
+   "now": {
+    "label": "reader:nomads",
+    "stage": "reader",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Read",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T01:52:43.127Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup"
+   ]
+  },
+  {
+   "id": "wf_f398c870-9a1",
+   "batch": "fan-rules-5",
+   "faction": "nocturnal",
+   "modified": "2026-11-27T01:52:24.815Z",
+   "now": {
+    "label": "rulescheck:nocturnal:p1.3",
+    "stage": "rulesCheck",
+    "faction": "nocturnal",
+    "pass": 1,
+    "try": 3,
+    "phase": "Review",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T01:52:24.808Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix"
+   ]
+  },
+  {
    "id": "wf_31b886d8-989",
    "batch": "fan-rules-4",
    "faction": "necropossums",
-   "modified": "2026-11-27T01:47:25.022Z",
+   "modified": "2026-11-27T01:50:18.649Z",
    "now": {
-    "label": "judge:necropossums:p1.2",
-    "stage": "judge",
-    "faction": "necropossums",
-    "pass": 1,
-    "try": 2,
-    "phase": "Review",
+    "label": "art:necropossums",
+    "stage": "art",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Art",
     "model": "sonnet",
     "running": true,
-    "start": "2026-11-27T01:47:25.013Z",
+    "start": "2026-11-27T01:50:18.643Z",
     "end": null
    },
    "stageDone": [
@@ -1007,33 +1047,8 @@
     "cut",
     "judge",
     "stepfix",
+    "coverage",
     "skin"
-   ]
-  },
-  {
-   "id": "wf_f398c870-9a1",
-   "batch": "fan-rules-5",
-   "faction": "nocturnal",
-   "modified": "2026-11-27T01:46:41.512Z",
-   "now": {
-    "label": "stepfix:nocturnal:p1.1",
-    "stage": "stepfix",
-    "faction": "nocturnal",
-    "pass": 1,
-    "try": 2,
-    "phase": "Build",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T01:46:41.506Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix"
    ]
   },
   {
@@ -1126,6 +1141,69 @@
    "findings": 0
   },
   {
+   "label": "reader:nomads",
+   "stage": "reader",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Read",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T01:52:43.127Z",
+   "end": null
+  },
+  {
+   "label": "setup:fan-rules-3",
+   "stage": "setup",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Setup",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T01:52:38.833Z",
+   "end": "2026-11-27T01:52:43.119Z"
+  },
+  {
+   "label": "rulescheck:nocturnal:p1.3",
+   "stage": "rulesCheck",
+   "faction": "nocturnal",
+   "pass": 1,
+   "try": 3,
+   "phase": "Review",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T01:52:24.808Z",
+   "end": null
+  },
+  {
+   "label": "art:necropossums",
+   "stage": "art",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Art",
+   "model": "sonnet",
+   "running": true,
+   "start": "2026-11-27T01:50:18.643Z",
+   "end": null
+  },
+  {
+   "label": "coverage:necropossums:p1",
+   "stage": "coverage",
+   "faction": "necropossums",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T01:50:00.993Z",
+   "end": "2026-11-27T01:50:18.338Z",
+   "score": null,
+   "pass_ok": true,
+   "findings": 0
+  },
+  {
    "label": "judge:necropossums:p1.2",
    "stage": "judge",
    "faction": "necropossums",
@@ -1133,9 +1211,12 @@
    "try": 2,
    "phase": "Review",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T01:47:25.013Z",
-   "end": null
+   "end": "2026-11-27T01:49:59.272Z",
+   "score": 5.7,
+   "pass_ok": false,
+   "findings": 4
   },
   {
    "label": "stepfix:nocturnal:p1.1",
@@ -1145,9 +1226,11 @@
    "try": 2,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T01:46:41.506Z",
-   "end": null
+   "end": "2026-11-27T01:52:24.571Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "rulescheck:nocturnal:p1.2",
@@ -1412,77 +1495,6 @@
    "running": false,
    "start": "2026-11-27T00:41:45.275Z",
    "end": "2026-11-27T00:41:53.532Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "overlay:lemmings",
-   "stage": "overlay",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:36:13.305Z",
-   "end": "2026-11-27T00:48:48.125Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:lemmings:overlay",
-   "stage": "quota",
-   "faction": "lemmings",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:36:05.553Z",
-   "end": "2026-11-27T00:36:13.023Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "wireframe:lemmings",
-   "stage": "wireframe",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Screenshot",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:35:44.308Z",
-   "end": "2026-11-27T00:36:05.403Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "hudcheck:lemmings:p1.1",
-   "stage": "hudCheck",
-   "faction": "lemmings",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:30:19.548Z",
-   "end": "2026-11-27T00:35:42.710Z",
-   "score": 10,
-   "pass_ok": true,
-   "findings": 0
-  },
-  {
-   "label": "overlay:necropossums",
-   "stage": "overlay",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:30:03.366Z",
-   "end": "2026-11-27T00:41:45.125Z",
    "score": null,
    "findings": 0
   }
@@ -2245,7 +2257,7 @@
    },
    "img": "img/factions/lostpowers.webp",
    "thumb": "img/factions/lostpowers-thumb.webp",
-   "shotAt": "2026-11-27T01:39:29.853Z"
+   "shotAt": "2026-11-27T01:52:46.485Z"
   },
   {
    "key": "lemmings",
@@ -4690,7 +4702,7 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 1356
+   "commitsSinceLive": 1380
   },
   "branches": {
    "list": [
@@ -4700,18 +4712,13 @@
      "date": "2026-11-27"
     },
     {
-     "name": "factory/fan-rules-3",
-     "ahead": 23,
-     "date": "2026-11-27"
-    },
-    {
      "name": "factory/fan-rules-4",
      "ahead": 21,
      "date": "2026-11-27"
     },
     {
      "name": "factory/fan-rules-5",
-     "ahead": 4,
+     "ahead": 5,
      "date": "2026-11-27"
     },
     {
@@ -4760,7 +4767,7 @@
     "ok": true,
     "exit": 0,
     "lastRun": "2026-11-27T01:50:00.000Z",
-    "nextRun": null,
+    "nextRun": "2026-11-27T02:00:00.000Z",
     "lastNote": null
    },
    {
@@ -4875,62 +4882,76 @@
     },
     {
      "date": "2026-11-27",
-     "commits": 33
+     "commits": 57
     }
    ],
    "latest": [
     {
+     "hash": "bf90e63",
+     "date": "2026-11-27",
+     "subject": "Merge factory/fan-rules-3 (Lost Powers, approved)"
+    },
+    {
+     "hash": "782a869",
+     "date": "2026-11-27",
+     "subject": "learn lostpowers: kit rows in ICONS + cost badge checks (test-hud-action-tiles, test-hud-overflow 'cost badge:'), CHOICES rules prompt line,"
+    },
+    {
+     "hash": "af90f53",
+     "date": "2026-11-27",
+     "subject": "factory: approver lostpowers (fan-rules-3 pass 1/1, APPROVED, DONE; majors/minors listed)"
+    },
+    {
+     "hash": "f646c1c",
+     "date": "2026-11-27",
+     "subject": "factory: CLEAN code lostpowers"
+    },
+    {
+     "hash": "2ca7b28",
+     "date": "2026-11-27",
+     "subject": "factory: CLEAN artCheck lostpowers"
+    },
+    {
+     "hash": "ef3f864",
+     "date": "2026-11-27",
+     "subject": "factory: art lostpowers (turtle Elder warrior head)"
+    },
+    {
+     "hash": "6194087",
+     "date": "2026-11-27",
+     "subject": "factory: judge lostpowers p1.2"
+    },
+    {
+     "hash": "083faae",
+     "date": "2026-11-27",
+     "subject": "factory: judge fix lostpowers p1.1 leg 2 (fullscreen on the painted knot, parchment faction tab, tabs and counters on the concept's lines, r"
+    },
+    {
+     "hash": "6fec179",
+     "date": "2026-11-27",
+     "subject": "factory: judge fix lostpowers p1.1 leg 1 (theme-judge PASS, accent 1.24%, phone name, narrow-laptop top bar, Undo/Pieces unclipped, short-sc"
+    },
+    {
      "hash": "5075273",
      "date": "2026-11-27",
      "subject": "Merge factory/fan-rules-5 (Invasion of the Tinklones, approved)"
-    },
-    {
-     "hash": "1e1b485",
-     "date": "2026-11-27",
-     "subject": "learn tinklones: endPhaseGuard purity check (check-guard-pure.js), mode-card name size check, multi-pick cancel, SETTLED reuse, border-box p"
-    },
-    {
-     "hash": "1d8ea6f",
-     "date": "2026-11-27",
-     "subject": "factory: approver tinklones (fan-rules-5 pass 1/1, APPROVED, DONE; minors listed)"
-    },
-    {
-     "hash": "9b9c898",
-     "date": "2026-11-27",
-     "subject": "factory: CLEAN code tinklones"
-    },
-    {
-     "hash": "92432ab",
-     "date": "2026-11-27",
-     "subject": "factory: CLEAN artCheck tinklones"
-    },
-    {
-     "hash": "1b2d973",
-     "date": "2026-11-27",
-     "subject": "factory: tinklones art stage (new beaver warrior, repainted portal and anomaly)"
-    },
-    {
-     "hash": "a45faf1",
-     "date": "2026-11-27",
-     "subject": "factory: judge tinklones p1.2"
-    },
-    {
-     "hash": "cd923c2",
-     "date": "2026-11-27",
-     "subject": "tinklones judge fix leg 2: concept tiles (live/off), FAN pill, border-box row + pill plates, stats text on the concept"
-    },
-    {
-     "hash": "0a3abb2",
-     "date": "2026-11-27",
-     "subject": "tinklones judge fix leg 1: row-tag + icon plates, hand dial, rows on the painted twins, darker off tiles"
-    },
-    {
-     "hash": "6d9d57b",
-     "date": "2026-11-27",
-     "subject": "factory: judge tinklones p1.1"
     }
    ],
    "last24": [
+    {
+     "hash": "bf90e63",
+     "time": "2026-11-27T02:52:21+01:00",
+     "subject": "Merge factory/fan-rules-3 (Lost Powers, approved)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "a8a0194",
+     "time": "2026-11-27T02:52:15+01:00",
+     "subject": "factory: rules step fix nocturnal (fan-rules-5 pass 1, try 2): birds not wild everywhere (birdWildFor: Dominance, Fishermen, card costs, Amb",
+     "agent": "factory",
+     "branch": "factory/fan-rules-5"
+    },
     {
      "hash": "11b86b1",
      "time": "2026-11-27T02:49:59+01:00",
@@ -5090,7 +5111,7 @@
      "time": "2026-11-27T02:09:59+01:00",
      "subject": "Merge factory/fan-rules-5 (Invasion of the Tinklones, approved)",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-3"
     },
     {
      "hash": "0b49d2e",
@@ -5111,7 +5132,7 @@
      "time": "2026-11-27T02:02:12+01:00",
      "subject": "learn tinklones: endPhaseGuard purity check (check-guard-pure.js), mode-card name size check, multi-pick cancel, SETTLED reuse, border-box p",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-3"
     },
     {
      "hash": "d368aa1",
@@ -5139,14 +5160,14 @@
      "time": "2026-11-27T01:57:37+01:00",
      "subject": "factory: approver tinklones (fan-rules-5 pass 1/1, APPROVED, DONE; minors listed)",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-3"
     },
     {
      "hash": "9b9c898",
      "time": "2026-11-27T01:54:01+01:00",
      "subject": "factory: CLEAN code tinklones",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-3"
     },
     {
      "hash": "a33787e",
@@ -5160,7 +5181,7 @@
      "time": "2026-11-27T01:51:41+01:00",
      "subject": "factory: CLEAN artCheck tinklones",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-3"
     },
     {
      "hash": "cb4a8a8",
@@ -5181,7 +5202,7 @@
      "time": "2026-11-27T01:50:29+01:00",
      "subject": "factory: tinklones art stage (new beaver warrior, repainted portal and anomaly)",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-3"
     },
     {
      "hash": "2328354",
@@ -5223,14 +5244,14 @@
      "time": "2026-11-27T01:41:25+01:00",
      "subject": "factory: judge tinklones p1.2",
      "agent": "factory",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-3"
     },
     {
      "hash": "cd923c2",
      "time": "2026-11-27T01:36:35+01:00",
      "subject": "tinklones judge fix leg 2: concept tiles (live/off), FAN pill, border-box row + pill plates, stats text on the concept",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-3"
     },
     {
      "hash": "14616e5",
@@ -5300,7 +5321,7 @@
      "time": "2026-11-27T01:22:52+01:00",
      "subject": "tinklones judge fix leg 1: row-tag + icon plates, hand dial, rows on the painted twins, darker off tiles",
      "agent": "lead",
-     "branch": "factory/fan-rules-5"
+     "branch": "factory/fan-rules-3"
     },
     {
      "hash": "4e09f25",
@@ -5336,23 +5357,9 @@
      "subject": "factory: wireframe lostpowers (fan-rules-3)",
      "agent": "factory",
      "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "c875496",
-     "time": "2026-11-27T01:07:52+01:00",
-     "subject": "factory: CLEAN hudCheck lostpowers",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "5990062",
-     "time": "2026-11-27T01:03:36+01:00",
-     "subject": "lostpowers HUD build (functional, plain look): spec, kit rows + follower cost badges, Evening auto Cycle N (no Scored / Drew tile), Follower",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
     }
    ],
-   "last24Count": 690
+   "last24Count": 691
   },
   "trust": {
    "tests": {
@@ -6124,9 +6131,9 @@
   },
   "chatgpt": {
    "quota": {
-    "seen": "2026-11-27T01:30:30.009Z",
+    "seen": "2026-11-27T01:52:44.147Z",
     "primary": {
-     "usedPercent": 23,
+     "usedPercent": 24,
      "windowMinutes": 300,
      "resetsAt": "2026-11-27T03:24:01.000Z"
     },
@@ -6137,8 +6144,8 @@
     }
    },
    "calls": {
-    "today": 17,
-    "last7": 319,
+    "today": 18,
+    "last7": 320,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
@@ -6184,7 +6191,7 @@
      "hyena_necrocracy": 6,
      "tinklones": 10,
      "lostpowers": 4,
-     "necropossums": 3,
+     "necropossums": 4,
      "lemmings": 3
     },
     "failed": 1
@@ -6869,18 +6876,18 @@
  "tokens": {
   "factions": {
    "other": {
-    "input": 17871,
-    "output": 3821699,
-    "cacheCreate": 38459497,
-    "cacheRead": 504036121,
+    "input": 17875,
+    "output": 3822028,
+    "cacheCreate": 38521215,
+    "cacheRead": 504095077,
     "stages": {
      "setup": {
-      "input": 400,
-      "output": 33905,
-      "cacheCreate": 5299329,
-      "cacheRead": 6356068,
-      "fresh": 5333634,
-      "total": 11689702
+      "input": 404,
+      "output": 34234,
+      "cacheCreate": 5361047,
+      "cacheRead": 6415024,
+      "fresh": 5395685,
+      "total": 11810709
      },
      "spec": {
       "input": 3500,
@@ -7583,20 +7590,26 @@
       "agents": 2
      },
      {
+      "id": "wf_130753d6-21f",
+      "first": "2026-11-27",
+      "last": "2026-11-27",
+      "agents": 1
+     },
+     {
       "id": "wf_f398c870-9a1",
       "first": "2026-11-27",
       "last": "2026-11-27",
       "agents": 1
      }
     ],
-    "agents": 398,
+    "agents": 399,
     "first": "2026-11-04",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": false,
-    "fresh": 42299067,
-    "total": 546335188
+    "fresh": 42361118,
+    "total": 546456195
    },
    "caninecommonwealth": {
     "input": 2984,
@@ -8670,6 +8683,38 @@
     "fresh": 5407028,
     "total": 109623268
    },
+   "nomads": {
+    "input": 2,
+    "output": 187,
+    "cacheCreate": 39530,
+    "cacheRead": 20577,
+    "stages": {
+     "reader": {
+      "input": 2,
+      "output": 187,
+      "cacheCreate": 39530,
+      "cacheRead": 20577,
+      "fresh": 39719,
+      "total": 60296
+     }
+    },
+    "runs": [
+     {
+      "id": "wf_130753d6-21f",
+      "first": "2026-11-27",
+      "last": "2026-11-27",
+      "agents": 1
+     }
+    ],
+    "agents": 1,
+    "first": "2026-11-27",
+    "last": "2026-11-27",
+    "pictures": 0,
+    "failedPictures": 0,
+    "isFaction": true,
+    "fresh": 39719,
+    "total": 60296
+   },
    "eyriesend": {
     "input": 2630,
     "output": 838101,
@@ -8893,10 +8938,10 @@
     "total": 145096841
    },
    "necropossums": {
-    "input": 986,
-    "output": 408379,
-    "cacheCreate": 2035757,
-    "cacheRead": 58308073,
+    "input": 1002,
+    "output": 410993,
+    "cacheCreate": 2115326,
+    "cacheRead": 58779977,
     "stages": {
      "reader": {
       "input": 62,
@@ -9011,12 +9056,20 @@
       "total": 14506020
      },
      "coverage": {
-      "input": 2,
-      "output": 234,
-      "cacheCreate": 59142,
-      "cacheRead": 0,
-      "fresh": 59378,
-      "total": 59378
+      "input": 4,
+      "output": 309,
+      "cacheCreate": 61971,
+      "cacheRead": 59142,
+      "fresh": 62284,
+      "total": 121426
+     },
+     "art": {
+      "input": 14,
+      "output": 2539,
+      "cacheCreate": 76740,
+      "cacheRead": 412762,
+      "fresh": 79293,
+      "total": 492055
      }
     },
     "runs": [
@@ -9024,17 +9077,17 @@
       "id": "wf_31b886d8-989",
       "first": "2026-11-26",
       "last": "2026-11-27",
-      "agents": 19
+      "agents": 20
      }
     ],
-    "agents": 19,
+    "agents": 20,
     "first": "2026-11-26",
     "last": "2026-11-27",
-    "pictures": 3,
+    "pictures": 4,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2445122,
-    "total": 60753195
+    "fresh": 2527321,
+    "total": 61307298
    },
    "host": {
     "input": 1478,
@@ -10335,10 +10388,10 @@
     "total": 75972503
    },
    "lemmings": {
-    "input": 1470,
-    "output": 526375,
-    "cacheCreate": 2944793,
-    "cacheRead": 79572211,
+    "input": 1480,
+    "output": 530123,
+    "cacheCreate": 2949509,
+    "cacheRead": 80493706,
     "stages": {
      "reader": {
       "input": 80,
@@ -10373,12 +10426,12 @@
       "total": 12085511
      },
      "stepfix": {
-      "input": 440,
-      "output": 161996,
-      "cacheCreate": 597207,
-      "cacheRead": 25207930,
-      "fresh": 759643,
-      "total": 25967573
+      "input": 450,
+      "output": 165744,
+      "cacheCreate": 601923,
+      "cacheRead": 26129425,
+      "fresh": 768117,
+      "total": 26897542
      },
      "hud": {
       "input": 220,
@@ -10467,8 +10520,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3472638,
-    "total": 83044849
+    "fresh": 3481112,
+    "total": 83974818
    },
    "lostpowers": {
     "input": 1440,
@@ -14117,10 +14170,10 @@
     "total": 215870473
    },
    "nocturnal": {
-    "input": 498,
-    "output": 191293,
-    "cacheCreate": 854346,
-    "cacheRead": 27873457,
+    "input": 522,
+    "output": 195410,
+    "cacheCreate": 939501,
+    "cacheRead": 28859305,
     "stages": {
      "reader": {
       "input": 78,
@@ -14147,20 +14200,20 @@
       "total": 9945527
      },
      "rulescheck": {
-      "input": 142,
-      "output": 45000,
-      "cacheCreate": 295956,
-      "cacheRead": 7935517,
-      "fresh": 341098,
-      "total": 8276615
+      "input": 152,
+      "output": 46012,
+      "cacheCreate": 375508,
+      "cacheRead": 8204514,
+      "fresh": 421672,
+      "total": 8626186
      },
      "stepfix": {
-      "input": 132,
-      "output": 33756,
-      "cacheCreate": 187729,
-      "cacheRead": 6246523,
-      "fresh": 221617,
-      "total": 6468140
+      "input": 146,
+      "output": 36861,
+      "cacheCreate": 193332,
+      "cacheRead": 6963374,
+      "fresh": 230339,
+      "total": 7193713
      }
     },
     "runs": [
@@ -14168,17 +14221,17 @@
       "id": "wf_f398c870-9a1",
       "first": "2026-11-27",
       "last": "2026-11-27",
-      "agents": 7
+      "agents": 8
      }
     ],
-    "agents": 7,
+    "agents": 8,
     "first": "2026-11-27",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1046137,
-    "total": 28919594
+    "fresh": 1135433,
+    "total": 29994738
    },
    "lupine_pact": {
     "input": 6798,
