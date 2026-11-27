@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T05:10:00.179Z",
+ "generatedAt": "2026-11-27T05:20:00.185Z",
  "stages": [
   {
    "id": "reader",
@@ -4848,7 +4848,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T05:10:00.000Z",
+    "lastRun": "2026-11-27T05:20:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -5441,7 +5441,7 @@
      "branch": "factory/fan-rules-5"
     }
    ],
-   "last24Count": 712
+   "last24Count": 706
   },
   "trust": {
    "tests": {
@@ -9087,10 +9087,10 @@
     "total": 145096841
    },
    "orderforest": {
-    "input": 776,
-    "output": 275987,
-    "cacheCreate": 1475985,
-    "cacheRead": 41063274,
+    "input": 844,
+    "output": 301770,
+    "cacheCreate": 1518576,
+    "cacheRead": 46039467,
     "stages": {
      "reader": {
       "input": 72,
@@ -9133,12 +9133,12 @@
       "total": 11575178
      },
      "hud": {
-      "input": 46,
-      "output": 12862,
-      "cacheCreate": 106037,
-      "cacheRead": 2235069,
-      "fresh": 118945,
-      "total": 2354014
+      "input": 114,
+      "output": 38645,
+      "cacheCreate": 148628,
+      "cacheRead": 7211262,
+      "fresh": 187387,
+      "total": 7398649
      }
     },
     "runs": [
@@ -9155,14 +9155,14 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1752748,
-    "total": 42816022
+    "fresh": 1821190,
+    "total": 47860657
    },
    "battery": {
-    "input": 1012,
-    "output": 386345,
-    "cacheCreate": 2477406,
-    "cacheRead": 58212376,
+    "input": 1056,
+    "output": 410533,
+    "cacheCreate": 2511928,
+    "cacheRead": 61232702,
     "stages": {
      "reader": {
       "input": 72,
@@ -9261,12 +9261,12 @@
       "total": 689425
      },
      "skin": {
-      "input": 142,
-      "output": 75191,
-      "cacheCreate": 279544,
-      "cacheRead": 9253824,
-      "fresh": 354877,
-      "total": 9608701
+      "input": 186,
+      "output": 99379,
+      "cacheCreate": 314066,
+      "cacheRead": 12274150,
+      "fresh": 413631,
+      "total": 12687781
      }
     },
     "runs": [
@@ -9283,8 +9283,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2864763,
-    "total": 61077139
+    "fresh": 2923517,
+    "total": 64156219
    },
    "necropossums": {
     "input": 1304,
@@ -12089,10 +12089,10 @@
     "total": 84918821
    },
    "northclan": {
-    "input": 1210,
-    "output": 462051,
-    "cacheCreate": 2639093,
-    "cacheRead": 66745888,
+    "input": 1230,
+    "output": 467356,
+    "cacheCreate": 2722846,
+    "cacheRead": 67670555,
     "stages": {
      "reader": {
       "input": 58,
@@ -12127,12 +12127,12 @@
       "total": 7057717
      },
      "stepfix": {
-      "input": 392,
-      "output": 121355,
-      "cacheCreate": 536449,
-      "cacheRead": 20585733,
-      "fresh": 658196,
-      "total": 21243929
+      "input": 412,
+      "output": 126660,
+      "cacheCreate": 620202,
+      "cacheRead": 21510400,
+      "fresh": 747274,
+      "total": 22257674
      },
      "hud": {
       "input": 154,
@@ -12229,8 +12229,8 @@
     "pictures": 4,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3102354,
-    "total": 69848242
+    "fresh": 3191432,
+    "total": 70861987
    },
    "honeycomb": {
     "input": 1548,
@@ -12441,10 +12441,10 @@
     "total": 90164585
    },
    "tinker": {
-    "input": 1132,
-    "output": 424035,
-    "cacheCreate": 2364497,
-    "cacheRead": 60663147,
+    "input": 1176,
+    "output": 436560,
+    "cacheCreate": 2394978,
+    "cacheRead": 63017210,
     "stages": {
      "reader": {
       "input": 66,
@@ -12479,12 +12479,12 @@
       "total": 9533139
      },
      "stepfix": {
-      "input": 296,
-      "output": 96286,
-      "cacheCreate": 429787,
-      "cacheRead": 15696068,
-      "fresh": 526369,
-      "total": 16222437
+      "input": 340,
+      "output": 108811,
+      "cacheCreate": 460268,
+      "cacheRead": 18050131,
+      "fresh": 569419,
+      "total": 18619550
      },
      "hud": {
       "input": 142,
@@ -12573,8 +12573,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2789664,
-    "total": 63452811
+    "fresh": 2832714,
+    "total": 65849924
    },
    "caninerepublic": {
     "input": 1960,
