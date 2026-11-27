@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T13:00:00.168Z",
+ "generatedAt": "2026-11-27T13:10:00.173Z",
  "stages": [
   {
    "id": "reader",
@@ -4322,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T13:00:00.000Z",
+    "lastRun": "2026-11-27T13:10:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4333,8 +4333,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T12:35:00.000Z",
-    "nextRun": "2026-11-27T13:05:00.000Z",
+    "lastRun": "2026-11-27T13:05:00.000Z",
+    "nextRun": "2026-11-27T13:35:00.000Z",
     "lastNote": null
    },
    {
@@ -4915,7 +4915,7 @@
      "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 661
+   "last24Count": 658
   },
   "trust": {
    "tests": {
@@ -5716,7 +5716,7 @@
    },
    "calls": {
     "today": 76,
-    "last7": 374,
+    "last7": 372,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
