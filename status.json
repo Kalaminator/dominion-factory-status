@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T02:00:00.179Z",
+ "generatedAt": "2026-11-27T02:10:01.532Z",
  "stages": [
   {
    "id": "reader",
@@ -213,26 +213,40 @@
   }
  ],
  "run": {
-  "id": "wf_130753d6-21f",
-  "modified": "2026-11-27T01:58:05.938Z",
+  "id": "wf_40ce25e7-080",
+  "modified": "2026-11-27T02:09:38.384Z",
   "running": 1,
-  "faction": "nomads",
+  "faction": "lemmings",
   "stageDone": [
    "setup",
    "reader",
-   "theme"
+   "theme",
+   "rules",
+   "rulesCheck",
+   "stepfix",
+   "hud",
+   "hudCheck",
+   "wireframe",
+   "quota",
+   "overlay",
+   "plate",
+   "cut",
+   "judge",
+   "coverage",
+   "art",
+   "skin"
   ]
  },
  "now": {
-  "label": "rules:nomads:p1.1",
-  "stage": "rules",
-  "faction": "nomads",
+  "label": "artcheck:lemmings:p1.1",
+  "stage": "artCheck",
+  "faction": "lemmings",
   "pass": 1,
   "try": 1,
-  "phase": "Build",
+  "phase": "Review",
   "model": "opus",
   "running": true,
-  "start": "2026-11-27T01:58:05.933Z",
+  "start": "2026-11-27T02:09:38.380Z",
   "end": null
  },
  "scores": [
@@ -287,27 +301,6 @@
   },
   {
    "stage": "rulesCheck",
-   "label": "rulescheck:nocturnal:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 8
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:nocturnal:p1.2",
-   "pass": 1,
-   "try": 2,
-   "score": 8
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:nocturnal:p1.3",
-   "pass": 1,
-   "try": 3,
-   "score": 9
-  },
-  {
-   "stage": "rulesCheck",
    "label": "rulescheck:necropossums:p1.1",
    "pass": 1,
    "try": 1,
@@ -333,6 +326,34 @@
    "pass": 1,
    "try": 2,
    "score": 5.7
+  },
+  {
+   "stage": "artCheck",
+   "label": "artcheck:necropossums:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 6
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:nocturnal:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 8
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:nocturnal:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 8
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:nocturnal:p1.3",
+   "pass": 1,
+   "try": 3,
+   "score": 9
   }
  ],
  "factions": [
@@ -911,28 +932,28 @@
  "doneCount": 44,
  "recentRuns": [
   {
+   "id": "wf_40ce25e7-080",
+   "modified": "2026-11-27T02:09:38.384Z",
+   "running": 1,
+   "agents": 31
+  },
+  {
+   "id": "wf_31b886d8-989",
+   "modified": "2026-11-27T02:09:20.892Z",
+   "running": 1,
+   "agents": 25
+  },
+  {
    "id": "wf_130753d6-21f",
    "modified": "2026-11-27T01:58:05.938Z",
    "running": 1,
    "agents": 4
   },
   {
-   "id": "wf_40ce25e7-080",
-   "modified": "2026-11-27T01:56:47.915Z",
-   "running": 1,
-   "agents": 29
-  },
-  {
    "id": "wf_f398c870-9a1",
    "modified": "2026-11-27T01:55:35.281Z",
    "running": 1,
    "agents": 10
-  },
-  {
-   "id": "wf_31b886d8-989",
-   "modified": "2026-11-27T01:50:18.649Z",
-   "running": 1,
-   "agents": 21
   },
   {
    "id": "wf_47d7b24a-41e",
@@ -985,6 +1006,82 @@
  ],
  "factories": [
   {
+   "id": "wf_40ce25e7-080",
+   "batch": "fan-rules-2",
+   "faction": "lemmings",
+   "modified": "2026-11-27T02:09:38.384Z",
+   "now": {
+    "label": "artcheck:lemmings:p1.1",
+    "stage": "artCheck",
+    "faction": "lemmings",
+    "pass": 1,
+    "try": 1,
+    "phase": "Review",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T02:09:38.380Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix",
+    "hud",
+    "hudCheck",
+    "wireframe",
+    "quota",
+    "overlay",
+    "plate",
+    "cut",
+    "judge",
+    "coverage",
+    "art",
+    "skin"
+   ]
+  },
+  {
+   "id": "wf_31b886d8-989",
+   "batch": "fan-rules-4",
+   "faction": "necropossums",
+   "modified": "2026-11-27T02:09:20.892Z",
+   "now": {
+    "label": "artcheck:necropossums:p1.2",
+    "stage": "artCheck",
+    "faction": "necropossums",
+    "pass": 1,
+    "try": 2,
+    "phase": "Review",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T02:09:20.882Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "hud",
+    "hudCheck",
+    "wireframe",
+    "quota",
+    "overlay",
+    "plate",
+    "cut",
+    "judge",
+    "stepfix",
+    "coverage",
+    "art",
+    "artCheck",
+    "artfix",
+    "skin"
+   ]
+  },
+  {
    "id": "wf_130753d6-21f",
    "batch": "fan-rules-3",
    "faction": "nomads",
@@ -1005,42 +1102,6 @@
     "setup",
     "reader",
     "theme"
-   ]
-  },
-  {
-   "id": "wf_40ce25e7-080",
-   "batch": "fan-rules-2",
-   "faction": "lemmings",
-   "modified": "2026-11-27T01:56:47.915Z",
-   "now": {
-    "label": "art:lemmings",
-    "stage": "art",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Art",
-    "model": "sonnet",
-    "running": true,
-    "start": "2026-11-27T01:56:47.909Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix",
-    "hud",
-    "hudCheck",
-    "wireframe",
-    "quota",
-    "overlay",
-    "plate",
-    "cut",
-    "judge",
-    "coverage",
-    "skin"
    ]
   },
   {
@@ -1067,42 +1128,6 @@
     "rules",
     "rulesCheck",
     "stepfix"
-   ]
-  },
-  {
-   "id": "wf_31b886d8-989",
-   "batch": "fan-rules-4",
-   "faction": "necropossums",
-   "modified": "2026-11-27T01:50:18.649Z",
-   "now": {
-    "label": "art:necropossums",
-    "stage": "art",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Art",
-    "model": "sonnet",
-    "running": true,
-    "start": "2026-11-27T01:50:18.643Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "hud",
-    "hudCheck",
-    "wireframe",
-    "quota",
-    "overlay",
-    "plate",
-    "cut",
-    "judge",
-    "stepfix",
-    "coverage",
-    "skin"
    ]
   }
  ],
@@ -1160,6 +1185,87 @@
    "findings": 0
   },
   {
+   "label": "artcheck:lemmings:p1.1",
+   "stage": "artCheck",
+   "faction": "lemmings",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T02:09:38.380Z",
+   "end": null
+  },
+  {
+   "label": "quota:lemmings:art-p1",
+   "stage": "quota",
+   "faction": "lemmings",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T02:09:29.775Z",
+   "end": "2026-11-27T02:09:38.154Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "artcheck:necropossums:p1.2",
+   "stage": "artCheck",
+   "faction": "necropossums",
+   "pass": 1,
+   "try": 2,
+   "phase": "Review",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T02:09:20.882Z",
+   "end": null
+  },
+  {
+   "label": "artfix:necropossums:1579",
+   "stage": "artfix",
+   "faction": "necropossums",
+   "pass": null,
+   "try": 1,
+   "phase": "Art",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T02:06:40.621Z",
+   "end": "2026-11-27T02:09:20.784Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "artcheck:necropossums:p1.1",
+   "stage": "artCheck",
+   "faction": "necropossums",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-27T02:03:27.129Z",
+   "end": "2026-11-27T02:06:40.509Z",
+   "score": 6,
+   "pass_ok": false,
+   "findings": 3
+  },
+  {
+   "label": "quota:necropossums:art-p1",
+   "stage": "quota",
+   "faction": "necropossums",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T02:03:18.914Z",
+   "end": "2026-11-27T02:03:26.848Z",
+   "score": null,
+   "findings": 0
+  },
+  {
    "label": "rules:nomads:p1.1",
    "stage": "rules",
    "faction": "nomads",
@@ -1193,9 +1299,11 @@
    "try": null,
    "phase": "Art",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T01:56:47.909Z",
-   "end": null
+   "end": "2026-11-27T02:09:29.660Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "coverage:lemmings:p1",
@@ -1288,9 +1396,11 @@
    "try": null,
    "phase": "Art",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T01:50:18.643Z",
-   "end": null
+   "end": "2026-11-27T02:03:18.823Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "coverage:necropossums:p1",
@@ -1436,89 +1546,6 @@
    "score": 5.7,
    "pass_ok": false,
    "findings": 7
-  },
-  {
-   "label": "rules:nocturnal:p1.1",
-   "stage": "rules",
-   "faction": "nocturnal",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T01:16:19.503Z",
-   "end": "2026-11-27T01:30:27.990Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "theme:nocturnal",
-   "stage": "theme",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T01:15:37.978Z",
-   "end": "2026-11-27T01:16:19.387Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "stepfix:lemmings:p1.1",
-   "stage": "stepfix",
-   "faction": "lemmings",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T01:14:21.605Z",
-   "end": "2026-11-27T01:34:36.254Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "reader:nocturnal",
-   "stage": "reader",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Read",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T01:10:22.507Z",
-   "end": "2026-11-27T01:15:37.815Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "setup:fan-rules-5",
-   "stage": "setup",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Setup",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T01:10:17.934Z",
-   "end": "2026-11-27T01:10:22.496Z"
-  },
-  {
-   "label": "judge:lemmings:p1.1",
-   "stage": "judge",
-   "faction": "lemmings",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T01:10:05.442Z",
-   "end": "2026-11-27T01:14:21.484Z",
-   "score": 1.3,
-   "pass_ok": false,
-   "findings": 12
   }
  ],
  "elements": [
@@ -4730,7 +4757,7 @@
    "list": [
     {
      "name": "factory/fan-rules-2",
-     "ahead": 23,
+     "ahead": 24,
      "date": "2026-11-27"
     },
     {
@@ -4740,7 +4767,7 @@
     },
     {
      "name": "factory/fan-rules-4",
-     "ahead": 21,
+     "ahead": 23,
      "date": "2026-11-27"
     },
     {
@@ -4793,7 +4820,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T02:00:00.000Z",
+    "lastRun": "2026-11-27T02:10:01.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4804,8 +4831,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T01:35:00.000Z",
-    "nextRun": "2026-11-27T02:05:00.000Z",
+    "lastRun": "2026-11-27T02:05:01.000Z",
+    "nextRun": "2026-11-27T02:35:00.000Z",
     "lastNote": null
    },
    {
@@ -4965,6 +4992,27 @@
     }
    ],
    "last24": [
+    {
+     "hash": "b70a708",
+     "time": "2026-11-27T03:09:25+01:00",
+     "subject": "factory: art lemmings (warrior drawn, encampment, cache)",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "18eabcf",
+     "time": "2026-11-27T03:09:16+01:00",
+     "subject": "factory: necropossums art fix, cemetery repainted light with outline + skull",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "aa5f7e0",
+     "time": "2026-11-27T03:03:14+01:00",
+     "subject": "factory: ART necropossums (warrior drawn, cemetery repainted)",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
     {
      "hash": "fb60b17",
      "time": "2026-11-27T02:58:03+01:00",
@@ -5363,30 +5411,9 @@
      "subject": "necropossums handoff: HUD BUILD: DONE",
      "agent": "lead",
      "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "027b69d",
-     "time": "2026-11-27T01:24:31+01:00",
-     "subject": "factory: lostpowers cut the plate (15 fixed, 6 repeated, 6 9-slice)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "53d1695",
-     "time": "2026-11-27T01:23:08+01:00",
-     "subject": "factory: clean plate lostpowers (fan-rules-3)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "0a3abb2",
-     "time": "2026-11-27T01:22:52+01:00",
-     "subject": "tinklones judge fix leg 1: row-tag + icon plates, hand dial, rows on the painted twins, darker off tiles",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
     }
    ],
-   "last24Count": 693
+   "last24Count": 692
   },
   "trust": {
    "tests": {
@@ -6158,21 +6185,21 @@
   },
   "chatgpt": {
    "quota": {
-    "seen": "2026-11-27T01:59:27.074Z",
+    "seen": "2026-11-27T02:09:15.648Z",
     "primary": {
-     "usedPercent": 26,
+     "usedPercent": 29,
      "windowMinutes": 300,
      "resetsAt": "2026-11-27T03:24:01.000Z"
     },
     "secondary": {
-     "usedPercent": 6,
+     "usedPercent": 7,
      "windowMinutes": 10080,
      "resetsAt": "2026-12-03T20:21:26.000Z"
     }
    },
    "calls": {
-    "today": 21,
-    "last7": 323,
+    "today": 25,
+    "last7": 327,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
@@ -6218,8 +6245,8 @@
      "hyena_necrocracy": 6,
      "tinklones": 10,
      "lostpowers": 4,
-     "necropossums": 5,
-     "lemmings": 5
+     "necropossums": 6,
+     "lemmings": 8
     },
     "failed": 1
    }
@@ -8711,10 +8738,10 @@
     "total": 109623268
    },
    "nomads": {
-    "input": 102,
-    "output": 36785,
-    "cacheCreate": 251162,
-    "cacheRead": 4567572,
+    "input": 188,
+    "output": 100910,
+    "cacheCreate": 332464,
+    "cacheRead": 11445862,
     "stages": {
      "reader": {
       "input": 60,
@@ -8733,12 +8760,12 @@
       "total": 390425
      },
      "rules": {
-      "input": 30,
-      "output": 4967,
-      "cacheCreate": 87975,
-      "cacheRead": 1279060,
-      "fresh": 92972,
-      "total": 1372032
+      "input": 116,
+      "output": 69092,
+      "cacheCreate": 169277,
+      "cacheRead": 8157350,
+      "fresh": 238485,
+      "total": 8395835
      }
     },
     "runs": [
@@ -8755,8 +8782,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 288049,
-    "total": 4855621
+    "fresh": 433562,
+    "total": 11879424
    },
    "eyriesend": {
     "input": 2630,
@@ -8981,10 +9008,10 @@
     "total": 145096841
    },
    "necropossums": {
-    "input": 1002,
-    "output": 410993,
-    "cacheCreate": 2115326,
-    "cacheRead": 58779977,
+    "input": 1102,
+    "output": 429453,
+    "cacheCreate": 2423111,
+    "cacheRead": 62037069,
     "stages": {
      "reader": {
       "input": 62,
@@ -9043,12 +9070,12 @@
       "total": 247043
      },
      "quota": {
-      "input": 8,
-      "output": 308,
-      "cacheCreate": 121848,
-      "cacheRead": 116710,
-      "fresh": 122164,
-      "total": 238874
+      "input": 12,
+      "output": 462,
+      "cacheCreate": 182755,
+      "cacheRead": 175048,
+      "fresh": 183229,
+      "total": 358277
      },
      "overlay": {
       "input": 20,
@@ -9107,12 +9134,28 @@
       "total": 121426
      },
      "art": {
-      "input": 14,
-      "output": 2539,
-      "cacheCreate": 76740,
-      "cacheRead": 412762,
-      "fresh": 79293,
-      "total": 492055
+      "input": 30,
+      "output": 5522,
+      "cacheCreate": 139540,
+      "cacheRead": 999232,
+      "fresh": 145092,
+      "total": 1144324
+     },
+     "artcheck": {
+      "input": 56,
+      "output": 10800,
+      "cacheCreate": 127223,
+      "cacheRead": 1800090,
+      "fresh": 138079,
+      "total": 1938169
+     },
+     "artfix": {
+      "input": 24,
+      "output": 4523,
+      "cacheCreate": 56855,
+      "cacheRead": 812194,
+      "fresh": 61402,
+      "total": 873596
      }
     },
     "runs": [
@@ -9120,17 +9163,17 @@
       "id": "wf_31b886d8-989",
       "first": "2026-11-26",
       "last": "2026-11-27",
-      "agents": 20
+      "agents": 24
      }
     ],
-    "agents": 20,
+    "agents": 24,
     "first": "2026-11-26",
     "last": "2026-11-27",
-    "pictures": 5,
+    "pictures": 6,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2527321,
-    "total": 61307298
+    "fresh": 2853666,
+    "total": 64890735
    },
    "host": {
     "input": 1478,
@@ -10431,10 +10474,10 @@
     "total": 75972503
    },
    "lemmings": {
-    "input": 1518,
-    "output": 540555,
-    "cacheCreate": 3119469,
-    "cacheRead": 82087677,
+    "input": 1554,
+    "output": 546772,
+    "cacheCreate": 3291568,
+    "cacheRead": 83225119,
     "stages": {
      "reader": {
       "input": 80,
@@ -10501,12 +10544,12 @@
       "total": 247007
      },
      "quota": {
-      "input": 8,
-      "output": 308,
-      "cacheCreate": 121848,
-      "cacheRead": 116710,
-      "fresh": 122164,
-      "total": 238874
+      "input": 12,
+      "output": 462,
+      "cacheCreate": 182755,
+      "cacheRead": 175048,
+      "fresh": 183229,
+      "total": 358277
      },
      "overlay": {
       "input": 22,
@@ -10557,12 +10600,20 @@
       "total": 120646
      },
      "art": {
-      "input": 18,
-      "output": 3369,
-      "cacheCreate": 55269,
-      "cacheRead": 569749,
-      "fresh": 58656,
-      "total": 628405
+      "input": 38,
+      "output": 7534,
+      "cacheCreate": 119769,
+      "cacheRead": 1311004,
+      "fresh": 127341,
+      "total": 1438345
+     },
+     "artcheck": {
+      "input": 12,
+      "output": 1898,
+      "cacheCreate": 46692,
+      "cacheRead": 337849,
+      "fresh": 48602,
+      "total": 386451
      }
     },
     "runs": [
@@ -10570,17 +10621,17 @@
       "id": "wf_40ce25e7-080",
       "first": "2026-11-26",
       "last": "2026-11-27",
-      "agents": 28
+      "agents": 30
      }
     ],
-    "agents": 28,
+    "agents": 30,
     "first": "2026-11-26",
     "last": "2026-11-27",
-    "pictures": 5,
+    "pictures": 8,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3661542,
-    "total": 85749219
+    "fresh": 3839894,
+    "total": 87065013
    },
    "lostpowers": {
     "input": 1440,
@@ -14229,10 +14280,10 @@
     "total": 215870473
    },
    "nocturnal": {
-    "input": 618,
-    "output": 226610,
-    "cacheCreate": 1111097,
-    "cacheRead": 34053370,
+    "input": 648,
+    "output": 243544,
+    "cacheCreate": 1136068,
+    "cacheRead": 36359837,
     "stages": {
      "reader": {
       "input": 78,
@@ -14275,12 +14326,12 @@
       "total": 7193713
      },
      "hud": {
-      "input": 54,
-      "output": 15906,
-      "cacheCreate": 119381,
-      "cacheRead": 2867907,
-      "fresh": 135341,
-      "total": 3003248
+      "input": 84,
+      "output": 32840,
+      "cacheCreate": 144352,
+      "cacheRead": 5174374,
+      "fresh": 177276,
+      "total": 5351650
      }
     },
     "runs": [
@@ -14297,8 +14348,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1338325,
-    "total": 35391695
+    "fresh": 1380260,
+    "total": 37740097
    },
    "lupine_pact": {
     "input": 6798,
