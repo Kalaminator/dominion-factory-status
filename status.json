@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T01:20:26.498Z",
+ "generatedAt": "2026-11-27T01:30:00.619Z",
  "stages": [
   {
    "id": "reader",
@@ -213,26 +213,39 @@
   }
  ],
  "run": {
-  "id": "wf_f398c870-9a1",
-  "modified": "2026-11-27T01:16:19.510Z",
+  "id": "wf_47d7b24a-41e",
+  "modified": "2026-11-27T01:29:16.619Z",
   "running": 1,
-  "faction": "nocturnal",
+  "faction": "lostpowers",
   "stageDone": [
    "setup",
    "reader",
-   "theme"
+   "theme",
+   "rules",
+   "rulesCheck",
+   "stepfix",
+   "hud",
+   "hudCheck",
+   "wireframe",
+   "quota",
+   "overlay",
+   "plate",
+   "cut",
+   "judge",
+   "coverage",
+   "skin"
   ]
  },
  "now": {
-  "label": "rules:nocturnal:p1.1",
-  "stage": "rules",
-  "faction": "nocturnal",
-  "pass": 1,
-  "try": 1,
-  "phase": "Build",
-  "model": "opus",
+  "label": "art:lostpowers",
+  "stage": "art",
+  "faction": "",
+  "pass": null,
+  "try": null,
+  "phase": "Art",
+  "model": "sonnet",
   "running": true,
-  "start": "2026-11-27T01:16:19.503Z",
+  "start": "2026-11-27T01:29:16.611Z",
   "end": null
  },
  "scores": [
@@ -263,6 +276,34 @@
    "pass": 1,
    "try": 1,
    "score": 5.8
+  },
+  {
+   "stage": "judge",
+   "label": "judge:lostpowers:p1.2",
+   "pass": 1,
+   "try": 2,
+   "score": 6.9
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:necropossums:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 8.5
+  },
+  {
+   "stage": "hudCheck",
+   "label": "hudcheck:necropossums:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 10
+  },
+  {
+   "stage": "judge",
+   "label": "judge:necropossums:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 5.7
   },
   {
    "stage": "rulesCheck",
@@ -305,20 +346,6 @@
    "pass": 1,
    "try": 1,
    "score": 1.3
-  },
-  {
-   "stage": "rulesCheck",
-   "label": "rulescheck:necropossums:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 8.5
-  },
-  {
-   "stage": "hudCheck",
-   "label": "hudcheck:necropossums:p1.1",
-   "pass": 1,
-   "try": 1,
-   "score": 10
   }
  ],
  "factions": [
@@ -897,16 +924,22 @@
  "doneCount": 43,
  "recentRuns": [
   {
+   "id": "wf_47d7b24a-41e",
+   "modified": "2026-11-27T01:29:16.619Z",
+   "running": 1,
+   "agents": 24
+  },
+  {
+   "id": "wf_31b886d8-989",
+   "modified": "2026-11-27T01:27:21.536Z",
+   "running": 1,
+   "agents": 17
+  },
+  {
    "id": "wf_f398c870-9a1",
    "modified": "2026-11-27T01:16:19.510Z",
    "running": 1,
    "agents": 4
-  },
-  {
-   "id": "wf_47d7b24a-41e",
-   "modified": "2026-11-27T01:14:27.298Z",
-   "running": 1,
-   "agents": 21
   },
   {
    "id": "wf_40ce25e7-080",
@@ -919,12 +952,6 @@
    "modified": "2026-11-27T01:02:42.436Z",
    "running": 0,
    "agents": 35
-  },
-  {
-   "id": "wf_31b886d8-989",
-   "modified": "2026-11-27T00:58:30.247Z",
-   "running": 1,
-   "agents": 15
   },
   {
    "id": "wf_12036dec-63e",
@@ -971,6 +998,76 @@
  ],
  "factories": [
   {
+   "id": "wf_47d7b24a-41e",
+   "batch": "fan-rules-3",
+   "faction": "lostpowers",
+   "modified": "2026-11-27T01:29:16.619Z",
+   "now": {
+    "label": "art:lostpowers",
+    "stage": "art",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Art",
+    "model": "sonnet",
+    "running": true,
+    "start": "2026-11-27T01:29:16.611Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix",
+    "hud",
+    "hudCheck",
+    "wireframe",
+    "quota",
+    "overlay",
+    "plate",
+    "cut",
+    "judge",
+    "coverage",
+    "skin"
+   ]
+  },
+  {
+   "id": "wf_31b886d8-989",
+   "batch": "fan-rules-4",
+   "faction": "necropossums",
+   "modified": "2026-11-27T01:27:21.536Z",
+   "now": {
+    "label": "stepfix:necropossums:p1.1",
+    "stage": "stepfix",
+    "faction": "necropossums",
+    "pass": 1,
+    "try": 1,
+    "phase": "Build",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T01:27:21.529Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "hud",
+    "hudCheck",
+    "wireframe",
+    "quota",
+    "overlay",
+    "plate",
+    "cut",
+    "judge",
+    "skin"
+   ]
+  },
+  {
    "id": "wf_f398c870-9a1",
    "batch": "fan-rules-5",
    "faction": "nocturnal",
@@ -991,41 +1088,6 @@
     "setup",
     "reader",
     "theme"
-   ]
-  },
-  {
-   "id": "wf_47d7b24a-41e",
-   "batch": "fan-rules-3",
-   "faction": "lostpowers",
-   "modified": "2026-11-27T01:14:27.298Z",
-   "now": {
-    "label": "stepfix:lostpowers:p1.2",
-    "stage": "stepfix",
-    "faction": "lostpowers",
-    "pass": 1,
-    "try": 1,
-    "phase": "Build",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T01:14:27.293Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix",
-    "hud",
-    "hudCheck",
-    "wireframe",
-    "quota",
-    "overlay",
-    "plate",
-    "cut",
-    "judge",
-    "skin"
    ]
   },
   {
@@ -1062,65 +1124,9 @@
     "judge",
     "skin"
    ]
-  },
-  {
-   "id": "wf_31b886d8-989",
-   "batch": "fan-rules-4",
-   "faction": "necropossums",
-   "modified": "2026-11-27T00:58:30.247Z",
-   "now": {
-    "label": "skin:necropossums:p1.2",
-    "stage": "skin",
-    "faction": "necropossums",
-    "pass": 1,
-    "try": 2,
-    "phase": "Build",
-    "model": "opus",
-    "running": true,
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "hud",
-    "hudCheck",
-    "wireframe",
-    "quota",
-    "overlay",
-    "plate",
-    "cut",
-    "skin"
-   ]
   }
  ],
  "agents": [
-  {
-   "label": "skin:necropossums:p1.2",
-   "stage": "skin",
-   "faction": "necropossums",
-   "pass": 1,
-   "try": 2,
-   "phase": "Build",
-   "model": "opus",
-   "running": true,
-   "end": null
-  },
-  {
-   "label": "skin:necropossums:p1.1",
-   "stage": "skin",
-   "faction": "necropossums",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "end": "2026-11-27T00:58:29.986Z",
-   "score": null,
-   "findings": 0
-  },
   {
    "label": "skin:lemmings:p1.2",
    "stage": "skin",
@@ -1144,6 +1150,32 @@
    "model": "opus",
    "running": false,
    "end": "2026-11-27T01:01:27.146Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "skin:necropossums:p1.2",
+   "stage": "skin",
+   "faction": "necropossums",
+   "pass": 1,
+   "try": 2,
+   "phase": "Build",
+   "model": "opus",
+   "running": false,
+   "end": "2026-11-27T01:24:36.418Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "skin:necropossums:p1.1",
+   "stage": "skin",
+   "faction": "necropossums",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": false,
+   "end": "2026-11-27T00:58:29.986Z",
    "score": null,
    "findings": 0
   },
@@ -1172,6 +1204,75 @@
    "end": "2026-11-27T00:34:09.902Z",
    "score": null,
    "findings": 0
+  },
+  {
+   "label": "art:lostpowers",
+   "stage": "art",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Art",
+   "model": "sonnet",
+   "running": true,
+   "start": "2026-11-27T01:29:16.611Z",
+   "end": null
+  },
+  {
+   "label": "coverage:lostpowers:p1",
+   "stage": "coverage",
+   "faction": "lostpowers",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T01:28:58.427Z",
+   "end": "2026-11-27T01:29:16.212Z",
+   "score": null,
+   "pass_ok": true,
+   "findings": 0
+  },
+  {
+   "label": "stepfix:necropossums:p1.1",
+   "stage": "stepfix",
+   "faction": "necropossums",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T01:27:21.529Z",
+   "end": null
+  },
+  {
+   "label": "judge:lostpowers:p1.2",
+   "stage": "judge",
+   "faction": "lostpowers",
+   "pass": 1,
+   "try": 2,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T01:25:43.460Z",
+   "end": "2026-11-27T01:28:56.817Z",
+   "score": 6.9,
+   "pass_ok": false,
+   "findings": 9
+  },
+  {
+   "label": "judge:necropossums:p1.1",
+   "stage": "judge",
+   "faction": "necropossums",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T01:24:36.561Z",
+   "end": "2026-11-27T01:27:19.739Z",
+   "score": 5.7,
+   "pass_ok": false,
+   "findings": 7
   },
   {
    "label": "rules:nocturnal:p1.1",
@@ -1207,9 +1308,11 @@
    "try": 1,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T01:14:27.293Z",
-   "end": null
+   "end": "2026-11-27T01:25:43.269Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "stepfix:lemmings:p1.1",
@@ -1432,77 +1535,6 @@
    "end": "2026-11-27T00:35:42.710Z",
    "score": 10,
    "pass_ok": true,
-   "findings": 0
-  },
-  {
-   "label": "overlay:necropossums",
-   "stage": "overlay",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:30:03.366Z",
-   "end": "2026-11-27T00:41:45.125Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:necropossums:overlay",
-   "stage": "quota",
-   "faction": "necropossums",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:29:53.339Z",
-   "end": "2026-11-27T00:30:03.063Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "wireframe:necropossums",
-   "stage": "wireframe",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Screenshot",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:29:31.819Z",
-   "end": "2026-11-27T00:29:53.188Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "hudcheck:necropossums:p1.1",
-   "stage": "hudCheck",
-   "faction": "necropossums",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:25:57.025Z",
-   "end": "2026-11-27T00:29:30.201Z",
-   "score": 10,
-   "pass_ok": true,
-   "findings": 0
-  },
-  {
-   "label": "cut:lostpowers",
-   "stage": "cut",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Art",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T00:23:11.528Z",
-   "end": "2026-11-27T00:24:34.734Z",
-   "score": null,
    "findings": 0
   }
  ],
@@ -4720,12 +4752,12 @@
     },
     {
      "name": "factory/fan-rules-3",
-     "ahead": 16,
+     "ahead": 18,
      "date": "2026-11-27"
     },
     {
      "name": "factory/fan-rules-4",
-     "ahead": 16,
+     "ahead": 18,
      "date": "2026-11-27"
     },
     {
@@ -4778,7 +4810,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T01:20:26.000Z",
+    "lastRun": "2026-11-27T01:30:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4950,6 +4982,34 @@
     }
    ],
    "last24": [
+    {
+     "hash": "6194087",
+     "time": "2026-11-27T02:28:56+01:00",
+     "subject": "factory: judge lostpowers p1.2",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "d6a6be8",
+     "time": "2026-11-27T02:27:19+01:00",
+     "subject": "factory: judge necropossums p1.1",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "083faae",
+     "time": "2026-11-27T02:25:32+01:00",
+     "subject": "factory: judge fix lostpowers p1.1 leg 2 (fullscreen on the painted knot, parchment faction tab, tabs and counters on the concept's lines, r",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "0aecef4",
+     "time": "2026-11-27T02:24:27+01:00",
+     "subject": "factory: skin necropossums leg 2: stats plate whole with its painted skull, FAN ghost lifted, row tags and hint at the concept boxes; handof",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
     {
      "hash": "602c930",
      "time": "2026-11-27T02:19:36+01:00",
@@ -5341,34 +5401,6 @@
      "subject": "tinklones skin leg 1 handoff (partial: text sweep list)",
      "agent": "lead",
      "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "6ea7101",
-     "time": "2026-11-27T00:32:56+01:00",
-     "subject": "necropossums: theme on (hudTheme, stub theme css, bundle)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "5a110e2",
-     "time": "2026-11-27T00:32:04+01:00",
-     "subject": "factory: card reader necropossums (fan-rules-4): ledger 23 rows, 7 conflicts fixed in Vault, brief, handoff",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "fbf4d81",
-     "time": "2026-11-27T00:29:50+01:00",
-     "subject": "tinklones skin leg 1: parts re-cut at painted boxes (tinklones-skin-parts.py), theme CSS on the cut plates, 1080 boxes on the concept",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "303125c",
-     "time": "2026-11-27T00:29:16+01:00",
-     "subject": "lostpowers rules build leg 2: Advanced Setup card 2 (setup-advanced-lostpowers.js, bots run it), lp_actions counter, Retire effect prompt sp",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
     }
    ],
    "last24Count": 684
@@ -8912,10 +8944,10 @@
     "total": 145096841
    },
    "necropossums": {
-    "input": 686,
-    "output": 304021,
-    "cacheCreate": 1546497,
-    "cacheRead": 41031036,
+    "input": 778,
+    "output": 333968,
+    "cacheCreate": 1728918,
+    "cacheRead": 46301003,
     "stages": {
      "reader": {
       "input": 62,
@@ -9006,12 +9038,28 @@
       "total": 1209560
      },
      "skin": {
-      "input": 224,
-      "output": 117836,
-      "cacheCreate": 335702,
-      "cacheRead": 15528307,
-      "fresh": 453762,
-      "total": 15982069
+      "input": 248,
+      "output": 132725,
+      "cacheCreate": 351984,
+      "cacheRead": 17972600,
+      "fresh": 484957,
+      "total": 18457557
+     },
+     "judge": {
+      "input": 12,
+      "output": 3253,
+      "cacheCreate": 72011,
+      "cacheRead": 334278,
+      "fresh": 75276,
+      "total": 409554
+     },
+     "stepfix": {
+      "input": 56,
+      "output": 11805,
+      "cacheCreate": 94128,
+      "cacheRead": 2491396,
+      "fresh": 105989,
+      "total": 2597385
      }
     },
     "runs": [
@@ -9019,17 +9067,17 @@
       "id": "wf_31b886d8-989",
       "first": "2026-11-26",
       "last": "2026-11-27",
-      "agents": 14
+      "agents": 16
      }
     ],
-    "agents": 14,
+    "agents": 16,
     "first": "2026-11-26",
     "last": "2026-11-27",
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1851204,
-    "total": 42882240
+    "fresh": 2063664,
+    "total": 48364667
    },
    "host": {
     "input": 1478,
@@ -10330,10 +10378,10 @@
     "total": 75972503
    },
    "lemmings": {
-    "input": 1294,
-    "output": 445906,
-    "cacheCreate": 2744894,
-    "cacheRead": 67136782,
+    "input": 1340,
+    "output": 463648,
+    "cacheCreate": 2774833,
+    "cacheRead": 70624542,
     "stages": {
      "reader": {
       "input": 80,
@@ -10368,12 +10416,12 @@
       "total": 12085511
      },
      "stepfix": {
-      "input": 264,
-      "output": 81527,
-      "cacheCreate": 397308,
-      "cacheRead": 12772501,
-      "fresh": 479099,
-      "total": 13251600
+      "input": 310,
+      "output": 99269,
+      "cacheCreate": 427247,
+      "cacheRead": 16260261,
+      "fresh": 526826,
+      "total": 16787087
      },
      "hud": {
       "input": 220,
@@ -10462,14 +10510,14 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3192094,
-    "total": 70328876
+    "fresh": 3239821,
+    "total": 73864363
    },
    "lostpowers": {
-    "input": 1074,
-    "output": 413870,
-    "cacheCreate": 2151095,
-    "cacheRead": 59192338,
+    "input": 1124,
+    "output": 428271,
+    "cacheCreate": 2352700,
+    "cacheRead": 61601515,
     "stages": {
      "reader": {
       "input": 70,
@@ -10504,12 +10552,12 @@
       "total": 6048296
      },
      "stepfix": {
-      "input": 284,
-      "output": 103754,
-      "cacheCreate": 510413,
-      "cacheRead": 16361878,
-      "fresh": 614451,
-      "total": 16976329
+      "input": 310,
+      "output": 113328,
+      "cacheCreate": 524171,
+      "cacheRead": 18162055,
+      "fresh": 637809,
+      "total": 18799864
      },
      "hud": {
       "input": 110,
@@ -10576,12 +10624,28 @@
       "total": 11619507
      },
      "judge": {
-      "input": 8,
-      "output": 3206,
-      "cacheCreate": 69461,
-      "cacheRead": 191809,
-      "fresh": 72675,
-      "total": 264484
+      "input": 16,
+      "output": 6173,
+      "cacheCreate": 118363,
+      "cacheRead": 405475,
+      "fresh": 124552,
+      "total": 530027
+     },
+     "coverage": {
+      "input": 4,
+      "output": 310,
+      "cacheCreate": 61574,
+      "cacheRead": 58743,
+      "fresh": 61888,
+      "total": 120631
+     },
+     "art": {
+      "input": 12,
+      "output": 1550,
+      "cacheCreate": 77371,
+      "cacheRead": 336591,
+      "fresh": 78933,
+      "total": 415524
      }
     },
     "runs": [
@@ -10589,17 +10653,17 @@
       "id": "wf_47d7b24a-41e",
       "first": "2026-11-26",
       "last": "2026-11-27",
-      "agents": 20
+      "agents": 23
      }
     ],
-    "agents": 20,
+    "agents": 23,
     "first": "2026-11-26",
     "last": "2026-11-27",
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2566039,
-    "total": 61758377
+    "fresh": 2782095,
+    "total": 64383610
    },
    "croakers": {
     "input": 3416,
@@ -14040,10 +14104,10 @@
     "total": 215870473
    },
    "nocturnal": {
-    "input": 156,
-    "output": 56385,
-    "cacheCreate": 302999,
-    "cacheRead": 7394558,
+    "input": 218,
+    "output": 109889,
+    "cacheCreate": 367433,
+    "cacheRead": 13072799,
     "stages": {
      "reader": {
       "input": 78,
@@ -14062,12 +14126,12 @@
       "total": 463085
      },
      "rules": {
-      "input": 64,
-      "output": 20751,
-      "cacheCreate": 120115,
-      "cacheRead": 3383856,
-      "fresh": 140930,
-      "total": 3524786
+      "input": 126,
+      "output": 74255,
+      "cacheCreate": 184549,
+      "cacheRead": 9062097,
+      "fresh": 258930,
+      "total": 9321027
      }
     },
     "runs": [
@@ -14084,8 +14148,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 359540,
-    "total": 7754098
+    "fresh": 477540,
+    "total": 13550339
    },
    "lupine_pact": {
     "input": 6798,
