@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T11:10:00.174Z",
+ "generatedAt": "2026-11-27T11:20:00.169Z",
  "stages": [
   {
    "id": "reader",
@@ -4279,8 +4279,8 @@
     },
     {
      "name": "patrol",
-     "ahead": 9,
-     "date": "2026-11-26"
+     "ahead": 10,
+     "date": "2026-11-27"
     },
     {
      "name": "gpu-root-ai-inputs",
@@ -4322,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T11:10:00.000Z",
+    "lastRun": "2026-11-27T11:20:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4344,9 +4344,9 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T07:17:00.000Z",
-    "nextRun": "2026-11-27T11:17:00.000Z",
-    "lastNote": "2026-11-27T08:17:00+01:00 skip: lock dominion-chromium held"
+    "lastRun": "2026-11-27T11:17:00.000Z",
+    "nextRun": "2026-11-27T15:17:00.000Z",
+    "lastNote": "2026-11-27T12:17:05+01:00 claude -p exited 1 (127 = claude not found)"
    },
    {
     "key": "hardener",
@@ -4494,6 +4494,13 @@
     }
    ],
    "last24": [
+    {
+     "hash": "8c3cafb",
+     "time": "2026-11-27T12:17:00+01:00",
+     "subject": "Merge branch 'main' into patrol",
+     "agent": "lead",
+     "branch": "patrol"
+    },
     {
      "hash": "f4a46bc",
      "time": "2026-11-27T08:33:36+01:00",
@@ -4904,13 +4911,6 @@
      "hash": "37d78d4",
      "time": "2026-11-27T06:59:34+01:00",
      "subject": "factory: CLEAN artCheck tinker",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "0f0abe5",
-     "time": "2026-11-27T06:58:31+01:00",
-     "subject": "factory: CLEAN artCheck northclan",
      "agent": "factory",
      "branch": "factory/fan-rules-2"
     }
@@ -18830,6 +18830,16 @@
   "helpers": {
    "runs": [
     {
+     "time": "2026-11-27T11:17:05.142Z",
+     "agent": "patrol",
+     "issues": [],
+     "elements": [],
+     "fresh": 0,
+     "total": 0,
+     "costUsd": 0,
+     "durationMs": 511
+    },
+    {
      "time": "2026-11-26T11:21:02.927Z",
      "agent": "patrol",
      "issues": [],
@@ -18975,6 +18985,11 @@
      "day": "2026-11-26",
      "fresh": 55234,
      "total": 262607
+    },
+    {
+     "day": "2026-11-27",
+     "fresh": 0,
+     "total": 0
     }
    ],
    "byElement": {},
