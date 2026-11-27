@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T06:40:05.709Z",
+ "generatedAt": "2026-11-27T06:41:34.032Z",
  "stages": [
   {
    "id": "reader",
@@ -213,27 +213,24 @@
   }
  ],
  "run": {
-  "id": "wf_ce4bfc00-ff3",
-  "modified": "2026-11-27T06:39:10.709Z",
+  "id": "wf_1f7f0033-c7a",
+  "modified": "2026-11-27T06:41:31.534Z",
   "running": 1,
-  "faction": "owls",
+  "faction": "",
   "stageDone": [
-   "setup",
-   "reader",
-   "theme",
-   "rules"
+   "setup"
   ]
  },
  "now": {
-  "label": "rules:owls:p1.2",
-  "stage": "rules",
-  "faction": "owls",
-  "pass": 1,
-  "try": 2,
-  "phase": "Build",
+  "label": "reader:pigtroupe",
+  "stage": "reader",
+  "faction": "",
+  "pass": null,
+  "try": null,
+  "phase": "Read",
   "model": "opus",
   "running": true,
-  "start": "2026-11-27T06:39:10.696Z",
+  "start": "2026-11-27T06:41:31.529Z",
   "end": null
  },
  "scores": [
@@ -857,6 +854,18 @@
  "doneCount": 50,
  "recentRuns": [
   {
+   "id": "wf_1f7f0033-c7a",
+   "modified": "2026-11-27T06:41:31.534Z",
+   "running": 1,
+   "agents": 2
+  },
+  {
+   "id": "wf_20883d95-86d",
+   "modified": "2026-11-27T06:41:24.085Z",
+   "running": 1,
+   "agents": 25
+  },
+  {
    "id": "wf_ce4bfc00-ff3",
    "modified": "2026-11-27T06:39:10.709Z",
    "running": 1,
@@ -873,12 +882,6 @@
    "modified": "2026-11-27T06:32:10.107Z",
    "running": 0,
    "agents": 37
-  },
-  {
-   "id": "wf_20883d95-86d",
-   "modified": "2026-11-27T06:22:53.417Z",
-   "running": 1,
-   "agents": 24
   },
   {
    "id": "wf_a4dad086-161",
@@ -921,15 +924,65 @@
    "modified": "2026-11-27T01:46:39.979Z",
    "running": 0,
    "agents": 33
-  },
-  {
-   "id": "wf_ea8fced9-4b5",
-   "modified": "2026-11-27T01:02:42.436Z",
-   "running": 0,
-   "agents": 35
   }
  ],
  "factories": [
+  {
+   "id": "wf_1f7f0033-c7a",
+   "batch": "fan-rules-4",
+   "faction": "",
+   "modified": "2026-11-27T06:41:31.534Z",
+   "now": {
+    "label": "reader:pigtroupe",
+    "stage": "reader",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Read",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T06:41:31.529Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup"
+   ]
+  },
+  {
+   "id": "wf_20883d95-86d",
+   "batch": "fan-rules-5",
+   "faction": "orderforest",
+   "modified": "2026-11-27T06:41:24.085Z",
+   "now": {
+    "label": "stepfix:orderforest:p1.2",
+    "stage": "stepfix",
+    "faction": "orderforest",
+    "pass": 1,
+    "try": 1,
+    "phase": "Build",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T06:41:24.079Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules",
+    "rulesCheck",
+    "stepfix",
+    "hud",
+    "hudCheck",
+    "wireframe",
+    "quota",
+    "overlay",
+    "plate",
+    "cut",
+    "judge",
+    "skin"
+   ]
+  },
   {
    "id": "wf_ce4bfc00-ff3",
    "batch": "fan-rules-2",
@@ -977,41 +1030,6 @@
     "theme",
     "rules"
    ]
-  },
-  {
-   "id": "wf_20883d95-86d",
-   "batch": "fan-rules-5",
-   "faction": "orderforest",
-   "modified": "2026-11-27T06:22:53.417Z",
-   "now": {
-    "label": "stepfix:orderforest:p1.1",
-    "stage": "stepfix",
-    "faction": "orderforest",
-    "pass": 1,
-    "try": 1,
-    "phase": "Build",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T06:22:53.410Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme",
-    "rules",
-    "rulesCheck",
-    "stepfix",
-    "hud",
-    "hudCheck",
-    "wireframe",
-    "quota",
-    "overlay",
-    "plate",
-    "cut",
-    "judge",
-    "skin"
-   ]
   }
  ],
  "agents": [
@@ -1040,6 +1058,42 @@
    "end": "2026-11-27T06:06:00.389Z",
    "score": null,
    "findings": 0
+  },
+  {
+   "label": "reader:pigtroupe",
+   "stage": "reader",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Read",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T06:41:31.529Z",
+   "end": null
+  },
+  {
+   "label": "setup:fan-rules-4",
+   "stage": "setup",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Setup",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T06:41:26.790Z",
+   "end": "2026-11-27T06:41:31.523Z"
+  },
+  {
+   "label": "stepfix:orderforest:p1.2",
+   "stage": "stepfix",
+   "faction": "orderforest",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T06:41:24.079Z",
+   "end": null
   },
   {
    "label": "rules:owls:p1.2",
@@ -1155,9 +1209,11 @@
    "try": 1,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T06:22:53.410Z",
-   "end": null
+   "end": "2026-11-27T06:41:23.981Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "judge:orderforest:p1.1",
@@ -1385,49 +1441,6 @@
    "score": 7.8,
    "pass_ok": false,
    "findings": 5
-  },
-  {
-   "label": "stepfix:orderforest:p1.1",
-   "stage": "stepfix",
-   "faction": "orderforest",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T04:31:39.460Z",
-   "end": "2026-11-27T04:41:14.973Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "rulescheck:orderforest:p1.1",
-   "stage": "rulesCheck",
-   "faction": "orderforest",
-   "pass": 1,
-   "try": 1,
-   "phase": "Review",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T04:28:07.221Z",
-   "end": "2026-11-27T04:31:39.336Z",
-   "score": 6,
-   "pass_ok": false,
-   "findings": 8
-  },
-  {
-   "label": "rules:orderforest:p1.2",
-   "stage": "rules",
-   "faction": "orderforest",
-   "pass": 1,
-   "try": 2,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T04:16:45.125Z",
-   "end": "2026-11-27T04:28:07.115Z",
-   "score": null,
-   "findings": 0
   }
  ],
  "elements": [
@@ -2273,7 +2286,7 @@
    },
    "img": "img/factions/battery.webp",
    "thumb": "img/factions/battery-thumb.webp",
-   "shotAt": "2026-11-27T06:25:14.850Z"
+   "shotAt": "2026-11-27T06:41:33.963Z"
   },
   {
    "key": "tinker",
@@ -4633,7 +4646,7 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 1526
+   "commitsSinceLive": 1557
   },
   "branches": {
    "list": [
@@ -4648,13 +4661,8 @@
      "date": "2026-11-27"
     },
     {
-     "name": "factory/fan-rules-4",
-     "ahead": 30,
-     "date": "2026-11-27"
-    },
-    {
      "name": "factory/fan-rules-5",
-     "ahead": 22,
+     "ahead": 23,
      "date": "2026-11-27"
     },
     {
@@ -4708,7 +4716,7 @@
     "ok": true,
     "exit": 0,
     "lastRun": "2026-11-27T06:40:05.000Z",
-    "nextRun": null,
+    "nextRun": "2026-11-27T06:50:00.000Z",
     "lastNote": null
    },
    {
@@ -4823,14 +4831,44 @@
     },
     {
      "date": "2026-11-27",
-     "commits": 201
+     "commits": 232
     }
    ],
    "latest": [
     {
+     "hash": "1ceae34",
+     "date": "2026-11-27",
+     "subject": "Merge factory/fan-rules-4 (Noxious Battery, approved)"
+    },
+    {
+     "hash": "8efb582",
+     "date": "2026-11-27",
+     "subject": "learn battery: track badge check (built vs not), tile count reads the module word (data-word), STYLE-ONLY hand panel up front, rules build p"
+    },
+    {
+     "hash": "0aad648",
+     "date": "2026-11-27",
+     "subject": "factory: approve battery (fan-rules-4 pass 1/1): APPROVED, UX majors open"
+    },
+    {
      "hash": "dab5794",
      "date": "2026-11-27",
      "subject": "Merge factory/fan-rules-2 (Old Man Tinker, approved)"
+    },
+    {
+     "hash": "5cd93f1",
+     "date": "2026-11-27",
+     "subject": "factory: CLEAN code battery"
+    },
+    {
+     "hash": "3e77fe9",
+     "date": "2026-11-27",
+     "subject": "factory: CLEAN artCheck battery"
+    },
+    {
+     "hash": "9358097",
+     "date": "2026-11-27",
+     "subject": "factory: battery art fix (Cannon pawn picture)"
     },
     {
      "hash": "604e6b9",
@@ -4838,47 +4876,31 @@
      "subject": "Merge factory/fan-rules-3 (The North Clan, approved)"
     },
     {
+     "hash": "1956946",
+     "date": "2026-11-27",
+     "subject": "factory: battery art stage (warrior drawn, cannonball + scentMark repainted)"
+    },
+    {
      "hash": "52ac53b",
      "date": "2026-11-27",
      "subject": "learn tinker: off-tile brighter check (--tiles), track spread check from 1181 wide, top-button colour + judge HUD_SWEEP prompt lines"
-    },
-    {
-     "hash": "441ed0a",
-     "date": "2026-11-27",
-     "subject": "learn northclan: track label/bonus overflow check, skin lines for row pills + phone right panel, lessons merged under the word cap"
-    },
-    {
-     "hash": "ad0ec48",
-     "date": "2026-11-27",
-     "subject": "factory: approver tinker (fan-rules-2 pass 1/1, APPROVED, DONE; majors/minors listed)"
-    },
-    {
-     "hash": "950595f",
-     "date": "2026-11-27",
-     "subject": "factory: approve northclan (fan-rules-3 pass 1/1): APPROVED, UX majors open"
-    },
-    {
-     "hash": "eabdd3f",
-     "date": "2026-11-27",
-     "subject": "factory: CLEAN code tinker"
-    },
-    {
-     "hash": "bee653b",
-     "date": "2026-11-27",
-     "subject": "factory: CLEAN code northclan"
-    },
-    {
-     "hash": "37d78d4",
-     "date": "2026-11-27",
-     "subject": "factory: CLEAN artCheck tinker"
-    },
-    {
-     "hash": "0f0abe5",
-     "date": "2026-11-27",
-     "subject": "factory: CLEAN artCheck northclan"
     }
    ],
    "last24": [
+    {
+     "hash": "25a69fe",
+     "time": "2026-11-27T07:41:13+01:00",
+     "subject": "factory: orderforest judge step fix p1.1: text findings fixed (narrow hint wrap, Undo cut, cost chip, 4k tile words), hint + crafted plates ",
+     "agent": "factory",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "1ceae34",
+     "time": "2026-11-27T07:41:00+01:00",
+     "subject": "Merge factory/fan-rules-4 (Noxious Battery, approved)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-4"
+    },
     {
      "hash": "69384a4",
      "time": "2026-11-27T07:38:58+01:00",
@@ -5284,23 +5306,9 @@
      "subject": "orderforest rules step fix 1: Rest at Evening end, Congregate one clearing per card, Witness tied to the paid faction, Herald rule either en",
      "agent": "lead",
      "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "3d2e8dc",
-     "time": "2026-11-27T05:40:25+01:00",
-     "subject": "factory: judge northclan p1.1",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "960d370",
-     "time": "2026-11-27T05:37:38+01:00",
-     "subject": "northclan: skin leg 2 - full-size boxes on the paint, tile plate from the concept, 768-high abilities, ghost row height (fan-rules-3)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 691
+   "last24Count": 692
   },
   "trust": {
    "tests": {
@@ -6837,18 +6845,18 @@
  "tokens": {
   "factions": {
    "other": {
-    "input": 17951,
-    "output": 3838992,
-    "cacheCreate": 39325782,
-    "cacheRead": 505658374,
+    "input": 17955,
+    "output": 3839330,
+    "cacheCreate": 39387511,
+    "cacheRead": 505717328,
     "stages": {
      "setup": {
-      "input": 428,
-      "output": 36327,
-      "cacheCreate": 5669508,
-      "cacheRead": 6831610,
-      "fresh": 5706263,
-      "total": 12537873
+      "input": 432,
+      "output": 36665,
+      "cacheCreate": 5731237,
+      "cacheRead": 6890564,
+      "fresh": 5768334,
+      "total": 12658898
      },
      "spec": {
       "input": 3500,
@@ -7563,6 +7571,12 @@
       "agents": 2
      },
      {
+      "id": "wf_1f7f0033-c7a",
+      "first": "2026-11-27",
+      "last": "2026-11-27",
+      "agents": 1
+     },
+     {
       "id": "wf_20883d95-86d",
       "first": "2026-11-27",
       "last": "2026-11-27",
@@ -7599,14 +7613,14 @@
       "agents": 2
      }
     ],
-    "agents": 413,
+    "agents": 414,
     "first": "2026-11-04",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": false,
-    "fresh": 43182725,
-    "total": 548841099
+    "fresh": 43244796,
+    "total": 548962124
    },
    "caninecommonwealth": {
     "input": 2984,
@@ -7823,10 +7837,10 @@
     "total": 157115423
    },
    "order_of_the_scale": {
-    "input": 260,
-    "output": 117353,
-    "cacheCreate": 466168,
-    "cacheRead": 14367062,
+    "input": 270,
+    "output": 119107,
+    "cacheCreate": 470656,
+    "cacheRead": 15004189,
     "stages": {
      "reader": {
       "input": 70,
@@ -7845,12 +7859,12 @@
       "total": 325425
      },
      "rules": {
-      "input": 180,
-      "output": 77802,
-      "cacheCreate": 268764,
-      "cacheRead": 10337664,
-      "fresh": 346746,
-      "total": 10684410
+      "input": 190,
+      "output": 79556,
+      "cacheCreate": 273252,
+      "cacheRead": 10974791,
+      "fresh": 352998,
+      "total": 11327789
      }
     },
     "runs": [
@@ -7867,8 +7881,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 583781,
-    "total": 14950843
+    "fresh": 590033,
+    "total": 15594222
    },
    "marquistadors": {
     "input": 1686,
@@ -9006,11 +9020,43 @@
     "fresh": 6262094,
     "total": 145096841
    },
+   "pigtroupe": {
+    "input": 2,
+    "output": 200,
+    "cacheCreate": 39561,
+    "cacheRead": 20577,
+    "stages": {
+     "reader": {
+      "input": 2,
+      "output": 200,
+      "cacheCreate": 39561,
+      "cacheRead": 20577,
+      "fresh": 39763,
+      "total": 60340
+     }
+    },
+    "runs": [
+     {
+      "id": "wf_1f7f0033-c7a",
+      "first": "2026-11-27",
+      "last": "2026-11-27",
+      "agents": 1
+     }
+    ],
+    "agents": 1,
+    "first": "2026-11-27",
+    "last": "2026-11-27",
+    "pictures": 0,
+    "failedPictures": 0,
+    "isFaction": true,
+    "fresh": 39763,
+    "total": 60340
+   },
    "orderforest": {
-    "input": 1358,
-    "output": 498943,
-    "cacheCreate": 2646561,
-    "cacheRead": 77036439,
+    "input": 1368,
+    "output": 503120,
+    "cacheCreate": 2695680,
+    "cacheRead": 77683736,
     "stages": {
      "reader": {
       "input": 72,
@@ -9045,12 +9091,12 @@
       "total": 12139725
      },
      "stepfix": {
-      "input": 366,
-      "output": 130138,
-      "cacheCreate": 499689,
-      "cacheRead": 21370918,
-      "fresh": 630193,
-      "total": 22001111
+      "input": 376,
+      "output": 134315,
+      "cacheCreate": 548808,
+      "cacheRead": 22018215,
+      "fresh": 683499,
+      "total": 22701714
      },
      "hud": {
       "input": 144,
@@ -9130,17 +9176,17 @@
       "id": "wf_20883d95-86d",
       "first": "2026-11-27",
       "last": "2026-11-27",
-      "agents": 23
+      "agents": 24
      }
     ],
-    "agents": 23,
+    "agents": 24,
     "first": "2026-11-27",
     "last": "2026-11-27",
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3146862,
-    "total": 80183301
+    "fresh": 3200168,
+    "total": 80883904
    },
    "battery": {
     "input": 1610,
@@ -13657,10 +13703,10 @@
     "total": 106961401
    },
    "owls": {
-    "input": 182,
-    "output": 80790,
-    "cacheCreate": 393207,
-    "cacheRead": 9297388,
+    "input": 198,
+    "output": 87223,
+    "cacheCreate": 407473,
+    "cacheRead": 10084212,
     "stages": {
      "reader": {
       "input": 66,
@@ -13679,12 +13725,12 @@
       "total": 386234
      },
      "rules": {
-      "input": 104,
-      "output": 50025,
-      "cacheCreate": 207504,
-      "cacheRead": 5700156,
-      "fresh": 257633,
-      "total": 5957789
+      "input": 120,
+      "output": 56458,
+      "cacheCreate": 221770,
+      "cacheRead": 6486980,
+      "fresh": 278348,
+      "total": 6765328
      }
     },
     "runs": [
@@ -13701,8 +13747,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 474179,
-    "total": 9771567
+    "fresh": 494894,
+    "total": 10579106
    },
    "fangus": {
     "input": 1658,
