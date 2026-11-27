@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T00:10:41.292Z",
+ "generatedAt": "2026-11-27T00:20:00.302Z",
  "stages": [
   {
    "id": "reader",
@@ -4792,7 +4792,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T00:10:41.000Z",
+    "lastRun": "2026-11-27T00:20:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -5385,7 +5385,7 @@
      "branch": "factory/fan-rules-3"
     }
    ],
-   "last24Count": 665
+   "last24Count": 664
   },
   "trust": {
    "tests": {
@@ -6157,21 +6157,21 @@
   },
   "chatgpt": {
    "quota": {
-    "seen": "2026-11-26T23:20:44.961Z",
+    "seen": "2026-11-27T00:17:03.205Z",
     "primary": {
-     "usedPercent": 8,
+     "usedPercent": 11,
      "windowMinutes": 300,
-     "resetsAt": "2026-11-27T03:24:02.000Z"
+     "resetsAt": "2026-11-27T03:24:01.000Z"
     },
     "secondary": {
-     "usedPercent": 3,
+     "usedPercent": 4,
      "windowMinutes": 10080,
      "resetsAt": "2026-12-03T20:21:26.000Z"
     }
    },
    "calls": {
-    "today": 0,
-    "last7": 302,
+    "today": 2,
+    "last7": 304,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
@@ -6215,7 +6215,8 @@
      "honeycomb": 8,
      "host": 5,
      "hyena_necrocracy": 6,
-     "tinklones": 3
+     "tinklones": 3,
+     "lostpowers": 2
     },
     "failed": 1
    }
@@ -8917,10 +8918,10 @@
     "total": 145096841
    },
    "necropossums": {
-    "input": 354,
-    "output": 156070,
-    "cacheCreate": 599295,
-    "cacheRead": 21212399,
+    "input": 362,
+    "output": 157961,
+    "cacheCreate": 752480,
+    "cacheRead": 21752203,
     "stages": {
      "reader": {
       "input": 62,
@@ -8955,12 +8956,12 @@
       "total": 1758756
      },
      "hud": {
-      "input": 106,
-      "output": 35090,
-      "cacheCreate": 149812,
-      "cacheRead": 6728263,
-      "fresh": 185008,
-      "total": 6913271
+      "input": 114,
+      "output": 36981,
+      "cacheCreate": 302997,
+      "cacheRead": 7268067,
+      "fresh": 340092,
+      "total": 7608159
      }
     },
     "runs": [
@@ -8977,8 +8978,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 755719,
-    "total": 21968118
+    "fresh": 910803,
+    "total": 22663006
    },
    "host": {
     "input": 1478,
@@ -10279,10 +10280,10 @@
     "total": 75972503
    },
    "lemmings": {
-    "input": 878,
-    "output": 297905,
-    "cacheCreate": 1370443,
-    "cacheRead": 46944868,
+    "input": 882,
+    "output": 300399,
+    "cacheCreate": 1544490,
+    "cacheRead": 47117477,
     "stages": {
      "reader": {
       "input": 80,
@@ -10325,12 +10326,12 @@
       "total": 10075440
      },
      "hud": {
-      "input": 128,
-      "output": 40832,
-      "cacheCreate": 150574,
-      "cacheRead": 7823171,
-      "fresh": 191534,
-      "total": 8014705
+      "input": 132,
+      "output": 43326,
+      "cacheCreate": 324621,
+      "cacheRead": 7995780,
+      "fresh": 368079,
+      "total": 8363859
      }
     },
     "runs": [
@@ -10347,14 +10348,14 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1669226,
-    "total": 48614094
+    "fresh": 1845771,
+    "total": 48963248
    },
    "lostpowers": {
-    "input": 644,
-    "output": 238743,
-    "cacheCreate": 1163296,
-    "cacheRead": 36136427,
+    "input": 648,
+    "output": 239927,
+    "cacheCreate": 1164944,
+    "cacheRead": 36287557,
     "stages": {
      "reader": {
       "input": 70,
@@ -10429,12 +10430,12 @@
       "total": 119437
      },
      "overlay": {
-      "input": 14,
-      "output": 2878,
-      "cacheCreate": 54516,
-      "cacheRead": 434079,
-      "fresh": 57408,
-      "total": 491487
+      "input": 18,
+      "output": 4062,
+      "cacheCreate": 56164,
+      "cacheRead": 585209,
+      "fresh": 60244,
+      "total": 645453
      }
     },
     "runs": [
@@ -10448,11 +10449,11 @@
     "agents": 12,
     "first": "2026-11-26",
     "last": "2026-11-27",
-    "pictures": 0,
+    "pictures": 2,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1402683,
-    "total": 37539110
+    "fresh": 1405519,
+    "total": 37693076
    },
    "croakers": {
     "input": 3416,
@@ -13247,10 +13248,10 @@
     "total": 84883327
    },
    "tinklones": {
-    "input": 1020,
-    "output": 385891,
-    "cacheCreate": 1964000,
-    "cacheRead": 56470982,
+    "input": 1040,
+    "output": 390504,
+    "cacheCreate": 2088352,
+    "cacheRead": 57764967,
     "stages": {
      "reader": {
       "input": 52,
@@ -13285,12 +13286,12 @@
       "total": 5843032
      },
      "stepfix": {
-      "input": 180,
-      "output": 54946,
-      "cacheCreate": 283198,
-      "cacheRead": 8604416,
-      "fresh": 338324,
-      "total": 8942740
+      "input": 200,
+      "output": 59559,
+      "cacheCreate": 407550,
+      "cacheRead": 9898401,
+      "fresh": 467309,
+      "total": 10365710
      },
      "hud": {
       "input": 98,
@@ -13379,8 +13380,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2350911,
-    "total": 58821893
+    "fresh": 2479896,
+    "total": 60244863
    },
    "darkforest": {
     "input": 1586,
