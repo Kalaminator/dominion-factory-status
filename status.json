@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T13:40:00.174Z",
+ "generatedAt": "2026-11-27T13:50:00.166Z",
  "stages": [
   {
    "id": "reader",
@@ -4322,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T13:40:00.000Z",
+    "lastRun": "2026-11-27T13:50:00.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4915,7 +4915,7 @@
      "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 632
+   "last24Count": 627
   },
   "trust": {
    "tests": {
@@ -5716,7 +5716,7 @@
    },
    "calls": {
     "today": 76,
-    "last7": 370,
+    "last7": 368,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
