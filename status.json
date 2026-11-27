@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T05:20:00.185Z",
+ "generatedAt": "2026-11-27T05:30:02.343Z",
  "stages": [
   {
    "id": "reader",
@@ -4790,7 +4790,7 @@
     },
     {
      "name": "factory/fan-rules-4",
-     "ahead": 17,
+     "ahead": 18,
      "date": "2026-11-27"
     },
     {
@@ -4848,7 +4848,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T05:20:00.000Z",
+    "lastRun": "2026-11-27T05:30:02.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -5020,6 +5020,13 @@
     }
    ],
    "last24": [
+    {
+     "hash": "0da72a1",
+     "time": "2026-11-27T06:20:33+01:00",
+     "subject": "factory: skin battery leg 2 (bottom panels on painted boxes at full size, native top buttons, short hint plate, own drop/hint blocks)",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
     {
      "hash": "69d3778",
      "time": "2026-11-27T06:08:58+01:00",
@@ -5432,16 +5439,9 @@
      "subject": "factory: northclan rules step fix pass 1 try 2: Shield hits reset at battle end, Relocate / Build skip clearings that ban placement, setup i",
      "agent": "factory",
      "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "828708a",
-     "time": "2026-11-27T04:01:57+01:00",
-     "subject": "factory: judge fix nocturnal p1.1 leg 1: End label fits, hint wraps, accent gate, abilities plate back, bat medallion, stat row / undo re-cu",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
     }
    ],
-   "last24Count": 706
+   "last24Count": 701
   },
   "trust": {
    "tests": {
@@ -9087,10 +9087,10 @@
     "total": 145096841
    },
    "orderforest": {
-    "input": 844,
-    "output": 301770,
-    "cacheCreate": 1518576,
-    "cacheRead": 46039467,
+    "input": 862,
+    "output": 307655,
+    "cacheCreate": 1682547,
+    "cacheRead": 47465849,
     "stages": {
      "reader": {
       "input": 72,
@@ -9133,12 +9133,12 @@
       "total": 11575178
      },
      "hud": {
-      "input": 114,
-      "output": 38645,
-      "cacheCreate": 148628,
-      "cacheRead": 7211262,
-      "fresh": 187387,
-      "total": 7398649
+      "input": 132,
+      "output": 44530,
+      "cacheCreate": 312599,
+      "cacheRead": 8637644,
+      "fresh": 357261,
+      "total": 8994905
      }
     },
     "runs": [
@@ -9155,14 +9155,14 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1821190,
-    "total": 47860657
+    "fresh": 1991064,
+    "total": 49456913
    },
    "battery": {
-    "input": 1056,
-    "output": 410533,
-    "cacheCreate": 2511928,
-    "cacheRead": 61232702,
+    "input": 1066,
+    "output": 416423,
+    "cacheCreate": 2520637,
+    "cacheRead": 62015204,
     "stages": {
      "reader": {
       "input": 72,
@@ -9261,12 +9261,12 @@
       "total": 689425
      },
      "skin": {
-      "input": 186,
-      "output": 99379,
-      "cacheCreate": 314066,
-      "cacheRead": 12274150,
-      "fresh": 413631,
-      "total": 12687781
+      "input": 196,
+      "output": 105269,
+      "cacheCreate": 322775,
+      "cacheRead": 13056652,
+      "fresh": 428240,
+      "total": 13484892
      }
     },
     "runs": [
@@ -9283,8 +9283,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2923517,
-    "total": 64156219
+    "fresh": 2938126,
+    "total": 64953330
    },
    "necropossums": {
     "input": 1304,
@@ -12089,10 +12089,10 @@
     "total": 84918821
    },
    "northclan": {
-    "input": 1230,
-    "output": 467356,
-    "cacheCreate": 2722846,
-    "cacheRead": 67670555,
+    "input": 1250,
+    "output": 472932,
+    "cacheCreate": 2816554,
+    "cacheRead": 68681742,
     "stages": {
      "reader": {
       "input": 58,
@@ -12127,12 +12127,12 @@
       "total": 7057717
      },
      "stepfix": {
-      "input": 412,
-      "output": 126660,
-      "cacheCreate": 620202,
-      "cacheRead": 21510400,
-      "fresh": 747274,
-      "total": 22257674
+      "input": 432,
+      "output": 132236,
+      "cacheCreate": 713910,
+      "cacheRead": 22521587,
+      "fresh": 846578,
+      "total": 23368165
      },
      "hud": {
       "input": 154,
@@ -12229,8 +12229,8 @@
     "pictures": 4,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3191432,
-    "total": 70861987
+    "fresh": 3290736,
+    "total": 71972478
    },
    "honeycomb": {
     "input": 1548,
@@ -12441,10 +12441,10 @@
     "total": 90164585
    },
    "tinker": {
-    "input": 1176,
-    "output": 436560,
-    "cacheCreate": 2394978,
-    "cacheRead": 63017210,
+    "input": 1190,
+    "output": 440425,
+    "cacheCreate": 2503360,
+    "cacheRead": 63790122,
     "stages": {
      "reader": {
       "input": 66,
@@ -12479,12 +12479,12 @@
       "total": 9533139
      },
      "stepfix": {
-      "input": 340,
-      "output": 108811,
-      "cacheCreate": 460268,
-      "cacheRead": 18050131,
-      "fresh": 569419,
-      "total": 18619550
+      "input": 354,
+      "output": 112676,
+      "cacheCreate": 568650,
+      "cacheRead": 18823043,
+      "fresh": 681680,
+      "total": 19504723
      },
      "hud": {
       "input": 142,
@@ -12573,8 +12573,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 2832714,
-    "total": 65849924
+    "fresh": 2944975,
+    "total": 66735097
    },
    "caninerepublic": {
     "input": 1960,
