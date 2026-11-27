@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T02:30:20.046Z",
+ "generatedAt": "2026-11-27T02:34:05.140Z",
  "stages": [
   {
    "id": "reader",
@@ -213,35 +213,26 @@
   }
  ],
  "run": {
-  "id": "wf_f398c870-9a1",
-  "modified": "2026-11-27T02:30:08.416Z",
+  "id": "wf_23dc7d9b-a2c",
+  "modified": "2026-11-27T02:33:54.030Z",
   "running": 1,
-  "faction": "nocturnal",
+  "faction": "battery",
   "stageDone": [
    "setup",
    "reader",
-   "theme",
-   "rules",
-   "rulesCheck",
-   "stepfix",
-   "hud",
-   "hudCheck",
-   "wireframe",
-   "quota",
-   "overlay",
-   "plate",
-   "cut"
+   "theme"
   ]
  },
  "now": {
-  "label": "skin:nocturnal:p1.1",
-  "stage": "skin",
-  "faction": "nocturnal",
+  "label": "rules:battery:p1.1",
+  "stage": "rules",
+  "faction": "battery",
   "pass": 1,
   "try": 1,
   "phase": "Build",
   "model": "opus",
   "running": true,
+  "start": "2026-11-27T02:33:54.022Z",
   "end": null
  },
  "scores": [
@@ -571,9 +562,9 @@
   },
   {
    "key": "battery",
-   "state": "TODO",
    "passes": 0,
-   "commit": "-"
+   "commit": "-",
+   "state": "RUNNING"
   },
   {
    "key": "tinker",
@@ -843,24 +834,36 @@
  "counts": {
   "DONE": 41,
   "DONE-OPEN": 5,
-  "RUNNING": 2,
+  "RUNNING": 3,
   "PARKED": 1,
-  "TODO": 45
+  "TODO": 44
  },
  "total": 94,
  "doneCount": 46,
  "recentRuns": [
   {
+   "id": "wf_23dc7d9b-a2c",
+   "modified": "2026-11-27T02:33:54.030Z",
+   "running": 1,
+   "agents": 4
+  },
+  {
+   "id": "wf_a4dad086-161",
+   "modified": "2026-11-27T02:33:47.531Z",
+   "running": 1,
+   "agents": 2
+  },
+  {
+   "id": "wf_9562eee6-def",
+   "modified": "2026-11-27T02:33:31.544Z",
+   "running": 1,
+   "agents": 5
+  },
+  {
    "id": "wf_f398c870-9a1",
    "modified": "2026-11-27T02:30:08.416Z",
    "running": 1,
    "agents": 18
-  },
-  {
-   "id": "wf_23dc7d9b-a2c",
-   "modified": "2026-11-27T02:28:56.780Z",
-   "running": 1,
-   "agents": 2
   },
   {
    "id": "wf_40ce25e7-080",
@@ -873,12 +876,6 @@
    "modified": "2026-11-27T02:25:08.302Z",
    "running": 0,
    "agents": 32
-  },
-  {
-   "id": "wf_9562eee6-def",
-   "modified": "2026-11-27T02:21:17.079Z",
-   "running": 1,
-   "agents": 4
   },
   {
    "id": "wf_130753d6-21f",
@@ -915,15 +912,77 @@
    "modified": "2026-11-26T22:44:16.529Z",
    "running": 0,
    "agents": 34
-  },
-  {
-   "id": "wf_a2e60da6-5ab",
-   "modified": "2026-11-26T21:57:50.898Z",
-   "running": 0,
-   "agents": 34
   }
  ],
  "factories": [
+  {
+   "id": "wf_23dc7d9b-a2c",
+   "batch": "fan-rules-4",
+   "faction": "battery",
+   "modified": "2026-11-27T02:33:54.030Z",
+   "now": {
+    "label": "rules:battery:p1.1",
+    "stage": "rules",
+    "faction": "battery",
+    "pass": 1,
+    "try": 1,
+    "phase": "Build",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T02:33:54.022Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme"
+   ]
+  },
+  {
+   "id": "wf_a4dad086-161",
+   "batch": "fan-rules-2",
+   "faction": "",
+   "modified": "2026-11-27T02:33:47.531Z",
+   "now": {
+    "label": "reader:tinker",
+    "stage": "reader",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Read",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T02:33:47.525Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup"
+   ]
+  },
+  {
+   "id": "wf_9562eee6-def",
+   "batch": "fan-rules-3",
+   "faction": "northclan",
+   "modified": "2026-11-27T02:33:31.544Z",
+   "now": {
+    "label": "rulescheck:northclan:p1.1",
+    "stage": "rulesCheck",
+    "faction": "northclan",
+    "pass": 1,
+    "try": 1,
+    "phase": "Review",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T02:33:31.535Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme",
+    "rules"
+   ]
+  },
   {
    "id": "wf_f398c870-9a1",
    "batch": "fan-rules-5",
@@ -955,50 +1014,6 @@
     "plate",
     "cut"
    ]
-  },
-  {
-   "id": "wf_23dc7d9b-a2c",
-   "batch": "fan-rules-4",
-   "faction": "",
-   "modified": "2026-11-27T02:28:56.780Z",
-   "now": {
-    "label": "reader:battery",
-    "stage": "reader",
-    "faction": "",
-    "pass": null,
-    "try": null,
-    "phase": "Read",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T02:28:56.772Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup"
-   ]
-  },
-  {
-   "id": "wf_9562eee6-def",
-   "batch": "fan-rules-3",
-   "faction": "northclan",
-   "modified": "2026-11-27T02:21:17.079Z",
-   "now": {
-    "label": "rules:northclan:p1.1",
-    "stage": "rules",
-    "faction": "northclan",
-    "pass": 1,
-    "try": 1,
-    "phase": "Build",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T02:21:17.067Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup",
-    "reader",
-    "theme"
-   ]
   }
  ],
  "agents": [
@@ -1014,7 +1029,19 @@
    "end": null
   },
   {
-   "label": "reader:battery",
+   "label": "rules:battery:p1.1",
+   "stage": "rules",
+   "faction": "battery",
+   "pass": 1,
+   "try": 1,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T02:33:54.022Z",
+   "end": null
+  },
+  {
+   "label": "reader:tinker",
    "stage": "reader",
    "faction": "",
    "pass": null,
@@ -1022,8 +1049,60 @@
    "phase": "Read",
    "model": "opus",
    "running": true,
-   "start": "2026-11-27T02:28:56.772Z",
+   "start": "2026-11-27T02:33:47.525Z",
    "end": null
+  },
+  {
+   "label": "setup:fan-rules-2",
+   "stage": "setup",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Setup",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T02:33:42.651Z",
+   "end": "2026-11-27T02:33:47.518Z"
+  },
+  {
+   "label": "rulescheck:northclan:p1.1",
+   "stage": "rulesCheck",
+   "faction": "northclan",
+   "pass": 1,
+   "try": 1,
+   "phase": "Review",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T02:33:31.535Z",
+   "end": null
+  },
+  {
+   "label": "theme:battery",
+   "stage": "theme",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Concept",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T02:33:13.029Z",
+   "end": "2026-11-27T02:33:53.931Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "reader:battery",
+   "stage": "reader",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Read",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-27T02:28:56.772Z",
+   "end": "2026-11-27T02:33:12.930Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "setup:fan-rules-4",
@@ -1087,9 +1166,11 @@
    "try": 1,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T02:21:17.067Z",
-   "end": null
+   "end": "2026-11-27T02:33:31.430Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "theme:northclan",
@@ -2088,7 +2169,7 @@
    },
    "img": "img/factions/lemmings.webp",
    "thumb": "img/factions/lemmings-thumb.webp",
-   "shotAt": "2026-11-27T02:17:02.210Z"
+   "shotAt": "2026-11-27T02:33:54.374Z"
   },
   {
    "key": "lostpowers",
@@ -2122,7 +2203,7 @@
    },
    "img": "img/factions/necropossums.webp",
    "thumb": "img/factions/necropossums-thumb.webp",
-   "shotAt": "2026-11-27T02:16:15.069Z"
+   "shotAt": "2026-11-27T02:34:05.069Z"
   },
   {
    "key": "nocturnal",
@@ -2157,6 +2238,23 @@
    "img": "img/factions/northclan.webp",
    "thumb": "img/factions/northclan-thumb.webp",
    "shotAt": "2026-11-18T21:05:58.112Z"
+  },
+  {
+   "key": "battery",
+   "name": "Battery",
+   "group": "Factions",
+   "what": "Fan faction.",
+   "state": "running",
+   "feedback": {
+    "open": 0,
+    "fixed": 0,
+    "queued": 0,
+    "needsLead": 0,
+    "issues": []
+   },
+   "img": "img/factions/battery.webp",
+   "thumb": "img/factions/battery-thumb.webp",
+   "shotAt": "2026-11-18T21:06:06.591Z"
   },
   {
    "key": "woodland",
@@ -2431,23 +2529,6 @@
    "img": "img/factions/nomads.webp",
    "thumb": "img/factions/nomads-thumb.webp",
    "shotAt": "2026-11-18T21:05:51.186Z"
-  },
-  {
-   "key": "battery",
-   "name": "Battery",
-   "group": "Factions",
-   "what": "Fan faction.",
-   "state": "waiting",
-   "feedback": {
-    "open": 0,
-    "fixed": 0,
-    "queued": 0,
-    "needsLead": 0,
-    "issues": []
-   },
-   "img": "img/factions/battery.webp",
-   "thumb": "img/factions/battery-thumb.webp",
-   "shotAt": "2026-11-18T21:06:06.591Z"
   },
   {
    "key": "tinker",
@@ -4533,18 +4614,18 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 1410
+   "commitsSinceLive": 1439
   },
   "branches": {
    "list": [
     {
-     "name": "factory/fan-rules-2",
-     "ahead": 28,
+     "name": "factory/fan-rules-3",
+     "ahead": 6,
      "date": "2026-11-27"
     },
     {
-     "name": "factory/fan-rules-3",
-     "ahead": 3,
+     "name": "factory/fan-rules-4",
+     "ahead": 2,
      "date": "2026-11-27"
     },
     {
@@ -4603,7 +4684,7 @@
     "ok": true,
     "exit": 0,
     "lastRun": "2026-11-27T02:30:19.000Z",
-    "nextRun": null,
+    "nextRun": "2026-11-27T02:40:00.000Z",
     "lastNote": null
    },
    {
@@ -4714,14 +4795,19 @@
     },
     {
      "date": "2026-11-26",
-     "commits": 629
+     "commits": 631
     },
     {
      "date": "2026-11-27",
-     "commits": 87
+     "commits": 114
     }
    ],
    "latest": [
+    {
+     "hash": "3990f3a",
+     "date": "2026-11-27",
+     "subject": "Merge factory/fan-rules-2 (Lemming Reavers, approved)"
+    },
     {
      "hash": "676b547",
      "date": "2026-11-27",
@@ -4733,9 +4819,19 @@
      "subject": "Merge factory/fan-rules-4 (Necropossums Cabal, approved)"
     },
     {
+     "hash": "0f4ba33",
+     "date": "2026-11-27",
+     "subject": "learn lemmings: track overlap + draw-count checks, shared fan_draw shows 'Draw N', every fan theme in the abilities list box, rules Law-defa"
+    },
+    {
      "hash": "3d715f2",
      "date": "2026-11-27",
      "subject": "learn necropossums: --tiles highlight check (6 units' 'highlight hidden'), tiles ride the text sweep, font pick in one HUD_SWEEP run, endPha"
+    },
+    {
+     "hash": "9534ce8",
+     "date": "2026-11-27",
+     "subject": "factory: approver lemmings (fan-rules-2 pass 1/1, APPROVED, DONE; majors/minors listed)"
     },
     {
      "hash": "65c3283",
@@ -4748,32 +4844,59 @@
      "subject": "token log: nomads pass 1 (parked on Gargantuan)"
     },
     {
+     "hash": "256eb7c",
+     "date": "2026-11-27",
+     "subject": "factory: CLEAN code lemmings"
+    },
+    {
      "hash": "a15ec9c",
      "date": "2026-11-27",
      "subject": "factory: CLEAN code necropossums"
-    },
-    {
-     "hash": "abf9adc",
-     "date": "2026-11-27",
-     "subject": "factory: CLEAN artCheck necropossums"
-    },
-    {
-     "hash": "18eabcf",
-     "date": "2026-11-27",
-     "subject": "factory: necropossums art fix, cemetery repainted light with outline + skull"
-    },
-    {
-     "hash": "aa5f7e0",
-     "date": "2026-11-27",
-     "subject": "factory: ART necropossums (warrior drawn, cemetery repainted)"
-    },
-    {
-     "hash": "bf90e63",
-     "date": "2026-11-27",
-     "subject": "Merge factory/fan-rules-3 (Lost Powers, approved)"
     }
    ],
    "last24": [
+    {
+     "hash": "9bbf743",
+     "time": "2026-11-27T03:33:49+01:00",
+     "subject": "battery: hudTheme on + theme stub",
+     "agent": "lead",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "3990f3a",
+     "time": "2026-11-27T03:33:23+01:00",
+     "subject": "Merge factory/fan-rules-2 (Lemming Reavers, approved)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "e206c38",
+     "time": "2026-11-27T03:33:21+01:00",
+     "subject": "factory: northclan rules build done: Pillage in the Raider clearing (OPEN-RULES 7), fixed dice in the fight row, ledger lines, handoff",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "54b6c08",
+     "time": "2026-11-27T03:33:05+01:00",
+     "subject": "factory: card reader battery (fan-rules-4): 28 ledger rows, 7 MISSING, 14 WRONG, 1 conflict (Vault phases fixed to the board), 0 unreadable",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "d9eb83c",
+     "time": "2026-11-27T03:32:25+01:00",
+     "subject": "factory: northclan split ncBattleSpoils (slop complexity)",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "49f2959",
+     "time": "2026-11-27T03:32:13+01:00",
+     "subject": "factory: rules build northclan (fan-rules-3): four Member pawns, Berzerk strikeFirst + Warborn ambushPawns engine hooks, 33 ledger rows PASS",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
     {
      "hash": "ddf6fd2",
      "time": "2026-11-27T03:30:05+01:00",
@@ -4793,14 +4916,14 @@
      "time": "2026-11-27T03:28:52+01:00",
      "subject": "progress: nomads PARKED (Gargantuan waits on the user)",
      "agent": "lead",
-     "branch": "main"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "bda6a0c",
      "time": "2026-11-27T03:28:34+01:00",
      "subject": "Merge factory/fan-rules-4 (Necropossums Cabal, approved)",
      "agent": "lead",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "2ca1419",
@@ -4828,7 +4951,7 @@
      "time": "2026-11-27T03:24:22+01:00",
      "subject": "learn necropossums: --tiles highlight check (6 units' 'highlight hidden'), tiles ride the text sweep, font pick in one HUD_SWEEP run, endPha",
      "agent": "lead",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "d89891b",
@@ -4870,7 +4993,7 @@
      "time": "2026-11-27T03:16:20+01:00",
      "subject": "factory: approver necropossums (fan-rules-4 pass 1/1, APPROVED, DONE; majors/minors listed)",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "cc2bbab",
@@ -4884,7 +5007,7 @@
      "time": "2026-11-27T03:14:58+01:00",
      "subject": "token log: nomads pass 1 (parked on Gargantuan)",
      "agent": "lead",
-     "branch": "factory/fan-rules-3"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "98b7a03",
@@ -4912,7 +5035,7 @@
      "time": "2026-11-27T03:13:12+01:00",
      "subject": "factory: CLEAN code necropossums",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "edb54e2",
@@ -4947,7 +5070,7 @@
      "time": "2026-11-27T03:10:16+01:00",
      "subject": "factory: CLEAN artCheck necropossums",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "b70a708",
@@ -4961,14 +5084,14 @@
      "time": "2026-11-27T03:09:16+01:00",
      "subject": "factory: necropossums art fix, cemetery repainted light with outline + skull",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "aa5f7e0",
      "time": "2026-11-27T03:03:14+01:00",
      "subject": "factory: ART necropossums (warrior drawn, cemetery repainted)",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "fb60b17",
@@ -5010,7 +5133,7 @@
      "time": "2026-11-27T02:52:21+01:00",
      "subject": "Merge factory/fan-rules-3 (Lost Powers, approved)",
      "agent": "lead",
-     "branch": "factory/fan-rules-3"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "a8a0194",
@@ -5024,21 +5147,21 @@
      "time": "2026-11-27T02:49:59+01:00",
      "subject": "factory: judge necropossums p1.2",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "85c2d1d",
      "time": "2026-11-27T02:47:12+01:00",
      "subject": "factory: judge fix necropossums p1.1 leg 2: phase pill with the concept's painted skull, Offline + top buttons on whole pixels (dot shown), ",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "782a869",
      "time": "2026-11-27T02:46:12+01:00",
      "subject": "learn lostpowers: kit rows in ICONS + cost badge checks (test-hud-action-tiles, test-hud-overflow 'cost badge:'), CHOICES rules prompt line,",
      "agent": "lead",
-     "branch": "factory/fan-rules-3"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "3df7882",
@@ -5052,21 +5175,21 @@
      "time": "2026-11-27T02:39:33+01:00",
      "subject": "factory: approver lostpowers (fan-rules-3 pass 1/1, APPROVED, DONE; majors/minors listed)",
      "agent": "factory",
-     "branch": "factory/fan-rules-3"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "7316615",
      "time": "2026-11-27T02:38:20+01:00",
      "subject": "factory: judge fix necropossums p1.1: top buttons + Offline on their painted boxes, Pieces head on its tab (frame closed), wheel-cell part, ",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "f646c1c",
      "time": "2026-11-27T02:34:30+01:00",
      "subject": "factory: CLEAN code lostpowers",
      "agent": "factory",
-     "branch": "factory/fan-rules-3"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "7321b4a",
@@ -5080,14 +5203,14 @@
      "time": "2026-11-27T02:32:04+01:00",
      "subject": "factory: CLEAN artCheck lostpowers",
      "agent": "factory",
-     "branch": "factory/fan-rules-3"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "ef3f864",
      "time": "2026-11-27T02:30:45+01:00",
      "subject": "factory: art lostpowers (turtle Elder warrior head)",
      "agent": "factory",
-     "branch": "factory/fan-rules-3"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "9683f33",
@@ -5101,42 +5224,42 @@
      "time": "2026-11-27T02:28:56+01:00",
      "subject": "factory: judge lostpowers p1.2",
      "agent": "factory",
-     "branch": "factory/fan-rules-3"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "d6a6be8",
      "time": "2026-11-27T02:27:19+01:00",
      "subject": "factory: judge necropossums p1.1",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "083faae",
      "time": "2026-11-27T02:25:32+01:00",
      "subject": "factory: judge fix lostpowers p1.1 leg 2 (fullscreen on the painted knot, parchment faction tab, tabs and counters on the concept's lines, r",
      "agent": "factory",
-     "branch": "factory/fan-rules-3"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "0aecef4",
      "time": "2026-11-27T02:24:27+01:00",
      "subject": "factory: skin necropossums leg 2: stats plate whole with its painted skull, FAN ghost lifted, row tags and hint at the concept boxes; handof",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "602c930",
      "time": "2026-11-27T02:19:36+01:00",
      "subject": "factory: skin necropossums leg 2: slot rim mirrored, tab heads on their painted tabs, rule checks clean",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "8d1c6ad",
      "time": "2026-11-27T02:18:35+01:00",
      "subject": "factory: skin necropossums leg 2: text sweep clean at every size (tablet/phone plum insides, short-height Abilities, End stroke off)",
      "agent": "factory",
-     "branch": "factory/fan-rules-4"
+     "branch": "factory/fan-rules-2"
     },
     {
      "hash": "2876cdd",
@@ -5151,51 +5274,9 @@
      "subject": "factory: card reader nocturnal (fan-rules-5): ledger 25 rows, brief, Vault board transcription, user-list",
      "agent": "factory",
      "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "6fec179",
-     "time": "2026-11-27T02:14:16+01:00",
-     "subject": "factory: judge fix lostpowers p1.1 leg 1 (theme-judge PASS, accent 1.24%, phone name, narrow-laptop top bar, Undo/Pieces unclipped, short-sc",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "4356065",
-     "time": "2026-11-27T02:14:09+01:00",
-     "subject": "factory: judge lemmings p1.1",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "59606b0",
-     "time": "2026-11-27T02:12:09+01:00",
-     "subject": "factory: skin necropossums leg 2: nameplate + FAN on the tab band, tiles on their cut plate at the painted grid, right column on its paint, ",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "5075273",
-     "time": "2026-11-27T02:09:59+01:00",
-     "subject": "Merge factory/fan-rules-5 (Invasion of the Tinklones, approved)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "0b49d2e",
-     "time": "2026-11-27T02:09:55+01:00",
-     "subject": "factory: skin lemmings leg 2 (bare gold row words, off End own face, accent seams; overflow 10/10, contrast 64/64; handoff)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "1482993",
-     "time": "2026-11-27T02:04:32+01:00",
-     "subject": "factory: skin lemmings leg 2 (abilities fold in a row at 768 high, End wraps inside its row)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 712
+   "last24Count": 718
   },
   "trust": {
    "tests": {
@@ -6713,18 +6794,18 @@
  "tokens": {
   "factions": {
    "other": {
-    "input": 17903,
-    "output": 3829143,
-    "cacheCreate": 38800353,
-    "cacheRead": 504684138,
+    "input": 17907,
+    "output": 3829522,
+    "cacheCreate": 38841354,
+    "cacheRead": 504763951,
     "stages": {
      "setup": {
-      "input": 412,
-      "output": 34929,
-      "cacheCreate": 5463748,
-      "cacheRead": 6553771,
-      "fresh": 5499089,
-      "total": 12052860
+      "input": 416,
+      "output": 35308,
+      "cacheCreate": 5504749,
+      "cacheRead": 6633584,
+      "fresh": 5540473,
+      "total": 12174057
      },
      "spec": {
       "input": 3500,
@@ -7445,20 +7526,26 @@
       "agents": 1
      },
      {
+      "id": "wf_a4dad086-161",
+      "first": "2026-11-27",
+      "last": "2026-11-27",
+      "agents": 1
+     },
+     {
       "id": "wf_f398c870-9a1",
       "first": "2026-11-27",
       "last": "2026-11-27",
       "agents": 1
      }
     ],
-    "agents": 404,
+    "agents": 405,
     "first": "2026-11-04",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": false,
-    "fresh": 42647399,
-    "total": 547331537
+    "fresh": 42688783,
+    "total": 547452734
    },
    "caninecommonwealth": {
     "input": 2984,
@@ -8811,18 +8898,34 @@
     "total": 145096841
    },
    "battery": {
-    "input": 38,
-    "output": 7235,
-    "cacheCreate": 80827,
-    "cacheRead": 1469151,
+    "input": 90,
+    "output": 29762,
+    "cacheCreate": 214266,
+    "cacheRead": 3992415,
     "stages": {
      "reader": {
-      "input": 38,
-      "output": 7235,
-      "cacheCreate": 80827,
-      "cacheRead": 1469151,
-      "fresh": 88100,
-      "total": 1557251
+      "input": 72,
+      "output": 26744,
+      "cacheCreate": 112496,
+      "cacheRead": 3496848,
+      "fresh": 139312,
+      "total": 3636160
+     },
+     "theme": {
+      "input": 12,
+      "output": 2358,
+      "cacheCreate": 49814,
+      "cacheRead": 346228,
+      "fresh": 52184,
+      "total": 398412
+     },
+     "rules": {
+      "input": 6,
+      "output": 660,
+      "cacheCreate": 51956,
+      "cacheRead": 149339,
+      "fresh": 52622,
+      "total": 201961
      }
     },
     "runs": [
@@ -8830,17 +8933,17 @@
       "id": "wf_23dc7d9b-a2c",
       "first": "2026-11-27",
       "last": "2026-11-27",
-      "agents": 1
+      "agents": 3
      }
     ],
-    "agents": 1,
+    "agents": 3,
     "first": "2026-11-27",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 88100,
-    "total": 1557251
+    "fresh": 244118,
+    "total": 4236533
    },
    "necropossums": {
     "input": 1304,
@@ -11645,10 +11748,10 @@
     "total": 84918821
    },
    "northclan": {
-    "input": 140,
-    "output": 90347,
-    "cacheCreate": 309940,
-    "cacheRead": 7419086,
+    "input": 178,
+    "output": 100960,
+    "cacheCreate": 396537,
+    "cacheRead": 9948069,
     "stages": {
      "reader": {
       "input": 58,
@@ -11667,12 +11770,20 @@
       "total": 389369
      },
      "rules": {
-      "input": 70,
-      "output": 53408,
-      "cacheCreate": 151180,
-      "cacheRead": 4457022,
-      "fresh": 204658,
-      "total": 4661680
+      "input": 94,
+      "output": 62221,
+      "cacheCreate": 162428,
+      "cacheRead": 6573721,
+      "fresh": 224743,
+      "total": 6798464
+     },
+     "rulescheck": {
+      "input": 14,
+      "output": 1800,
+      "cacheCreate": 75349,
+      "cacheRead": 412284,
+      "fresh": 77163,
+      "total": 489447
      }
     },
     "runs": [
@@ -11680,17 +11791,17 @@
       "id": "wf_9562eee6-def",
       "first": "2026-11-27",
       "last": "2026-11-27",
-      "agents": 3
+      "agents": 4
      }
     ],
-    "agents": 3,
+    "agents": 4,
     "first": "2026-11-27",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 400427,
-    "total": 7819513
+    "fresh": 497675,
+    "total": 10445744
    },
    "honeycomb": {
     "input": 1548,
@@ -11899,6 +12010,38 @@
     "isFaction": true,
     "fresh": 3383865,
     "total": 90164585
+   },
+   "tinker": {
+    "input": 10,
+    "output": 1482,
+    "cacheCreate": 49408,
+    "cacheRead": 279097,
+    "stages": {
+     "reader": {
+      "input": 10,
+      "output": 1482,
+      "cacheCreate": 49408,
+      "cacheRead": 279097,
+      "fresh": 50900,
+      "total": 329997
+     }
+    },
+    "runs": [
+     {
+      "id": "wf_a4dad086-161",
+      "first": "2026-11-27",
+      "last": "2026-11-27",
+      "agents": 1
+     }
+    ],
+    "agents": 1,
+    "first": "2026-11-27",
+    "last": "2026-11-27",
+    "pictures": 0,
+    "failedPictures": 0,
+    "isFaction": true,
+    "fresh": 50900,
+    "total": 329997
    },
    "caninerepublic": {
     "input": 1960,
@@ -14259,10 +14402,10 @@
     "total": 215870473
    },
    "nocturnal": {
-    "input": 782,
-    "output": 276167,
-    "cacheCreate": 1632288,
-    "cacheRead": 41027299,
+    "input": 826,
+    "output": 289127,
+    "cacheCreate": 1673519,
+    "cacheRead": 43316290,
     "stages": {
      "reader": {
       "input": 78,
@@ -14361,12 +14504,12 @@
       "total": 2669369
      },
      "skin": {
-      "input": 8,
-      "output": 985,
-      "cacheCreate": 61004,
-      "cacheRead": 241868,
-      "fresh": 61997,
-      "total": 303865
+      "input": 52,
+      "output": 13945,
+      "cacheCreate": 102235,
+      "cacheRead": 2530859,
+      "fresh": 116232,
+      "total": 2647091
      }
     },
     "runs": [
@@ -14383,8 +14526,8 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1909237,
-    "total": 42936536
+    "fresh": 1963472,
+    "total": 45279762
    },
    "lupine_pact": {
     "input": 6798,
