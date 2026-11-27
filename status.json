@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T06:24:54.975Z",
+ "generatedAt": "2026-11-27T06:30:08.179Z",
  "stages": [
   {
    "id": "reader",
@@ -214,23 +214,24 @@
  ],
  "run": {
   "id": "wf_ce4bfc00-ff3",
-  "modified": "2026-11-27T06:24:52.563Z",
+  "modified": "2026-11-27T06:29:37.701Z",
   "running": 1,
   "faction": "",
   "stageDone": [
-   "setup"
+   "setup",
+   "reader"
   ]
  },
  "now": {
-  "label": "reader:owls",
-  "stage": "reader",
+  "label": "theme:owls",
+  "stage": "theme",
   "faction": "",
   "pass": null,
   "try": null,
-  "phase": "Read",
-  "model": "opus",
+  "phase": "Concept",
+  "model": "sonnet",
   "running": true,
-  "start": "2026-11-27T06:24:52.558Z",
+  "start": "2026-11-27T06:29:37.693Z",
   "end": null
  },
  "scores": [
@@ -638,7 +639,7 @@
   {
    "key": "battery",
    "passes": 1,
-   "commit": "{H}",
+   "commit": "5cd93f1",
    "state": "RUNNING"
   },
   {
@@ -918,21 +919,21 @@
  "recentRuns": [
   {
    "id": "wf_ce4bfc00-ff3",
-   "modified": "2026-11-27T06:24:52.563Z",
+   "modified": "2026-11-27T06:29:37.701Z",
    "running": 1,
-   "agents": 2
+   "agents": 3
+  },
+  {
+   "id": "wf_23dc7d9b-a2c",
+   "modified": "2026-11-27T06:25:27.033Z",
+   "running": 1,
+   "agents": 36
   },
   {
    "id": "wf_05b935aa-050",
    "modified": "2026-11-27T06:24:10.593Z",
    "running": 1,
    "agents": 4
-  },
-  {
-   "id": "wf_23dc7d9b-a2c",
-   "modified": "2026-11-27T06:23:36.730Z",
-   "running": 1,
-   "agents": 35
   },
   {
    "id": "wf_20883d95-86d",
@@ -994,61 +995,39 @@
    "id": "wf_ce4bfc00-ff3",
    "batch": "fan-rules-2",
    "faction": "",
-   "modified": "2026-11-27T06:24:52.563Z",
+   "modified": "2026-11-27T06:29:37.701Z",
    "now": {
-    "label": "reader:owls",
-    "stage": "reader",
+    "label": "theme:owls",
+    "stage": "theme",
     "faction": "",
     "pass": null,
     "try": null,
-    "phase": "Read",
-    "model": "opus",
+    "phase": "Concept",
+    "model": "sonnet",
     "running": true,
-    "start": "2026-11-27T06:24:52.558Z",
-    "end": null
-   },
-   "stageDone": [
-    "setup"
-   ]
-  },
-  {
-   "id": "wf_05b935aa-050",
-   "batch": "fan-rules-3",
-   "faction": "order_of_the_scale",
-   "modified": "2026-11-27T06:24:10.593Z",
-   "now": {
-    "label": "rules:order_of_the_scale:p1.1",
-    "stage": "rules",
-    "faction": "order_of_the_scale",
-    "pass": 1,
-    "try": 1,
-    "phase": "Build",
-    "model": "opus",
-    "running": true,
-    "start": "2026-11-27T06:24:10.587Z",
+    "start": "2026-11-27T06:29:37.693Z",
     "end": null
    },
    "stageDone": [
     "setup",
-    "reader",
-    "theme"
+    "reader"
    ]
   },
   {
    "id": "wf_23dc7d9b-a2c",
    "batch": "fan-rules-4",
    "faction": "battery",
-   "modified": "2026-11-27T06:23:36.730Z",
+   "modified": "2026-11-27T06:25:27.033Z",
    "now": {
-    "label": "approve:battery:p1",
-    "stage": "approve",
-    "faction": "battery",
+    "label": "learn:battery",
+    "stage": "learn",
+    "faction": "",
     "pass": null,
     "try": null,
     "phase": "Approve",
     "model": "opus",
     "running": true,
-    "start": "2026-11-27T06:23:36.725Z",
+    "start": "2026-11-27T06:25:27.027Z",
     "end": null
    },
    "stageDone": [
@@ -1074,7 +1053,31 @@
     "shots",
     "code",
     "ux",
+    "approve",
     "skin"
+   ]
+  },
+  {
+   "id": "wf_05b935aa-050",
+   "batch": "fan-rules-3",
+   "faction": "order_of_the_scale",
+   "modified": "2026-11-27T06:24:10.593Z",
+   "now": {
+    "label": "rules:order_of_the_scale:p1.1",
+    "stage": "rules",
+    "faction": "order_of_the_scale",
+    "pass": 1,
+    "try": 1,
+    "phase": "Build",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T06:24:10.587Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup",
+    "reader",
+    "theme"
    ]
   },
   {
@@ -1167,6 +1170,30 @@
    "findings": 0
   },
   {
+   "label": "theme:owls",
+   "stage": "theme",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Concept",
+   "model": "sonnet",
+   "running": true,
+   "start": "2026-11-27T06:29:37.693Z",
+   "end": null
+  },
+  {
+   "label": "learn:battery",
+   "stage": "learn",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Approve",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T06:25:27.027Z",
+   "end": null
+  },
+  {
    "label": "reader:owls",
    "stage": "reader",
    "faction": "",
@@ -1174,9 +1201,11 @@
    "try": null,
    "phase": "Read",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T06:24:52.558Z",
-   "end": null
+   "end": "2026-11-27T06:29:37.588Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "setup:fan-rules-2",
@@ -1210,9 +1239,12 @@
    "try": null,
    "phase": "Approve",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T06:23:36.725Z",
-   "end": null
+   "end": "2026-11-27T06:25:26.932Z",
+   "score": null,
+   "approve": true,
+   "findings": 9
   },
   {
    "label": "theme:order_of_the_scale",
@@ -1493,34 +1525,6 @@
    "running": false,
    "start": "2026-11-27T05:49:43.158Z",
    "end": "2026-11-27T05:49:51.333Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "overlay:orderforest",
-   "stage": "overlay",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T05:41:05.784Z",
-   "end": "2026-11-27T05:49:41.451Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "quota:orderforest:overlay",
-   "stage": "quota",
-   "faction": "orderforest",
-   "pass": null,
-   "try": null,
-   "phase": "Review",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T05:40:57.139Z",
-   "end": "2026-11-27T05:41:05.360Z",
    "score": null,
    "findings": 0
   }
@@ -2385,7 +2389,7 @@
    },
    "img": "img/factions/battery.webp",
    "thumb": "img/factions/battery-thumb.webp",
-   "shotAt": "2026-11-18T21:06:06.591Z"
+   "shotAt": "2026-11-27T06:25:14.850Z"
   },
   {
    "key": "orderforest",
@@ -4733,13 +4737,18 @@
   "branches": {
    "list": [
     {
+     "name": "factory/fan-rules-2",
+     "ahead": 1,
+     "date": "2026-11-27"
+    },
+    {
      "name": "factory/fan-rules-3",
      "ahead": 2,
      "date": "2026-11-27"
     },
     {
      "name": "factory/fan-rules-4",
-     "ahead": 28,
+     "ahead": 29,
      "date": "2026-11-27"
     },
     {
@@ -4797,8 +4806,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T06:20:03.000Z",
-    "nextRun": "2026-11-27T06:30:00.000Z",
+    "lastRun": "2026-11-27T06:30:08.000Z",
+    "nextRun": null,
     "lastNote": null
    },
    {
@@ -4969,6 +4978,20 @@
     }
    ],
    "last24": [
+    {
+     "hash": "beb7164",
+     "time": "2026-11-27T07:29:26+01:00",
+     "subject": "factory: card reader owls (fan-rules-2): ledger 31 rows, brief, Vault board transcription, user-list",
+     "agent": "factory",
+     "branch": "factory/fan-rules-2"
+    },
+    {
+     "hash": "0aad648",
+     "time": "2026-11-27T07:25:18+01:00",
+     "subject": "factory: approve battery (fan-rules-4 pass 1/1): APPROVED, UX majors open",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
     {
      "hash": "dab5794",
      "time": "2026-11-27T07:24:26+01:00",
@@ -5374,23 +5397,9 @@
      "subject": "factory: concept battery (fan-rules-4), theme-judge PASS 7",
      "agent": "factory",
      "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "2e286f5",
-     "time": "2026-11-27T05:29:03+01:00",
-     "subject": "tinker: cut plate parts (fan-rules-2)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "dedaadc",
-     "time": "2026-11-27T05:27:56+01:00",
-     "subject": "orderforest rules build leg 2: Witness swap at hit time (engine.swapHits) + Ranks-or-owner choice, pawns soak Ambush hits, Ambush rows; 32/3",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
     }
    ],
-   "last24Count": 699
+   "last24Count": 694
   },
   "trust": {
    "tests": {
@@ -7913,10 +7922,10 @@
     "total": 157115423
    },
    "order_of_the_scale": {
-    "input": 94,
-    "output": 42468,
-    "cacheCreate": 276027,
-    "cacheRead": 4523477,
+    "input": 138,
+    "output": 71068,
+    "cacheCreate": 331462,
+    "cacheRead": 7237902,
     "stages": {
      "reader": {
       "input": 70,
@@ -7935,12 +7944,12 @@
       "total": 325425
      },
      "rules": {
-      "input": 14,
-      "output": 2917,
-      "cacheCreate": 78623,
-      "cacheRead": 494079,
-      "fresh": 81554,
-      "total": 575633
+      "input": 58,
+      "output": 31517,
+      "cacheCreate": 134058,
+      "cacheRead": 3208504,
+      "fresh": 165633,
+      "total": 3374137
      }
     },
     "runs": [
@@ -7957,8 +7966,8 @@
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 318589,
-    "total": 4842066
+    "fresh": 402668,
+    "total": 7640570
    },
    "marquistadors": {
     "input": 1686,
@@ -9097,10 +9106,10 @@
     "total": 145096841
    },
    "orderforest": {
-    "input": 1240,
-    "output": 446404,
-    "cacheCreate": 2566603,
-    "cacheRead": 68552924,
+    "input": 1302,
+    "output": 470410,
+    "cacheCreate": 2604011,
+    "cacheRead": 72413911,
     "stages": {
      "reader": {
       "input": 72,
@@ -9135,12 +9144,12 @@
       "total": 12139725
      },
      "stepfix": {
-      "input": 248,
-      "output": 77599,
-      "cacheCreate": 419731,
-      "cacheRead": 12887403,
-      "fresh": 497578,
-      "total": 13384981
+      "input": 310,
+      "output": 101605,
+      "cacheCreate": 457139,
+      "cacheRead": 16748390,
+      "fresh": 559054,
+      "total": 17307444
      },
      "hud": {
       "input": 144,
@@ -9229,14 +9238,14 @@
     "pictures": 3,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 3014247,
-    "total": 71567171
+    "fresh": 3075723,
+    "total": 75489634
    },
    "battery": {
-    "input": 1522,
-    "output": 546822,
-    "cacheCreate": 3628845,
-    "cacheRead": 82213688,
+    "input": 1590,
+    "output": 568165,
+    "cacheCreate": 3772604,
+    "cacheRead": 85785942,
     "stages": {
      "reader": {
       "input": 72,
@@ -9415,12 +9424,20 @@
       "total": 2278495
      },
      "approve": {
-      "input": 26,
-      "output": 5701,
-      "cacheCreate": 89179,
-      "cacheRead": 965119,
-      "fresh": 94906,
-      "total": 1060025
+      "input": 34,
+      "output": 8960,
+      "cacheCreate": 94345,
+      "cacheRead": 1332823,
+      "fresh": 103339,
+      "total": 1436162
+     },
+     "learn": {
+      "input": 60,
+      "output": 18084,
+      "cacheCreate": 138593,
+      "cacheRead": 3204550,
+      "fresh": 156737,
+      "total": 3361287
      }
     },
     "runs": [
@@ -9428,17 +9445,17 @@
       "id": "wf_23dc7d9b-a2c",
       "first": "2026-11-27",
       "last": "2026-11-27",
-      "agents": 34
+      "agents": 35
      }
     ],
-    "agents": 34,
+    "agents": 35,
     "first": "2026-11-27",
     "last": "2026-11-27",
     "pictures": 8,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 4177189,
-    "total": 86390877
+    "fresh": 4342359,
+    "total": 90128301
    },
    "necropossums": {
     "input": 1304,
@@ -13739,36 +13756,44 @@
     "total": 106961401
    },
    "owls": {
-    "input": 0,
-    "output": 0,
-    "cacheCreate": 0,
-    "cacheRead": 0,
+    "input": 74,
+    "output": 29938,
+    "cacheCreate": 182186,
+    "cacheRead": 3465904,
     "stages": {
      "reader": {
-      "input": 0,
-      "output": 0,
-      "cacheCreate": 0,
-      "cacheRead": 0,
-      "fresh": 0,
-      "total": 0
+      "input": 66,
+      "output": 28613,
+      "cacheCreate": 117997,
+      "cacheRead": 3280868,
+      "fresh": 146676,
+      "total": 3427544
+     },
+     "theme": {
+      "input": 8,
+      "output": 1325,
+      "cacheCreate": 64189,
+      "cacheRead": 185036,
+      "fresh": 65522,
+      "total": 250558
      }
     },
     "runs": [
      {
       "id": "wf_ce4bfc00-ff3",
-      "first": "",
-      "last": "",
-      "agents": 1
+      "first": "2026-11-27",
+      "last": "2026-11-27",
+      "agents": 2
      }
     ],
-    "agents": 1,
-    "first": "",
-    "last": "",
+    "agents": 2,
+    "first": "2026-11-27",
+    "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 0,
-    "total": 0
+    "fresh": 212198,
+    "total": 3678102
    },
    "fangus": {
     "input": 1658,
