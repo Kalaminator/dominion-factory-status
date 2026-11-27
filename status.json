@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T07:20:00.182Z",
+ "generatedAt": "2026-11-27T07:24:06.404Z",
  "stages": [
   {
    "id": "reader",
@@ -213,30 +213,24 @@
   }
  ],
  "run": {
-  "id": "wf_05b935aa-050",
-  "modified": "2026-11-27T07:19:55.021Z",
+  "id": "wf_3d4273d8-5da",
+  "modified": "2026-11-27T07:24:05.220Z",
   "running": 1,
-  "faction": "order_of_the_scale",
+  "faction": "",
   "stageDone": [
-   "setup",
-   "reader",
-   "theme",
-   "rules",
-   "rulesCheck",
-   "stepfix",
-   "hud"
+   "setup"
   ]
  },
  "now": {
-  "label": "hudcheck:order_of_the_scale:p1.1",
-  "stage": "hudCheck",
-  "faction": "order_of_the_scale",
-  "pass": 1,
-  "try": 1,
-  "phase": "Review",
-  "model": "sonnet",
+  "label": "reader:plaguedoctors",
+  "stage": "reader",
+  "faction": "",
+  "pass": null,
+  "try": null,
+  "phase": "Read",
+  "model": "opus",
   "running": true,
-  "start": "2026-11-27T07:19:55.011Z",
+  "start": "2026-11-27T07:24:05.212Z",
   "end": null
  },
  "scores": [
@@ -253,6 +247,13 @@
    "pass": 1,
    "try": 2,
    "score": 8.5
+  },
+  {
+   "stage": "hudCheck",
+   "label": "hudcheck:order_of_the_scale:p1.1",
+   "pass": 1,
+   "try": 1,
+   "score": 10
   },
   {
    "stage": "rulesCheck",
@@ -274,6 +275,13 @@
    "pass": 1,
    "try": 3,
    "score": 7.2
+  },
+  {
+   "stage": "rulesCheck",
+   "label": "rulescheck:owls:p1.4",
+   "pass": 1,
+   "try": 4,
+   "score": 8
   },
   {
    "stage": "rulesCheck",
@@ -867,28 +875,34 @@
  "doneCount": 51,
  "recentRuns": [
   {
-   "id": "wf_05b935aa-050",
-   "modified": "2026-11-27T07:19:55.021Z",
+   "id": "wf_3d4273d8-5da",
+   "modified": "2026-11-27T07:24:05.220Z",
    "running": 1,
-   "agents": 10
+   "agents": 2
+  },
+  {
+   "id": "wf_05b935aa-050",
+   "modified": "2026-11-27T07:23:57.020Z",
+   "running": 1,
+   "agents": 13
+  },
+  {
+   "id": "wf_ce4bfc00-ff3",
+   "modified": "2026-11-27T07:23:56.451Z",
+   "running": 1,
+   "agents": 13
+  },
+  {
+   "id": "wf_1f7f0033-c7a",
+   "modified": "2026-11-27T07:21:51.040Z",
+   "running": 1,
+   "agents": 9
   },
   {
    "id": "wf_20883d95-86d",
    "modified": "2026-11-27T07:16:14.847Z",
    "running": 0,
    "agents": 37
-  },
-  {
-   "id": "wf_ce4bfc00-ff3",
-   "modified": "2026-11-27T07:16:13.205Z",
-   "running": 1,
-   "agents": 11
-  },
-  {
-   "id": "wf_1f7f0033-c7a",
-   "modified": "2026-11-27T07:13:45.909Z",
-   "running": 1,
-   "agents": 8
   },
   {
    "id": "wf_23dc7d9b-a2c",
@@ -931,30 +945,45 @@
    "modified": "2026-11-27T02:14:43.838Z",
    "running": 0,
    "agents": 7
-  },
-  {
-   "id": "wf_47d7b24a-41e",
-   "modified": "2026-11-27T01:46:39.979Z",
-   "running": 0,
-   "agents": 33
   }
  ],
  "factories": [
   {
+   "id": "wf_3d4273d8-5da",
+   "batch": "fan-rules-5",
+   "faction": "",
+   "modified": "2026-11-27T07:24:05.220Z",
+   "now": {
+    "label": "reader:plaguedoctors",
+    "stage": "reader",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Read",
+    "model": "opus",
+    "running": true,
+    "start": "2026-11-27T07:24:05.212Z",
+    "end": null
+   },
+   "stageDone": [
+    "setup"
+   ]
+  },
+  {
    "id": "wf_05b935aa-050",
    "batch": "fan-rules-3",
    "faction": "order_of_the_scale",
-   "modified": "2026-11-27T07:19:55.021Z",
+   "modified": "2026-11-27T07:23:57.020Z",
    "now": {
-    "label": "hudcheck:order_of_the_scale:p1.1",
-    "stage": "hudCheck",
-    "faction": "order_of_the_scale",
-    "pass": 1,
-    "try": 1,
-    "phase": "Review",
+    "label": "overlay:order_of_the_scale",
+    "stage": "overlay",
+    "faction": "",
+    "pass": null,
+    "try": null,
+    "phase": "Concept",
     "model": "sonnet",
     "running": true,
-    "start": "2026-11-27T07:19:55.011Z",
+    "start": "2026-11-27T07:23:57.014Z",
     "end": null
    },
    "stageDone": [
@@ -964,24 +993,27 @@
     "rules",
     "rulesCheck",
     "stepfix",
-    "hud"
+    "hud",
+    "hudCheck",
+    "wireframe",
+    "quota"
    ]
   },
   {
    "id": "wf_ce4bfc00-ff3",
    "batch": "fan-rules-2",
    "faction": "owls",
-   "modified": "2026-11-27T07:16:13.205Z",
+   "modified": "2026-11-27T07:23:56.451Z",
    "now": {
     "label": "stepfix:owls:p1.1",
     "stage": "stepfix",
     "faction": "owls",
     "pass": 1,
-    "try": 3,
+    "try": 4,
     "phase": "Build",
     "model": "opus",
     "running": true,
-    "start": "2026-11-27T07:16:13.200Z",
+    "start": "2026-11-27T07:23:56.442Z",
     "end": null
    },
    "stageDone": [
@@ -997,17 +1029,17 @@
    "id": "wf_1f7f0033-c7a",
    "batch": "fan-rules-4",
    "faction": "pigtroupe",
-   "modified": "2026-11-27T07:13:45.909Z",
+   "modified": "2026-11-27T07:21:51.040Z",
    "now": {
-    "label": "stepfix:pigtroupe:p1.1",
-    "stage": "stepfix",
+    "label": "rulescheck:pigtroupe:p1.3",
+    "stage": "rulesCheck",
     "faction": "pigtroupe",
     "pass": 1,
-    "try": 2,
-    "phase": "Build",
+    "try": 3,
+    "phase": "Review",
     "model": "opus",
     "running": true,
-    "start": "2026-11-27T07:13:45.900Z",
+    "start": "2026-11-27T07:21:51.027Z",
     "end": null
    },
    "stageDone": [
@@ -1022,6 +1054,109 @@
  ],
  "agents": [
   {
+   "label": "reader:plaguedoctors",
+   "stage": "reader",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Read",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T07:24:05.212Z",
+   "end": null
+  },
+  {
+   "label": "setup:fan-rules-5",
+   "stage": "setup",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Setup",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T07:23:59.211Z",
+   "end": "2026-11-27T07:24:05.203Z"
+  },
+  {
+   "label": "overlay:order_of_the_scale",
+   "stage": "overlay",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Concept",
+   "model": "sonnet",
+   "running": true,
+   "start": "2026-11-27T07:23:57.014Z",
+   "end": null
+  },
+  {
+   "label": "stepfix:owls:p1.1",
+   "stage": "stepfix",
+   "faction": "owls",
+   "pass": 1,
+   "try": 4,
+   "phase": "Build",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T07:23:56.442Z",
+   "end": null
+  },
+  {
+   "label": "quota:order_of_the_scale:overlay",
+   "stage": "quota",
+   "faction": "order_of_the_scale",
+   "pass": null,
+   "try": null,
+   "phase": "Review",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T07:23:48.078Z",
+   "end": "2026-11-27T07:23:56.873Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "wireframe:order_of_the_scale",
+   "stage": "wireframe",
+   "faction": "",
+   "pass": null,
+   "try": null,
+   "phase": "Screenshot",
+   "model": "sonnet",
+   "running": false,
+   "start": "2026-11-27T07:23:30.631Z",
+   "end": "2026-11-27T07:23:47.657Z",
+   "score": null,
+   "findings": 0
+  },
+  {
+   "label": "rulescheck:pigtroupe:p1.3",
+   "stage": "rulesCheck",
+   "faction": "pigtroupe",
+   "pass": 1,
+   "try": 3,
+   "phase": "Review",
+   "model": "opus",
+   "running": true,
+   "start": "2026-11-27T07:21:51.027Z",
+   "end": null
+  },
+  {
+   "label": "rulescheck:owls:p1.4",
+   "stage": "rulesCheck",
+   "faction": "owls",
+   "pass": 1,
+   "try": 4,
+   "phase": "Review",
+   "model": "opus",
+   "running": false,
+   "start": "2026-11-27T07:21:17.941Z",
+   "end": "2026-11-27T07:23:56.326Z",
+   "score": 8,
+   "pass_ok": false,
+   "findings": 2
+  },
+  {
    "label": "hudcheck:order_of_the_scale:p1.1",
    "stage": "hudCheck",
    "faction": "order_of_the_scale",
@@ -1029,9 +1164,12 @@
    "try": 1,
    "phase": "Review",
    "model": "sonnet",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T07:19:55.011Z",
-   "end": null
+   "end": "2026-11-27T07:23:28.958Z",
+   "score": 10,
+   "pass_ok": true,
+   "findings": 0
   },
   {
    "label": "stepfix:owls:p1.1",
@@ -1041,9 +1179,11 @@
    "try": 3,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T07:16:13.200Z",
-   "end": null
+   "end": "2026-11-27T07:21:17.842Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "stepfix:pigtroupe:p1.1",
@@ -1053,9 +1193,11 @@
    "try": 2,
    "phase": "Build",
    "model": "opus",
-   "running": true,
+   "running": false,
    "start": "2026-11-27T07:13:45.900Z",
-   "end": null
+   "end": "2026-11-27T07:21:50.946Z",
+   "score": null,
+   "findings": 0
   },
   {
    "label": "rulescheck:owls:p1.3",
@@ -1327,100 +1469,6 @@
    "end": "2026-11-27T06:39:10.553Z",
    "score": null,
    "findings": 0
-  },
-  {
-   "label": "theme:owls",
-   "stage": "theme",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T06:29:37.693Z",
-   "end": "2026-11-27T06:30:18.463Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "reader:owls",
-   "stage": "reader",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Read",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T06:24:52.558Z",
-   "end": "2026-11-27T06:29:37.588Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "setup:fan-rules-2",
-   "stage": "setup",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Setup",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T06:24:47.780Z",
-   "end": "2026-11-27T06:24:52.551Z"
-  },
-  {
-   "label": "rules:order_of_the_scale:p1.1",
-   "stage": "rules",
-   "faction": "order_of_the_scale",
-   "pass": 1,
-   "try": 1,
-   "phase": "Build",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T06:24:10.587Z",
-   "end": "2026-11-27T06:33:16.552Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "theme:order_of_the_scale",
-   "stage": "theme",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Concept",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T06:23:28.430Z",
-   "end": "2026-11-27T06:24:10.260Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "reader:order_of_the_scale",
-   "stage": "reader",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Read",
-   "model": "opus",
-   "running": false,
-   "start": "2026-11-27T06:17:40.987Z",
-   "end": "2026-11-27T06:23:28.328Z",
-   "score": null,
-   "findings": 0
-  },
-  {
-   "label": "setup:fan-rules-3",
-   "stage": "setup",
-   "faction": "",
-   "pass": null,
-   "try": null,
-   "phase": "Setup",
-   "model": "sonnet",
-   "running": false,
-   "start": "2026-11-27T06:17:35.390Z",
-   "end": "2026-11-27T06:17:40.979Z"
   }
  ],
  "elements": [
@@ -2300,7 +2348,7 @@
    },
    "img": "img/factions/orderforest.webp",
    "thumb": "img/factions/orderforest-thumb.webp",
-   "shotAt": "2026-11-27T07:08:15.609Z"
+   "shotAt": "2026-11-27T07:24:06.331Z"
   },
   {
    "key": "order_of_the_scale",
@@ -4626,28 +4674,23 @@
   "release": {
    "live": "dominion-v262",
    "main": "dominion-v262",
-   "commitsSinceLive": 1557
+   "commitsSinceLive": 1588
   },
   "branches": {
    "list": [
     {
      "name": "factory/fan-rules-2",
-     "ahead": 6,
-     "date": "2026-11-27"
-    },
-    {
-     "name": "factory/fan-rules-3",
      "ahead": 7,
      "date": "2026-11-27"
     },
     {
-     "name": "factory/fan-rules-4",
-     "ahead": 4,
+     "name": "factory/fan-rules-3",
+     "ahead": 9,
      "date": "2026-11-27"
     },
     {
-     "name": "factory/fan-rules-5",
-     "ahead": 30,
+     "name": "factory/fan-rules-4",
+     "ahead": 5,
      "date": "2026-11-27"
     },
     {
@@ -4701,7 +4744,7 @@
     "ok": true,
     "exit": 0,
     "lastRun": "2026-11-27T07:20:00.000Z",
-    "nextRun": null,
+    "nextRun": "2026-11-27T07:30:00.000Z",
     "lastNote": null
    },
    {
@@ -4816,62 +4859,97 @@
     },
     {
      "date": "2026-11-27",
-     "commits": 232
+     "commits": 263
     }
    ],
    "latest": [
     {
+     "hash": "d3d3896",
+     "date": "2026-11-27",
+     "subject": "Merge factory/fan-rules-5 (Order of the Forest, approved)"
+    },
+    {
+     "hash": "caab326",
+     "date": "2026-11-27",
+     "subject": "learn orderforest: track state faint check (cell inside must change built vs not), crafted box covers no counter row, COSTS line in the rule"
+    },
+    {
+     "hash": "6b754d3",
+     "date": "2026-11-27",
+     "subject": "factory: approve orderforest (fan-rules-5 pass 1/1): APPROVED, UX majors open"
+    },
+    {
+     "hash": "1e4ccd0",
+     "date": "2026-11-27",
+     "subject": "factory: CLEAN code orderforest"
+    },
+    {
+     "hash": "cfcec3f",
+     "date": "2026-11-27",
+     "subject": "factory: CLEAN artCheck orderforest"
+    },
+    {
+     "hash": "c9ee98a",
+     "date": "2026-11-27",
+     "subject": "orderforest art stage: new fox warrior head, coins repaint, abbey/soup plain TTS cuts"
+    },
+    {
+     "hash": "1ba9c00",
+     "date": "2026-11-27",
+     "subject": "factory: judge orderforest p1.2"
+    },
+    {
+     "hash": "6c17832",
+     "date": "2026-11-27",
+     "subject": "factory: orderforest judge step fix p1.1 leg 2: row tag PASS, score rows on the painted bars (brown score-row-2 plate, 17 px names), lighter"
+    },
+    {
+     "hash": "25a69fe",
+     "date": "2026-11-27",
+     "subject": "factory: orderforest judge step fix p1.1: text findings fixed (narrow hint wrap, Undo cut, cost chip, 4k tile words), hint + crafted plates "
+    },
+    {
      "hash": "1ceae34",
      "date": "2026-11-27",
      "subject": "Merge factory/fan-rules-4 (Noxious Battery, approved)"
-    },
-    {
-     "hash": "8efb582",
-     "date": "2026-11-27",
-     "subject": "learn battery: track badge check (built vs not), tile count reads the module word (data-word), STYLE-ONLY hand panel up front, rules build p"
-    },
-    {
-     "hash": "0aad648",
-     "date": "2026-11-27",
-     "subject": "factory: approve battery (fan-rules-4 pass 1/1): APPROVED, UX majors open"
-    },
-    {
-     "hash": "dab5794",
-     "date": "2026-11-27",
-     "subject": "Merge factory/fan-rules-2 (Old Man Tinker, approved)"
-    },
-    {
-     "hash": "5cd93f1",
-     "date": "2026-11-27",
-     "subject": "factory: CLEAN code battery"
-    },
-    {
-     "hash": "3e77fe9",
-     "date": "2026-11-27",
-     "subject": "factory: CLEAN artCheck battery"
-    },
-    {
-     "hash": "9358097",
-     "date": "2026-11-27",
-     "subject": "factory: battery art fix (Cannon pawn picture)"
-    },
-    {
-     "hash": "604e6b9",
-     "date": "2026-11-27",
-     "subject": "Merge factory/fan-rules-3 (The North Clan, approved)"
-    },
-    {
-     "hash": "1956946",
-     "date": "2026-11-27",
-     "subject": "factory: battery art stage (warrior drawn, cannonball + scentMark repainted)"
-    },
-    {
-     "hash": "52ac53b",
-     "date": "2026-11-27",
-     "subject": "learn tinker: off-tile brighter check (--tiles), track spread check from 1181 wide, top-button colour + judge HUD_SWEEP prompt lines"
     }
    ],
    "last24": [
+    {
+     "hash": "c6f3169",
+     "time": "2026-11-27T08:23:45+01:00",
+     "subject": "factory: order_of_the_scale wireframe shot",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "d3d3896",
+     "time": "2026-11-27T08:23:35+01:00",
+     "subject": "Merge factory/fan-rules-5 (Order of the Forest, approved)",
+     "agent": "lead",
+     "branch": "factory/fan-rules-5"
+    },
+    {
+     "hash": "e1a3800",
+     "time": "2026-11-27T08:23:28+01:00",
+     "subject": "factory: CLEAN hudCheck order_of_the_scale",
+     "agent": "factory",
+     "branch": "factory/fan-rules-3"
+    },
+    {
+     "hash": "e93ab8b",
+     "time": "2026-11-27T08:21:40+01:00",
+     "subject": "factory: rules step fix pigtroupe (fan-rules-4 pass 1 try 2): card battles free of the Rager limit, bird reveal discards, human setup row pi",
+     "agent": "factory",
+     "branch": "factory/fan-rules-4"
+    },
+    {
+     "hash": "a344870",
+     "time": "2026-11-27T08:21:08+01:00",
+     "subject": "owls rules fix 3: Daylight after a Celebration Day is replaced (no Craft/Procession/Tribute), Radicalisation pickers chained (Day canticles,",
+     "agent": "lead",
+     "branch": "factory/fan-rules-2"
+    },
     {
      "hash": "1a12765",
      "time": "2026-11-27T08:19:45+01:00",
@@ -5256,44 +5334,9 @@
      "subject": "factory: clean plate orderforest",
      "agent": "factory",
      "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "2dd80ea",
-     "time": "2026-11-27T06:50:56+01:00",
-     "subject": "factory: judge fix tinker p1.1 leg 2 (overflow 10/10, text sweep clean at every size, right pills as own parts, crafted 9-slice drawn, accen",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "c3e2212",
-     "time": "2026-11-27T06:50:17+01:00",
-     "subject": "factory: northclan art stage (warrior drawn, forge + runestone repainted)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "4ba5f76",
-     "time": "2026-11-27T06:49:41+01:00",
-     "subject": "factory: orderforest concept handoff",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "411427c",
-     "time": "2026-11-27T06:49:34+01:00",
-     "subject": "factory: orderforest concept over the wireframe (theme-judge PASS 7)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "e0d8ce1",
-     "time": "2026-11-27T06:40:54+01:00",
-     "subject": "factory: wireframe orderforest",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
     }
    ],
-   "last24Count": 694
+   "last24Count": 699
   },
   "trust": {
    "tests": {
@@ -6830,18 +6873,18 @@
  "tokens": {
   "factions": {
    "other": {
-    "input": 17961,
-    "output": 3840891,
-    "cacheCreate": 39455017,
-    "cacheRead": 505841284,
+    "input": 17965,
+    "output": 3841242,
+    "cacheCreate": 39516738,
+    "cacheRead": 505900217,
     "stages": {
      "setup": {
-      "input": 432,
-      "output": 36665,
-      "cacheCreate": 5731237,
-      "cacheRead": 6890564,
-      "fresh": 5768334,
-      "total": 12658898
+      "input": 436,
+      "output": 37016,
+      "cacheCreate": 5792958,
+      "cacheRead": 6949497,
+      "fresh": 5830410,
+      "total": 12779907
      },
      "spec": {
       "input": 3500,
@@ -7574,6 +7617,12 @@
       "agents": 2
      },
      {
+      "id": "wf_3d4273d8-5da",
+      "first": "2026-11-27",
+      "last": "2026-11-27",
+      "agents": 1
+     },
+     {
       "id": "wf_9562eee6-def",
       "first": "2026-11-27",
       "last": "2026-11-27",
@@ -7598,14 +7647,14 @@
       "agents": 2
      }
     ],
-    "agents": 415,
+    "agents": 416,
     "first": "2026-11-04",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": false,
-    "fresh": 43313869,
-    "total": 549155153
+    "fresh": 43375945,
+    "total": 549276162
    },
    "caninecommonwealth": {
     "input": 2984,
@@ -7822,10 +7871,10 @@
     "total": 157115423
    },
    "order_of_the_scale": {
-    "input": 648,
-    "output": 241070,
-    "cacheCreate": 1083859,
-    "cacheRead": 37692495,
+    "input": 670,
+    "output": 243744,
+    "cacheCreate": 1262042,
+    "cacheRead": 38215572,
     "stages": {
      "reader": {
       "input": 70,
@@ -7876,12 +7925,36 @@
       "total": 9501670
      },
      "hudcheck": {
+      "input": 6,
+      "output": 1842,
+      "cacheCreate": 67334,
+      "cacheRead": 125825,
+      "fresh": 69182,
+      "total": 195007
+     },
+     "wireframe": {
+      "input": 8,
+      "output": 962,
+      "cacheCreate": 64011,
+      "cacheRead": 185655,
+      "fresh": 64981,
+      "total": 250636
+     },
+     "quota": {
       "input": 4,
-      "output": 1371,
-      "cacheCreate": 64255,
-      "cacheRead": 61570,
-      "fresh": 65630,
-      "total": 127200
+      "output": 154,
+      "cacheCreate": 60884,
+      "cacheRead": 58315,
+      "fresh": 61042,
+      "total": 119357
+     },
+     "overlay": {
+      "input": 8,
+      "output": 1087,
+      "cacheCreate": 50209,
+      "cacheRead": 214852,
+      "fresh": 51304,
+      "total": 266156
      }
     },
     "runs": [
@@ -7889,17 +7962,17 @@
       "id": "wf_05b935aa-050",
       "first": "2026-11-27",
       "last": "2026-11-27",
-      "agents": 9
+      "agents": 12
      }
     ],
-    "agents": 9,
+    "agents": 12,
     "first": "2026-11-27",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1325577,
-    "total": 39018072
+    "fresh": 1506456,
+    "total": 39722028
    },
    "marquistadors": {
     "input": 1686,
@@ -9038,10 +9111,10 @@
     "total": 145096841
    },
    "pigtroupe": {
-    "input": 450,
-    "output": 180862,
-    "cacheCreate": 787176,
-    "cacheRead": 24159774,
+    "input": 488,
+    "output": 194137,
+    "cacheCreate": 884542,
+    "cacheRead": 25956390,
     "stages": {
      "reader": {
       "input": 46,
@@ -9068,20 +9141,20 @@
       "total": 6811709
      },
      "rulescheck": {
-      "input": 110,
-      "output": 36834,
-      "cacheCreate": 217615,
-      "cacheRead": 5541844,
-      "fresh": 254559,
-      "total": 5796403
+      "input": 140,
+      "output": 47469,
+      "cacheCreate": 309785,
+      "cacheRead": 6791965,
+      "fresh": 357394,
+      "total": 7149359
      },
      "stepfix": {
-      "input": 178,
-      "output": 51395,
-      "cacheCreate": 229295,
-      "cacheRead": 9676565,
-      "fresh": 280868,
-      "total": 9957433
+      "input": 186,
+      "output": 54035,
+      "cacheCreate": 234491,
+      "cacheRead": 10223060,
+      "fresh": 288712,
+      "total": 10511772
      }
     },
     "runs": [
@@ -9089,17 +9162,17 @@
       "id": "wf_1f7f0033-c7a",
       "first": "2026-11-27",
       "last": "2026-11-27",
-      "agents": 7
+      "agents": 8
      }
     ],
-    "agents": 7,
+    "agents": 8,
     "first": "2026-11-27",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 968488,
-    "total": 25128262
+    "fresh": 1079167,
+    "total": 27035557
    },
    "orderforest": {
     "input": 1744,
@@ -10830,6 +10903,38 @@
     "isFaction": true,
     "fresh": 26803500,
     "total": 212711175
+   },
+   "plaguedoctors": {
+    "input": 2,
+    "output": 201,
+    "cacheCreate": 39551,
+    "cacheRead": 20577,
+    "stages": {
+     "reader": {
+      "input": 2,
+      "output": 201,
+      "cacheCreate": 39551,
+      "cacheRead": 20577,
+      "fresh": 39754,
+      "total": 60331
+     }
+    },
+    "runs": [
+     {
+      "id": "wf_3d4273d8-5da",
+      "first": "2026-11-27",
+      "last": "2026-11-27",
+      "agents": 1
+     }
+    ],
+    "agents": 1,
+    "first": "2026-11-27",
+    "last": "2026-11-27",
+    "pictures": 0,
+    "failedPictures": 0,
+    "isFaction": true,
+    "fresh": 39754,
+    "total": 60331
    },
    "pretenders": {
     "input": 1420,
@@ -13824,10 +13929,10 @@
     "total": 106961401
    },
    "owls": {
-    "input": 672,
-    "output": 240380,
-    "cacheCreate": 1106218,
-    "cacheRead": 35729594,
+    "input": 732,
+    "output": 256330,
+    "cacheCreate": 1275046,
+    "cacheRead": 38471151,
     "stages": {
      "reader": {
       "input": 66,
@@ -13854,20 +13959,20 @@
       "total": 13262277
      },
      "rulescheck": {
-      "input": 218,
-      "output": 60576,
-      "cacheCreate": 348670,
-      "cacheRead": 11400574,
-      "fresh": 409464,
-      "total": 11810038
+      "input": 268,
+      "output": 74020,
+      "cacheCreate": 466617,
+      "cacheRead": 13784683,
+      "fresh": 540905,
+      "total": 14325588
      },
      "stepfix": {
-      "input": 164,
-      "output": 59261,
-      "cacheCreate": 289607,
-      "cacheRead": 7841739,
-      "fresh": 349032,
-      "total": 8190771
+      "input": 174,
+      "output": 61767,
+      "cacheCreate": 340488,
+      "cacheRead": 8199187,
+      "fresh": 402429,
+      "total": 8601616
      }
     },
     "runs": [
@@ -13875,17 +13980,17 @@
       "id": "wf_ce4bfc00-ff3",
       "first": "2026-11-27",
       "last": "2026-11-27",
-      "agents": 10
+      "agents": 12
      }
     ],
-    "agents": 10,
+    "agents": 12,
     "first": "2026-11-27",
     "last": "2026-11-27",
     "pictures": 0,
     "failedPictures": 0,
     "isFaction": true,
-    "fresh": 1347270,
-    "total": 37076864
+    "fresh": 1532108,
+    "total": 40003259
    },
    "fangus": {
     "input": 1658,
