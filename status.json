@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-28T11:40:28.105Z",
+ "generatedAt": "2026-11-28T11:50:28.097Z",
  "stages": [
   {
    "id": "reader",
@@ -4226,9 +4226,9 @@
    }
   ],
   "live": {
-   "running": false,
-   "what": null,
-   "since": null,
+   "running": true,
+   "what": "--enable-features=PlatformHEVCDecoderSupport",
+   "since": "2026-11-28T11:43:57.534Z",
    "log": null,
    "lastLogLines": []
   }
@@ -4322,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-28T11:40:28.000Z",
+    "lastRun": "2026-11-28T11:50:28.000Z",
     "nextRun": null,
     "lastNote": null
    },
