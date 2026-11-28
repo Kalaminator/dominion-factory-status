@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T23:30:00.184Z",
+ "generatedAt": "2026-11-28T09:40:28.106Z",
  "stages": [
   {
    "id": "reader",
@@ -4322,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T23:30:00.000Z",
+    "lastRun": "2026-11-28T09:40:28.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4333,8 +4333,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T23:05:00.000Z",
-    "nextRun": "2026-11-27T23:35:00.000Z",
+    "lastRun": "2026-11-28T09:35:28.000Z",
+    "nextRun": "2026-11-28T10:05:00.000Z",
     "lastNote": null
    },
    {
@@ -4344,9 +4344,9 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T23:17:00.000Z",
-    "nextRun": "2026-11-28T03:17:00.000Z",
-    "lastNote": "2026-11-28T00:17:03+01:00 claude -p exited 1 (127 = claude not found)"
+    "lastRun": null,
+    "nextRun": "2026-11-28T11:17:00.000Z",
+    "lastNote": null
    },
    {
     "key": "hardener",
@@ -4366,8 +4366,8 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-27T02:30:19.000Z",
-    "nextRun": "2026-11-28T02:30:00.000Z",
+    "lastRun": null,
+    "nextRun": "2026-11-29T02:30:00.000Z",
     "lastNote": null
    },
    {
@@ -4384,10 +4384,6 @@
   ],
   "activity": {
    "perDay": [
-    {
-     "date": "2026-11-14",
-     "commits": 33
-    },
     {
      "date": "2026-11-15",
      "commits": 82
@@ -4439,6 +4435,10 @@
     {
      "date": "2026-11-27",
      "commits": 263
+    },
+    {
+     "date": "2026-11-28",
+     "commits": 0
     }
    ],
    "latest": [
@@ -4500,422 +4500,9 @@
      "subject": "Merge branch 'main' into patrol",
      "agent": "lead",
      "branch": "patrol"
-    },
-    {
-     "hash": "f4a46bc",
-     "time": "2026-11-27T08:33:36+01:00",
-     "subject": "factory: clean plate order_of_the_scale (fan-rules-3)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "fbc70f2",
-     "time": "2026-11-27T08:31:31+01:00",
-     "subject": "factory: concept order_of_the_scale (fan-rules-3), theme-judge PASS 7",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "a1b7906",
-     "time": "2026-11-27T08:30:25+01:00",
-     "subject": "plaguedoctors: hudTheme on + stub theme css + bundle",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "5827cc2",
-     "time": "2026-11-27T08:30:02+01:00",
-     "subject": "factory: rules step fix pigtroupe (fan-rules-4 pass 1 try 3): Vagabond Strike and Escort Strike score fanPieceVP (Party Foul flip scores 0),",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "2d9c881",
-     "time": "2026-11-27T08:29:25+01:00",
-     "subject": "factory: card reader plaguedoctors (fan-rules-5): ledger 25 rows, brief, Vault board transcription, 4 conflicts fixed to the card",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "6007421",
-     "time": "2026-11-27T08:28:47+01:00",
-     "subject": "owls rules fix 4: Nemetons counted as pieces (2 per clearing: +2 on the 2nd, draw icons, Celebration Day scores/removes each, one holy item ",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "c6f3169",
-     "time": "2026-11-27T08:23:45+01:00",
-     "subject": "factory: order_of_the_scale wireframe shot",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "d3d3896",
-     "time": "2026-11-27T08:23:35+01:00",
-     "subject": "Merge factory/fan-rules-5 (Order of the Forest, approved)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "e1a3800",
-     "time": "2026-11-27T08:23:28+01:00",
-     "subject": "factory: CLEAN hudCheck order_of_the_scale",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "e93ab8b",
-     "time": "2026-11-27T08:21:40+01:00",
-     "subject": "factory: rules step fix pigtroupe (fan-rules-4 pass 1 try 2): card battles free of the Rager limit, bird reveal discards, human setup row pi",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "a344870",
-     "time": "2026-11-27T08:21:08+01:00",
-     "subject": "owls rules fix 3: Daylight after a Celebration Day is replaced (no Craft/Procession/Tribute), Radicalisation pickers chained (Day canticles,",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "1a12765",
-     "time": "2026-11-27T08:19:45+01:00",
-     "subject": "factory: HUD build order_of_the_scale pass 1 leg 1 (fan-rules-3): spec.md, one tile per Blessing, Evening auto tiles, Temples socket track +",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "caab326",
-     "time": "2026-11-27T08:15:43+01:00",
-     "subject": "learn orderforest: track state faint check (cell inside must change built vs not), crafted box covers no counter row, COSTS line in the rule",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "ac5c4c0",
-     "time": "2026-11-27T08:11:52+01:00",
-     "subject": "owls rules fix 2: Tribute Battle/Move pay at battle start / first leg (switching keeps card + Procession), Guidance owner picks the bird car",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "2beed74",
-     "time": "2026-11-27T08:10:38+01:00",
-     "subject": "factory: rules step fix pigtroupe (fan-rules-4 pass 1): sweep VP through fanPieceVP (Party Foul scores 0 on Favor/Boom/Revolt/Bomb), human c",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "6b754d3",
-     "time": "2026-11-27T08:08:18+01:00",
-     "subject": "factory: approve orderforest (fan-rules-5 pass 1/1): APPROVED, UX majors open",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "1e4ccd0",
-     "time": "2026-11-27T08:04:55+01:00",
-     "subject": "factory: CLEAN code orderforest",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "2cfd93f",
-     "time": "2026-11-27T08:03:20+01:00",
-     "subject": "owls rules fix 1: pawn is no warrior (Celebration Day, Enthrall), forest warriors replaced, Fascination on clearing->forest legs, Tribute pa",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "2fabd2d",
-     "time": "2026-11-27T08:02:00+01:00",
-     "subject": "factory: CLEAN rulesCheck order_of_the_scale",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "cfcec3f",
-     "time": "2026-11-27T08:01:49+01:00",
-     "subject": "factory: CLEAN artCheck orderforest",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "c9ee98a",
-     "time": "2026-11-27T08:00:20+01:00",
-     "subject": "orderforest art stage: new fox warrior head, coins repaint, abbey/soup plain TTS cuts",
-     "agent": "lead",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "a5f3790",
-     "time": "2026-11-27T07:58:57+01:00",
-     "subject": "factory: rules step fix order_of_the_scale pass 1 (fan-rules-3): Sanctify + Arson tell the Temple owner, Restore closed by a Blessing, Recru",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "24cfbcb",
-     "time": "2026-11-27T07:57:27+01:00",
-     "subject": "factory: rules build pigtroupe (fan-rules-4): every ledger row coded, test-fan-pigtroupe.js 37 rows PASS",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "1ba9c00",
-     "time": "2026-11-27T07:53:26+01:00",
-     "subject": "factory: judge orderforest p1.2",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "6c17832",
-     "time": "2026-11-27T07:50:56+01:00",
-     "subject": "factory: orderforest judge step fix p1.1 leg 2: row tag PASS, score rows on the painted bars (brown score-row-2 plate, 17 px names), lighter",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "7fed74c",
-     "time": "2026-11-27T07:50:52+01:00",
-     "subject": "owls rules leg 2: Fascination + loot, Profanation, Holy Items (takeableItems), Soothing Songs (fanSoothes, Ambush rows); 33 rows PASS",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "9785772",
-     "time": "2026-11-27T07:46:12+01:00",
-     "subject": "pigtroupe: hudTheme on + 15-variable stub theme",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "0837dd0",
-     "time": "2026-11-27T07:45:34+01:00",
-     "subject": "factory: rules build order_of_the_scale leg 2 (fan-rules-3): Congregation via engine.onEnemyPlace, setup supply 16, no generic actions, RULE",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "077c837",
-     "time": "2026-11-27T07:45:25+01:00",
-     "subject": "factory: card reader pigtroupe (fan-rules-4): ledger 29 rows, 10 conflicts fixed in the Vault note, brief, user-list",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "25a69fe",
-     "time": "2026-11-27T07:41:13+01:00",
-     "subject": "factory: orderforest judge step fix p1.1: text findings fixed (narrow hint wrap, Undo cut, cost chip, 4k tile words), hint + crafted plates ",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "1ceae34",
-     "time": "2026-11-27T07:41:00+01:00",
-     "subject": "Merge factory/fan-rules-4 (Noxious Battery, approved)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "69384a4",
-     "time": "2026-11-27T07:38:58+01:00",
-     "subject": "owls rules leg 1: forests, Radicalisation, Celebration Day, arrow beads, Tributes, Procession, Chant, Guidance (26 ledger rows PASS)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "be77aa4",
-     "time": "2026-11-27T07:33:06+01:00",
-     "subject": "factory: rules build order_of_the_scale leg 1 (fan-rules-3): 26/27 ledger rows PASS, Advanced Setup card 5",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "8efb582",
-     "time": "2026-11-27T07:31:28+01:00",
-     "subject": "learn battery: track badge check (built vs not), tile count reads the module word (data-word), STYLE-ONLY hand panel up front, rules build p",
-     "agent": "lead",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "ed8eb97",
-     "time": "2026-11-27T07:30:15+01:00",
-     "subject": "owls: hudTheme on + theme stub, first shot",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "beb7164",
-     "time": "2026-11-27T07:29:26+01:00",
-     "subject": "factory: card reader owls (fan-rules-2): ledger 31 rows, brief, Vault board transcription, user-list",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "0aad648",
-     "time": "2026-11-27T07:25:18+01:00",
-     "subject": "factory: approve battery (fan-rules-4 pass 1/1): APPROVED, UX majors open",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "dab5794",
-     "time": "2026-11-27T07:24:26+01:00",
-     "subject": "Merge factory/fan-rules-2 (Old Man Tinker, approved)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "df52864",
-     "time": "2026-11-27T07:24:06+01:00",
-     "subject": "factory: order_of_the_scale theme on + stub CSS, first shot",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "efac66c",
-     "time": "2026-11-27T07:23:18+01:00",
-     "subject": "factory: card reader order_of_the_scale (fan-rules-3): ledger 27 rows, 4 conflicts fixed in Vault to the card",
-     "agent": "factory",
-     "branch": "factory/fan-rules-3"
-    },
-    {
-     "hash": "e254d5a",
-     "time": "2026-11-27T07:22:51+01:00",
-     "subject": "factory: judge orderforest p1.1",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "5cd93f1",
-     "time": "2026-11-27T07:22:16+01:00",
-     "subject": "factory: CLEAN code battery",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "413ae2d",
-     "time": "2026-11-27T07:20:19+01:00",
-     "subject": "factory: orderforest skin leg 2 handoff (overflow 10/10 PASS, judge: crafted + buildings left)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "3e77fe9",
-     "time": "2026-11-27T07:19:01+01:00",
-     "subject": "factory: CLEAN artCheck battery",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "6cacc52",
-     "time": "2026-11-27T07:18:25+01:00",
-     "subject": "factory: orderforest skin leg 2: plates re-cut from the concept (stat row, crafted, stats panel, action card; ink lifted), score-row rim mir",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "9358097",
-     "time": "2026-11-27T07:18:13+01:00",
-     "subject": "factory: battery art fix (Cannon pawn picture)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "604e6b9",
-     "time": "2026-11-27T07:17:00+01:00",
-     "subject": "Merge factory/fan-rules-3 (The North Clan, approved)",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "1956946",
-     "time": "2026-11-27T07:12:51+01:00",
-     "subject": "factory: battery art stage (warrior drawn, cannonball + scentMark repainted)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "a782dd5",
-     "time": "2026-11-27T07:11:53+01:00",
-     "subject": "factory: orderforest skin leg 2: overflow 10/10 PASS (crafted border specificity, track stack + Ranks row below full size, short-screen tabs",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "52ac53b",
-     "time": "2026-11-27T07:10:20+01:00",
-     "subject": "learn tinker: off-tile brighter check (--tiles), track spread check from 1181 wide, top-button colour + judge HUD_SWEEP prompt lines",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "441ed0a",
-     "time": "2026-11-27T07:10:00+01:00",
-     "subject": "learn northclan: track label/bonus overflow check, skin lines for row pills + phone right panel, lessons merged under the word cap",
-     "agent": "lead",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "3e2b2ac",
-     "time": "2026-11-27T07:05:51+01:00",
-     "subject": "factory: orderforest skin leg 1 (parts at painted boxes, theme CSS skin; overflow + judge open)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-5"
-    },
-    {
-     "hash": "8766e5d",
-     "time": "2026-11-27T07:05:49+01:00",
-     "subject": "factory: judge p1.2 battery",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "ad0ec48",
-     "time": "2026-11-27T07:05:11+01:00",
-     "subject": "factory: approver tinker (fan-rules-2 pass 1/1, APPROVED, DONE; majors/minors listed)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "950595f",
-     "time": "2026-11-27T07:04:23+01:00",
-     "subject": "factory: approve northclan (fan-rules-3 pass 1/1): APPROVED, UX majors open",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "c2ca0c0",
-     "time": "2026-11-27T07:02:54+01:00",
-     "subject": "factory: judge fix battery p1.2 (nameplate word on the concept line, crafted text placed, hand cards 114; gates green, overflow 10/10)",
-     "agent": "factory",
-     "branch": "factory/fan-rules-4"
-    },
-    {
-     "hash": "eabdd3f",
-     "time": "2026-11-27T07:02:48+01:00",
-     "subject": "factory: CLEAN code tinker",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "bee653b",
-     "time": "2026-11-27T07:01:15+01:00",
-     "subject": "factory: CLEAN code northclan",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
-    },
-    {
-     "hash": "37d78d4",
-     "time": "2026-11-27T06:59:34+01:00",
-     "subject": "factory: CLEAN artCheck tinker",
-     "agent": "factory",
-     "branch": "factory/fan-rules-2"
     }
    ],
-   "last24Count": 270
+   "last24Count": 1
   },
   "trust": {
    "tests": {
@@ -5715,8 +5302,8 @@
     }
    },
    "calls": {
-    "today": 76,
-    "last7": 358,
+    "today": 0,
+    "last7": 345,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
