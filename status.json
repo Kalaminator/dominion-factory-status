@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-28T11:10:28.100Z",
+ "generatedAt": "2026-11-28T11:20:28.100Z",
  "stages": [
   {
    "id": "reader",
@@ -4322,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-28T11:10:28.000Z",
+    "lastRun": "2026-11-28T11:20:28.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -4344,9 +4344,9 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": null,
-    "nextRun": "2026-11-28T11:17:00.000Z",
-    "lastNote": null
+    "lastRun": "2026-11-28T11:17:28.000Z",
+    "nextRun": "2026-11-28T15:17:00.000Z",
+    "lastNote": "2026-11-28T12:17:31+01:00 claude -p exited 1 (127 = claude not found)"
    },
    {
     "key": "hardener",
@@ -4493,16 +4493,8 @@
      "subject": "Merge factory/fan-rules-4 (Noxious Battery, approved)"
     }
    ],
-   "last24": [
-    {
-     "hash": "8c3cafb",
-     "time": "2026-11-27T12:17:00+01:00",
-     "subject": "Merge branch 'main' into patrol",
-     "agent": "lead",
-     "branch": "patrol"
-    }
-   ],
-   "last24Count": 1
+   "last24": [],
+   "last24Count": 0
   },
   "trust": {
    "tests": {
@@ -18417,6 +18409,16 @@
   "helpers": {
    "runs": [
     {
+     "time": "2026-11-28T11:17:31.151Z",
+     "agent": "patrol",
+     "issues": [],
+     "elements": [],
+     "fresh": 0,
+     "total": 0,
+     "costUsd": 0,
+     "durationMs": 508
+    },
+    {
      "time": "2026-11-27T23:17:03.170Z",
      "agent": "patrol",
      "issues": [],
@@ -18605,6 +18607,11 @@
     },
     {
      "day": "2026-11-27",
+     "fresh": 0,
+     "total": 0
+    },
+    {
+     "day": "2026-11-28",
      "fresh": 0,
      "total": 0
     }
