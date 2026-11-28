@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-28T15:50:28.099Z",
+ "generatedAt": "2026-11-28T16:00:28.105Z",
  "stages": [
   {
    "id": "reader",
@@ -4322,7 +4322,7 @@
     "on": true,
     "ok": true,
     "exit": 0,
-    "lastRun": "2026-11-28T15:50:28.000Z",
+    "lastRun": "2026-11-28T16:00:28.000Z",
     "nextRun": null,
     "lastNote": null
    },
@@ -5295,7 +5295,7 @@
    },
    "calls": {
     "today": 0,
-    "last7": 345,
+    "last7": 343,
     "perFaction": {
      "lupine_pact": 24,
      "dragon_cult": 5,
